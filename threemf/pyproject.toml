@@ -1,0 +1,16 @@
+[project]
+name = "p2p-threemf"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=2.5.3",
+    "p2p-contracts",
+    "scipy>=1.18.1",
+]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

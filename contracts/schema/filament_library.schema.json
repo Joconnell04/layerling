@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "Filament": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "Slug rule: lowercase, [a-z0-9-] only, <brand>-<material or line>-<color>, e.g. bambu-pla-basic-red, generic-petg-blue; unique per owner; never reused for a different spool",
+          "title": "Id",
+          "type": "string"
+        },
+        "brand": {
+          "title": "Brand",
+          "type": "string"
+        },
+        "line": {
+          "description": "Basic, Matte, Silk+, ...",
+          "title": "Line",
+          "type": "string"
+        },
+        "name": {
+          "description": "Color name as sold",
+          "title": "Name",
+          "type": "string"
+        },
+        "material": {
+          "default": "PLA",
+          "title": "Material",
+          "type": "string"
+        },
+        "hex": {
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "title": "Hex",
+          "type": "string"
+        },
+        "lab": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Lab",
+          "type": "array"
+        },
+        "lab_source": {
+          "default": "nominal",
+          "enum": [
+            "nominal",
+            "measured"
+          ],
+          "title": "Lab Source",
+          "type": "string"
+        },
+        "td_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Thickness at which the color over black and over white are both within dE00 2 of the solid tile (measured from the swatch card wedges); bleed risk",
+          "title": "Td Mm"
+        },
+        "owned": {
+          "default": true,
+          "title": "Owned",
+          "type": "boolean"
+        },
+        "spools": {
+          "default": 1,
+          "title": "Spools",
+          "type": "integer"
+        },
+        "ams_slot": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Currently loaded AMS slot, if any",
+          "title": "Ams Slot"
+        },
+        "swatch": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Path under filaments/swatches/ or Storage key",
+          "title": "Swatch"
+        },
+        "bambu_filament_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Bambu preset id, e.g. GFA00",
+          "title": "Bambu Filament Id"
+        },
+        "slicer_preset": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. Bambu PLA Basic @BBL X2D",
+          "title": "Slicer Preset"
+        },
+        "density_g_cm3": {
+          "default": 1.24,
+          "title": "Density G Cm3",
+          "type": "number"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "id",
+        "brand",
+        "line",
+        "name",
+        "hex",
+        "lab"
+      ],
+      "title": "Filament",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "updated_at": {
+      "format": "date-time",
+      "title": "Updated At",
+      "type": "string"
+    },
+    "illuminant": {
+      "const": "D65",
+      "default": "D65",
+      "title": "Illuminant",
+      "type": "string"
+    },
+    "filaments": {
+      "items": {
+        "$ref": "#/$defs/Filament"
+      },
+      "title": "Filaments",
+      "type": "array"
+    }
+  },
+  "required": [
+    "updated_at",
+    "filaments"
+  ],
+  "title": "FilamentLibrary",
+  "type": "object"
+}

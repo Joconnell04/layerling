@@ -1,0 +1,122 @@
+{
+  "schema_version": "1",
+  "updated_at": "2026-09-24T03:37:46.272942Z",
+  "illuminant": "D65",
+  "filaments": [
+    {
+      "id": "generic-pla-black",
+      "brand": "Generic",
+      "line": "PLA",
+      "name": "Black",
+      "material": "PLA",
+      "hex": "#161616",
+      "lab": [
+        7.25,
+        -0.0,
+        0.0
+      ],
+      "lab_source": "nominal",
+      "td_mm": null,
+      "owned": true,
+      "spools": 1,
+      "ams_slot": 1,
+      "swatch": null,
+      "bambu_filament_id": "GFL99",
+      "slicer_preset": "Generic PLA @BBL X2D 0.4 nozzle",
+      "density_g_cm3": 1.24,
+      "notes": "AMS color from Jackson's Bambu Studio preset; nominal until a swatch is measured"
+    },
+    {
+      "id": "generic-pla-brown",
+      "brand": "Generic",
+      "line": "PLA",
+      "name": "Brown",
+      "material": "PLA",
+      "hex": "#7C4B00",
+      "lab": [
+        36.59,
+        15.71,
+        45.82
+      ],
+      "lab_source": "nominal",
+      "td_mm": null,
+      "owned": true,
+      "spools": 1,
+      "ams_slot": 2,
+      "swatch": null,
+      "bambu_filament_id": "GFL99",
+      "slicer_preset": "Generic PLA @BBL X2D 0.4 nozzle",
+      "density_g_cm3": 1.24,
+      "notes": "AMS color from Jackson's Bambu Studio preset; nominal until a swatch is measured"
+    },
+    {
+      "id": "bambu-pla-basic-red",
+      "brand": "Bambu Lab",
+      "line": "PLA Basic",
+      "name": "Red",
+      "material": "PLA",
+      "hex": "#F72323",
+      "lab": [
+        53.06,
+        74.71,
+        54.91
+      ],
+      "lab_source": "nominal",
+      "td_mm": null,
+      "owned": true,
+      "spools": 1,
+      "ams_slot": 3,
+      "swatch": null,
+      "bambu_filament_id": "GFA00",
+      "slicer_preset": "Bambu PLA Basic @BBL X2D 0.4 nozzle",
+      "density_g_cm3": 1.26,
+      "notes": "AMS color from Jackson's Bambu Studio preset; nominal until a swatch is measured"
+    },
+    {
+      "id": "generic-petg-blue",
+      "brand": "Generic",
+      "line": "PETG",
+      "name": "Blue",
+      "material": "PETG",
+      "hex": "#0D6284",
+      "lab": [
+        38.7,
+        -10.47,
+        -25.47
+      ],
+      "lab_source": "nominal",
+      "td_mm": null,
+      "owned": true,
+      "spools": 1,
+      "ams_slot": 4,
+      "swatch": null,
+      "bambu_filament_id": "GFG99",
+      "slicer_preset": "Generic PETG @BBL X2D 0.4 nozzle",
+      "density_g_cm3": 1.27,
+      "notes": "AMS color from Jackson's Bambu Studio preset; nominal until a swatch is measured"
+    },
+    {
+      "id": "generic-pla-white",
+      "brand": "Generic",
+      "line": "PLA",
+      "name": "White",
+      "material": "PLA",
+      "hex": "#FFFFFF",
+      "lab": [
+        100.0,
+        -0.0,
+        0.0
+      ],
+      "lab_source": "nominal",
+      "td_mm": null,
+      "owned": true,
+      "spools": 1,
+      "ams_slot": 5,
+      "swatch": null,
+      "bambu_filament_id": "GFL99",
+      "slicer_preset": "Generic PLA @BBL X2D 0.4 nozzle",
+      "density_g_cm3": 1.24,
+      "notes": "AMS color from Jackson's Bambu Studio preset; nominal until a swatch is measured"
+    }
+  ]
+}

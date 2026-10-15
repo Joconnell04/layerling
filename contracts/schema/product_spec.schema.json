@@ -1,0 +1,280 @@
+{
+  "$defs": {
+    "AddOn": {
+      "additionalProperties": false,
+      "description": "Exact geometry added in s06. Generated, never asked of Meshy (AI meshes garble text).",
+      "properties": {
+        "kind": {
+          "$ref": "#/$defs/AddOnKind"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TextSpec"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "filament_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filament Id"
+        },
+        "params": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "description": "e.g. loop_inner_d_mm, plate_w_mm, plate_d_mm, plate_t_mm, pocket_d_mm, pocket_depth_mm, position (top|back|left|right)",
+          "title": "Params",
+          "type": "object"
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "title": "AddOn",
+      "type": "object"
+    },
+    "AddOnKind": {
+      "enum": [
+        "round_base",
+        "oval_base",
+        "keyring_loop",
+        "hanging_loop",
+        "nameplate",
+        "flat_back",
+        "magnet_pocket"
+      ],
+      "title": "AddOnKind",
+      "type": "string"
+    },
+    "CustomAsk": {
+      "additionalProperties": false,
+      "description": "Something the customer asked to see beyond the subjects themselves: a prop, an outfit, a\npose, a name. Carried from intake into the concept prompt, the concept check and the views,\nso it survives into the 3D model.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "prop",
+            "outfit",
+            "pose",
+            "expression",
+            "text",
+            "other"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "text": {
+          "description": "In the customer's words, e.g. wearing a sombrero",
+          "maxLength": 120,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "subject_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "s1, s2, ... or None for the whole piece",
+          "title": "Subject Id"
+        },
+        "source": {
+          "default": "request",
+          "enum": [
+            "request",
+            "answer",
+            "form"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "buildable": {
+          "default": true,
+          "description": "False when the product has nowhere to put it (a name on a 3D keychain); never drawn or checked, and the customer gets a note",
+          "title": "Buildable",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "kind",
+        "text"
+      ],
+      "title": "CustomAsk",
+      "type": "object"
+    },
+    "ProductForm": {
+      "description": "What the printed object is, set at intake and kept by every stage (FROM JACKSON).\n\nflat: a relief charm, a height field of the front view with a flat back.\nfigure: a full 3D figure, never flattened later.",
+      "enum": [
+        "flat",
+        "figure"
+      ],
+      "title": "ProductForm",
+      "type": "string"
+    },
+    "ProductType": {
+      "enum": [
+        "figurine",
+        "keychain",
+        "nameplate",
+        "ornament",
+        "magnet",
+        "other"
+      ],
+      "title": "ProductType",
+      "type": "string"
+    },
+    "TextSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "maxLength": 24,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "font": {
+          "default": "rounded-bold",
+          "description": "Font key from the geometry package",
+          "title": "Font",
+          "type": "string"
+        },
+        "cap_height_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None = fit to plate",
+          "title": "Cap Height Mm"
+        },
+        "relief_mm": {
+          "default": 1.0,
+          "description": "Raised height (or engrave depth)",
+          "title": "Relief Mm",
+          "type": "number"
+        },
+        "style": {
+          "default": "raised",
+          "enum": [
+            "raised",
+            "engraved"
+          ],
+          "title": "Style",
+          "type": "string"
+        },
+        "filament_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None = highest-contrast palette filament",
+          "title": "Filament Id"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "TextSpec",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "s01 output product.json (role product_spec): the one product decision per job that every\nlater stage reads instead of picking its own default (docs/runs/fidelity/DEEP-DIVE.md,\nconsistency rule 1).",
+  "properties": {
+    "product_type": {
+      "$ref": "#/$defs/ProductType"
+    },
+    "form": {
+      "$ref": "#/$defs/ProductForm"
+    },
+    "target_size_mm": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Target Size Mm"
+    },
+    "addons": {
+      "items": {
+        "$ref": "#/$defs/AddOn"
+      },
+      "title": "Addons",
+      "type": "array"
+    },
+    "custom_asks": {
+      "items": {
+        "$ref": "#/$defs/CustomAsk"
+      },
+      "title": "Custom Asks",
+      "type": "array"
+    },
+    "picks": {
+      "additionalProperties": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "description": "Question id -> picked option ids (pose, style, ...)",
+      "title": "Picks",
+      "type": "object"
+    },
+    "decided_by": {
+      "additionalProperties": {
+        "enum": [
+          "user",
+          "form",
+          "request",
+          "default"
+        ],
+        "type": "string"
+      },
+      "description": "Who set form and size",
+      "title": "Decided By",
+      "type": "object"
+    }
+  },
+  "required": [
+    "product_type",
+    "form"
+  ],
+  "title": "ProductSpec",
+  "type": "object"
+}

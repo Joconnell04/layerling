@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd agent for the photo2print worker. Template: install.sh fills __REPO__, __UV__ and
+  __PATH__ and copies the result to ~/Library/LaunchAgents/. Secrets stay in __REPO__/.env,
+  which the worker reads itself; none belong in this file.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.photo2print.worker</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>__UV__</string>
+    <string>run</string>
+    <string>--project</string>
+    <string>__REPO__</string>
+    <string>python</string>
+    <string>-m</string>
+    <string>p2p_worker</string>
+    <string>serve</string>
+    <string>--host</string>
+    <string>127.0.0.1</string>
+    <string>--port</string>
+    <string>8787</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>__REPO__</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <!-- uv and the claude CLI (Claude Code login) live in ~/.local/bin -->
+    <key>PATH</key>
+    <string>__PATH__</string>
+    <key>P2P_LOG_DIR</key>
+    <string>__REPO__/logs</string>
+    <key>PYTHONUNBUFFERED</key>
+    <string>1</string>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <dict>
+    <key>SuccessfulExit</key>
+    <false/>
+  </dict>
+  <key>ThrottleInterval</key>
+  <integer>30</integer>
+  <key>ProcessType</key>
+  <string>Background</string>
+
+  <!-- JSON logs go to __REPO__/logs/worker.jsonl (rotated at 10 MB); these catch crashes -->
+  <key>StandardOutPath</key>
+  <string>__REPO__/logs/worker.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>__REPO__/logs/worker.err.log</string>
+</dict>
+</plist>

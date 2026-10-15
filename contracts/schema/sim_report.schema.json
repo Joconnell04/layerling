@@ -1,0 +1,265 @@
+{
+  "$defs": {
+    "BleedFlag": {
+      "additionalProperties": false,
+      "properties": {
+        "region_id": {
+          "title": "Region Id",
+          "type": "integer"
+        },
+        "over_region_id": {
+          "title": "Over Region Id",
+          "type": "integer"
+        },
+        "light_layers": {
+          "title": "Light Layers",
+          "type": "integer"
+        },
+        "area_mm2": {
+          "title": "Area Mm2",
+          "type": "number"
+        }
+      },
+      "required": [
+        "region_id",
+        "over_region_id",
+        "light_layers",
+        "area_mm2"
+      ],
+      "title": "BleedFlag",
+      "type": "object"
+    },
+    "FileRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "description": "POSIX path relative to jobs/<job_id>/",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bytes"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+          "title": "Kind"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "FileRef",
+      "type": "object"
+    },
+    "MergedRegion": {
+      "additionalProperties": false,
+      "properties": {
+        "region_id": {
+          "title": "Region Id",
+          "type": "integer"
+        },
+        "into_region_id": {
+          "title": "Into Region Id",
+          "type": "integer"
+        },
+        "area_mm2": {
+          "title": "Area Mm2",
+          "type": "number"
+        },
+        "reason": {
+          "enum": [
+            "too_thin",
+            "island",
+            "quantized_away"
+          ],
+          "title": "Reason",
+          "type": "string"
+        },
+        "kind": {
+          "default": "whole",
+          "description": "whole: the region vanished; sliver: only a thin part of it was trimmed",
+          "enum": [
+            "whole",
+            "sliver"
+          ],
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "required": [
+        "region_id",
+        "into_region_id",
+        "area_mm2",
+        "reason"
+      ],
+      "title": "MergedRegion",
+      "type": "object"
+    },
+    "SimParams": {
+      "additionalProperties": false,
+      "properties": {
+        "nozzle_mm": {
+          "default": 0.4,
+          "title": "Nozzle Mm",
+          "type": "number"
+        },
+        "layer_mm": {
+          "default": 0.2,
+          "title": "Layer Mm",
+          "type": "number"
+        },
+        "min_width_factor": {
+          "default": 2.0,
+          "description": "Erode regions narrower than factor x nozzle",
+          "title": "Min Width Factor",
+          "type": "number"
+        },
+        "flat_angle_deg": {
+          "default": 30.0,
+          "description": "Surfaces flatter than this count as tops (paint projects down through them)",
+          "title": "Flat Angle Deg",
+          "type": "number"
+        },
+        "quantize_model": {
+          "default": "slicer",
+          "description": "slicer: tops keep shape, walls snap to layers (Bambu source); plan: PLAN rule 2",
+          "enum": [
+            "slicer",
+            "plan"
+          ],
+          "title": "Quantize Model",
+          "type": "string"
+        },
+        "paint_penetration_layers": {
+          "default": 5,
+          "description": "Layers a painted top projects downward",
+          "title": "Paint Penetration Layers",
+          "type": "integer"
+        },
+        "nozzles": {
+          "default": 2,
+          "description": "X2D has 2; filaments on different nozzles swap without purge",
+          "title": "Nozzles",
+          "type": "integer"
+        },
+        "min_light_layers": {
+          "default": 5,
+          "description": "Light over dark with fewer layers is flagged",
+          "title": "Min Light Layers",
+          "type": "integer"
+        },
+        "dark_to_light_weight": {
+          "default": 1.0,
+          "description": "Multiplier on Bambu's color-based flush volume for dark to light swaps",
+          "title": "Dark To Light Weight",
+          "type": "number"
+        }
+      },
+      "title": "SimParams",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "params": {
+      "$ref": "#/$defs/SimParams"
+    },
+    "merged": {
+      "items": {
+        "$ref": "#/$defs/MergedRegion"
+      },
+      "title": "Merged",
+      "type": "array"
+    },
+    "bleed_flags": {
+      "items": {
+        "$ref": "#/$defs/BleedFlag"
+      },
+      "title": "Bleed Flags",
+      "type": "array"
+    },
+    "layers": {
+      "title": "Layers",
+      "type": "integer"
+    },
+    "swaps_total": {
+      "title": "Swaps Total",
+      "type": "integer"
+    },
+    "swaps_max_per_layer": {
+      "title": "Swaps Max Per Layer",
+      "type": "integer"
+    },
+    "purge_g_est": {
+      "title": "Purge G Est",
+      "type": "number"
+    },
+    "model_g_est": {
+      "title": "Model G Est",
+      "type": "number"
+    },
+    "purge_pct": {
+      "title": "Purge Pct",
+      "type": "number"
+    },
+    "face_filaments": {
+      "$ref": "#/$defs/FileRef",
+      "description": "sim_face_filaments.npy int16 slot per face"
+    },
+    "images": {
+      "items": {
+        "$ref": "#/$defs/FileRef"
+      },
+      "title": "Images",
+      "type": "array"
+    }
+  },
+  "required": [
+    "params",
+    "layers",
+    "swaps_total",
+    "swaps_max_per_layer",
+    "purge_g_est",
+    "model_g_est",
+    "purge_pct",
+    "face_filaments"
+  ],
+  "title": "SimReport",
+  "type": "object"
+}

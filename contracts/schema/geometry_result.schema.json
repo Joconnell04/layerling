@@ -1,0 +1,322 @@
+{
+  "$defs": {
+    "FileRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "description": "POSIX path relative to jobs/<job_id>/",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bytes"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+          "title": "Kind"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "FileRef",
+      "type": "object"
+    },
+    "PartRef": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "figure",
+            "base",
+            "keyring",
+            "hanging_loop",
+            "plate",
+            "text",
+            "back",
+            "cutter"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "mesh": {
+          "$ref": "#/$defs/FileRef",
+          "description": "PLY in the print frame (mm, Z up, front -Y)"
+        },
+        "filament_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None for the painted figure",
+          "title": "Filament Id"
+        },
+        "watertight": {
+          "title": "Watertight",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "mesh",
+        "watertight"
+      ],
+      "title": "PartRef",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_glb": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FileRef"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The Meshy glTF the transform applies to"
+    },
+    "transform": {
+      "description": "Meshy glTF frame -> print frame, row-major",
+      "maxItems": 4,
+      "minItems": 4,
+      "prefixItems": [
+        {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        {
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        }
+      ],
+      "title": "Transform",
+      "type": "array"
+    },
+    "figure": {
+      "$ref": "#/$defs/PartRef",
+      "description": "The repaired figure mesh, faces in Meshy order"
+    },
+    "face_index_map": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FileRef"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "int32 npy: new face -> original Meshy face, only if repair changed faces"
+    },
+    "parts": {
+      "description": "Add-ons, not including figure. Written into the 3MF in list order after the figure; the figure goes first so its paint wins where parts overlap",
+      "items": {
+        "$ref": "#/$defs/PartRef"
+      },
+      "title": "Parts",
+      "type": "array"
+    },
+    "orientation": {
+      "default": "upright",
+      "enum": [
+        "upright",
+        "flat_face_up",
+        "flat_back_down"
+      ],
+      "title": "Orientation",
+      "type": "string"
+    },
+    "supports": {
+      "default": "tree",
+      "description": "Slicer supports to use",
+      "enum": [
+        "none",
+        "tree",
+        "normal"
+      ],
+      "title": "Supports",
+      "type": "string"
+    },
+    "notes": {
+      "description": "Decisions made, for the manifest",
+      "items": {
+        "type": "string"
+      },
+      "title": "Notes",
+      "type": "array"
+    },
+    "bbox_min_mm": {
+      "maxItems": 3,
+      "minItems": 3,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Bbox Min Mm",
+      "type": "array"
+    },
+    "bbox_max_mm": {
+      "maxItems": 3,
+      "minItems": 3,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Bbox Max Mm",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "transform",
+    "figure",
+    "bbox_min_mm",
+    "bbox_max_mm"
+  ],
+  "title": "GeometryResult",
+  "type": "object"
+}

@@ -1,0 +1,31 @@
+[project]
+name = "p2p-worker"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "anthropic>=1.8.0",
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "numpy>=2.5.3",
+    "p2p-contracts",
+    "p2p-geometry",
+    "p2p-sam3",
+    "p2p-sim",
+    "p2p-threemf",
+    "pillow>=12.3.0",
+    "pyyaml>=6.0.3",
+    "trimesh>=5.1.0",
+    "uvicorn>=0.30",
+    "websockets>=17.1",
+]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+p2p-threemf = { workspace = true }
+p2p-geometry = { workspace = true }
+p2p-sam3 = { workspace = true }
+p2p-sim = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

@@ -1,0 +1,142 @@
+{
+  "keychain": {
+    "hero": "keychain.png",
+    "front": "keychain-front.png",
+    "front_px_per_mm": 10.0,
+    "front_size_px": [
+      357,
+      571
+    ],
+    "front_object_px": [
+      60,
+      60,
+      297,
+      511
+    ],
+    "size_mm": [
+      23.7,
+      14.7,
+      45.0
+    ],
+    "pose": "flat",
+    "front_elevation_deg": 4.0,
+    "tier_axis": "height",
+    "source": "geometry/_out/keychain/keychain_x2d.3mf (p2p_geometry production run on the Meshy beagle)"
+  },
+  "figurine": {
+    "hero": "figurine.png",
+    "front": "figurine-front.png",
+    "front_px_per_mm": 10.0,
+    "front_size_px": [
+      862,
+      1035
+    ],
+    "front_object_px": [
+      60,
+      60,
+      802,
+      975
+    ],
+    "size_mm": [
+      74.2,
+      81.8,
+      90.0
+    ],
+    "pose": "upright",
+    "front_elevation_deg": 4.0,
+    "tier_axis": "height",
+    "source": "geometry/_out/figurine/figurine_x2d.3mf (p2p_geometry production run on the Meshy beagle)"
+  },
+  "magnet": {
+    "hero": "magnet.png",
+    "front": "magnet-front.png",
+    "front_px_per_mm": 10.0,
+    "front_size_px": [
+      510,
+      721
+    ],
+    "front_object_px": [
+      60,
+      60,
+      450,
+      661
+    ],
+    "size_mm": [
+      39.0,
+      21.0,
+      59.8
+    ],
+    "pose": "flat",
+    "front_elevation_deg": 4.0,
+    "tier_axis": "height",
+    "source": "geometry/_out/magnet/magnet_x2d.3mf (p2p_geometry production run on the Meshy beagle)"
+  },
+  "nameplate": {
+    "hero": "nameplate.png",
+    "front": "nameplate-front.png",
+    "front_px_per_mm": 10.0,
+    "front_size_px": [
+      1320,
+      705
+    ],
+    "front_object_px": [
+      60,
+      60,
+      1260,
+      645
+    ],
+    "size_mm": [
+      120.0,
+      55.7,
+      53.4
+    ],
+    "pose": "upright",
+    "front_elevation_deg": 32.0,
+    "tier_axis": "width",
+    "source": "geometry/_out/nameplate/nameplate_x2d.3mf (p2p_geometry production run on the Meshy beagle)"
+  },
+  "ornament": {
+    "hero": "ornament.png",
+    "front": "ornament-front.png",
+    "front_px_per_mm": 10.0,
+    "front_size_px": [
+      551,
+      830
+    ],
+    "front_object_px": [
+      60,
+      60,
+      491,
+      770
+    ],
+    "size_mm": [
+      43.1,
+      55.7,
+      70.0
+    ],
+    "pose": "upright",
+    "front_elevation_deg": 4.0,
+    "tier_axis": "height",
+    "source": "geometry/_out/ornament/ornament_x2d.3mf (p2p_geometry production run on the Meshy beagle)"
+  },
+  "frenchie-keychain": {
+    "hero": "frenchie-keychain.png",
+    "size_mm": [
+      20.5,
+      14.5,
+      45.0
+    ],
+    "pose": "flat",
+    "source": "jobs/819cc491-c341-470a-bb97-63a194fa8dca/s09_paint/a2/final.3mf"
+  },
+  "bronco-nameplate": {
+    "hero": "bronco-nameplate.png",
+    "size_mm": [
+      120.0,
+      49.6,
+      53.4
+    ],
+    "pose": "upright",
+    "source": "jobs/1785a480-84b8-41f9-8f97-1005b6d7d0a6/s07_baseline/a2/baseline_x2d.3mf"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "$defs": {
+    "StageId": {
+      "enum": [
+        "s01_intake",
+        "s02_color_spec",
+        "s03_concept",
+        "s04_multiview",
+        "s05_mesh",
+        "s06_printability",
+        "s07_baseline",
+        "s08_palette",
+        "s09_paint",
+        "s10_write"
+      ],
+      "title": "StageId",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "at": {
+      "format": "date-time",
+      "title": "At",
+      "type": "string"
+    },
+    "job_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Job Id"
+    },
+    "stage": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/StageId"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "vendor": {
+      "enum": [
+        "anthropic",
+        "meshy",
+        "runpod"
+      ],
+      "title": "Vendor",
+      "type": "string"
+    },
+    "kind": {
+      "description": "e.g. image-to-image, multi-image-to-3d, messages, sam3",
+      "title": "Kind",
+      "type": "string"
+    },
+    "usd": {
+      "default": 0.0,
+      "title": "Usd",
+      "type": "number"
+    },
+    "credits": {
+      "default": 0,
+      "title": "Credits",
+      "type": "integer"
+    },
+    "ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Meshy task id, Anthropic request id, Runpod job id",
+      "title": "Ref"
+    },
+    "test_mode": {
+      "default": false,
+      "title": "Test Mode",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "at",
+    "vendor",
+    "kind"
+  ],
+  "title": "SpendEvent",
+  "type": "object"
+}

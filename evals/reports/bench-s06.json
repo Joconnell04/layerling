@@ -1,0 +1,105 @@
+[
+ {
+  "job": "sombrero",
+  "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+  "runs": {
+   "before": {
+    "wall_s": 706.9,
+    "cpu_s": 603.1,
+    "source": "p2p_geometry",
+    "vs_stored": {
+     "compared": true,
+     "tol_mm": 0.001,
+     "parts": [
+      "base",
+      "figure"
+     ],
+     "parts_same": true,
+     "filaments_same": true,
+     "orientation_same": true,
+     "supports_same": true,
+     "notes_same": true,
+     "warnings_same": true,
+     "transform_max_dev": 0.0,
+     "meshes": {
+      "base": {
+       "identical": true,
+       "max_dev_mm": 0.0
+      },
+      "figure": {
+       "identical": true,
+       "max_dev_mm": 0.0
+      }
+     },
+     "max_vertex_dev_mm": 0.0,
+     "faces_same": true,
+     "report_diffs": [],
+     "ok": true
+    }
+   },
+   "after": {
+    "wall_s": 53.2,
+    "cpu_s": 38.2,
+    "source": "p2p_geometry",
+    "vs_stored": {
+     "compared": true,
+     "tol_mm": 0.001,
+     "parts": [
+      "base",
+      "figure"
+     ],
+     "parts_same": true,
+     "filaments_same": true,
+     "orientation_same": true,
+     "supports_same": true,
+     "notes_same": true,
+     "warnings_same": true,
+     "transform_max_dev": 0.0,
+     "meshes": {
+      "base": {
+       "identical": true,
+       "max_dev_mm": 0.0
+      },
+      "figure": {
+       "identical": true,
+       "max_dev_mm": 0.0
+      }
+     },
+     "max_vertex_dev_mm": 0.0,
+     "faces_same": true,
+     "report_diffs": [],
+     "ok": true
+    }
+   },
+   "same_output": {
+    "compared": true,
+    "tol_mm": 0.001,
+    "parts": [
+     "base",
+     "figure"
+    ],
+    "parts_same": true,
+    "filaments_same": true,
+    "orientation_same": true,
+    "supports_same": true,
+    "notes_same": true,
+    "warnings_same": true,
+    "transform_max_dev": 0.0,
+    "meshes": {
+     "base": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "figure": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     }
+    },
+    "max_vertex_dev_mm": 0.0,
+    "faces_same": true,
+    "report_diffs": [],
+    "ok": true
+   }
+  }
+ }
+]

@@ -1,0 +1,155 @@
+@import "tailwindcss";
+/* Design system v1 tokens (generated from design/tokens.json by scripts/gen-tokens.mjs). */
+@import "./tokens.css";
+/* Public site motion: print-in, reveal, parallax, number tick, typing caret. */
+@import "./motion.css";
+/* Public site layout that needs container units: the lineup, size cells, the size visualizer. */
+@import "./site.css";
+
+/*
+ * Studio names from direction B, kept as aliases of the v1 tokens so the studio keeps working
+ * while it moves to the new names. New code uses the token names (paper, sheet, tint, ink, ink-2,
+ * ink-3, brick, on-brick, danger).
+ */
+@theme {
+  --color-bg: var(--color-paper);
+  --color-panel: var(--color-sheet);
+  --color-raised: var(--color-tint);
+  --color-fg: var(--color-ink);
+  --color-muted: var(--color-ink-2);
+  --color-faint: var(--color-ink-3);
+  --color-accent: var(--color-brick);
+  --color-accent-fg: var(--color-on-brick);
+  --color-accent-soft: color-mix(in srgb, var(--color-brick) 9%, transparent);
+  --color-bad: var(--color-danger);
+  --color-shadow: var(--color-shadow-paper);
+  /* Light neutral behind product renders (concepts have transparent backgrounds). */
+  --color-canvas: var(--color-hover);
+
+  /* Studio text scale (denser than the site). */
+  --text-2xs: 11px;
+  --text-2xs--line-height: 14px;
+  --text-xs: 12.5px;
+  --text-xs--line-height: 17px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-base: 15px;
+  --text-base--line-height: 22px;
+  --text-lg: 18px;
+  --text-lg--line-height: 26px;
+  --text-xl: 26px;
+  --text-xl--line-height: 30px;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
+  -webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+  color: var(--color-brick);
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Display type: Fraunces with the SOFT axis at 100, so terminals read like extruded plastic. */
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 100, "WONK" 0;
+}
+
+/* The logo wordmark only: Fraunces 700, SOFT 0. */
+.font-wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  letter-spacing: -0.02em;
+}
+
+/* Measurements and references: a number and a unit, or an id. */
+.measure {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 1 px ink at 5% every 7 px, like a print's side. */
+.layer-lines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    color-mix(in srgb, var(--color-ink) 5%, transparent) 0px,
+    color-mix(in srgb, var(--color-ink) 5%, transparent) 1px,
+    transparent 1px,
+    transparent 7px
+  );
+}
+
+/* Tick ruler under the proof. */
+.tick-ruler {
+  background-image: repeating-linear-gradient(90deg, var(--color-line-strong) 0px, var(--color-line-strong) 1px, transparent 1px, transparent 10px);
+}
+
+.sheet-shadow {
+  box-shadow: var(--shadow-elev-sheet);
+}
+
+.slug {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+::selection {
+  background: var(--color-brick-wash);
+}
+
+/* Focus is ink (a 2 px gap, then 2 px ink), never brick: brick next to an error border reads as
+   an error. Matches the focus-ring token. */
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line-strong) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.pulse {
+  animation: pulse-dot 1.4s ease-in-out infinite;
+}

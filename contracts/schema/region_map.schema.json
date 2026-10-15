@@ -1,0 +1,324 @@
+{
+  "$defs": {
+    "FileRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "description": "POSIX path relative to jobs/<job_id>/",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bytes"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+          "title": "Kind"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "FileRef",
+      "type": "object"
+    },
+    "MeshRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "description": "Job-relative path to the mesh (PLY or GLB) the ids index into",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "n_faces": {
+          "title": "N Faces",
+          "type": "integer"
+        },
+        "n_vertices": {
+          "title": "N Vertices",
+          "type": "integer"
+        },
+        "units": {
+          "const": "mm",
+          "default": "mm",
+          "title": "Units",
+          "type": "string"
+        },
+        "up_axis": {
+          "const": "z",
+          "default": "z",
+          "title": "Up Axis",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "n_faces",
+        "n_vertices"
+      ],
+      "title": "MeshRef",
+      "type": "object"
+    },
+    "Region": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "Stable; never reused after a region is deleted",
+          "minimum": 1,
+          "title": "Id",
+          "type": "integer"
+        },
+        "label": {
+          "description": "subject.part[_qualifier], e.g. s1.eye_left, s2.marking_back. left/right are the SUBJECT's own sides (anatomical): with the front facing -Y, the subject's left is +X.",
+          "title": "Label",
+          "type": "string"
+        },
+        "subject_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Subject Id"
+        },
+        "part": {
+          "description": "One of payloads.PART_VOCAB",
+          "title": "Part",
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "sam3",
+            "meshy_split",
+            "meshy_color",
+            "texture_cluster",
+            "manual",
+            "split",
+            "merge",
+            "pixel",
+            "fill"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "n_faces": {
+          "title": "N Faces",
+          "type": "integer"
+        },
+        "area_mm2": {
+          "title": "Area Mm2",
+          "type": "number"
+        },
+        "centroid_mm": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Centroid Mm",
+          "type": "array"
+        },
+        "bbox_min_mm": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox Min Mm",
+          "type": "array"
+        },
+        "bbox_max_mm": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Bbox Max Mm",
+          "type": "array"
+        },
+        "min_width_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Thinnest local width; printability",
+          "title": "Min Width Mm"
+        },
+        "views_seen": {
+          "default": 0,
+          "title": "Views Seen",
+          "type": "integer"
+        },
+        "color_lab": {
+          "anyOf": [
+            {
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Mean CIELAB of the texture over this region",
+          "title": "Color Lab"
+        },
+        "parent_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Parent Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "part",
+        "source",
+        "n_faces",
+        "area_mm2",
+        "centroid_mm",
+        "bbox_min_mm",
+        "bbox_max_mm"
+      ],
+      "title": "Region",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "mesh": {
+      "$ref": "#/$defs/MeshRef"
+    },
+    "face_regions": {
+      "$ref": "#/$defs/FileRef",
+      "description": "face_regions.npy, int32 (n_faces,), 0 = unlabeled"
+    },
+    "regions": {
+      "items": {
+        "$ref": "#/$defs/Region"
+      },
+      "title": "Regions",
+      "type": "array"
+    },
+    "next_region_id": {
+      "title": "Next Region Id",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "mesh",
+    "face_regions",
+    "regions",
+    "next_region_id"
+  ],
+  "title": "RegionMap",
+  "type": "object"
+}

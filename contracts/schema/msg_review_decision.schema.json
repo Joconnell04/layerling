@@ -1,0 +1,31 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "approve",
+        "reject",
+        "rerun_paint"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "action"
+  ],
+  "title": "ReviewDecision",
+  "type": "object"
+}

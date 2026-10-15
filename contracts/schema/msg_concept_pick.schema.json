@@ -1,0 +1,20 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "candidate_id": {
+      "title": "Candidate Id",
+      "type": "string"
+    },
+    "approve": {
+      "description": "True: approve and continue. False: pick as base to tweak.",
+      "title": "Approve",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "candidate_id",
+    "approve"
+  ],
+  "title": "ConceptPick",
+  "type": "object"
+}

@@ -1,0 +1,370 @@
+{
+  "$defs": {
+    "PrintNumbers": {
+      "additionalProperties": false,
+      "description": "Time, grams and purge of one slice.",
+      "properties": {
+        "slicer": {
+          "enum": [
+            "bambu_studio",
+            "orcaslicer",
+            "p2p_slicer"
+          ],
+          "title": "Slicer",
+          "type": "string"
+        },
+        "print_time_s": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Print Time S"
+        },
+        "total_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Grams"
+        },
+        "purge_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Flush and prime tower",
+          "title": "Purge Grams"
+        },
+        "filament_changes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filament Changes"
+        },
+        "layers": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Layers"
+        },
+        "filaments": {
+          "items": {
+            "$ref": "#/$defs/SliceFilament"
+          },
+          "title": "Filaments",
+          "type": "array"
+        }
+      },
+      "required": [
+        "slicer"
+      ],
+      "title": "PrintNumbers",
+      "type": "object"
+    },
+    "ProofImage": {
+      "additionalProperties": false,
+      "description": "One proof render: the product from one of regions.PROOF_VIEWS.",
+      "properties": {
+        "kind": {
+          "description": "model: the 3D model with its own texture; paint: filament colors as painted; print: the simulated print (slicer limits applied)",
+          "enum": [
+            "model",
+            "paint",
+            "print"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "view": {
+          "description": "A key of regions.PROOF_VIEWS",
+          "title": "View",
+          "type": "string"
+        },
+        "path": {
+          "description": "Job-relative PNG",
+          "title": "Path",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "view",
+        "path"
+      ],
+      "title": "ProofImage",
+      "type": "object"
+    },
+    "SimSummary": {
+      "additionalProperties": false,
+      "description": "simulate_print in numbers.",
+      "properties": {
+        "changed_pct": {
+          "description": "Share of the figure area the print repaints, percent",
+          "title": "Changed Pct",
+          "type": "number"
+        },
+        "regions_lost": {
+          "description": "Regions under 5% kept",
+          "items": {
+            "type": "integer"
+          },
+          "title": "Regions Lost",
+          "type": "array"
+        },
+        "bleed_flags": {
+          "default": 0,
+          "title": "Bleed Flags",
+          "type": "integer"
+        },
+        "purge_g_est": {
+          "title": "Purge G Est",
+          "type": "number"
+        },
+        "model_g_est": {
+          "title": "Model G Est",
+          "type": "number"
+        },
+        "swaps_total": {
+          "title": "Swaps Total",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "changed_pct",
+        "purge_g_est",
+        "model_g_est",
+        "swaps_total"
+      ],
+      "title": "SimSummary",
+      "type": "object"
+    },
+    "SliceFilament": {
+      "additionalProperties": false,
+      "properties": {
+        "slot": {
+          "title": "Slot",
+          "type": "integer"
+        },
+        "filament_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filament Id"
+        },
+        "grams": {
+          "title": "Grams",
+          "type": "number"
+        },
+        "meters": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Meters"
+        },
+        "model_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Printed in the model, no flush or tower",
+          "title": "Model Grams"
+        },
+        "flush_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Flush Grams"
+        },
+        "tower_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tower Grams"
+        }
+      },
+      "required": [
+        "slot",
+        "grams"
+      ],
+      "title": "SliceFilament",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "What a paint edit prints like: s09 paint_edit attempts write it as paint_preview.json\n(role paint_preview); the paint MCP tool preview_print returns it. `before` and `after` are\nboth p2p_slicer numbers, so their difference is the edit's. The Bambu gate runs after (s10).\n\nToolpaths (`toolpaths`, version 1): a JSON index next to a little-endian binary file.\n  {\"version\": 1, \"bin\": \"toolpaths.bin\", \"scale_mm\": 0.01, \"origin_mm\": [x, y],\n   \"bbox_mm\": [x0, y0, x1, y1], \"slots\": [{\"slot\", \"filament_id\", \"hex\"}], \"roles\": [...],\n   \"points\": {\"offset\", \"count\"}, \"chains\": {\"offset\", \"count\"},\n   \"layers\": [{\"z\", \"height\", \"chains\": [first, count], \"time_s\", \"slots\", \"changes\"}]}\npoints: uint16 (x, y) pairs, mm = origin_mm + value * scale_mm. chains: uint32 triples\n(first point, point count, slot << 8 | role), one per continuous extrusion; layers list\ntheir chains in print order. Travel is left out; the prime tower is in (role Prime tower).",
+  "properties": {
+    "base_attempt": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Attempt folder of the paint before",
+      "title": "Base Attempt"
+    },
+    "ops": {
+      "default": 0,
+      "title": "Ops",
+      "type": "integer"
+    },
+    "changed_faces": {
+      "default": 0,
+      "title": "Changed Faces",
+      "type": "integer"
+    },
+    "changed_regions": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Changed Regions",
+      "type": "array"
+    },
+    "palette": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Palette",
+      "type": "array"
+    },
+    "threemf": {
+      "description": "Job-relative 3MF the after numbers are for",
+      "title": "Threemf",
+      "type": "string"
+    },
+    "before": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PrintNumbers"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "after": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PrintNumbers"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "None when p2p_slicer could not slice"
+    },
+    "sim": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SimSummary"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "proof_images": {
+      "description": "paint and print (simulated) from the 8 proof views",
+      "items": {
+        "$ref": "#/$defs/ProofImage"
+      },
+      "title": "Proof Images",
+      "type": "array"
+    },
+    "toolpaths": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Job-relative toolpaths.json",
+      "title": "Toolpaths"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "timings_s": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Timings S",
+      "type": "object"
+    }
+  },
+  "required": [
+    "palette",
+    "threemf"
+  ],
+  "title": "PaintPreview",
+  "type": "object"
+}

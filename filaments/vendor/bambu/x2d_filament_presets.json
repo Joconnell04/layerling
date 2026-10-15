@@ -1,0 +1,1247 @@
+{
+ "source": "Bambu Studio 2.08 resources/profiles/BBL/filament, instantiated presets with X2D in the name, inherits resolved",
+ "presets": [
+  {
+   "name": "Bambu ABS @BBL X2D",
+   "filament_id": "GFB00",
+   "filament_type": "ABS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ABS @BBL X2D 0.2 nozzle",
+   "filament_id": "GFB00",
+   "filament_type": "ABS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ABS @BBL X2D 0.4 nozzle",
+   "filament_id": "GFB00",
+   "filament_type": "ABS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ABS @BBL X2D 0.8 nozzle",
+   "filament_id": "GFB00",
+   "filament_type": "ABS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ABS-GF @BBL X2D",
+   "filament_id": "GFB50",
+   "filament_type": "ABS-GF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ABS-GF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFB50",
+   "filament_type": "ABS-GF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ASA @BBL X2D",
+   "filament_id": "GFB01",
+   "filament_type": "ASA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ASA @BBL X2D 0.2 nozzle",
+   "filament_id": "GFB01",
+   "filament_type": "ASA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ASA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFB01",
+   "filament_type": "ASA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ASA @BBL X2D 0.8 nozzle",
+   "filament_id": "GFB01",
+   "filament_type": "ASA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ASA-Aero @BBL X2D",
+   "filament_id": "GFB02",
+   "filament_type": "ASA-AERO",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ASA-Aero @BBL X2D 0.4 nozzle",
+   "filament_id": "GFB02",
+   "filament_type": "ASA-AERO",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ASA-CF @BBL X2D",
+   "filament_id": "GFB51",
+   "filament_type": "ASA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu ASA-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFB51",
+   "filament_type": "ASA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PA-CF @BBL X2D",
+   "filament_id": "GFN03",
+   "filament_type": "PA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PA-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN03",
+   "filament_type": "PA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PA6-CF @BBL X2D",
+   "filament_id": "GFN05",
+   "filament_type": "PA6-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PA6-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN05",
+   "filament_type": "PA6-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PA6-CF @BBL X2D 0.8 nozzle",
+   "filament_id": "GFN05",
+   "filament_type": "PA6-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PA6-GF @BBL X2D",
+   "filament_id": "GFN08",
+   "filament_type": "PA-GF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PA6-GF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN08",
+   "filament_type": "PA-GF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PAHT-CF @BBL X2D",
+   "filament_id": "GFN04",
+   "filament_type": "PA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PAHT-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN04",
+   "filament_type": "PA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PAHT-CF @BBL X2D 0.8 nozzle",
+   "filament_id": "GFN04",
+   "filament_type": "PA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PC @BBL X2D",
+   "filament_id": "GFC00",
+   "filament_type": "PC",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PC @BBL X2D 0.4 nozzle",
+   "filament_id": "GFC00",
+   "filament_type": "PC",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PC @BBL X2D 0.8 nozzle",
+   "filament_id": "GFC00",
+   "filament_type": "PC",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PC FR @BBL X2D",
+   "filament_id": "GFC01",
+   "filament_type": "PC",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PC FR @BBL X2D 0.4 nozzle",
+   "filament_id": "GFC01",
+   "filament_type": "PC",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PC FR @BBL X2D 0.8 nozzle",
+   "filament_id": "GFC01",
+   "filament_type": "PC",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PET-CF @BBL X2D",
+   "filament_id": "GFT01",
+   "filament_type": "PET-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PET-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFT01",
+   "filament_type": "PET-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Basic @BBL X2D",
+   "filament_id": "GFG00",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Basic @BBL X2D 0.2 nozzle",
+   "filament_id": "GFG00",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Basic @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG00",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Basic @BBL X2D 0.8 nozzle",
+   "filament_id": "GFG00",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG HF @BBL X2D",
+   "filament_id": "GFG02",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG HF @BBL X2D 0.2 nozzle",
+   "filament_id": "GFG02",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG HF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG02",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG HF @BBL X2D 0.8 nozzle",
+   "filament_id": "GFG02",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Matte @BBL X2D",
+   "filament_id": "GFG03",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Matte @BBL X2D 0.2 nozzle",
+   "filament_id": "GFG03",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Matte @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG03",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Matte @BBL X2D 0.8 nozzle",
+   "filament_id": "GFG03",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Translucent @BBL X2D",
+   "filament_id": "GFG01",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Translucent @BBL X2D 0.2 nozzle",
+   "filament_id": "GFG01",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Translucent @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG01",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG Translucent @BBL X2D 0.8 nozzle",
+   "filament_id": "GFG01",
+   "filament_type": "PETG",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG-CF @BBL X2D",
+   "filament_id": "GFG50",
+   "filament_type": "PETG-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG50",
+   "filament_type": "PETG-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PETG-CF @BBL X2D 0.8 nozzle",
+   "filament_id": "GFG50",
+   "filament_type": "PETG-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Aero @BBL X2D",
+   "filament_id": "GFA11",
+   "filament_type": "PLA-AERO",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Aero @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA11",
+   "filament_type": "PLA-AERO",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Basic @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA00",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Basic @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA00",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Basic @BBL X2D 0.6 nozzle",
+   "filament_id": "GFA00",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Basic @BBL X2D 0.8 nozzle",
+   "filament_id": "GFA00",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Dynamic @BBL X2D",
+   "filament_id": "GFA13",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Dynamic @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA13",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Dynamic @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA13",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Galaxy @BBL X2D",
+   "filament_id": "GFA15",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Galaxy @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA15",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Galaxy @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA15",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Glow @BBL X2D",
+   "filament_id": "GFA12",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Glow @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA12",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Glow @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA12",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Lite @BBL X2D",
+   "filament_id": "GFA18",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Lite @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA18",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Lite @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA18",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Lite @BBL X2D 0.8 nozzle",
+   "filament_id": "GFA18",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Marble @BBL X2D",
+   "filament_id": "GFA07",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Marble @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA07",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Matte @BBL X2D",
+   "filament_id": "GFA01",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Matte @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA01",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Matte @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA01",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Matte @BBL X2D 0.8 nozzle",
+   "filament_id": "GFA01",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Metal @BBL X2D",
+   "filament_id": "GFA02",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Metal @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA02",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Metal @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA02",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Pure @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA19",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Pure @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA19",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Pure @BBL X2D 0.6 nozzle",
+   "filament_id": "GFA19",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Pure @BBL X2D 0.8 nozzle",
+   "filament_id": "GFA19",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Silk @BBL X2D",
+   "filament_id": "GFA05",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Silk @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA05",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Silk @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA05",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Silk+ @BBL X2D",
+   "filament_id": "GFA06",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Silk+ @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA06",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Silk+ @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA06",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Silk+ @BBL X2D 0.8 nozzle",
+   "filament_id": "GFA06",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Sparkle @BBL X2D",
+   "filament_id": "GFA08",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Sparkle @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA08",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Tough @BBL X2D",
+   "filament_id": "GFA09",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Tough @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA09",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Tough @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA09",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Tough+ @BBL X2D",
+   "filament_id": "GFA10",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Tough+ @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA10",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Tough+ @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA10",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Tough+ @BBL X2D 0.8 nozzle",
+   "filament_id": "GFA10",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Translucent @BBL X2D 0.2 nozzle",
+   "filament_id": "GFA17",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Translucent @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA17",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Translucent @BBL X2D 0.6 nozzle",
+   "filament_id": "GFA17",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Translucent @BBL X2D 0.8 nozzle",
+   "filament_id": "GFA17",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Wood @BBL X2D",
+   "filament_id": "GFA16",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA Wood @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA16",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA-CF @BBL X2D",
+   "filament_id": "GFA50",
+   "filament_type": "PLA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFA50",
+   "filament_type": "PLA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PLA-CF @BBL X2D 0.8 nozzle",
+   "filament_id": "GFA50",
+   "filament_type": "PLA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PPA-CF @BBL X2D",
+   "filament_id": "GFN06",
+   "filament_type": "PPA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PPA-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN06",
+   "filament_type": "PPA-CF",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PVA @BBL X2D",
+   "filament_id": "GFS04",
+   "filament_type": "PVA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PVA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS04",
+   "filament_type": "PVA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu PVA @BBL X2D 0.8 nozzle",
+   "filament_id": "GFS04",
+   "filament_type": "PVA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PA/PET @BBL X2D",
+   "filament_id": "GFS03",
+   "filament_type": "PA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PA/PET @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS03",
+   "filament_type": "PA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PLA @BBL X2D",
+   "filament_id": "GFS02",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PLA @BBL X2D 0.2 nozzle",
+   "filament_id": "GFS02",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PLA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS02",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PLA @BBL X2D 0.8 nozzle",
+   "filament_id": "GFS02",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PLA/PETG @BBL X2D",
+   "filament_id": "GFS05",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PLA/PETG @BBL X2D 0.2 nozzle",
+   "filament_id": "GFS05",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PLA/PETG @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS05",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support For PLA/PETG @BBL X2D 0.8 nozzle",
+   "filament_id": "GFS05",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support G @BBL X2D",
+   "filament_id": "GFS01",
+   "filament_type": "PA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support G @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS01",
+   "filament_type": "PA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support W @BBL X2D",
+   "filament_id": "GFS00",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support W @BBL X2D 0.2 nozzle",
+   "filament_id": "GFS00",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support W @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS00",
+   "filament_type": "PLA",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support for ABS @BBL X2D",
+   "filament_id": "GFS06",
+   "filament_type": "ABS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support for ABS @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS06",
+   "filament_type": "ABS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu Support for ABS @BBL X2D 0.8 nozzle",
+   "filament_id": "GFS06",
+   "filament_type": "ABS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 85A @BBL X2D",
+   "filament_id": "GFU04",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 85A @BBL X2D 0.8 nozzle",
+   "filament_id": "GFU04",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 90A @BBL X2D",
+   "filament_id": "GFU03",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 90A @BBL X2D 0.4 nozzle",
+   "filament_id": "GFU03",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 90A @BBL X2D 0.8 nozzle",
+   "filament_id": "GFU03",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 95A @BBL X2D",
+   "filament_id": "GFU01",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 95A @BBL X2D 0.4 nozzle",
+   "filament_id": "GFU01",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 95A HF @BBL X2D",
+   "filament_id": "GFU00",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 95A HF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFU00",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU 95A HF @BBL X2D 0.8 nozzle",
+   "filament_id": "GFU00",
+   "filament_type": "TPU",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU for AMS @BBL X2D",
+   "filament_id": "GFU02",
+   "filament_type": "TPU-AMS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU for AMS @BBL X2D 0.4 nozzle",
+   "filament_id": "GFU02",
+   "filament_type": "TPU-AMS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Bambu TPU for AMS @BBL X2D 0.8 nozzle",
+   "filament_id": "GFU02",
+   "filament_type": "TPU-AMS",
+   "vendor": "Bambu Lab"
+  },
+  {
+   "name": "Generic ABS @BBL X2D",
+   "filament_id": "GFB99",
+   "filament_type": "ABS",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic ABS @BBL X2D 0.2 nozzle",
+   "filament_id": "GFB99",
+   "filament_type": "ABS",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic ABS @BBL X2D 0.4 nozzle",
+   "filament_id": "GFB99",
+   "filament_type": "ABS",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic ASA @BBL X2D",
+   "filament_id": "GFB98",
+   "filament_type": "ASA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic ASA @BBL X2D 0.2 nozzle",
+   "filament_id": "GFB98",
+   "filament_type": "ASA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic ASA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFB98",
+   "filament_type": "ASA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic BVOH @BBL X2D",
+   "filament_id": "GFS97",
+   "filament_type": "BVOH",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic BVOH @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS97",
+   "filament_type": "BVOH",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic EVA @BBL X2D",
+   "filament_id": "GFR99",
+   "filament_type": "EVA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic EVA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFR99",
+   "filament_type": "EVA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic HIPS @BBL X2D",
+   "filament_id": "GFS98",
+   "filament_type": "HIPS",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic HIPS @BBL X2D 0.2 nozzle",
+   "filament_id": "GFS98",
+   "filament_type": "HIPS",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic HIPS @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS98",
+   "filament_type": "HIPS",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PA @BBL X2D",
+   "filament_id": "GFN99",
+   "filament_type": "PA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN99",
+   "filament_type": "PA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PA-CF @BBL X2D",
+   "filament_id": "GFN98",
+   "filament_type": "PA-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PA-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN98",
+   "filament_type": "PA-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PC @BBL X2D",
+   "filament_id": "GFC99",
+   "filament_type": "PC",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PC @BBL X2D 0.2 nozzle",
+   "filament_id": "GFC99",
+   "filament_type": "PC",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PC @BBL X2D 0.4 nozzle",
+   "filament_id": "GFC99",
+   "filament_type": "PC",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PCTG @BBL X2D",
+   "filament_id": "GFG97",
+   "filament_type": "PCTG",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PCTG @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG97",
+   "filament_type": "PCTG",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PE @BBL X2D",
+   "filament_id": "GFP99",
+   "filament_type": "PE",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PE @BBL X2D 0.4 nozzle",
+   "filament_id": "GFP99",
+   "filament_type": "PE",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PE-CF @BBL X2D",
+   "filament_id": "GFP98",
+   "filament_type": "PE-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PE-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFP98",
+   "filament_type": "PE-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PETG @BBL X2D",
+   "filament_id": "GFG99",
+   "filament_type": "PETG",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PETG @BBL X2D 0.2 nozzle",
+   "filament_id": "GFG99",
+   "filament_type": "PETG",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PETG @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG99",
+   "filament_type": "PETG",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PETG HF @BBL X2D",
+   "filament_id": "GFG96",
+   "filament_type": "PETG",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PETG HF @BBL X2D 0.2 nozzle",
+   "filament_id": "GFG96",
+   "filament_type": "PETG",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PETG HF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG96",
+   "filament_type": "PETG",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PETG-CF @BBL X2D",
+   "filament_id": "GFG98",
+   "filament_type": "PETG-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PETG-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFG98",
+   "filament_type": "PETG-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PHA @BBL X2D",
+   "filament_id": "GFR98",
+   "filament_type": "PHA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PHA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFR98",
+   "filament_type": "PHA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA @BBL X2D",
+   "filament_id": "GFL99",
+   "filament_type": "PLA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA @BBL X2D 0.2 nozzle",
+   "filament_id": "GFL99",
+   "filament_type": "PLA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFL99",
+   "filament_type": "PLA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA High Speed @BBL X2D",
+   "filament_id": "GFL95",
+   "filament_type": "PLA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA High Speed @BBL X2D 0.2 nozzle",
+   "filament_id": "GFL95",
+   "filament_type": "PLA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA High Speed @BBL X2D 0.4 nozzle",
+   "filament_id": "GFL95",
+   "filament_type": "PLA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA Silk @BBL X2D",
+   "filament_id": "GFL96",
+   "filament_type": "PLA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA Silk @BBL X2D 0.4 nozzle",
+   "filament_id": "GFL96",
+   "filament_type": "PLA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA-CF @BBL X2D",
+   "filament_id": "GFL98",
+   "filament_type": "PLA-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PLA-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFL98",
+   "filament_type": "PLA-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PP @BBL X2D",
+   "filament_id": "GFP97",
+   "filament_type": "PP",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PP @BBL X2D 0.4 nozzle",
+   "filament_id": "GFP97",
+   "filament_type": "PP",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PP-CF @BBL X2D",
+   "filament_id": "GFP96",
+   "filament_type": "PP-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PP-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFP96",
+   "filament_type": "PP-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PP-GF @BBL X2D",
+   "filament_id": "GFP95",
+   "filament_type": "PP-GF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PP-GF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFP95",
+   "filament_type": "PP-GF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PPA-CF @BBL X2D",
+   "filament_id": "GFN97",
+   "filament_type": "PPA-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PPA-CF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN97",
+   "filament_type": "PPA-CF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PPA-GF @BBL X2D",
+   "filament_id": "GFN96",
+   "filament_type": "PPA-GF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PPA-GF @BBL X2D 0.4 nozzle",
+   "filament_id": "GFN96",
+   "filament_type": "PPA-GF",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PVA @BBL X2D",
+   "filament_id": "GFS99",
+   "filament_type": "PVA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PVA @BBL X2D 0.2 nozzle",
+   "filament_id": "GFS99",
+   "filament_type": "PVA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic PVA @BBL X2D 0.4 nozzle",
+   "filament_id": "GFS99",
+   "filament_type": "PVA",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic TPU @BBL X2D",
+   "filament_id": "GFU99",
+   "filament_type": "TPU",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic TPU @BBL X2D 0.4 nozzle",
+   "filament_id": "GFU99",
+   "filament_type": "TPU",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic TPU for AMS @BBL X2D",
+   "filament_id": "GFU98",
+   "filament_type": "TPU-AMS",
+   "vendor": "Generic"
+  },
+  {
+   "name": "Generic TPU for AMS @BBL X2D 0.4 nozzle",
+   "filament_id": "GFU98",
+   "filament_type": "TPU-AMS",
+   "vendor": "Generic"
+  }
+ ]
+}

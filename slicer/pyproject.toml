@@ -1,0 +1,24 @@
+[project]
+name = "p2p-slicer"
+version = "0.1.0"
+description = "Native slicer for photo2print: painted project 3MF to toolpaths, G-code, time and grams."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "clipper2-py==0.1.0",
+    "numba>=0.67.0",
+    "numpy>=2.5.3",
+    "p2p-contracts",
+    "p2p-sim",
+    "p2p-threemf",
+    "pillow>=10.1",
+    "pyclipper>=1.4.0",
+]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+p2p-sim = { workspace = true }
+p2p-threemf = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

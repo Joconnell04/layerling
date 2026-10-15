@@ -1,0 +1,165 @@
+{
+  "$defs": {
+    "PaintOp": {
+      "additionalProperties": false,
+      "description": "One paint edit on a finished job, by region id, by face set, or by palette slot.\n\nThe filament is `filament_id` (an owned spool or a catalog color) or `slot` (1-based in the\npalette as it stands when this op runs); exactly one of the two.\n- fill_region: the regions in `region_ids` take the filament.\n- brush_faces: the faces in `faces` (or the file at `faces_path`) become one new region in\n  the filament, id = the region map's next_region_id at that point (ids are never reused).\n- replace_slot: everything painted with slot `from_slot` (regions, the default filament,\n  add-on parts) takes the filament; the slot drops out when the filament is already in the\n  palette.",
+      "properties": {
+        "op": {
+          "enum": [
+            "fill_region",
+            "brush_faces",
+            "replace_slot"
+          ],
+          "title": "Op",
+          "type": "string"
+        },
+        "filament_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filament Id"
+        },
+        "slot": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Slot"
+        },
+        "region_ids": {
+          "description": "fill_region",
+          "items": {
+            "type": "integer"
+          },
+          "title": "Region Ids",
+          "type": "array"
+        },
+        "faces": {
+          "anyOf": [
+            {
+              "maxLength": 200000,
+              "pattern": "^(\\d+(-\\d+)?)(,\\d+(-\\d+)?)*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "brush_faces: figure face ids as ranges, e.g. 0-9,15,20-31",
+          "title": "Faces"
+        },
+        "faces_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "brush_faces, large strokes: job-relative text file holding the same ranges (the web uploads input/paint/<name>.txt to bucket inputs)",
+          "title": "Faces Path"
+        },
+        "from_slot": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "replace_slot: the slot to replace",
+          "title": "From Slot"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "maxLength": 60,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "brush_faces: new region label",
+          "title": "Label"
+        }
+      },
+      "required": [
+        "op"
+      ],
+      "title": "PaintOp",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "User (or Claude) repaints a finished job. The worker applies `ops` in order to the paint\nin `base_attempt` as a new s09 attempt, re-runs the simulated print, writes the 3MF, slices\nit with p2p_slicer for the preview (reports.PaintPreview, role paint_preview), then runs s10\nas a new attempt: the same paint through the slicer gate (Bambu Studio where installed) and\na new `result`.",
+  "properties": {
+    "ops": {
+      "description": "Applied in order. Empty: preview the base paint as it is",
+      "items": {
+        "$ref": "#/$defs/PaintOp"
+      },
+      "maxItems": 500,
+      "title": "Ops",
+      "type": "array"
+    },
+    "base_attempt": {
+      "anyOf": [
+        {
+          "pattern": "^s0[89]_[a-z]+/a[1-9][0-9]*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Attempt folder of the paint the ops were drawn on, e.g. s09_paint/a2. Refused when the job's paint moved on since. None: the paint behind the current result",
+      "title": "Base Attempt"
+    },
+    "source": {
+      "default": "owned",
+      "description": "any: ops may add unowned catalog colors",
+      "enum": [
+        "owned",
+        "any"
+      ],
+      "title": "Source",
+      "type": "string"
+    },
+    "note": {
+      "anyOf": [
+        {
+          "maxLength": 500,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Note"
+    }
+  },
+  "title": "PaintEdit",
+  "type": "object"
+}

@@ -1,0 +1,6 @@
+# GPU worker only. torch and torchvision come from the base image (see Dockerfile).
+# Sam3Model / Sam3Processor are in transformers 5.x; 5.17.0 is the version the handler was read against.
+transformers==5.17.0
+runpod==1.12.0
+pillow>=10.0
+numpy>=1.26

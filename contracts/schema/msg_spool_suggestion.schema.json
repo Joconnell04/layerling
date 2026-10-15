@@ -1,0 +1,92 @@
+{
+  "additionalProperties": false,
+  "description": "A color the loaded spools cannot match; shown as \"Add gray PLA, dE00 26.9 -> 3.1\".",
+  "properties": {
+    "suggestion": {
+      "description": "Plain name, e.g. gray PLA",
+      "title": "Suggestion",
+      "type": "string"
+    },
+    "target_hex": {
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "title": "Target Hex",
+      "type": "string"
+    },
+    "target_lab": {
+      "maxItems": 3,
+      "minItems": 3,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Target Lab",
+      "type": "array"
+    },
+    "delta_e_now": {
+      "description": "CIEDE2000 to the best loaded spool",
+      "title": "Delta E Now",
+      "type": "number"
+    },
+    "delta_e_with": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "CIEDE2000 with the suggested spool",
+      "title": "Delta E With"
+    },
+    "regions": {
+      "description": "Region labels affected",
+      "items": {
+        "type": "string"
+      },
+      "title": "Regions",
+      "type": "array"
+    },
+    "area_pct": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Area Pct"
+    },
+    "filament_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Catalog filament id to apply in one click (palette_edit), when one matches",
+      "title": "Filament Id"
+    }
+  },
+  "required": [
+    "suggestion",
+    "target_hex",
+    "target_lab",
+    "delta_e_now"
+  ],
+  "title": "SpoolSuggestion",
+  "type": "object"
+}

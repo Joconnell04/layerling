@@ -1,0 +1,188 @@
+{
+  "updated_at": "2026-09-24T14:54:06+00:00",
+  "currency": "USD",
+  "products": {
+    "keychain": {
+      "price": 31.99,
+      "from": true,
+      "cost_floor": 15.42,
+      "basis": "cost",
+      "channels": {
+        "own_site": 31.99,
+        "own_pickup": 26.99,
+        "etsy": 38.99,
+        "facebook": 27.0,
+        "ebay": 42.99,
+        "market": 57.0
+      },
+      "sizes": {
+        "xs": {
+          "price": 31.99,
+          "mm": 40.0
+        },
+        "s": {
+          "price": 31.99,
+          "mm": 45.0
+        },
+        "m": {
+          "price": 31.99,
+          "mm": 52.0
+        },
+        "l": {
+          "price": 32.99,
+          "mm": 60.0
+        }
+      }
+    },
+    "nameplate": {
+      "price": 44.99,
+      "from": true,
+      "cost_floor": 21.66,
+      "basis": "cost",
+      "channels": {
+        "own_site": 44.99,
+        "own_pickup": 27.99,
+        "etsy": 54.99,
+        "facebook": 26.0,
+        "ebay": 59.99,
+        "market": 68.0
+      },
+      "sizes": {
+        "xs": {
+          "price": 40.99,
+          "mm": 80.0
+        },
+        "s": {
+          "price": 42.99,
+          "mm": 100.0
+        },
+        "m": {
+          "price": 44.99,
+          "mm": 120.0
+        },
+        "l": {
+          "price": 47.99,
+          "mm": 150.0
+        }
+      }
+    },
+    "figurine": {
+      "price": 57.99,
+      "from": true,
+      "cost_floor": 27.86,
+      "basis": "cost",
+      "channels": {
+        "own_site": 57.99,
+        "own_pickup": 40.99,
+        "etsy": 70.99,
+        "facebook": 38.0,
+        "ebay": 76.99,
+        "market": 82.0
+      },
+      "sizes": {
+        "xs": {
+          "price": 48.99,
+          "mm": 50.0
+        },
+        "s": {
+          "price": 52.99,
+          "mm": 70.0
+        },
+        "m": {
+          "price": 57.99,
+          "mm": 90.0
+        },
+        "l": {
+          "price": 66.99,
+          "mm": 120.0
+        }
+      }
+    },
+    "ornament": {
+      "price": 44.99,
+      "from": true,
+      "cost_floor": 21.41,
+      "basis": "cost",
+      "channels": {
+        "own_site": 44.99,
+        "own_pickup": 27.99,
+        "etsy": 53.99,
+        "facebook": 26.0,
+        "ebay": 59.99,
+        "market": 68.0
+      },
+      "sizes": {
+        "xs": {
+          "price": 40.99,
+          "mm": 50.0
+        },
+        "s": {
+          "price": 42.99,
+          "mm": 60.0
+        },
+        "m": {
+          "price": 44.99,
+          "mm": 70.0
+        },
+        "l": {
+          "price": 48.99,
+          "mm": 85.0
+        }
+      }
+    },
+    "magnet": {
+      "price": 34.99,
+      "from": true,
+      "cost_floor": 16.52,
+      "basis": "cost",
+      "channels": {
+        "own_site": 34.99,
+        "own_pickup": 17.99,
+        "etsy": 41.99,
+        "facebook": 16.0,
+        "ebay": 45.99,
+        "market": 59.0
+      },
+      "sizes": {
+        "xs": {
+          "price": 34.99,
+          "mm": 40.0
+        },
+        "s": {
+          "price": 34.99,
+          "mm": 50.0
+        },
+        "m": {
+          "price": 34.99,
+          "mm": 60.0
+        },
+        "l": {
+          "price": 35.99,
+          "mm": 75.0
+        }
+      }
+    }
+  },
+  "reference": {
+    "large_figure": {
+      "price": 58.99,
+      "from": true,
+      "cost_floor": 28.14,
+      "basis": "cost",
+      "channels": {
+        "own_site": 58.99,
+        "own_pickup": 40.99,
+        "etsy": 70.99,
+        "facebook": 38.0,
+        "ebay": 77.99,
+        "market": 82.0
+      }
+    }
+  },
+  "other": {
+    "min": 31.99,
+    "max": 100.99,
+    "basis": "From the cheapest XS price to an L figurine plus a 50% premium for custom work."
+  },
+  "notes": "price is the own-site price with free USPS shipping; sales tax is added at checkout. from = true means a starting price (more subjects or a larger size cost more). cost_floor is the own-site break-even price. basis is cost (target margin), market (market low quartile) or override (set by hand). channels holds the price per channel: own_site, own_pickup (NYC pickup), etsy, facebook (local pickup), ebay, market (NYC booth). reference.large_figure is the Meshy-scale figure, not a listed product. Built by costs/refresh.py from costs/cost_model.xlsx."
+}

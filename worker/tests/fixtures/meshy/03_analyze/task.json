@@ -1,0 +1,27 @@
+{
+  "id": "01a0d181-be8d-760b-8af9-ac49b5d2ee12",
+  "type": "print-analyze",
+  "status": "SUCCEEDED",
+  "progress": 100,
+  "created_at": 1790221336209,
+  "started_at": 1790221336216,
+  "finished_at": 1790221336784,
+  "expires_at": 1790480536784,
+  "task_error": null,
+  "printability": {
+    "_version": "v1",
+    "status": "warning",
+    "issue_count": 2,
+    "error_count": 0,
+    "warning_count": 2,
+    "metrics": {
+      "is_watertight": false,
+      "volume": 1.2299649903466559,
+      "non_manifold_edges": 3,
+      "degenerate_faces": 0,
+      "holes": 0
+    },
+    "evaluated_at": 1790221336582
+  },
+  "consumed_credits": 0
+}

@@ -1,0 +1,992 @@
+[
+  {
+    "id": "pp_woman_chihuahua",
+    "category": "person_with_pet",
+    "product_type": "ornament",
+    "target_size_mm": 70.0,
+    "product": {
+      "type": "ornament",
+      "target_size_mm": 70.0,
+      "addons": [
+        {
+          "kind": "hanging_loop"
+        }
+      ]
+    },
+    "prompt": "can u make an ornament of me holding my chihuahua for the tree",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": []
+    },
+    "photos": [
+      {
+        "file": "photos/pp_woman_chihuahua/pp_woman_chihuahua_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/2008-09-27_Cute_Chihuahua_showing_pride_1.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2008-09-27_Cute_Chihuahua_showing_pride_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Ildar Sagdejev (Specious)"
+      },
+      {
+        "file": "photos/pp_woman_chihuahua/pp_woman_chihuahua_2.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/2008-09-27_Cute_Chihuahua_showing_pride_2.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2008-09-27_Cute_Chihuahua_showing_pride_2.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Ildar Sagdejev (Specious)"
+      },
+      {
+        "file": "photos/pp_woman_chihuahua/pp_woman_chihuahua_3.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/2008-09-27_Cute_Chihuahua_showing_pride_4.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2008-09-27_Cute_Chihuahua_showing_pride_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Ildar Sagdejev (Specious)"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "woman",
+        "kind": "person",
+        "notes": "shoulder-length blond hair, white t-shirt"
+      },
+      {
+        "name": "chihuahua",
+        "kind": "dog",
+        "notes": "fawn short coat, pale muzzle, big upright ears, dark collar"
+      }
+    ],
+    "notes": "3 photos from slightly different angles; ornament loop has to clear two heads"
+  },
+  {
+    "id": "pp_man_basset",
+    "category": "person_with_pet",
+    "product_type": "magnet",
+    "target_size_mm": 60.0,
+    "product": {
+      "type": "magnet",
+      "target_size_mm": 60.0,
+      "addons": [
+        {
+          "kind": "flat_back"
+        },
+        {
+          "kind": "magnet_pocket"
+        }
+      ]
+    },
+    "prompt": "fridge magnet of me n my basset hound lying on the bed",
+    "expect": {
+      "form": null,
+      "form_asked": true,
+      "custom_asks": [
+        "lying"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/pp_man_basset/pp_man_basset_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/David_C._Levy_with_dog.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:David_C._Levy_with_dog.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Lettucecup"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "man",
+        "kind": "person",
+        "notes": "older man, bald, grey goatee, black t-shirt with white graphic, lying on his side"
+      },
+      {
+        "name": "basset hound",
+        "kind": "dog",
+        "notes": "red-tan and white coat, long droopy ears"
+      }
+    ],
+    "notes": "lying pose suits a flat-back relief"
+  },
+  {
+    "id": "pp_woman_cocker",
+    "category": "person_with_pet",
+    "product_type": "figurine",
+    "target_size_mm": 100.0,
+    "product": {
+      "type": "figurine",
+      "target_size_mm": 100.0,
+      "addons": [
+        {
+          "kind": "round_base"
+        }
+      ]
+    },
+    "prompt": "me and my cocker spaniel hugging, like 4 inches tall",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [
+        "hugging"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/pp_woman_cocker/pp_woman_cocker_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/17.04.2025_-_Cerim%C3%B4nia_de_assinatura_do_Decreto_Presidencial_que_institui_o_Programa_Nacional_de_Prote%C3%A7%C3%A3o_e_Manejo_Populacional_%C3%89tico_de_C%C3%A3es_e_Gatos_%28ProPatinhas%29_%2854457296797%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:17.04.2025_-_Cerim%C3%B4nia_de_assinatura_do_Decreto_Presidencial_que_institui_o_Programa_Nacional_de_Prote%C3%A7%C3%A3o_e_Manejo_Populacional_%C3%89tico_de_C%C3%A3es_e_Gatos_(ProPatinhas)_(54457296797).jpg",
+        "license": "CC BY-SA 2.0",
+        "author": "Lula Oficial"
+      },
+      {
+        "file": "photos/pp_woman_cocker/pp_woman_cocker_2.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/17.04.2025_-_Cerim%C3%B4nia_de_assinatura_do_Decreto_Presidencial_que_institui_o_Programa_Nacional_de_Prote%C3%A7%C3%A3o_e_Manejo_Populacional_%C3%89tico_de_C%C3%A3es_e_Gatos_%28ProPatinhas%29_%2854458327204%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:17.04.2025_-_Cerim%C3%B4nia_de_assinatura_do_Decreto_Presidencial_que_institui_o_Programa_Nacional_de_Prote%C3%A7%C3%A3o_e_Manejo_Populacional_%C3%89tico_de_C%C3%A3es_e_Gatos_(ProPatinhas)_(54458327204).jpg",
+        "license": "CC BY-SA 2.0",
+        "author": "Lula Oficial"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "woman",
+        "kind": "person",
+        "notes": "dark curly hair, glasses, mustard top"
+      },
+      {
+        "name": "cocker spaniel",
+        "kind": "dog",
+        "notes": "golden-red wavy coat, long feathered ears, orange bandana"
+      }
+    ],
+    "notes": "person-with-pet hug on a round base; busy event background; 2 photos of the same hug"
+  },
+  {
+    "id": "pp_woman_cat",
+    "category": "person_with_pet",
+    "product_type": "ornament",
+    "target_size_mm": 70.0,
+    "product": {
+      "type": "ornament",
+      "target_size_mm": 70.0,
+      "addons": [
+        {
+          "kind": "hanging_loop"
+        }
+      ]
+    },
+    "prompt": "xmas ornament of me and my cat in matching santa hats",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [
+        "wearing matching santa hats"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/pp_woman_cat/pp_woman_cat_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/BRI_Russo_Golden_Oscar_%284496552638%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:BRI_Russo_Golden_Oscar_(4496552638).jpg",
+        "license": "CC BY-SA 2.0",
+        "author": "Nickolas Titkov from Moscow, Russian Federation"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "woman",
+        "kind": "person",
+        "notes": "short blond hair, light top"
+      },
+      {
+        "name": "cat",
+        "kind": "cat",
+        "notes": "golden-cream British Shorthair, round face, copper eyes"
+      }
+    ],
+    "notes": "head-and-shoulders crop; bust-style ornament"
+  },
+  {
+    "id": "pp_woman_black_dog",
+    "category": "person_with_pet",
+    "product_type": "magnet",
+    "target_size_mm": 60.0,
+    "product": {
+      "type": "magnet",
+      "target_size_mm": 60.0,
+      "addons": [
+        {
+          "kind": "flat_back"
+        },
+        {
+          "kind": "magnet_pocket"
+        }
+      ]
+    },
+    "prompt": "flat magnet of me hugging my dog, hes holding his tennis ball",
+    "expect": {
+      "form": "flat",
+      "form_asked": false,
+      "custom_asks": [
+        "hugging",
+        "holding a tennis ball"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/pp_woman_black_dog/pp_woman_black_dog_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Happy_tattooed_woman_hugging_her_lovely_black_dog.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Happy_tattooed_woman_hugging_her_lovely_black_dog.jpg",
+        "license": "CC BY 2.0",
+        "author": "Nenad Stojkovic"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "woman",
+        "kind": "person",
+        "notes": "long dark hair, tattooed arms, white tank top, light jeans, sitting"
+      },
+      {
+        "name": "dog",
+        "kind": "dog",
+        "notes": "fawn pug-type dog, black muzzle, curled tail, held up to her face"
+      }
+    ],
+    "notes": "tattoos test fine surface detail; flat back; file title says black dog but the dog is fawn"
+  },
+  {
+    "id": "tp_kittens_cuddle",
+    "category": "two_pets",
+    "product_type": "keychain",
+    "target_size_mm": 45.0,
+    "product": {
+      "type": "keychain",
+      "target_size_mm": 45.0,
+      "addons": [
+        {
+          "kind": "keyring_loop"
+        }
+      ]
+    },
+    "prompt": "keychain of my 2 kittens cuddling",
+    "expect": {
+      "form": null,
+      "form_asked": true,
+      "custom_asks": [
+        "cuddling"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/tp_kittens_cuddle/tp_kittens_cuddle_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Two_littermates_cuddling_03.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Two_littermates_cuddling_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Zenith4237"
+      },
+      {
+        "file": "photos/tp_kittens_cuddle/tp_kittens_cuddle_2.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Two_littermates_cuddling_01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Two_littermates_cuddling_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Zenith4237"
+      },
+      {
+        "file": "photos/tp_kittens_cuddle/tp_kittens_cuddle_3.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Two_littermates_cuddling_07.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Two_littermates_cuddling_07.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Zenith4237"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "kitten 1",
+        "kind": "cat",
+        "notes": "black and white bicolor"
+      },
+      {
+        "name": "kitten 2",
+        "kind": "cat",
+        "notes": "white with calico patches (orange and black) on head"
+      }
+    ],
+    "notes": "3 photos; two subjects squeezed into 45 mm"
+  },
+  {
+    "id": "tp_dog_cat_cuddle",
+    "category": "two_pets",
+    "product_type": "figurine",
+    "target_size_mm": 90.0,
+    "product": {
+      "type": "figurine",
+      "target_size_mm": 90.0,
+      "addons": [
+        {
+          "kind": "round_base"
+        }
+      ]
+    },
+    "prompt": "my dog and cat snuggled up together",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [
+        "snuggled up"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/tp_dog_cat_cuddle/tp_dog_cat_cuddle_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Cuddling_time.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Cuddling_time.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Klejdi Shtrepi"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "dog",
+        "kind": "dog",
+        "notes": "tan short coat, curled up"
+      },
+      {
+        "name": "cat",
+        "kind": "cat",
+        "notes": "orange tabby, curled into the dog"
+      }
+    ],
+    "notes": "two-subject hug on a round base; colorful blanket should not become part of the model"
+  },
+  {
+    "id": "tp_two_terriers",
+    "category": "two_pets",
+    "product_type": "nameplate",
+    "target_size_mm": 120.0,
+    "product": {
+      "type": "nameplate",
+      "target_size_mm": 120.0,
+      "addons": [
+        {
+          "kind": "nameplate",
+          "text": {
+            "text": "Blossom & Laysha"
+          }
+        }
+      ]
+    },
+    "prompt": "nameplate w my 2 terriers blossom and laysha",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [],
+      "name": "Blossom & Laysha"
+    },
+    "photos": [
+      {
+        "file": "photos/tp_two_terriers/tp_two_terriers_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Blossom_and_Laysha.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Blossom_and_Laysha.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Carlos Valenzuela"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Blossom",
+        "kind": "dog",
+        "notes": "black wiry coat, upright ears (Scottish terrier type)"
+      },
+      {
+        "name": "Laysha",
+        "kind": "dog",
+        "notes": "white West Highland terrier, fluffy face"
+      }
+    ],
+    "notes": "names from the Commons file title; which dog is which is not stated (mapping assumed); black next to white tests color separation"
+  },
+  {
+    "id": "sp_golden_face",
+    "category": "single_pet",
+    "product_type": "keychain",
+    "target_size_mm": 45.0,
+    "product": {
+      "type": "keychain",
+      "target_size_mm": 45.0,
+      "addons": [
+        {
+          "kind": "keyring_loop"
+        }
+      ]
+    },
+    "prompt": "3d keychain of my golden's face holding a ball in his mouth",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [
+        "holding a ball"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/sp_golden_face/sp_golden_face_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/D%C3%BClmen%2C_Hausd%C3%BClmen%2C_Golden_Retriever_--_2022_--_5530.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5530.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Dietmar Rabich"
+      },
+      {
+        "file": "photos/sp_golden_face/sp_golden_face_2.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/D%C3%BClmen%2C_Hausd%C3%BClmen%2C_Golden_Retriever_--_2022_--_5945.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_5945.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Dietmar Rabich"
+      },
+      {
+        "file": "photos/sp_golden_face/sp_golden_face_3.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/D%C3%BClmen%2C_Hausd%C3%BClmen%2C_Golden_Retriever_--_2022_--_6055.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Hausd%C3%BClmen,_Golden_Retriever_--_2022_--_6055.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Dietmar Rabich"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "golden retriever",
+        "kind": "dog",
+        "notes": "pale cream coat, dark eyes and nose"
+      }
+    ],
+    "notes": "head shots only"
+  },
+  {
+    "id": "sp_beagle",
+    "category": "single_pet",
+    "product_type": "nameplate",
+    "target_size_mm": 120.0,
+    "product": {
+      "type": "nameplate",
+      "target_size_mm": 120.0,
+      "addons": [
+        {
+          "kind": "nameplate",
+          "text": {
+            "text": "Bronco"
+          }
+        }
+      ]
+    },
+    "prompt": "nameplate for my beagle bronco with his name, give him a bow tie",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [
+        "wearing a bow tie"
+      ],
+      "name": "Bronco"
+    },
+    "photos": [
+      {
+        "file": "photos/sp_beagle/sp_beagle_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Bronco_the_Beagle.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Bronco_the_Beagle.JPG",
+        "license": "CC BY-SA 4.0",
+        "author": "PumpkinSky"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Bronco",
+        "kind": "dog",
+        "notes": "tricolor: black saddle, tan head, white chest, legs and tail tip"
+      }
+    ],
+    "notes": "name from the Commons file title; full body standing"
+  },
+  {
+    "id": "sp_rabbit",
+    "category": "single_pet",
+    "product_type": "nameplate",
+    "target_size_mm": 120.0,
+    "product": {
+      "type": "nameplate",
+      "target_size_mm": 120.0,
+      "addons": [
+        {
+          "kind": "nameplate",
+          "text": {
+            "text": "Clover"
+          }
+        }
+      ]
+    },
+    "prompt": "my bunny clover on a little nameplate w her name",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [],
+      "name": "Clover"
+    },
+    "photos": [
+      {
+        "file": "photos/sp_rabbit/sp_rabbit_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Heimtier_004_2023_08_26.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Heimtier_004_2023_08_26.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Friedrich Haag"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Clover",
+        "kind": "rabbit",
+        "notes": "white with grey-brown patches, upright ears"
+      }
+    ],
+    "notes": "name invented; non-dog, non-cat pet"
+  },
+  {
+    "id": "bw_tuxedo_cat",
+    "category": "black_and_white_animal",
+    "product_type": "figurine",
+    "target_size_mm": 90.0,
+    "product": {
+      "type": "figurine",
+      "target_size_mm": 90.0,
+      "addons": [
+        {
+          "kind": "round_base"
+        }
+      ]
+    },
+    "prompt": "my cat curled up asleep",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [
+        "curled up",
+        "asleep"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/bw_tuxedo_cat/bw_tuxedo_cat_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Black-White-Cat-Sitia-Crete-4.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Black-White-Cat-Sitia-Crete-4.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Petro Stelte"
+      },
+      {
+        "file": "photos/bw_tuxedo_cat/bw_tuxedo_cat_2.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Black-White-Cat-Sitia-Crete-6.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Black-White-Cat-Sitia-Crete-6.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Petro Stelte"
+      },
+      {
+        "file": "photos/bw_tuxedo_cat/bw_tuxedo_cat_3.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Black-White-Cat-Sitia-Crete-Greece.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Black-White-Cat-Sitia-Crete-Greece.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Petro Stelte"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "cat",
+        "kind": "cat",
+        "notes": "mostly white, black cap on head, black patches on back, black tail"
+      }
+    ],
+    "notes": "3 photos of the same cat"
+  },
+  {
+    "id": "bw_frenchie",
+    "category": "black_and_white_animal",
+    "product_type": "keychain",
+    "target_size_mm": 45.0,
+    "product": {
+      "type": "keychain",
+      "target_size_mm": 45.0,
+      "addons": [
+        {
+          "kind": "keyring_loop"
+        }
+      ]
+    },
+    "prompt": "keychain of my frenchie wearing a sombrero lol",
+    "expect": {
+      "form": null,
+      "form_asked": true,
+      "custom_asks": [
+        "wearing a sombrero"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/bw_frenchie/bw_frenchie_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/French_bulldog_head%2C_Josselin_01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:French_bulldog_head,_Josselin_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Tsaag Valren"
+      },
+      {
+        "file": "photos/bw_frenchie/bw_frenchie_2.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/French_bulldog_head%2C_Josselin_02.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:French_bulldog_head,_Josselin_02.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Tsaag Valren"
+      },
+      {
+        "file": "photos/bw_frenchie/bw_frenchie_3.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/French_bulldog_head%2C_Josselin_03.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:French_bulldog_head,_Josselin_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Tsaag Valren"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "french bulldog",
+        "kind": "dog",
+        "notes": "pied: white with black patches, black ears and eye patches, collar"
+      }
+    ],
+    "notes": "3 head shots"
+  },
+  {
+    "id": "pat_calico",
+    "category": "patterned_animal",
+    "product_type": "keychain",
+    "target_size_mm": 45.0,
+    "product": {
+      "type": "keychain",
+      "target_size_mm": 45.0,
+      "addons": [
+        {
+          "kind": "keyring_loop"
+        }
+      ]
+    },
+    "prompt": "flat keychain of my calico holding a ball of yarn",
+    "expect": {
+      "form": "flat",
+      "form_asked": false,
+      "custom_asks": [
+        "holding a ball of yarn"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/pat_calico/pat_calico_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Calico_cat%2C_-_Assisi%2C_Italy.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Calico_cat,_-_Assisi,_Italy.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Terragio67"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "cat",
+        "kind": "cat",
+        "notes": "calico: white, orange and black patches"
+      }
+    ],
+    "notes": "patch boundaries must survive at 45 mm"
+  },
+  {
+    "id": "pat_tabby",
+    "category": "patterned_animal",
+    "product_type": "nameplate",
+    "target_size_mm": 120.0,
+    "product": {
+      "type": "nameplate",
+      "target_size_mm": 120.0,
+      "addons": [
+        {
+          "kind": "nameplate",
+          "text": {
+            "text": "Bartholomew"
+          }
+        }
+      ]
+    },
+    "prompt": "nameplate for my tabby bartholomew pls",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [],
+      "name": "Bartholomew"
+    },
+    "photos": [
+      {
+        "file": "photos/pat_tabby/pat_tabby_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Siberian_black_tabby_blotched_cat_01.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Siberian_black_tabby_blotched_cat_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Tadeáš Bednarz"
+      },
+      {
+        "file": "photos/pat_tabby/pat_tabby_2.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Siberian_black_tabby_blotched_cat_03.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Siberian_black_tabby_blotched_cat_03.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Tadeáš Bednarz"
+      },
+      {
+        "file": "photos/pat_tabby/pat_tabby_3.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Siberian_black_tabby_blotched_cat_04.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Siberian_black_tabby_blotched_cat_04.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Tadeáš Bednarz"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Bartholomew",
+        "kind": "cat",
+        "notes": "Siberian long-hair, black blotched tabby on brown, green eyes"
+      }
+    ],
+    "notes": "name invented; long name (11 letters) tests text fit on the plate; 3 photos"
+  },
+  {
+    "id": "pa_man",
+    "category": "person_alone",
+    "product_type": "figurine",
+    "target_size_mm": 100.0,
+    "product": {
+      "type": "figurine",
+      "target_size_mm": 100.0,
+      "addons": [
+        {
+          "kind": "round_base"
+        }
+      ]
+    },
+    "prompt": "a mini me, 4 inches tall, holding a coffee",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [
+        "holding a coffee"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/pa_man/pa_man_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/21st-century_portrait_photographs_of_men.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:21st-century_portrait_photographs_of_men.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Dmitry Makeev"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "man",
+        "kind": "person",
+        "notes": "short brown hair, grey long-sleeve sweater, hands on hips"
+      }
+    ],
+    "notes": "studio; cropped at the thighs, so legs and shoes must be invented"
+  },
+  {
+    "id": "pa_woman",
+    "category": "person_alone",
+    "product_type": "keychain",
+    "target_size_mm": 45.0,
+    "product": {
+      "type": "keychain",
+      "target_size_mm": 45.0,
+      "addons": [
+        {
+          "kind": "keyring_loop"
+        }
+      ]
+    },
+    "prompt": "keychain of me pls",
+    "expect": {
+      "form": null,
+      "form_asked": true,
+      "custom_asks": []
+    },
+    "photos": [
+      {
+        "file": "photos/pa_woman/pa_woman_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/2025-07-13_Motorsport%2C_ABB_FIA_Formula_E_World_Championship%2C_Berlin_E-Prix_2025_STP_0590.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2025-07-13_Motorsport,_ABB_FIA_Formula_E_World_Championship,_Berlin_E-Prix_2025_STP_0590.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Steffen Prößdorf"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "woman",
+        "kind": "person",
+        "notes": "dark hair, black polo shirt, beige trousers, arms crossed"
+      }
+    ],
+    "notes": "cropped at the knees; full person at 45 mm, face detail is the risk"
+  },
+  {
+    "id": "obj_eames_birds",
+    "category": "object",
+    "product_type": "figurine",
+    "target_size_mm": 90.0,
+    "product": {
+      "type": "figurine",
+      "target_size_mm": 90.0,
+      "addons": [
+        {
+          "kind": "round_base"
+        }
+      ]
+    },
+    "prompt": "figurine of my 2 eames birds",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": []
+    },
+    "photos": [
+      {
+        "file": "photos/obj_eames_birds/obj_eames_birds_1.png",
+        "source": "own",
+        "license": "not included; supply your own product photo of an Eames House Bird"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "walnut bird",
+        "kind": "object",
+        "notes": "walnut wood grain, thin black wire legs"
+      },
+      {
+        "name": "black bird",
+        "kind": "object",
+        "notes": "black lacquer, thin black wire legs"
+      }
+    ],
+    "notes": "product photo on white; thin wire legs test printability; small printed logo on the black bird"
+  },
+  {
+    "id": "obj_teddy",
+    "category": "object",
+    "product_type": "keychain",
+    "target_size_mm": 45.0,
+    "product": {
+      "type": "keychain",
+      "target_size_mm": 45.0,
+      "addons": [
+        {
+          "kind": "keyring_loop"
+        }
+      ]
+    },
+    "prompt": "keychain of my kids teddy bear with his name Otis on it",
+    "expect": {
+      "form": null,
+      "form_asked": true,
+      "custom_asks": [
+        "Otis"
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/obj_teddy/obj_teddy_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/2023_Pluszowy_mi%C5%9B.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:2023_Pluszowy_mi%C5%9B.jpg",
+        "license": "CC BY-SA 4.0",
+        "author": "Jacek Halicki"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "teddy bear",
+        "kind": "object",
+        "notes": "cream plush, red knit sweater with white pattern"
+      }
+    ],
+    "notes": "plush on white background"
+  },
+  {
+    "id": "hard_couple_dog",
+    "category": "hardest",
+    "product_type": "nameplate",
+    "target_size_mm": 120.0,
+    "product": {
+      "type": "nameplate",
+      "target_size_mm": 120.0,
+      "addons": [
+        {
+          "kind": "nameplate",
+          "text": {
+            "text": "Arthur, Maud & Biscuit"
+          }
+        }
+      ]
+    },
+    "prompt": "the 2 of us and biscuit on a nameplate with all our names",
+    "expect": {
+      "form": "figure",
+      "form_asked": false,
+      "custom_asks": [],
+      "name": "Arthur, Maud & Biscuit"
+    },
+    "photos": [
+      {
+        "file": "photos/hard_couple_dog/hard_couple_dog_1.jpg",
+        "source": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Victorian_Costumed_Couple_with_Dog.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Victorian_Costumed_Couple_with_Dog.JPG",
+        "license": "CC BY-SA 3.0",
+        "author": "Ellin Beltz"
+      }
+    ],
+    "subjects": [
+      {
+        "name": "Arthur",
+        "kind": "person",
+        "notes": "Victorian costume: black top hat, sunglasses, black frock coat, sitting on a bench"
+      },
+      {
+        "name": "Maud",
+        "kind": "person",
+        "notes": "Victorian costume: wide flowered hat, olive lace blouse, white skirt, holding a pink leash"
+      },
+      {
+        "name": "Biscuit",
+        "kind": "dog",
+        "notes": "fluffy golden-cream dog sitting at their feet"
+      }
+    ],
+    "notes": "hardest case: three subjects, costume detail, his eyes hidden by sunglasses, 22-character name line; names invented"
+  }
+]

@@ -1,0 +1,210 @@
+# Intake question bank, per product type. Haiku picks 2 to 4 questions the photos and request
+# leave open. Labels stay under 40 characters; question text under 120.
+#
+# Option effects (applied after the user answers):
+#   sets:      job fields, e.g. {target_size_mm: 45}
+#   addon:     add or update an exact-geometry add-on: {kind: keyring_loop, params: {position: top}}
+#   remove:    drop an add-on kind, e.g. remove: round_base
+#   text_from: fill the question's `text_addon` text: `answer` (typed text) or `subject_names`
+# `when`: multi_subject | single_subject (omit = always applicable).
+# `required`: always asked unless the form or request already set what `covers` names.
+# `covers`: an add-on kind (keyring_loop, nameplate, ...), target_size_mm or form. A question
+#   whose `covers` the new-job form (or, for form, the request's own words) already set is never
+#   asked.
+# Loop answers name an area, not a seat (p2p_geometry.product.loop_area): top = the head,
+#   back = the top of the back, side = a flank, any = wherever it hangs straightest. Geometry
+#   keeps the loop in that area and reports how it hangs (docs/runs/fidelity/rerun2).
+# `sets: {form: flat|figure}`: the product form (FROM JACKSON: keychains and magnets are the
+#   customer's choice; the concept draws it and Meshy builds it, never flattened later).
+# Option `ask: prop|outfit|pose`: the pick is a custom ask the concept check verifies.
+# Option `prompt`: what the pick means for the concept image. The image prompt gets this phrase,
+#   never the question text. Without it the label is used; "" adds nothing.
+# Text, loops, plates and bases are never asked of Meshy; they are exact geometry in s06.
+
+figurine:
+  - id: size
+    covers: target_size_mm
+    text: How big should it be?
+    options:
+      - {id: small, label: "Small, about 2 in (50 mm)", sets: {target_size_mm: 50}}
+      - {id: medium, label: "Medium, about 3.5 in (90 mm)", sets: {target_size_mm: 90}}
+      - {id: large, label: "Large, about 4 in (100 mm)", sets: {target_size_mm: 100}}
+  - id: pose_group
+    when: multi_subject
+    text: How should they be posed together?
+    options:
+      - {id: hugging, label: Hugging, prompt: the subjects hugging each other}
+      - {id: side_by_side, label: Sitting side by side, prompt: the subjects sitting side by side and touching}
+      - {id: cuddled, label: Curled up together, prompt: the subjects curled up together}
+      - {id: playing, label: Playing, prompt: the subjects playing together}
+  - id: pose
+    when: single_subject
+    text: Which pose?
+    options:
+      - {id: sitting, label: Sitting, prompt: a sitting pose}
+      - {id: standing, label: Standing, prompt: a standing pose}
+      - {id: lying, label: Lying down, prompt: a lying down pose}
+      - {id: from_photo, label: Same as the photo, prompt: the same pose as in the photo}
+  - id: base
+    text: What should it stand on?
+    options:
+      - {id: round_base, label: Round base, addon: {kind: round_base}, remove: oval_base}
+      - {id: oval_base, label: Oval base, addon: {kind: oval_base}, remove: round_base}
+      - {id: no_base, label: No base, remove: round_base}
+  - id: style
+    text: Which look?
+    options:
+      - {id: true_to_photo, label: True to the photo, prompt: realistic proportions true to the photos}
+      - {id: chibi, label: "Chibi, big head", prompt: cute chibi proportions with a big head}
+      - {id: cartoon, label: Cartoon, prompt: a cartoon style}
+  - id: extras
+    text: Add anything?
+    multi: true
+    options:
+      - {id: collar, label: Collar, prompt: wearing a collar, ask: outfit}
+      - {id: bandana, label: Bandana, prompt: wearing a bandana, ask: outfit}
+      - {id: toy, label: Favorite toy, prompt: holding a favorite toy, ask: prop}
+      - {id: nothing, label: Nothing, prompt: ""}
+
+keychain:
+  - id: form
+    required: true
+    covers: form
+    text: Flat charm or 3D figure?
+    options:
+      - {id: figure, label: 3D figure, sets: {form: figure}}
+      - {id: flat, label: Flat charm, sets: {form: flat}}
+  - id: loop
+    required: true
+    covers: keyring_loop
+    text: Where should the key ring attach?
+    options:
+      - {id: top, label: Top of the head, addon: {kind: keyring_loop, params: {position: top}}}
+      - {id: back, label: On the back, addon: {kind: keyring_loop, params: {position: back}}}
+      - {id: side, label: On the side, addon: {kind: keyring_loop, params: {position: left}}}
+      - {id: any, label: Wherever it hangs best, addon: {kind: keyring_loop, params: {position: any}}}
+  - id: size
+    covers: target_size_mm
+    text: How big should the charm be?
+    options:
+      - {id: small, label: "Small, 35 mm", sets: {target_size_mm: 35}}
+      - {id: medium, label: "Medium, 45 mm", sets: {target_size_mm: 45}}
+      - {id: large, label: "Large, 55 mm", sets: {target_size_mm: 55}}
+  - id: pose_group
+    when: multi_subject
+    text: How should they be posed together?
+    options:
+      - {id: hugging, label: Hugging, prompt: the subjects hugging each other}
+      - {id: side_by_side, label: Side by side, prompt: the subjects side by side and touching}
+      - {id: heads_only, label: Just their heads, prompt: just their heads side by side}
+  - id: style
+    text: Which look?
+    options:
+      - {id: true_to_photo, label: True to the photo, prompt: realistic proportions true to the photos}
+      - {id: chibi, label: "Chibi, big head", prompt: cute chibi proportions with a big head}
+      - {id: cartoon, label: Cartoon, prompt: a cartoon style}
+
+nameplate:
+  - id: name
+    required: true
+    covers: nameplate
+    text: What name goes on the plate?
+    allow_text: true
+    text_addon: nameplate
+    options:
+      - {id: pet_names, label: "Their names from the request", text_from: subject_names}
+      - {id: custom, label: "Type it below", text_from: answer}
+  - id: plate_shape
+    text: Which plate shape?
+    options:
+      - {id: rectangle, label: Rectangle, addon: {kind: nameplate, params: {shape: rectangle}}}
+      - {id: rounded, label: Rounded corners, addon: {kind: nameplate, params: {shape: rounded}}}
+      - {id: oval, label: Oval, addon: {kind: nameplate, params: {shape: oval}}}
+  - id: size
+    covers: target_size_mm
+    text: How wide should the plate be?
+    options:
+      - {id: small, label: "Small, 90 mm", sets: {target_size_mm: 90}}
+      - {id: medium, label: "Medium, 120 mm", sets: {target_size_mm: 120}}
+      - {id: large, label: "Large, 150 mm", sets: {target_size_mm: 150}}
+  - id: pose_group
+    when: multi_subject
+    text: How should they sit on the plate?
+    options:
+      - {id: side_by_side, label: Side by side, prompt: the subjects side by side and touching}
+      - {id: hugging, label: Hugging, prompt: the subjects hugging each other}
+      - {id: lying, label: Lying together, prompt: the subjects lying together}
+  - id: pose
+    when: single_subject
+    text: Which pose on the plate?
+    options:
+      - {id: sitting, label: Sitting, prompt: a sitting pose}
+      - {id: lying, label: Lying down, prompt: a lying down pose}
+      - {id: standing, label: Standing, prompt: a standing pose}
+
+ornament:
+  - id: size
+    covers: target_size_mm
+    text: How big should it be?
+    options:
+      - {id: small, label: "Small, 50 mm", sets: {target_size_mm: 50}}
+      - {id: medium, label: "Medium, 70 mm", sets: {target_size_mm: 70}}
+  - id: pose
+    text: Which pose?
+    options:
+      - {id: sitting, label: Sitting, prompt: a sitting pose}
+      - {id: curled, label: Curled up, prompt: curled up}
+      - {id: head_only, label: Just the head, prompt: just the head}
+  - id: style
+    text: Which look?
+    options:
+      - {id: true_to_photo, label: True to the photo, prompt: realistic proportions true to the photos}
+      - {id: chibi, label: "Chibi, big head", prompt: cute chibi proportions with a big head}
+      - {id: cartoon, label: Cartoon, prompt: a cartoon style}
+
+magnet:
+  - id: form
+    required: true
+    covers: form
+    text: Flat relief or 3D figure?
+    options:
+      - {id: flat, label: Flat relief, sets: {form: flat}}
+      - {id: figure, label: 3D figure, sets: {form: figure}}
+  - id: size
+    covers: target_size_mm
+    text: How big should the magnet be?
+    options:
+      - {id: small, label: "Small, 45 mm", sets: {target_size_mm: 45}}
+      - {id: medium, label: "Medium, 60 mm", sets: {target_size_mm: 60}}
+      - {id: large, label: "Large, 75 mm", sets: {target_size_mm: 75}}
+  - id: framing
+    text: What should it show?
+    options:
+      - {id: head_only, label: Just the head, prompt: just the head}
+      - {id: full_body, label: Full body, prompt: the full body}
+  - id: style
+    text: Which look?
+    options:
+      - {id: true_to_photo, label: True to the photo, prompt: realistic proportions true to the photos}
+      - {id: chibi, label: "Chibi, big head", prompt: cute chibi proportions with a big head}
+      - {id: cartoon, label: Cartoon, prompt: a cartoon style}
+
+other:
+  - id: size
+    covers: target_size_mm
+    text: How big should it be?
+    options:
+      - {id: small, label: "Small, 50 mm", sets: {target_size_mm: 50}}
+      - {id: medium, label: "Medium, 75 mm", sets: {target_size_mm: 75}}
+      - {id: large, label: "Large, 100 mm", sets: {target_size_mm: 100}}
+  - id: style
+    text: Which look?
+    options:
+      - {id: true_to_photo, label: True to the photo, prompt: realistic proportions true to the photos}
+      - {id: stylized, label: Stylized, prompt: a stylized look}
+      - {id: cartoon, label: Cartoon, prompt: a cartoon style}
+  - id: base
+    text: What should it stand on?
+    options:
+      - {id: round_base, label: Round base, addon: {kind: round_base}}
+      - {id: no_base, label: No base, remove: round_base}

@@ -1,0 +1,53 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# job artifacts and caches
+jobs/*
+!jobs/.gitkeep
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+node_modules/
+.next/
+.vercel/
+.turbo/
+dist/
+build/
+*.log
+.DS_Store
+
+# large local files
+evals/golden/runs/
+evals/fixtures/store/
+evals/_work/
+sim/_out/
+threemf/_out/
+.claude/worktrees/
+evals/golden/photos/
+/data/
+evals/golden/contact_sheet.jpg
+logs/
+
+# geometry previews and exports
+geometry/_out/
+
+# native slicer calibration: Bambu Studio outputs (G-code is large)
+slicer/calibration/_truth/
+
+# native slicer and inspector outputs
+slicer/_out/
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# local-only cost model inputs and outputs
+costs/cost_model.xlsx
+costs/test_data.jsonl
+costs/refresh_state.json
+costs/research/
+.claude/

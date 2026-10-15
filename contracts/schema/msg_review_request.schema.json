@@ -1,0 +1,46 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "reason": {
+      "title": "Reason",
+      "type": "string"
+    },
+    "confidence": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Confidence"
+    },
+    "checklist": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Job-relative path to checklist.json",
+      "title": "Checklist"
+    },
+    "images": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Images",
+      "type": "array"
+    }
+  },
+  "required": [
+    "reason"
+  ],
+  "title": "ReviewRequest",
+  "type": "object"
+}

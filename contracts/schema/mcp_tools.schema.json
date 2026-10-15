@@ -1,0 +1,3440 @@
+{
+  "open_job": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Resume this s09 attempt; default new attempt",
+          "title": "Attempt"
+        },
+        "base": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Start the new attempt from a finished paint instead of fresh SAM 3 labels: 'current' (the paint behind the job's result) or an attempt folder such as s09_paint/a2. Then edit with apply_paint_ops and read preview_print",
+          "title": "Base"
+        }
+      },
+      "required": [
+        "job_id"
+      ],
+      "title": "OpenJobIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "get_state": {
+    "input": {
+      "type": "object",
+      "properties": {}
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "list_regions": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "subject_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Subject Id"
+        },
+        "part": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Part"
+        },
+        "unassigned_only": {
+          "default": false,
+          "title": "Unassigned Only",
+          "type": "boolean"
+        }
+      },
+      "title": "ListRegionsIn",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "RegionSummary": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "label": {
+              "title": "Label",
+              "type": "string"
+            },
+            "part": {
+              "title": "Part",
+              "type": "string"
+            },
+            "subject_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Subject Id"
+            },
+            "filament_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Filament Id"
+            },
+            "area_mm2": {
+              "title": "Area Mm2",
+              "type": "number"
+            },
+            "min_width_mm": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Width Mm"
+            },
+            "confidence": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Confidence"
+            }
+          },
+          "required": [
+            "id",
+            "label",
+            "part",
+            "subject_id",
+            "filament_id",
+            "area_mm2",
+            "min_width_mm",
+            "confidence"
+          ],
+          "title": "RegionSummary",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "regions": {
+          "items": {
+            "$ref": "#/$defs/RegionSummary"
+          },
+          "title": "Regions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "regions"
+      ],
+      "title": "RegionsOut",
+      "type": "object"
+    }
+  },
+  "label_regions": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "prompts": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "SAM 3 text prompts; default from color spec",
+          "title": "Prompts"
+        },
+        "views": {
+          "anyOf": [
+            {
+              "items": {
+                "enum": [
+                  "front",
+                  "back",
+                  "left",
+                  "right",
+                  "top",
+                  "front_3q"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Views"
+        },
+        "close_ups": {
+          "default": true,
+          "description": "Also render close-ups around face parts",
+          "title": "Close Ups",
+          "type": "boolean"
+        },
+        "min_vote": {
+          "default": 0.5,
+          "description": "Multi-view vote share to keep a label",
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Min Vote",
+          "type": "number"
+        },
+        "replace": {
+          "default": false,
+          "description": "Replace existing regions instead of refining them",
+          "title": "Replace",
+          "type": "boolean"
+        },
+        "score_threshold": {
+          "default": 0.5,
+          "description": "Drop SAM 3 masks below this score",
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Score Threshold",
+          "type": "number"
+        },
+        "markings": {
+          "default": true,
+          "description": "Also split body and head by texture color clusters",
+          "title": "Markings",
+          "type": "boolean"
+        },
+        "min_component_frac": {
+          "default": 0.02,
+          "description": "Drop mask components smaller than this share of the mask",
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Min Component Frac",
+          "type": "number"
+        }
+      },
+      "title": "LabelRegionsIn",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "RegionSummary": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "title": "Id",
+              "type": "integer"
+            },
+            "label": {
+              "title": "Label",
+              "type": "string"
+            },
+            "part": {
+              "title": "Part",
+              "type": "string"
+            },
+            "subject_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Subject Id"
+            },
+            "filament_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Filament Id"
+            },
+            "area_mm2": {
+              "title": "Area Mm2",
+              "type": "number"
+            },
+            "min_width_mm": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Width Mm"
+            },
+            "confidence": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Confidence"
+            }
+          },
+          "required": [
+            "id",
+            "label",
+            "part",
+            "subject_id",
+            "filament_id",
+            "area_mm2",
+            "min_width_mm",
+            "confidence"
+          ],
+          "title": "RegionSummary",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "regions": {
+          "items": {
+            "$ref": "#/$defs/RegionSummary"
+          },
+          "title": "Regions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "regions"
+      ],
+      "title": "RegionsOut",
+      "type": "object"
+    }
+  },
+  "render_views": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "kinds": {
+          "items": {
+            "enum": [
+              "flat",
+              "shaded",
+              "overlay",
+              "crops",
+              "sim",
+              "texture"
+            ],
+            "type": "string"
+          },
+          "title": "Kinds",
+          "type": "array"
+        },
+        "views": {
+          "anyOf": [
+            {
+              "items": {
+                "enum": [
+                  "front",
+                  "back",
+                  "left",
+                  "right",
+                  "top",
+                  "front_3q"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Views"
+        },
+        "region_ids": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Highlight these; crops target them",
+          "title": "Region Ids"
+        },
+        "size_px": {
+          "default": 1024,
+          "title": "Size Px",
+          "type": "integer"
+        }
+      },
+      "title": "RenderViewsIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "images": {
+          "description": "[{kind, view, path, width, height, region_id?}]",
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Images",
+          "type": "array"
+        }
+      },
+      "required": [
+        "images"
+      ],
+      "title": "RenderOut",
+      "type": "object"
+    }
+  },
+  "paint_region": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Region Ids",
+          "type": "array"
+        },
+        "filament_id": {
+          "title": "Filament Id",
+          "type": "string"
+        },
+        "add_to_palette": {
+          "default": false,
+          "title": "Add To Palette",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "region_ids",
+        "filament_id"
+      ],
+      "title": "PaintRegionIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "merge_regions": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "title": "Region Ids",
+          "type": "array"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        }
+      },
+      "required": [
+        "region_ids"
+      ],
+      "title": "MergeRegionsIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "split_region": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "region_id": {
+          "title": "Region Id",
+          "type": "integer"
+        },
+        "method": {
+          "enum": [
+            "connected_components",
+            "plane",
+            "geodesic_seed",
+            "prompt"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "plane_point_mm": {
+          "anyOf": [
+            {
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Plane Point Mm"
+        },
+        "plane_normal": {
+          "anyOf": [
+            {
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Plane Normal"
+        },
+        "seed_face_ids": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Seed Face Ids"
+        },
+        "prompt": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Prompt"
+        },
+        "labels": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Labels for the new parts, in order",
+          "title": "Labels"
+        }
+      },
+      "required": [
+        "region_id",
+        "method"
+      ],
+      "title": "SplitRegionIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "grow": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "region_id": {
+          "title": "Region Id",
+          "type": "integer"
+        },
+        "mm": {
+          "exclusiveMinimum": 0,
+          "maximum": 10,
+          "title": "Mm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "region_id",
+        "mm"
+      ],
+      "title": "BoundaryEditIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "shrink": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "region_id": {
+          "title": "Region Id",
+          "type": "integer"
+        },
+        "mm": {
+          "exclusiveMinimum": 0,
+          "maximum": 10,
+          "title": "Mm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "region_id",
+        "mm"
+      ],
+      "title": "BoundaryEditIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "smooth_boundary": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "region_id": {
+          "title": "Region Id",
+          "type": "integer"
+        },
+        "mm": {
+          "exclusiveMinimum": 0,
+          "maximum": 10,
+          "title": "Mm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "region_id",
+        "mm"
+      ],
+      "title": "BoundaryEditIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "snap_to_creases": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "region_ids": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Default: all regions",
+          "title": "Region Ids"
+        },
+        "max_shift_mm": {
+          "default": 1.0,
+          "title": "Max Shift Mm",
+          "type": "number"
+        },
+        "crease_angle_deg": {
+          "default": 30.0,
+          "title": "Crease Angle Deg",
+          "type": "number"
+        }
+      },
+      "title": "SnapToCreasesIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "despeckle": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "min_area_mm2": {
+          "exclusiveMinimum": 0,
+          "title": "Min Area Mm2",
+          "type": "number"
+        },
+        "region_ids": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Region Ids"
+        }
+      },
+      "required": [
+        "min_area_mm2"
+      ],
+      "title": "DespeckleIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "select_by_pixel": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "view": {
+          "enum": [
+            "front",
+            "back",
+            "left",
+            "right",
+            "top",
+            "front_3q"
+          ],
+          "title": "View",
+          "type": "string"
+        },
+        "x": {
+          "title": "X",
+          "type": "integer"
+        },
+        "y": {
+          "title": "Y",
+          "type": "integer"
+        },
+        "radius_px": {
+          "default": 0,
+          "title": "Radius Px",
+          "type": "integer"
+        },
+        "action": {
+          "default": "info",
+          "enum": [
+            "info",
+            "new_region",
+            "add_to_region"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "region_id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Target for add_to_region",
+          "title": "Region Id"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        }
+      },
+      "required": [
+        "view",
+        "x",
+        "y"
+      ],
+      "title": "SelectByPixelIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "face_id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Face Id"
+        },
+        "region_id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Region Id"
+        },
+        "point_mm": {
+          "anyOf": [
+            {
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Point Mm"
+        },
+        "new_region_id": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "New Region Id"
+        }
+      },
+      "required": [
+        "face_id",
+        "region_id",
+        "point_mm"
+      ],
+      "title": "PixelOut",
+      "type": "object"
+    }
+  },
+  "suggest_palette": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "k": {
+          "maximum": 16,
+          "minimum": 1,
+          "title": "K",
+          "type": "integer"
+        },
+        "fixed": {
+          "description": "Filament ids that must be included",
+          "items": {
+            "type": "string"
+          },
+          "title": "Fixed",
+          "type": "array"
+        },
+        "owned_only": {
+          "default": true,
+          "title": "Owned Only",
+          "type": "boolean"
+        },
+        "apply": {
+          "default": false,
+          "description": "Replace palette and re-assign regions to nearest",
+          "title": "Apply",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "k"
+      ],
+      "title": "SuggestPaletteIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "delta_e": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "description": "str(region_id) -> CIEDE2000 to nearest",
+          "title": "Delta E",
+          "type": "object"
+        },
+        "swap_suggestions": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Swap Suggestions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "palette",
+        "delta_e"
+      ],
+      "title": "PaletteOut",
+      "type": "object"
+    }
+  },
+  "simulate_print": {
+    "input": {
+      "$defs": {
+        "SimParams": {
+          "additionalProperties": false,
+          "properties": {
+            "nozzle_mm": {
+              "default": 0.4,
+              "title": "Nozzle Mm",
+              "type": "number"
+            },
+            "layer_mm": {
+              "default": 0.2,
+              "title": "Layer Mm",
+              "type": "number"
+            },
+            "min_width_factor": {
+              "default": 2.0,
+              "description": "Erode regions narrower than factor x nozzle",
+              "title": "Min Width Factor",
+              "type": "number"
+            },
+            "flat_angle_deg": {
+              "default": 30.0,
+              "description": "Surfaces flatter than this count as tops (paint projects down through them)",
+              "title": "Flat Angle Deg",
+              "type": "number"
+            },
+            "quantize_model": {
+              "default": "slicer",
+              "description": "slicer: tops keep shape, walls snap to layers (Bambu source); plan: PLAN rule 2",
+              "enum": [
+                "slicer",
+                "plan"
+              ],
+              "title": "Quantize Model",
+              "type": "string"
+            },
+            "paint_penetration_layers": {
+              "default": 5,
+              "description": "Layers a painted top projects downward",
+              "title": "Paint Penetration Layers",
+              "type": "integer"
+            },
+            "nozzles": {
+              "default": 2,
+              "description": "X2D has 2; filaments on different nozzles swap without purge",
+              "title": "Nozzles",
+              "type": "integer"
+            },
+            "min_light_layers": {
+              "default": 5,
+              "description": "Light over dark with fewer layers is flagged",
+              "title": "Min Light Layers",
+              "type": "integer"
+            },
+            "dark_to_light_weight": {
+              "default": 1.0,
+              "description": "Multiplier on Bambu's color-based flush volume for dark to light swaps",
+              "title": "Dark To Light Weight",
+              "type": "number"
+            }
+          },
+          "title": "SimParams",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "params": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SimParams"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "render": {
+          "default": true,
+          "title": "Render",
+          "type": "boolean"
+        }
+      },
+      "title": "SimulatePrintIn",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "BleedFlag": {
+          "additionalProperties": false,
+          "properties": {
+            "region_id": {
+              "title": "Region Id",
+              "type": "integer"
+            },
+            "over_region_id": {
+              "title": "Over Region Id",
+              "type": "integer"
+            },
+            "light_layers": {
+              "title": "Light Layers",
+              "type": "integer"
+            },
+            "area_mm2": {
+              "title": "Area Mm2",
+              "type": "number"
+            }
+          },
+          "required": [
+            "region_id",
+            "over_region_id",
+            "light_layers",
+            "area_mm2"
+          ],
+          "title": "BleedFlag",
+          "type": "object"
+        },
+        "FileRef": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "description": "POSIX path relative to jobs/<job_id>/",
+              "title": "Path",
+              "type": "string"
+            },
+            "sha256": {
+              "title": "Sha256",
+              "type": "string"
+            },
+            "bytes": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Bytes"
+            },
+            "kind": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+              "title": "Kind"
+            },
+            "role": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+              "title": "Role"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "title": "FileRef",
+          "type": "object"
+        },
+        "MergedRegion": {
+          "additionalProperties": false,
+          "properties": {
+            "region_id": {
+              "title": "Region Id",
+              "type": "integer"
+            },
+            "into_region_id": {
+              "title": "Into Region Id",
+              "type": "integer"
+            },
+            "area_mm2": {
+              "title": "Area Mm2",
+              "type": "number"
+            },
+            "reason": {
+              "enum": [
+                "too_thin",
+                "island",
+                "quantized_away"
+              ],
+              "title": "Reason",
+              "type": "string"
+            },
+            "kind": {
+              "default": "whole",
+              "description": "whole: the region vanished; sliver: only a thin part of it was trimmed",
+              "enum": [
+                "whole",
+                "sliver"
+              ],
+              "title": "Kind",
+              "type": "string"
+            }
+          },
+          "required": [
+            "region_id",
+            "into_region_id",
+            "area_mm2",
+            "reason"
+          ],
+          "title": "MergedRegion",
+          "type": "object"
+        },
+        "SimParams": {
+          "additionalProperties": false,
+          "properties": {
+            "nozzle_mm": {
+              "default": 0.4,
+              "title": "Nozzle Mm",
+              "type": "number"
+            },
+            "layer_mm": {
+              "default": 0.2,
+              "title": "Layer Mm",
+              "type": "number"
+            },
+            "min_width_factor": {
+              "default": 2.0,
+              "description": "Erode regions narrower than factor x nozzle",
+              "title": "Min Width Factor",
+              "type": "number"
+            },
+            "flat_angle_deg": {
+              "default": 30.0,
+              "description": "Surfaces flatter than this count as tops (paint projects down through them)",
+              "title": "Flat Angle Deg",
+              "type": "number"
+            },
+            "quantize_model": {
+              "default": "slicer",
+              "description": "slicer: tops keep shape, walls snap to layers (Bambu source); plan: PLAN rule 2",
+              "enum": [
+                "slicer",
+                "plan"
+              ],
+              "title": "Quantize Model",
+              "type": "string"
+            },
+            "paint_penetration_layers": {
+              "default": 5,
+              "description": "Layers a painted top projects downward",
+              "title": "Paint Penetration Layers",
+              "type": "integer"
+            },
+            "nozzles": {
+              "default": 2,
+              "description": "X2D has 2; filaments on different nozzles swap without purge",
+              "title": "Nozzles",
+              "type": "integer"
+            },
+            "min_light_layers": {
+              "default": 5,
+              "description": "Light over dark with fewer layers is flagged",
+              "title": "Min Light Layers",
+              "type": "integer"
+            },
+            "dark_to_light_weight": {
+              "default": 1.0,
+              "description": "Multiplier on Bambu's color-based flush volume for dark to light swaps",
+              "title": "Dark To Light Weight",
+              "type": "number"
+            }
+          },
+          "title": "SimParams",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "params": {
+          "$ref": "#/$defs/SimParams"
+        },
+        "merged": {
+          "items": {
+            "$ref": "#/$defs/MergedRegion"
+          },
+          "title": "Merged",
+          "type": "array"
+        },
+        "bleed_flags": {
+          "items": {
+            "$ref": "#/$defs/BleedFlag"
+          },
+          "title": "Bleed Flags",
+          "type": "array"
+        },
+        "layers": {
+          "title": "Layers",
+          "type": "integer"
+        },
+        "swaps_total": {
+          "title": "Swaps Total",
+          "type": "integer"
+        },
+        "swaps_max_per_layer": {
+          "title": "Swaps Max Per Layer",
+          "type": "integer"
+        },
+        "purge_g_est": {
+          "title": "Purge G Est",
+          "type": "number"
+        },
+        "model_g_est": {
+          "title": "Model G Est",
+          "type": "number"
+        },
+        "purge_pct": {
+          "title": "Purge Pct",
+          "type": "number"
+        },
+        "face_filaments": {
+          "$ref": "#/$defs/FileRef",
+          "description": "sim_face_filaments.npy int16 slot per face"
+        },
+        "images": {
+          "items": {
+            "$ref": "#/$defs/FileRef"
+          },
+          "title": "Images",
+          "type": "array"
+        }
+      },
+      "required": [
+        "params",
+        "layers",
+        "swaps_total",
+        "swaps_max_per_layer",
+        "purge_g_est",
+        "model_g_est",
+        "purge_pct",
+        "face_filaments"
+      ],
+      "title": "SimReport",
+      "type": "object"
+    }
+  },
+  "run_checklist": {
+    "input": {
+      "type": "object",
+      "properties": {}
+    },
+    "output": {
+      "$defs": {
+        "ChecklistItem": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "enum": [
+                "spec_coverage",
+                "face_parts",
+                "markings",
+                "islands",
+                "creases",
+                "slot_count",
+                "sim_matches_intent",
+                "purge_under_40pct"
+              ],
+              "title": "Id",
+              "type": "string"
+            },
+            "passed": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Passed"
+            },
+            "by": {
+              "enum": [
+                "code",
+                "model"
+              ],
+              "title": "By",
+              "type": "string"
+            },
+            "evidence": {
+              "title": "Evidence",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "by",
+            "evidence"
+          ],
+          "title": "ChecklistItem",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/ChecklistItem"
+          },
+          "title": "Items",
+          "type": "array"
+        },
+        "passed_all": {
+          "title": "Passed All",
+          "type": "boolean"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "items",
+        "passed_all",
+        "confidence"
+      ],
+      "title": "Checklist",
+      "type": "object"
+    }
+  },
+  "checkpoint": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "note"
+      ],
+      "title": "CheckpointIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "undo": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Default: previous checkpoint",
+          "title": "Checkpoint Id"
+        }
+      },
+      "title": "UndoIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "write_3mf": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "default": "final",
+          "title": "Name",
+          "type": "string"
+        },
+        "use_sim": {
+          "default": false,
+          "description": "Write simulated per-face filaments instead of ideal",
+          "title": "Use Sim",
+          "type": "boolean"
+        }
+      },
+      "title": "Write3mfIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "n_faces": {
+          "title": "N Faces",
+          "type": "integer"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "slots_used": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Slots Used"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "n_faces",
+        "palette"
+      ],
+      "title": "Write3mfOut",
+      "type": "object"
+    }
+  },
+  "slice_check": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Job-relative 3MF; default last write_3mf output",
+          "title": "Path"
+        },
+        "keep_gcode": {
+          "default": false,
+          "title": "Keep Gcode",
+          "type": "boolean"
+        }
+      },
+      "title": "SliceCheckIn",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "FileRef": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "description": "POSIX path relative to jobs/<job_id>/",
+              "title": "Path",
+              "type": "string"
+            },
+            "sha256": {
+              "title": "Sha256",
+              "type": "string"
+            },
+            "bytes": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Bytes"
+            },
+            "kind": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+              "title": "Kind"
+            },
+            "role": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+              "title": "Role"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "title": "FileRef",
+          "type": "object"
+        },
+        "SliceFilament": {
+          "additionalProperties": false,
+          "properties": {
+            "slot": {
+              "title": "Slot",
+              "type": "integer"
+            },
+            "filament_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Filament Id"
+            },
+            "grams": {
+              "title": "Grams",
+              "type": "number"
+            },
+            "meters": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Meters"
+            },
+            "model_grams": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Printed in the model, no flush or tower",
+              "title": "Model Grams"
+            },
+            "flush_grams": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Flush Grams"
+            },
+            "tower_grams": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Tower Grams"
+            }
+          },
+          "required": [
+            "slot",
+            "grams"
+          ],
+          "title": "SliceFilament",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "ok": {
+          "title": "Ok",
+          "type": "boolean"
+        },
+        "slicer": {
+          "enum": [
+            "bambu_studio",
+            "orcaslicer",
+            "p2p_slicer"
+          ],
+          "title": "Slicer",
+          "type": "string"
+        },
+        "slicer_version": {
+          "title": "Slicer Version",
+          "type": "string"
+        },
+        "printer_profile": {
+          "title": "Printer Profile",
+          "type": "string"
+        },
+        "process_profile": {
+          "title": "Process Profile",
+          "type": "string"
+        },
+        "errors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Errors",
+          "type": "array"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "print_time_s": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Print Time S"
+        },
+        "filaments": {
+          "items": {
+            "$ref": "#/$defs/SliceFilament"
+          },
+          "title": "Filaments",
+          "type": "array"
+        },
+        "total_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Grams"
+        },
+        "purge_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Flush and prime tower",
+          "title": "Purge Grams"
+        },
+        "slots_used": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Slots Used"
+        },
+        "expected_slots": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected Slots"
+        },
+        "output": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FileRef"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Sliced .gcode.3mf, if kept"
+        },
+        "log": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Job-relative path to the slicer log",
+          "title": "Log"
+        },
+        "filament_changes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filament Changes"
+        },
+        "nozzle_changes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nozzle Changes"
+        },
+        "ams_swaps": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "AMS unload and load pairs (Bambu filament_change_times)",
+          "title": "Ams Swaps"
+        },
+        "model_time_s": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "print_time_s minus prepare_time_s",
+          "title": "Model Time S"
+        },
+        "prepare_time_s": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Start and end G-code, heating, homing",
+          "title": "Prepare Time S"
+        },
+        "tower_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Prime tower share of purge_grams",
+          "title": "Tower Grams"
+        },
+        "readback_ok": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Slicer re-saved file keeps presets and paint",
+          "title": "Readback Ok"
+        },
+        "readback_slots": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Readback Slots"
+        },
+        "thin_paint": {
+          "description": "[{slot, filament_id, area_mm2, min_width_mm}] under 2 x nozzle",
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Thin Paint",
+          "type": "array"
+        }
+      },
+      "required": [
+        "ok",
+        "slicer",
+        "slicer_version",
+        "printer_profile",
+        "process_profile"
+      ],
+      "title": "SliceReport",
+      "type": "object"
+    }
+  },
+  "apply_paint_ops": {
+    "input": {
+      "$defs": {
+        "PaintOp": {
+          "additionalProperties": false,
+          "description": "One paint edit on a finished job, by region id, by face set, or by palette slot.\n\nThe filament is `filament_id` (an owned spool or a catalog color) or `slot` (1-based in the\npalette as it stands when this op runs); exactly one of the two.\n- fill_region: the regions in `region_ids` take the filament.\n- brush_faces: the faces in `faces` (or the file at `faces_path`) become one new region in\n  the filament, id = the region map's next_region_id at that point (ids are never reused).\n- replace_slot: everything painted with slot `from_slot` (regions, the default filament,\n  add-on parts) takes the filament; the slot drops out when the filament is already in the\n  palette.",
+          "properties": {
+            "op": {
+              "enum": [
+                "fill_region",
+                "brush_faces",
+                "replace_slot"
+              ],
+              "title": "Op",
+              "type": "string"
+            },
+            "filament_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Filament Id"
+            },
+            "slot": {
+              "anyOf": [
+                {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Slot"
+            },
+            "region_ids": {
+              "description": "fill_region",
+              "items": {
+                "type": "integer"
+              },
+              "title": "Region Ids",
+              "type": "array"
+            },
+            "faces": {
+              "anyOf": [
+                {
+                  "maxLength": 200000,
+                  "pattern": "^(\\d+(-\\d+)?)(,\\d+(-\\d+)?)*$",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "brush_faces: figure face ids as ranges, e.g. 0-9,15,20-31",
+              "title": "Faces"
+            },
+            "faces_path": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "brush_faces, large strokes: job-relative text file holding the same ranges (the web uploads input/paint/<name>.txt to bucket inputs)",
+              "title": "Faces Path"
+            },
+            "from_slot": {
+              "anyOf": [
+                {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "replace_slot: the slot to replace",
+              "title": "From Slot"
+            },
+            "label": {
+              "anyOf": [
+                {
+                  "maxLength": 60,
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "brush_faces: new region label",
+              "title": "Label"
+            }
+          },
+          "required": [
+            "op"
+          ],
+          "title": "PaintOp",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "description": "The studio paint editor's operations (payloads.PaintOp), in order.",
+      "properties": {
+        "ops": {
+          "items": {
+            "$ref": "#/$defs/PaintOp"
+          },
+          "maxItems": 500,
+          "minItems": 1,
+          "title": "Ops",
+          "type": "array"
+        },
+        "source": {
+          "default": "owned",
+          "description": "any: catalog colors allowed",
+          "enum": [
+            "owned",
+            "any"
+          ],
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ops"
+      ],
+      "title": "PaintOpsIn",
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "title": "Job Id",
+          "type": "string"
+        },
+        "attempt": {
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "iteration": {
+          "title": "Iteration",
+          "type": "integer"
+        },
+        "checkpoint_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Checkpoint Id"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "n_regions": {
+          "title": "N Regions",
+          "type": "integer"
+        },
+        "unlabeled_area_pct": {
+          "title": "Unlabeled Area Pct",
+          "type": "number"
+        },
+        "changed_region_ids": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Region Ids",
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Message"
+        }
+      },
+      "required": [
+        "job_id",
+        "attempt",
+        "iteration",
+        "checkpoint_id",
+        "palette",
+        "n_regions",
+        "unlabeled_area_pct"
+      ],
+      "title": "StateOut",
+      "type": "object"
+    }
+  },
+  "preview_print": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "toolpaths": {
+          "default": true,
+          "description": "Write per-layer toolpaths (PaintPreview format)",
+          "title": "Toolpaths",
+          "type": "boolean"
+        },
+        "proof": {
+          "default": true,
+          "description": "Render paint and simulated print from 8 views",
+          "title": "Proof",
+          "type": "boolean"
+        }
+      },
+      "title": "PreviewPrintIn",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "PrintNumbers": {
+          "additionalProperties": false,
+          "description": "Time, grams and purge of one slice.",
+          "properties": {
+            "slicer": {
+              "enum": [
+                "bambu_studio",
+                "orcaslicer",
+                "p2p_slicer"
+              ],
+              "title": "Slicer",
+              "type": "string"
+            },
+            "print_time_s": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Print Time S"
+            },
+            "total_grams": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Total Grams"
+            },
+            "purge_grams": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Flush and prime tower",
+              "title": "Purge Grams"
+            },
+            "filament_changes": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Filament Changes"
+            },
+            "layers": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Layers"
+            },
+            "filaments": {
+              "items": {
+                "$ref": "#/$defs/SliceFilament"
+              },
+              "title": "Filaments",
+              "type": "array"
+            }
+          },
+          "required": [
+            "slicer"
+          ],
+          "title": "PrintNumbers",
+          "type": "object"
+        },
+        "ProofImage": {
+          "additionalProperties": false,
+          "description": "One proof render: the product from one of regions.PROOF_VIEWS.",
+          "properties": {
+            "kind": {
+              "description": "model: the 3D model with its own texture; paint: filament colors as painted; print: the simulated print (slicer limits applied)",
+              "enum": [
+                "model",
+                "paint",
+                "print"
+              ],
+              "title": "Kind",
+              "type": "string"
+            },
+            "view": {
+              "description": "A key of regions.PROOF_VIEWS",
+              "title": "View",
+              "type": "string"
+            },
+            "path": {
+              "description": "Job-relative PNG",
+              "title": "Path",
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "view",
+            "path"
+          ],
+          "title": "ProofImage",
+          "type": "object"
+        },
+        "SimSummary": {
+          "additionalProperties": false,
+          "description": "simulate_print in numbers.",
+          "properties": {
+            "changed_pct": {
+              "description": "Share of the figure area the print repaints, percent",
+              "title": "Changed Pct",
+              "type": "number"
+            },
+            "regions_lost": {
+              "description": "Regions under 5% kept",
+              "items": {
+                "type": "integer"
+              },
+              "title": "Regions Lost",
+              "type": "array"
+            },
+            "bleed_flags": {
+              "default": 0,
+              "title": "Bleed Flags",
+              "type": "integer"
+            },
+            "purge_g_est": {
+              "title": "Purge G Est",
+              "type": "number"
+            },
+            "model_g_est": {
+              "title": "Model G Est",
+              "type": "number"
+            },
+            "swaps_total": {
+              "title": "Swaps Total",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "changed_pct",
+            "purge_g_est",
+            "model_g_est",
+            "swaps_total"
+          ],
+          "title": "SimSummary",
+          "type": "object"
+        },
+        "SliceFilament": {
+          "additionalProperties": false,
+          "properties": {
+            "slot": {
+              "title": "Slot",
+              "type": "integer"
+            },
+            "filament_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Filament Id"
+            },
+            "grams": {
+              "title": "Grams",
+              "type": "number"
+            },
+            "meters": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Meters"
+            },
+            "model_grams": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Printed in the model, no flush or tower",
+              "title": "Model Grams"
+            },
+            "flush_grams": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Flush Grams"
+            },
+            "tower_grams": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Tower Grams"
+            }
+          },
+          "required": [
+            "slot",
+            "grams"
+          ],
+          "title": "SliceFilament",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "description": "What a paint edit prints like: s09 paint_edit attempts write it as paint_preview.json\n(role paint_preview); the paint MCP tool preview_print returns it. `before` and `after` are\nboth p2p_slicer numbers, so their difference is the edit's. The Bambu gate runs after (s10).\n\nToolpaths (`toolpaths`, version 1): a JSON index next to a little-endian binary file.\n  {\"version\": 1, \"bin\": \"toolpaths.bin\", \"scale_mm\": 0.01, \"origin_mm\": [x, y],\n   \"bbox_mm\": [x0, y0, x1, y1], \"slots\": [{\"slot\", \"filament_id\", \"hex\"}], \"roles\": [...],\n   \"points\": {\"offset\", \"count\"}, \"chains\": {\"offset\", \"count\"},\n   \"layers\": [{\"z\", \"height\", \"chains\": [first, count], \"time_s\", \"slots\", \"changes\"}]}\npoints: uint16 (x, y) pairs, mm = origin_mm + value * scale_mm. chains: uint32 triples\n(first point, point count, slot << 8 | role), one per continuous extrusion; layers list\ntheir chains in print order. Travel is left out; the prime tower is in (role Prime tower).",
+      "properties": {
+        "base_attempt": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Attempt folder of the paint before",
+          "title": "Base Attempt"
+        },
+        "ops": {
+          "default": 0,
+          "title": "Ops",
+          "type": "integer"
+        },
+        "changed_faces": {
+          "default": 0,
+          "title": "Changed Faces",
+          "type": "integer"
+        },
+        "changed_regions": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Changed Regions",
+          "type": "array"
+        },
+        "palette": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Palette",
+          "type": "array"
+        },
+        "threemf": {
+          "description": "Job-relative 3MF the after numbers are for",
+          "title": "Threemf",
+          "type": "string"
+        },
+        "before": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PrintNumbers"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "after": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PrintNumbers"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None when p2p_slicer could not slice"
+        },
+        "sim": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SimSummary"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "proof_images": {
+          "description": "paint and print (simulated) from the 8 proof views",
+          "items": {
+            "$ref": "#/$defs/ProofImage"
+          },
+          "title": "Proof Images",
+          "type": "array"
+        },
+        "toolpaths": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Job-relative toolpaths.json",
+          "title": "Toolpaths"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "timings_s": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Timings S",
+          "type": "object"
+        }
+      },
+      "required": [
+        "palette",
+        "threemf"
+      ],
+      "title": "PaintPreview",
+      "type": "object"
+    }
+  }
+}

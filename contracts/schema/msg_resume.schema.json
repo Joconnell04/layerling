@@ -1,0 +1,44 @@
+{
+  "additionalProperties": false,
+  "description": "User clears a pause (budget cap, retry limit). Optional new caps for this job.",
+  "properties": {
+    "cap_usd": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cap Usd"
+    },
+    "cap_credits": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cap Credits"
+    },
+    "note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Note"
+    }
+  },
+  "title": "Resume",
+  "type": "object"
+}

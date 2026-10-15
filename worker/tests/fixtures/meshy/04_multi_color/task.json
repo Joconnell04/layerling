@@ -1,0 +1,27 @@
+{
+  "id": "01a0d181-d1d5-7558-adcd-988641922b37",
+  "type": "print-multi-color",
+  "name": "",
+  "art_style": "",
+  "object_prompt": "",
+  "style_prompt": "",
+  "negative_prompt": "",
+  "texture_prompt": "",
+  "texture_image_url": "",
+  "text_style_prompt": "",
+  "image_style_url": "",
+  "status": "SUCCEEDED",
+  "created_at": 1790221341169,
+  "progress": 100,
+  "started_at": 1790221341175,
+  "finished_at": 1790221342676,
+  "expires_at": 1790480542676,
+  "task_error": null,
+  "model_url": "",
+  "model_urls": {
+    "3mf": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d181-d1d5-7558-adcd-988641922b37/output/model.3mf?Expires=1790480542&Signature=REDACTED&Key-Pair-Id=REDACTED"
+  },
+  "thumbnail_url": "",
+  "texture_urls": null,
+  "consumed_credits": 10
+}

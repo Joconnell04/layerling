@@ -1,0 +1,51 @@
+[
+  {
+    "id": 6,
+    "received_at": "2026-09-24T03:42:17.197292+00:00",
+    "status": "SUCCEEDED",
+    "event": {
+      "id": "01a0d181-be8d-760b-8af9-ac49b5d2ee12",
+      "type": "print-analyze",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "created_at": 1790221336209,
+      "expires_at": 1790480536784,
+      "started_at": 1790221336216,
+      "task_error": null,
+      "finished_at": 1790221336784,
+      "printability": {
+        "status": "warning",
+        "metrics": {
+          "holes": 0,
+          "volume": 1.2299649903466559,
+          "is_watertight": false,
+          "degenerate_faces": 0,
+          "non_manifold_edges": 3
+        },
+        "_version": "v1",
+        "error_count": 0,
+        "issue_count": 2,
+        "evaluated_at": 1790221336582,
+        "warning_count": 2
+      },
+      "consumed_credits": 0
+    }
+  },
+  {
+    "id": 7,
+    "received_at": "2026-09-24T03:42:17.534179+00:00",
+    "status": "IN_PROGRESS",
+    "event": {
+      "id": "01a0d181-be8d-760b-8af9-ac49b5d2ee12",
+      "type": "print-analyze",
+      "status": "IN_PROGRESS",
+      "progress": 50,
+      "created_at": 1790221336209,
+      "expires_at": 0,
+      "started_at": 1790221336216,
+      "task_error": null,
+      "finished_at": 0,
+      "consumed_credits": 0
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[project]
+name = "p2p-sam3"
+version = "0.1.0"
+description = "SAM 3 part labels: Runpod client, mock backend, and back-projection to mesh faces."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "httpx>=0.27",
+    "numpy>=2.0",
+    "p2p-contracts",
+    "pillow>=10.0",
+    "scipy>=1.13",
+]
+
+[project.optional-dependencies]
+local = [
+    "torch>=2.8",
+    "torchvision>=0.23",
+    "transformers==5.17.0",
+]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

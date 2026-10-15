@@ -1,0 +1,81 @@
+{
+  "$defs": {
+    "ChecklistItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "enum": [
+            "spec_coverage",
+            "face_parts",
+            "markings",
+            "islands",
+            "creases",
+            "slot_count",
+            "sim_matches_intent",
+            "purge_under_40pct"
+          ],
+          "title": "Id",
+          "type": "string"
+        },
+        "passed": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Passed"
+        },
+        "by": {
+          "enum": [
+            "code",
+            "model"
+          ],
+          "title": "By",
+          "type": "string"
+        },
+        "evidence": {
+          "title": "Evidence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "by",
+        "evidence"
+      ],
+      "title": "ChecklistItem",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "items": {
+        "$ref": "#/$defs/ChecklistItem"
+      },
+      "title": "Items",
+      "type": "array"
+    },
+    "passed_all": {
+      "title": "Passed All",
+      "type": "boolean"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    }
+  },
+  "required": [
+    "items",
+    "passed_all",
+    "confidence"
+  ],
+  "title": "Checklist",
+  "type": "object"
+}

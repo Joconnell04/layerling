@@ -1,0 +1,50 @@
+{
+  "$defs": {
+    "TweakRoute": {
+      "enum": [
+        "rerender_concept",
+        "retexture",
+        "regenerate_mesh",
+        "paint_edit",
+        "geometry_op",
+        "ask_followup"
+      ],
+      "title": "TweakRoute",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "route": {
+      "$ref": "#/$defs/TweakRoute"
+    },
+    "instruction": {
+      "description": "Tweak rewritten for the executor stage",
+      "title": "Instruction",
+      "type": "string"
+    },
+    "followup_question": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Followup Question"
+    },
+    "model": {
+      "title": "Model",
+      "type": "string"
+    }
+  },
+  "required": [
+    "route",
+    "instruction",
+    "model"
+  ],
+  "title": "TweakDecision",
+  "type": "object"
+}

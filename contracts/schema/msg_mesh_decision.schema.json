@@ -1,0 +1,31 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "approve",
+        "retexture",
+        "regenerate"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "text": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Text"
+    }
+  },
+  "required": [
+    "action"
+  ],
+  "title": "MeshDecision",
+  "type": "object"
+}

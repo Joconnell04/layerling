@@ -1,0 +1,162 @@
+{
+  "$defs": {
+    "FilamentUsage": {
+      "additionalProperties": false,
+      "properties": {
+        "slot": {
+          "title": "Slot",
+          "type": "integer"
+        },
+        "filament_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filament Id"
+        },
+        "grams": {
+          "title": "Grams",
+          "type": "number"
+        },
+        "meters": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Meters"
+        }
+      },
+      "required": [
+        "slot",
+        "grams"
+      ],
+      "title": "FilamentUsage",
+      "type": "object"
+    },
+    "ProofImage": {
+      "additionalProperties": false,
+      "description": "One proof render: the product from one of regions.PROOF_VIEWS.",
+      "properties": {
+        "kind": {
+          "description": "model: the 3D model with its own texture; paint: filament colors as painted; print: the simulated print (slicer limits applied)",
+          "enum": [
+            "model",
+            "paint",
+            "print"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "view": {
+          "description": "A key of regions.PROOF_VIEWS",
+          "title": "View",
+          "type": "string"
+        },
+        "path": {
+          "description": "Job-relative PNG",
+          "title": "Path",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "view",
+        "path"
+      ],
+      "title": "ProofImage",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "threemf": {
+      "title": "Threemf",
+      "type": "string"
+    },
+    "render_sheet": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Render Sheet"
+    },
+    "preview_glb": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "GLB with per-face filament colors",
+      "title": "Preview Glb"
+    },
+    "print_time_s": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Print Time S"
+    },
+    "filaments": {
+      "items": {
+        "$ref": "#/$defs/FilamentUsage"
+      },
+      "title": "Filaments",
+      "type": "array"
+    },
+    "baseline_only": {
+      "default": false,
+      "description": "True for the M1 Meshy baseline 3MF",
+      "title": "Baseline Only",
+      "type": "boolean"
+    },
+    "slice_ok": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Slice Ok"
+    },
+    "proof_images": {
+      "description": "The shipped product from all 8 proof views, per kind",
+      "items": {
+        "$ref": "#/$defs/ProofImage"
+      },
+      "title": "Proof Images",
+      "type": "array"
+    }
+  },
+  "required": [
+    "threemf"
+  ],
+  "title": "JobResult",
+  "type": "object"
+}

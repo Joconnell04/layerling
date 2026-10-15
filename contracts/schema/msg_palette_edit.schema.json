@@ -1,0 +1,62 @@
+{
+  "additionalProperties": false,
+  "description": "User changes a finished job's filaments. The worker re-runs the palette stage, then write\nand slice, as new attempts; the slicer gate still applies.",
+  "properties": {
+    "slots": {
+      "description": "Filament ids in slot order; empty means auto-pick",
+      "items": {
+        "type": "string"
+      },
+      "title": "Slots",
+      "type": "array"
+    },
+    "mode": {
+      "description": "recolor: same slot count, regions painted with slot i take slots[i]. refit: re-match the model colors to the new set.",
+      "enum": [
+        "recolor",
+        "refit"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "source": {
+      "default": "owned",
+      "description": "any: may add unowned catalog colors",
+      "enum": [
+        "owned",
+        "any"
+      ],
+      "title": "Source",
+      "type": "string"
+    },
+    "max_colors": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Max Colors"
+    },
+    "note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Note"
+    }
+  },
+  "required": [
+    "mode"
+  ],
+  "title": "PaletteEdit",
+  "type": "object"
+}

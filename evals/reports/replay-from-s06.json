@@ -1,0 +1,1219 @@
+{
+ "suite": "replay-from-s06",
+ "partial": false,
+ "start": "s06",
+ "claude": "recorded",
+ "paint": "replay",
+ "wall_s": 655.0,
+ "jobs": [
+  {
+   "job": "sombrero",
+   "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+   "what": "live run 2: golden in a sombrero, figurine on a round base",
+   "start": "s06",
+   "claude": "recorded",
+   "paint": "replay",
+   "status": "done",
+   "error": null,
+   "pause_reason": null,
+   "review_reason": null,
+   "wall_s": 190.1,
+   "stages": {
+    "s01_intake": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 34.104,
+     "stored_status": "succeeded"
+    },
+    "s02_color_spec": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 24.505,
+     "stored_status": "succeeded"
+    },
+    "s03_concept": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 129.062,
+     "stored_status": "succeeded"
+    },
+    "s04_multiview": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 99.769,
+     "stored_status": "succeeded"
+    },
+    "s05_mesh": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 249.439,
+     "stored_status": "succeeded"
+    },
+    "s06_printability": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 19.15,
+     "stored_s": 533.317,
+     "stored_status": "succeeded"
+    },
+    "s07_baseline": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 29.738,
+     "stored_s": 181.48,
+     "stored_status": "succeeded"
+    },
+    "s08_palette": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 26.327,
+     "stored_s": 31.792,
+     "stored_status": "succeeded"
+    },
+    "s09_paint": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 0.017,
+     "stored_s": 1100.738,
+     "stored_status": "succeeded"
+    },
+    "s10_write": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 114.83,
+     "stored_s": 526.22,
+     "stored_status": "succeeded"
+    }
+   },
+   "gate": {
+    "stage": "s10_write",
+    "slicer": "Bambu",
+    "ok": true,
+    "errors": [],
+    "print_time_s": 25321.0,
+    "total_grams": 111.49,
+    "slots_used": 5,
+    "summary": "Bambu pass",
+    "stored": "Bambu pass",
+    "stored_ok": true
+   },
+   "form": {
+    "job": "figure",
+    "concept": "figure",
+    "concept_read": "figure",
+    "built": "figure",
+    "stored_built": "figure",
+    "consistent": true,
+    "same_as_stored": true
+   },
+   "concept_check": {
+    "approved": "r1c2",
+    "passed": true,
+    "candidates": 2,
+    "candidates_passed": 2,
+    "stored": true,
+    "rerun": false
+   },
+   "final_check": {
+    "passed": false,
+    "how": "stored verdict (paint replayed)",
+    "approved_anyway": true,
+    "stored": false
+   },
+   "slots": {
+    "rerun": 5,
+    "stored": 5
+   },
+   "print_time_s": {
+    "rerun": 25321.0,
+    "stored": 25330.0,
+    "delta_pct": -0.04
+   },
+   "grams": {
+    "rerun": 111.49,
+    "stored": 111.49,
+    "delta_pct": 0.0
+   },
+   "paint_replay": {
+    "from": "s09_paint/a2",
+    "iteration": 4,
+    "same_mesh": true,
+    "stored_agent": null,
+    "stored_check_passed": false,
+    "stored_review_approved": true,
+    "used": true
+   },
+   "geometry_vs_stored": {
+    "compared": true,
+    "tol_mm": 0.001,
+    "parts": [
+     "base",
+     "figure"
+    ],
+    "parts_same": true,
+    "filaments_same": true,
+    "orientation_same": true,
+    "supports_same": true,
+    "notes_same": true,
+    "warnings_same": true,
+    "transform_max_dev": 0.0,
+    "meshes": {
+     "base": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "figure": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     }
+    },
+    "max_vertex_dev_mm": 0.0,
+    "faces_same": true,
+    "report_diffs": [],
+    "ok": true
+   },
+   "meshy": {
+    "answered": 2,
+    "by_match": {
+     "hash": 2
+    },
+    "misses": 0,
+    "asset_fetches": 1,
+    "credits_charged": 0,
+    "credits_live": 10,
+    "calls": [
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s06_printability",
+      "key": "analyze",
+      "endpoint": "print-analyze",
+      "task_id": "01a0d64a-c058-75cb-86b9-78b0554c64be",
+      "match": "hash",
+      "request_hash": "a4906e117d7aeb11",
+      "diff": [],
+      "credits_live": 0
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s07_baseline",
+      "key": "mc.cartoon",
+      "endpoint": "print-multi-color",
+      "task_id": "01a0d652-e131-71db-8cef-bf0f5a794e59",
+      "match": "hash",
+      "request_hash": "1ba7ee01c0286330",
+      "diff": [],
+      "credits_live": 10
+     }
+    ]
+   },
+   "meshy_credits_booked": 0,
+   "claude_calls": {
+    "answered": 1,
+    "by_match": {
+     "text": 1
+    },
+    "check_items_filled": 0,
+    "calls": [
+     {
+      "stage": "s06_printability",
+      "purpose": "concept_read",
+      "match": "text",
+      "recorded": "s06_printability/a1/02"
+     }
+    ]
+   }
+  },
+  {
+   "job": "catfish",
+   "job_id": "f67c6a54-82d8-4d2f-a2ae-acba2e9a8261",
+   "what": "live run 2: cat holding a fish, flat charm keychain",
+   "start": "s06",
+   "claude": "recorded",
+   "paint": "replay",
+   "status": "done",
+   "error": null,
+   "pause_reason": null,
+   "review_reason": null,
+   "wall_s": 199.7,
+   "stages": {
+    "s01_intake": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 27.924,
+     "stored_status": "succeeded"
+    },
+    "s02_color_spec": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 15.442,
+     "stored_status": "succeeded"
+    },
+    "s03_concept": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 172.216,
+     "stored_status": "succeeded"
+    },
+    "s04_multiview": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 0.353,
+     "stored_status": "succeeded"
+    },
+    "s05_mesh": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 192.966,
+     "stored_status": "succeeded"
+    },
+    "s06_printability": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 14.972,
+     "stored_s": 34.084,
+     "stored_status": "succeeded"
+    },
+    "s07_baseline": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 11.446,
+     "stored_s": 31.625,
+     "stored_status": "succeeded"
+    },
+    "s08_palette": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 8.753,
+     "stored_s": 12.387,
+     "stored_status": "succeeded"
+    },
+    "s09_paint": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 0.018,
+     "stored_s": 42637.175,
+     "stored_status": "succeeded"
+    },
+    "s10_write": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 164.522,
+     "stored_s": 203.305,
+     "stored_status": "succeeded"
+    }
+   },
+   "gate": {
+    "stage": "s10_write",
+    "slicer": "Bambu",
+    "ok": true,
+    "errors": [],
+    "print_time_s": 3231.0,
+    "total_grams": 10.89,
+    "slots_used": 4,
+    "summary": "Bambu pass",
+    "stored": "Bambu pass",
+    "stored_ok": true
+   },
+   "form": {
+    "job": "flat",
+    "concept": "flat",
+    "concept_read": null,
+    "built": "flat",
+    "stored_built": "flat",
+    "consistent": true,
+    "same_as_stored": true
+   },
+   "concept_check": {
+    "approved": "r1c1",
+    "passed": true,
+    "candidates": 2,
+    "candidates_passed": 2,
+    "stored": true,
+    "rerun": false
+   },
+   "final_check": {
+    "passed": false,
+    "how": "stored verdict (paint replayed)",
+    "approved_anyway": true,
+    "stored": false
+   },
+   "slots": {
+    "rerun": 4,
+    "stored": 4
+   },
+   "print_time_s": {
+    "rerun": 3231.0,
+    "stored": 3231.0,
+    "delta_pct": 0.0
+   },
+   "grams": {
+    "rerun": 10.89,
+    "stored": 10.89,
+    "delta_pct": 0.0
+   },
+   "paint_replay": {
+    "from": "s09_paint/a1",
+    "iteration": 14,
+    "same_mesh": true,
+    "stored_agent": null,
+    "stored_check_passed": false,
+    "stored_review_approved": true,
+    "used": true
+   },
+   "geometry_vs_stored": {
+    "compared": true,
+    "tol_mm": 0.001,
+    "parts": [
+     "back",
+     "figure",
+     "keyring"
+    ],
+    "parts_same": true,
+    "filaments_same": false,
+    "orientation_same": true,
+    "supports_same": true,
+    "notes_same": false,
+    "warnings_same": true,
+    "transform_max_dev": 0.0,
+    "meshes": {
+     "back": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "figure": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "keyring": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     }
+    },
+    "max_vertex_dev_mm": 0.0,
+    "faces_same": true,
+    "report_diffs": [
+     "addon_colors.1.delta_e",
+     "addon_colors.1.filament_id",
+     "addon_colors.1.from",
+     "addon_colors.1.target_hex"
+    ],
+    "ok": false
+   },
+   "meshy": {
+    "answered": 2,
+    "by_match": {
+     "hash": 2
+    },
+    "misses": 0,
+    "asset_fetches": 1,
+    "credits_charged": 0,
+    "credits_live": 10,
+    "calls": [
+     {
+      "job_id": "f67c6a54-82d8-4d2f-a2ae-acba2e9a8261",
+      "stage": "s06_printability",
+      "key": "analyze",
+      "endpoint": "print-analyze",
+      "task_id": "01a0d649-7f67-73b4-9fb4-31b9306a6f52",
+      "match": "hash",
+      "request_hash": "a3bfdbe7137f4351",
+      "diff": [],
+      "credits_live": 0
+     },
+     {
+      "job_id": "f67c6a54-82d8-4d2f-a2ae-acba2e9a8261",
+      "stage": "s07_baseline",
+      "key": "mc.cartoon",
+      "endpoint": "print-multi-color",
+      "task_id": "01a0d64a-b8ce-73b2-bebb-d69853e832d8",
+      "match": "hash",
+      "request_hash": "5842d0eaea9555aa",
+      "diff": [],
+      "credits_live": 10
+     }
+    ]
+   },
+   "meshy_credits_booked": 0,
+   "claude_calls": {
+    "answered": 0,
+    "by_match": {
+     "miss": 1
+    },
+    "check_items_filled": 0,
+    "calls": [
+     {
+      "stage": "s06_printability",
+      "purpose": "concept_read",
+      "match": "miss",
+      "recorded": null
+     }
+    ]
+   }
+  },
+  {
+   "job": "bronco",
+   "job_id": "eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb",
+   "what": "live run 2: Bronco nameplate",
+   "start": "s06",
+   "claude": "recorded",
+   "paint": "replay",
+   "status": "done",
+   "error": null,
+   "pause_reason": null,
+   "review_reason": null,
+   "wall_s": 85.0,
+   "stages": {
+    "s01_intake": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 26.008,
+     "stored_status": "succeeded"
+    },
+    "s02_color_spec": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 11.753,
+     "stored_status": "succeeded"
+    },
+    "s03_concept": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 292.503,
+     "stored_status": "succeeded"
+    },
+    "s04_multiview": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 104.031,
+     "stored_status": "succeeded"
+    },
+    "s05_mesh": {
+     "status": "stored",
+     "attempt": 2,
+     "wall_s": null,
+     "stored_s": 6086.608,
+     "stored_status": "succeeded"
+    },
+    "s06_printability": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 4.379,
+     "stored_s": 1074.027,
+     "stored_status": "succeeded"
+    },
+    "s07_baseline": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 13.39,
+     "stored_s": 56.192,
+     "stored_status": "succeeded"
+    },
+    "s08_palette": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 12.507,
+     "stored_s": 28.757,
+     "stored_status": "succeeded"
+    },
+    "s09_paint": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 0.017,
+     "stored_s": 429.924,
+     "stored_status": "succeeded"
+    },
+    "s10_write": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 54.71,
+     "stored_s": 104.914,
+     "stored_status": "succeeded"
+    }
+   },
+   "gate": {
+    "stage": "s10_write",
+    "slicer": "Bambu",
+    "ok": true,
+    "errors": [],
+    "print_time_s": 21677.0,
+    "total_grams": 104.61,
+    "slots_used": 4,
+    "summary": "Bambu pass",
+    "stored": "Bambu pass",
+    "stored_ok": true
+   },
+   "form": {
+    "job": "figure",
+    "concept": "figure",
+    "concept_read": "figure",
+    "built": "figure",
+    "stored_built": "figure",
+    "consistent": true,
+    "same_as_stored": true
+   },
+   "concept_check": {
+    "approved": "r1c1",
+    "passed": true,
+    "candidates": 2,
+    "candidates_passed": 2,
+    "stored": true,
+    "rerun": false
+   },
+   "final_check": {
+    "passed": true,
+    "how": "stored verdict (paint replayed)",
+    "approved_anyway": true,
+    "stored": true
+   },
+   "slots": {
+    "rerun": 4,
+    "stored": 4
+   },
+   "print_time_s": {
+    "rerun": 21677.0,
+    "stored": 21678.0,
+    "delta_pct": -0.0
+   },
+   "grams": {
+    "rerun": 104.61,
+    "stored": 104.61,
+    "delta_pct": 0.0
+   },
+   "paint_replay": {
+    "from": "s09_paint/a1",
+    "iteration": 3,
+    "same_mesh": true,
+    "stored_agent": null,
+    "stored_check_passed": true,
+    "stored_review_approved": true,
+    "used": true
+   },
+   "geometry_vs_stored": {
+    "compared": true,
+    "tol_mm": 0.001,
+    "parts": [
+     "figure",
+     "plate",
+     "text"
+    ],
+    "parts_same": true,
+    "filaments_same": true,
+    "orientation_same": true,
+    "supports_same": true,
+    "notes_same": true,
+    "warnings_same": true,
+    "transform_max_dev": 0.0,
+    "meshes": {
+     "figure": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "plate": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "text": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     }
+    },
+    "max_vertex_dev_mm": 0.0,
+    "faces_same": true,
+    "report_diffs": [],
+    "ok": true
+   },
+   "meshy": {
+    "answered": 2,
+    "by_match": {
+     "hash": 2
+    },
+    "misses": 0,
+    "asset_fetches": 1,
+    "credits_charged": 0,
+    "credits_live": 10,
+    "calls": [
+     {
+      "job_id": "eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb",
+      "stage": "s06_printability",
+      "key": "analyze",
+      "endpoint": "print-analyze",
+      "task_id": "01a0d6aa-3b7b-746d-bad8-66dc6c350ae5",
+      "match": "hash",
+      "request_hash": "c87f478fe7b7ccde",
+      "diff": [],
+      "credits_live": 0
+     },
+     {
+      "job_id": "eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb",
+      "stage": "s07_baseline",
+      "key": "mc.cartoon",
+      "endpoint": "print-multi-color",
+      "task_id": "01a0d6ba-9f14-773a-8798-0574a8eac588",
+      "match": "hash",
+      "request_hash": "143efa7292a48728",
+      "diff": [],
+      "credits_live": 10
+     }
+    ]
+   },
+   "meshy_credits_booked": 0,
+   "claude_calls": {
+    "answered": 1,
+    "by_match": {
+     "text": 1
+    },
+    "check_items_filled": 0,
+    "calls": [
+     {
+      "stage": "s06_printability",
+      "purpose": "concept_read",
+      "match": "text",
+      "recorded": "s06_printability/a1/02"
+     }
+    ]
+   }
+  },
+  {
+   "job": "frenchie",
+   "job_id": "819cc491-c341-470a-bb97-63a194fa8dca",
+   "what": "M3: Frenchie keychain, thin slice",
+   "start": "s06",
+   "claude": "recorded",
+   "paint": "replay",
+   "status": "done",
+   "error": null,
+   "pause_reason": null,
+   "review_reason": null,
+   "wall_s": 103.0,
+   "stages": {
+    "s01_intake": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 361.587,
+     "stored_status": "succeeded"
+    },
+    "s02_color_spec": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    },
+    "s03_concept": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 105.615,
+     "stored_status": "succeeded"
+    },
+    "s04_multiview": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    },
+    "s05_mesh": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 187.23,
+     "stored_status": "succeeded"
+    },
+    "s06_printability": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 8.454,
+     "stored_s": 100.787,
+     "stored_status": "succeeded"
+    },
+    "s07_baseline": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 94.57,
+     "stored_s": 72.273,
+     "stored_status": "succeeded"
+    },
+    "s08_palette": {
+     "status": null,
+     "attempt": null,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    },
+    "s09_paint": {
+     "status": null,
+     "attempt": null,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    },
+    "s10_write": {
+     "status": null,
+     "attempt": null,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    }
+   },
+   "gate": {
+    "stage": "s07_baseline",
+    "slicer": "Bambu",
+    "ok": true,
+    "errors": [],
+    "print_time_s": 7240.0,
+    "total_grams": 20.11,
+    "slots_used": 2,
+    "summary": "Bambu pass",
+    "stored": "Bambu pass",
+    "stored_ok": true
+   },
+   "form": {
+    "job": null,
+    "concept": null,
+    "concept_read": null,
+    "built": "figure",
+    "stored_built": "flat",
+    "consistent": true,
+    "same_as_stored": false
+   },
+   "concept_check": {
+    "approved": "r1c2",
+    "passed": null,
+    "candidates": 2,
+    "candidates_passed": 0,
+    "stored": null,
+    "rerun": false
+   },
+   "final_check": {
+    "passed": null,
+    "how": "no s09",
+    "stored": null
+   },
+   "slots": {
+    "rerun": 2,
+    "stored": 3
+   },
+   "print_time_s": {
+    "rerun": 7240.0,
+    "stored": 2333.0,
+    "delta_pct": 210.33
+   },
+   "grams": {
+    "rerun": 20.11,
+    "stored": 9.54,
+    "delta_pct": 110.8
+   },
+   "paint_replay": null,
+   "geometry_vs_stored": {
+    "compared": true,
+    "tol_mm": 0.001,
+    "parts": [
+     "figure",
+     "keyring"
+    ],
+    "parts_same": false,
+    "filaments_same": true,
+    "orientation_same": false,
+    "supports_same": false,
+    "notes_same": false,
+    "warnings_same": false,
+    "transform_max_dev": 23.571937792735724,
+    "meshes": {
+     "figure": {
+      "identical": false,
+      "faces_same": true,
+      "max_dev_mm": 38.06084632873535,
+      "faces": [
+       919464,
+       919464
+      ]
+     },
+     "keyring": {
+      "identical": false,
+      "faces_same": false,
+      "max_dev_mm": Infinity,
+      "faces": [
+       1086,
+       1192
+      ]
+     }
+    },
+    "max_vertex_dev_mm": Infinity,
+    "faces_same": false,
+    "report_diffs": [
+     "addon_colors.0.delta_e",
+     "addon_colors.0.filament_id",
+     "addon_colors.0.from",
+     "addon_colors.0.owned",
+     "addon_colors.0.part",
+     "addon_colors.0.role",
+     "addon_colors.0.target_hex",
+     "back.figure_sink_mm",
+     "back.rim_mm",
+     "back.t_mm",
+     "bed_contact_mm2",
+     "figure_height_mm",
+     "figure_palette.0.filament_id",
+     "figure_palette.0.hex",
+     "figure_palette.0.share",
+     "figure_palette.1.filament_id",
+     "figure_palette.1.hex",
+     "figure_palette.1.share",
+     "figure_palette.2.filament_id",
+     "figure_palette.2.hex",
+     "figure_palette.2.share",
+     "figure_palette.3.filament_id",
+     "figure_palette.3.hex",
+     "figure_palette.3.share",
+     "figure_palette.4.filament_id",
+     "figure_palette.4.hex",
+     "figure_palette.4.share",
+     "figure_palette.5.filament_id",
+     "figure_palette.5.hex",
+     "figure_palette.5.share",
+     "figure_palette.6.filament_id",
+     "figure_palette.6.hex",
+     "figure_palette.6.share",
+     "figure_palette.7.filament_id",
+     "figure_palette.7.hex",
+     "figure_palette.7.share",
+     "figure_size_mm",
+     "form",
+     "form_source",
+     "hang.area"
+    ],
+    "ok": false
+   },
+   "meshy": {
+    "answered": 2,
+    "by_match": {
+     "hash": 2
+    },
+    "misses": 0,
+    "asset_fetches": 1,
+    "credits_charged": 0,
+    "credits_live": 10,
+    "calls": [
+     {
+      "job_id": "819cc491-c341-470a-bb97-63a194fa8dca",
+      "stage": "s06_printability",
+      "key": "analyze",
+      "endpoint": "print-analyze",
+      "task_id": "01a0d386-e67a-70e4-8a67-c12f1ada455a",
+      "match": "hash",
+      "request_hash": "7b8e5e84d362b78e",
+      "diff": [],
+      "credits_live": 0
+     },
+     {
+      "job_id": "819cc491-c341-470a-bb97-63a194fa8dca",
+      "stage": "s07_baseline",
+      "key": "mc.cartoon",
+      "endpoint": "print-multi-color",
+      "task_id": "01a0d388-70d7-749b-a66d-1fa56a38d301",
+      "match": "hash",
+      "request_hash": "baedaaa134ac2c91",
+      "diff": [],
+      "credits_live": 10
+     }
+    ]
+   },
+   "meshy_credits_booked": 0,
+   "claude_calls": {
+    "answered": 0,
+    "by_match": {
+     "miss": 1
+    },
+    "check_items_filled": 0,
+    "calls": [
+     {
+      "stage": "s06_printability",
+      "purpose": "concept_read",
+      "match": "miss",
+      "recorded": null
+     }
+    ]
+   }
+  },
+  {
+   "job": "bronco_m3",
+   "job_id": "1785a480-84b8-41f9-8f97-1005b6d7d0a6",
+   "what": "M3: Bronco nameplate, thin slice",
+   "start": "s06",
+   "claude": "recorded",
+   "paint": "replay",
+   "status": "done",
+   "error": null,
+   "pause_reason": null,
+   "review_reason": null,
+   "wall_s": 76.4,
+   "stages": {
+    "s01_intake": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 67.63,
+     "stored_status": "succeeded"
+    },
+    "s02_color_spec": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    },
+    "s03_concept": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 118.46,
+     "stored_status": "succeeded"
+    },
+    "s04_multiview": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    },
+    "s05_mesh": {
+     "status": "stored",
+     "attempt": 1,
+     "wall_s": null,
+     "stored_s": 224.816,
+     "stored_status": "succeeded"
+    },
+    "s06_printability": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 9.838,
+     "stored_s": 43.173,
+     "stored_status": "succeeded"
+    },
+    "s07_baseline": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 66.552,
+     "stored_s": 24.514,
+     "stored_status": "succeeded"
+    },
+    "s08_palette": {
+     "status": null,
+     "attempt": null,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    },
+    "s09_paint": {
+     "status": null,
+     "attempt": null,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    },
+    "s10_write": {
+     "status": null,
+     "attempt": null,
+     "wall_s": null,
+     "stored_s": null,
+     "stored_status": "skipped"
+    }
+   },
+   "gate": {
+    "stage": "s07_baseline",
+    "slicer": "Bambu",
+    "ok": true,
+    "errors": [],
+    "print_time_s": 33407.0,
+    "total_grams": 126.34,
+    "slots_used": 3,
+    "summary": "Bambu pass",
+    "stored": "Bambu pass",
+    "stored_ok": true
+   },
+   "form": {
+    "job": null,
+    "concept": null,
+    "concept_read": null,
+    "built": "figure",
+    "stored_built": "figure",
+    "consistent": true,
+    "same_as_stored": true
+   },
+   "concept_check": {
+    "approved": "r1c1",
+    "passed": null,
+    "candidates": 2,
+    "candidates_passed": 0,
+    "stored": null,
+    "rerun": false
+   },
+   "final_check": {
+    "passed": null,
+    "how": "no s09",
+    "stored": null
+   },
+   "slots": {
+    "rerun": 3,
+    "stored": 3
+   },
+   "print_time_s": {
+    "rerun": 33407.0,
+    "stored": 33716.0,
+    "delta_pct": -0.92
+   },
+   "grams": {
+    "rerun": 126.34,
+    "stored": 127.15,
+    "delta_pct": -0.64
+   },
+   "paint_replay": null,
+   "geometry_vs_stored": {
+    "compared": true,
+    "tol_mm": 0.001,
+    "parts": [
+     "figure",
+     "plate",
+     "text"
+    ],
+    "parts_same": true,
+    "filaments_same": true,
+    "orientation_same": true,
+    "supports_same": true,
+    "notes_same": false,
+    "warnings_same": false,
+    "transform_max_dev": 0.0,
+    "meshes": {
+     "figure": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "plate": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "text": {
+      "identical": false,
+      "faces_same": false,
+      "max_dev_mm": Infinity,
+      "faces": [
+       4204,
+       4180
+      ]
+     }
+    },
+    "max_vertex_dev_mm": Infinity,
+    "faces_same": false,
+    "report_diffs": [
+     "addon_colors.0.delta_e",
+     "addon_colors.0.filament_id",
+     "addon_colors.0.from",
+     "addon_colors.0.owned",
+     "addon_colors.0.part",
+     "addon_colors.0.role",
+     "addon_colors.0.target_hex",
+     "addon_colors.1.delta_e",
+     "addon_colors.1.filament_id",
+     "addon_colors.1.from",
+     "addon_colors.1.owned",
+     "addon_colors.1.part",
+     "addon_colors.1.role",
+     "addon_colors.1.target_hex",
+     "center_of_mass",
+     "com_margin_mm",
+     "figure_height_mm",
+     "figure_palette.0.filament_id",
+     "figure_palette.0.hex",
+     "figure_palette.0.share",
+     "figure_palette.1.filament_id",
+     "figure_palette.1.hex",
+     "figure_palette.1.share",
+     "figure_palette.2.filament_id",
+     "figure_palette.2.hex",
+     "figure_palette.2.share",
+     "figure_palette.3.filament_id",
+     "figure_palette.3.hex",
+     "figure_palette.3.share",
+     "figure_palette.4.filament_id",
+     "figure_palette.4.hex",
+     "figure_palette.4.share",
+     "figure_palette.5.filament_id",
+     "figure_palette.5.hex",
+     "figure_palette.5.share",
+     "figure_palette.6.filament_id",
+     "figure_palette.6.hex",
+     "figure_palette.6.share",
+     "figure_palette.7.filament_id",
+     "figure_palette.7.hex"
+    ],
+    "ok": false
+   },
+   "meshy": {
+    "answered": 2,
+    "by_match": {
+     "hash": 2
+    },
+    "misses": 0,
+    "asset_fetches": 1,
+    "credits_charged": 0,
+    "credits_live": 10,
+    "calls": [
+     {
+      "job_id": "1785a480-84b8-41f9-8f97-1005b6d7d0a6",
+      "stage": "s06_printability",
+      "key": "analyze",
+      "endpoint": "print-analyze",
+      "task_id": "01a0d1c7-032b-7175-884a-fb06b8b18914",
+      "match": "hash",
+      "request_hash": "bbd37affcf856434",
+      "diff": [],
+      "credits_live": 0
+     },
+     {
+      "job_id": "1785a480-84b8-41f9-8f97-1005b6d7d0a6",
+      "stage": "s07_baseline",
+      "key": "mc.cartoon",
+      "endpoint": "print-multi-color",
+      "task_id": "01a0d1c7-ac68-7062-ae0d-d44df6a64d1d",
+      "match": "hash",
+      "request_hash": "d78f46a57208b381",
+      "diff": [],
+      "credits_live": 10
+     }
+    ]
+   },
+   "meshy_credits_booked": 0,
+   "claude_calls": {
+    "answered": 0,
+    "by_match": {
+     "miss": 1
+    },
+    "check_items_filled": 0,
+    "calls": [
+     {
+      "stage": "s06_printability",
+      "purpose": "concept_read",
+      "match": "miss",
+      "recorded": null
+     }
+    ]
+   }
+  }
+ ]
+}

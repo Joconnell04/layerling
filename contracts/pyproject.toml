@@ -1,0 +1,10 @@
+[project]
+name = "p2p-contracts"
+version = "0.1.0"
+description = "Shared data contracts for photo2print. Source of truth for every workstream."
+requires-python = ">=3.12,<3.13"
+dependencies = ["pydantic>=2.8"]
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

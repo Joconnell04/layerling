@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "id": "spec_coverage",
+      "passed": true,
+      "by": "code",
+      "evidence": "11 of 11 spec parts painted"
+    },
+    {
+      "id": "face_parts",
+      "passed": false,
+      "by": "model",
+      "evidence": "Left eye merged into head in simulation"
+    },
+    {
+      "id": "markings",
+      "passed": true,
+      "by": "model",
+      "evidence": "Belly patch present"
+    },
+    {
+      "id": "islands",
+      "passed": true,
+      "by": "code",
+      "evidence": "No island under 0.8 mm2"
+    },
+    {
+      "id": "creases",
+      "passed": null,
+      "by": "code",
+      "evidence": "62% of boundary length on creases"
+    },
+    {
+      "id": "slot_count",
+      "passed": true,
+      "by": "code",
+      "evidence": "4 of 4 AMS slots"
+    },
+    {
+      "id": "sim_matches_intent",
+      "passed": false,
+      "by": "model",
+      "evidence": "Eye missing in sim_front"
+    },
+    {
+      "id": "purge_under_40pct",
+      "passed": true,
+      "by": "code",
+      "evidence": "Purge 21% of model mass"
+    }
+  ],
+  "passed_all": false,
+  "confidence": 0.58
+}

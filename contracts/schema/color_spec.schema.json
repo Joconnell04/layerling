@@ -1,0 +1,145 @@
+{
+  "$defs": {
+    "PartSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "part": {
+          "description": "One of PART_VOCAB",
+          "title": "Part",
+          "type": "string"
+        },
+        "label": {
+          "description": "Unique within subject, e.g. left_eye, back_patch",
+          "title": "Label",
+          "type": "string"
+        },
+        "color_name": {
+          "title": "Color Name",
+          "type": "string"
+        },
+        "hex": {
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "title": "Hex",
+          "type": "string"
+        },
+        "lab": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Lab",
+          "type": "array"
+        },
+        "required": {
+          "default": true,
+          "title": "Required",
+          "type": "boolean"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "crop": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Job-relative path to the photo crop of this part",
+          "title": "Crop"
+        },
+        "photo_index": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Photo Index"
+        }
+      },
+      "required": [
+        "part",
+        "label",
+        "color_name",
+        "hex",
+        "lab"
+      ],
+      "title": "PartSpec",
+      "type": "object"
+    },
+    "SubjectSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "subject_id": {
+          "title": "Subject Id",
+          "type": "string"
+        },
+        "parts": {
+          "items": {
+            "$ref": "#/$defs/PartSpec"
+          },
+          "title": "Parts",
+          "type": "array"
+        }
+      },
+      "required": [
+        "subject_id",
+        "parts"
+      ],
+      "title": "SubjectSpec",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "subjects": {
+      "items": {
+        "$ref": "#/$defs/SubjectSpec"
+      },
+      "title": "Subjects",
+      "type": "array"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "subjects"
+  ],
+  "title": "ColorSpec",
+  "type": "object"
+}

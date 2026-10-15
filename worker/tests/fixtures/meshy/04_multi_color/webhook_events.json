@@ -1,0 +1,64 @@
+[
+  {
+    "id": 8,
+    "received_at": "2026-09-24T03:42:22.522233+00:00",
+    "status": "IN_PROGRESS",
+    "event": {
+      "id": "01a0d181-d1d5-7558-adcd-988641922b37",
+      "name": "",
+      "type": "print-multi-color",
+      "status": "IN_PROGRESS",
+      "progress": 50,
+      "art_style": "",
+      "model_url": "",
+      "created_at": 1790221341169,
+      "expires_at": 0,
+      "model_urls": {},
+      "started_at": 1790221341175,
+      "task_error": null,
+      "finished_at": 0,
+      "style_prompt": "",
+      "texture_urls": null,
+      "object_prompt": "",
+      "thumbnail_url": "",
+      "texture_prompt": "",
+      "image_style_url": "",
+      "negative_prompt": "",
+      "consumed_credits": 10,
+      "text_style_prompt": "",
+      "texture_image_url": ""
+    }
+  },
+  {
+    "id": 9,
+    "received_at": "2026-09-24T03:42:23.405943+00:00",
+    "status": "SUCCEEDED",
+    "event": {
+      "id": "01a0d181-d1d5-7558-adcd-988641922b37",
+      "name": "",
+      "type": "print-multi-color",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "art_style": "",
+      "model_url": "",
+      "created_at": 1790221341169,
+      "expires_at": 1790480542676,
+      "model_urls": {
+        "3mf": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d181-d1d5-7558-adcd-988641922b37/output/model.3mf?Expires=1790480542&Signature=REDACTED&Key-Pair-Id=REDACTED"
+      },
+      "started_at": 1790221341175,
+      "task_error": null,
+      "finished_at": 1790221342676,
+      "style_prompt": "",
+      "texture_urls": null,
+      "object_prompt": "",
+      "thumbnail_url": "",
+      "texture_prompt": "",
+      "image_style_url": "",
+      "negative_prompt": "",
+      "consumed_credits": 10,
+      "text_style_prompt": "",
+      "texture_image_url": ""
+    }
+  }
+]

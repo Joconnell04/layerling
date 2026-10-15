@@ -1,0 +1,79 @@
+[
+  {
+    "id": 4,
+    "received_at": "2026-09-24T03:40:06.957853+00:00",
+    "status": "IN_PROGRESS",
+    "event": {
+      "id": "01a0d17f-760d-716a-bb19-348bc00a15df",
+      "name": "",
+      "type": "image-to-3d",
+      "status": "IN_PROGRESS",
+      "progress": 50,
+      "art_style": "",
+      "model_url": "",
+      "created_at": 1790221186909,
+      "expires_at": 0,
+      "model_urls": {},
+      "started_at": 1790221186916,
+      "task_error": null,
+      "finished_at": 0,
+      "style_prompt": "",
+      "texture_urls": null,
+      "object_prompt": "",
+      "thumbnail_url": "",
+      "texture_prompt": "",
+      "image_style_url": "",
+      "negative_prompt": "",
+      "consumed_credits": 15,
+      "text_style_prompt": "",
+      "texture_image_url": ""
+    }
+  },
+  {
+    "id": 5,
+    "received_at": "2026-09-24T03:42:13.657765+00:00",
+    "status": "SUCCEEDED",
+    "event": {
+      "id": "01a0d17f-760d-716a-bb19-348bc00a15df",
+      "name": "",
+      "type": "image-to-3d",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "art_style": "",
+      "model_url": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/model.glb?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+      "created_at": 1790221186909,
+      "expires_at": 1790480533126,
+      "model_urls": {
+        "fbx": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/model.fbx?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+        "glb": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/model.glb?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+        "mtl": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/model.mtl?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+        "obj": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/model.obj?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+        "stl": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/model.stl?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+        "usdz": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/model.usdz?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED"
+      },
+      "started_at": 1790221186916,
+      "task_error": null,
+      "finished_at": 1790221333126,
+      "style_prompt": "",
+      "texture_urls": [
+        {
+          "base_color": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/texture_0.png?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED"
+        }
+      ],
+      "object_prompt": "",
+      "thumbnail_url": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/preview.png?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+      "texture_prompt": "",
+      "thumbnail_urls": {
+        "back": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/preview_back.png?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+        "left": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/preview_left.png?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+        "front": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/preview_front.png?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED",
+        "right": "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/tasks/01a0d17f-760d-716a-bb19-348bc00a15df/output/preview_right.png?Expires=1790480533&Signature=REDACTED&Key-Pair-Id=REDACTED"
+      },
+      "image_style_url": "",
+      "negative_prompt": "",
+      "consumed_credits": 15,
+      "text_style_prompt": "",
+      "texture_image_url": ""
+    }
+  }
+]

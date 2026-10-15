@@ -1,0 +1,300 @@
+{
+  "$defs": {
+    "CheckItem": {
+      "additionalProperties": false,
+      "description": "One line of a concept or view check.",
+      "properties": {
+        "id": {
+          "description": "e.g. part.keyring_loop, text, ask.1, markings, no_extra_base",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "part",
+            "text",
+            "ask",
+            "markings",
+            "no_extra_base",
+            "figure_identical",
+            "view"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "label": {
+          "description": "What must be true, e.g. Name reads Bronco",
+          "maxLength": 160,
+          "title": "Label",
+          "type": "string"
+        },
+        "on": {
+          "description": "figure: the figure-only image; product: the product concept; view: s04",
+          "enum": [
+            "figure",
+            "product",
+            "view"
+          ],
+          "title": "On",
+          "type": "string"
+        },
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "maxLength": 300,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        },
+        "by": {
+          "default": "model",
+          "enum": [
+            "model",
+            "code"
+          ],
+          "title": "By",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "label",
+        "on",
+        "passed"
+      ],
+      "title": "CheckItem",
+      "type": "object"
+    },
+    "ConceptCandidate": {
+      "additionalProperties": false,
+      "description": "One concept. `image` is the product concept the customer approves (the figure with the\nplate and name, the loop, or the base; the charm for a flat form). `figure_image` is the\nfigure alone: the 3D input for a figure-form job and the source of a flat charm.",
+      "properties": {
+        "id": {
+          "description": "r<round>c<n>, e.g. r1c2",
+          "title": "Id",
+          "type": "string"
+        },
+        "round": {
+          "title": "Round",
+          "type": "integer"
+        },
+        "image_model": {
+          "description": "gpt-image-2, nano-banana-pro, ...",
+          "title": "Image Model",
+          "type": "string"
+        },
+        "image": {
+          "title": "Image",
+          "type": "string"
+        },
+        "meshy_task_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The figure render task: tweaks chain from it, and s04 and s05 build a figure-form job from it",
+          "title": "Meshy Task Id"
+        },
+        "prompt": {
+          "title": "Prompt",
+          "type": "string"
+        },
+        "figure_image": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None on jobs from before the split: the figure is `image`",
+          "title": "Figure Image"
+        },
+        "form": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProductForm"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "product_task_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Task that drew the product: the add-on edit (figure form) or the Creative Lab prototype that s05 builds (flat form)",
+          "title": "Product Task Id"
+        },
+        "product_source": {
+          "default": "figure",
+          "description": "figure: no visible add-on, the product is the figure; edit: an image edit added the add-ons and the figure pixels were pasted back; code: add-ons drawn in code; prototype: a Creative Lab charm with the loop drawn in code",
+          "enum": [
+            "figure",
+            "edit",
+            "code",
+            "prototype"
+          ],
+          "title": "Product Source",
+          "type": "string"
+        },
+        "check": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ConceptCheck"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "round",
+        "image_model",
+        "image",
+        "prompt"
+      ],
+      "title": "ConceptCandidate",
+      "type": "object"
+    },
+    "ConceptCheck": {
+      "additionalProperties": false,
+      "description": "Claude vision check of one candidate against the photos and the request, plus code checks\n(figure pixels identical, exact name). A failed check starts a regeneration with changed\ninputs, capped per job (job.MAX_CONCEPT_FIXES).",
+      "properties": {
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/$defs/CheckItem"
+          },
+          "title": "Items",
+          "type": "array"
+        },
+        "text_read": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The name as the model read it",
+          "title": "Text Read"
+        },
+        "model": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model"
+        },
+        "figure_identical": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Share of the figure's opaque pixels copied unchanged into the product concept (1.0 = identical; loops keep their attachment band)",
+          "title": "Figure Identical"
+        }
+      },
+      "required": [
+        "passed"
+      ],
+      "title": "ConceptCheck",
+      "type": "object"
+    },
+    "ProductForm": {
+      "description": "What the printed object is, set at intake and kept by every stage (FROM JACKSON).\n\nflat: a relief charm, a height field of the front view with a flat back.\nfigure: a full 3D figure, never flattened later.",
+      "enum": [
+        "flat",
+        "figure"
+      ],
+      "title": "ProductForm",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "round": {
+      "title": "Round",
+      "type": "integer"
+    },
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/ConceptCandidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "rounds_left": {
+      "title": "Rounds Left",
+      "type": "integer"
+    },
+    "tweaks_exhausted": {
+      "default": false,
+      "description": "True once MAX_TWEAK_ROUNDS are used: pick only",
+      "title": "Tweaks Exhausted",
+      "type": "boolean"
+    },
+    "form": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ProductForm"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "round",
+    "candidates",
+    "rounds_left"
+  ],
+  "title": "ConceptsPayload",
+  "type": "object"
+}

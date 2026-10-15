@@ -1,0 +1,172 @@
+/*
+ * Public site layout helpers that need container units (design system v1). Scales are set in CSS
+ * from the container's width, so a drawing is at its final size before paint and never shifts.
+ */
+
+/* ------------------------------------------------------------------ product lineup */
+/* One px-per-mm (--ppm) for the whole shelf. Columns in mm: figure 74.2, nameplate 120, then three
+   53 mm columns wide enough for their text. 3.4 px per mm at 1296 px; phones scroll sideways at a
+   fixed 2.6 px per mm with snap points. */
+
+.lineup {
+  container-type: inline-size;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 16px;
+  scrollbar-width: none;
+}
+
+.lineup::-webkit-scrollbar {
+  display: none;
+}
+
+.lineup-track {
+  --ppm: 2.6px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  padding-top: 8px;
+}
+
+.lineup-row {
+  display: grid;
+  grid-template-columns: calc(var(--ppm) * 74.2) calc(var(--ppm) * 120) repeat(3, calc(var(--ppm) * 53));
+  column-gap: 24px;
+}
+
+.lineup-item {
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+@container (min-width: 900px) {
+  .lineup-track {
+    --ppm: min(3.4px, calc((100cqw - 96px) / 353.2));
+    width: auto;
+  }
+}
+
+/* ------------------------------------------------------------------ size cells */
+/* Each cell draws its tier at one px-per-mm shared by all four cells: the L object fills the
+   88 px render box, or the cell's width for wide products. --hl and --wl are the L object's
+   height and width in mm (set inline). */
+
+.size-cell {
+  container-type: inline-size;
+}
+
+.size-cell-render {
+  --cppm: min(calc(82px / var(--hl)), calc((100cqw - 12px) / var(--wl)));
+}
+
+/* ------------------------------------------------------------------ size visualizer */
+/* One px-per-mm (--vppm) for products and the reference object: the tallest item fits --vh, and
+   the reference plus four equal columns fit the width. --vh-mm is the tallest height in mm, --vw-mm
+   the reference width plus four L widths, in mm. A calibrated page sets --vppm-fixed. */
+
+.visualizer {
+  container-type: inline-size;
+}
+
+.visualizer-track {
+  --vppm: var(--vppm-fixed, min(calc(var(--vh) / var(--vh-mm)), calc((100cqw - var(--vgaps)) / var(--vw-mm))));
+}
+
+/* ------------------------------------------------------------------ dialog */
+/* A sheet over a scrim: 220 ms fade and 8 px rise. A bottom sheet on phones. */
+
+@keyframes ll-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes ll-scrim-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.ll-dialog {
+  width: min(1000px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 48px);
+  margin: max(24px, min(72px, 8vh)) auto auto;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: var(--color-sheet);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-elev-float);
+}
+
+.ll-dialog::backdrop {
+  background: rgb(28 26 23 / 0.42);
+}
+
+.ll-dialog[open] {
+  animation: ll-dialog-in var(--dur-base) var(--ease-out);
+}
+
+.ll-dialog[open]::backdrop {
+  animation: ll-scrim-in var(--dur-base) var(--ease-out);
+}
+
+@media (max-width: 639px) {
+  .ll-dialog {
+    width: 100%;
+    max-height: 92dvh;
+    margin: auto 0 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+}
+
+/* Latin faces from public/fonts, preloaded by app/(site)/layout.tsx so text does not swap and
+   shift after first paint. Same files as @fontsource-variable (declared later, so these win). */
+@font-face {
+  font-family: "Fraunces Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/fonts/fraunces-latin-full-normal.woff2) format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Instrument Sans Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url(/fonts/instrument-sans-latin-wght-normal.woff2) format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* First look, printing: filament layers (brown, white, black) build bottom-up in steps under the
+   product mask. clip-path only; static and fully shown under reduced motion. */
+.first-look-build {
+  background: linear-gradient(
+    to top,
+    var(--color-fil-brown) 0 34%,
+    var(--color-fil-white) 34% 67%,
+    var(--color-fil-black) 67% 100%
+  );
+  animation: first-look-build 6s steps(18, jump-end) infinite;
+}
+@keyframes first-look-build {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .first-look-build {
+    animation: none;
+  }
+}

@@ -1,0 +1,20 @@
+[project]
+name = "p2p-sim"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "manifold3d>=3.0",
+    "moderngl>=5.8",
+    "numpy>=2.0",
+    "p2p-contracts",
+    "pillow>=10.1",
+    "scipy>=1.13",
+    "trimesh>=4.0",
+]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

@@ -1,0 +1,21 @@
+[project]
+name = "p2p-filaments"
+version = "0.1.0"
+description = "Swatch card and photo calibration for the filament library."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "numpy>=2.0",
+    "opencv-contrib-python-headless>=4.10",
+    "p2p-contracts",
+    "p2p-threemf",
+    "scipy>=1.13",
+]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+p2p-threemf = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

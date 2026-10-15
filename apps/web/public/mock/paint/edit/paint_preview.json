@@ -1,0 +1,206 @@
+{
+ "base_attempt": "s09_paint/a1",
+ "ops": 2,
+ "changed_faces": 396,
+ "changed_regions": [
+  3,
+  16
+ ],
+ "palette": [
+  "generic-pla-brown",
+  "generic-pla-white",
+  "generic-pla-black",
+  "bambu-pla-basic-orange"
+ ],
+ "threemf": "s09_paint/a2/final.3mf",
+ "before": {
+  "slicer": "p2p_slicer",
+  "print_time_s": 6806.7,
+  "total_grams": 26.0918,
+  "purge_grams": 21.5498,
+  "filament_changes": 144,
+  "layers": 225,
+  "filaments": [
+   {
+    "slot": 1,
+    "filament_id": "generic-pla-brown",
+    "grams": 10.4475,
+    "meters": 3.5029,
+    "model_grams": 3.06,
+    "flush_grams": 0.0,
+    "tower_grams": 7.3875
+   },
+   {
+    "slot": 2,
+    "filament_id": "generic-pla-white",
+    "grams": 12.6993,
+    "meters": 4.2579,
+    "model_grams": 1.1206,
+    "flush_grams": 8.2608,
+    "tower_grams": 3.3179
+   },
+   {
+    "slot": 3,
+    "filament_id": "generic-pla-black",
+    "grams": 1.6603,
+    "meters": 0.5567,
+    "model_grams": 0.1542,
+    "flush_grams": 0.7539,
+    "tower_grams": 0.7522
+   },
+   {
+    "slot": 4,
+    "filament_id": "bambu-pla-basic-red",
+    "grams": 1.2846,
+    "meters": 0.4239,
+    "model_grams": 0.2072,
+    "flush_grams": 0.7831,
+    "tower_grams": 0.2943
+   }
+  ]
+ },
+ "after": {
+  "slicer": "p2p_slicer",
+  "print_time_s": 7544.0,
+  "total_grams": 25.9189,
+  "purge_grams": 21.3609,
+  "filament_changes": 157,
+  "layers": 225,
+  "filaments": [
+   {
+    "slot": 1,
+    "filament_id": "generic-pla-brown",
+    "grams": 15.642,
+    "meters": 5.2445,
+    "model_grams": 2.9865,
+    "flush_grams": 5.12,
+    "tower_grams": 7.5355
+   },
+   {
+    "slot": 2,
+    "filament_id": "generic-pla-white",
+    "grams": 6.3896,
+    "meters": 2.1423,
+    "model_grams": 1.1546,
+    "flush_grams": 1.3674,
+    "tower_grams": 3.8676
+   },
+   {
+    "slot": 3,
+    "filament_id": "generic-pla-black",
+    "grams": 2.5699,
+    "meters": 0.8617,
+    "model_grams": 0.2098,
+    "flush_grams": 2.0544,
+    "tower_grams": 0.3057
+   },
+   {
+    "slot": 4,
+    "filament_id": "bambu-pla-basic-orange",
+    "grams": 1.3174,
+    "meters": 0.4347,
+    "model_grams": 0.2072,
+    "flush_grams": 0.8159,
+    "tower_grams": 0.2943
+   }
+  ]
+ },
+ "sim": {
+  "changed_pct": 1.52,
+  "regions_lost": [],
+  "bleed_flags": 5,
+  "purge_g_est": 22.97,
+  "model_g_est": 4.704,
+  "swaps_total": 176
+ },
+ "proof_images": [
+  {
+   "kind": "paint",
+   "view": "front",
+   "path": "s09_paint/a2/preview/proof/paint_front.jpg"
+  },
+  {
+   "kind": "paint",
+   "view": "front_3q",
+   "path": "s09_paint/a2/preview/proof/paint_front_3q.jpg"
+  },
+  {
+   "kind": "paint",
+   "view": "left_3q",
+   "path": "s09_paint/a2/preview/proof/paint_left_3q.jpg"
+  },
+  {
+   "kind": "paint",
+   "view": "left",
+   "path": "s09_paint/a2/preview/proof/paint_left.jpg"
+  },
+  {
+   "kind": "paint",
+   "view": "right",
+   "path": "s09_paint/a2/preview/proof/paint_right.jpg"
+  },
+  {
+   "kind": "paint",
+   "view": "back",
+   "path": "s09_paint/a2/preview/proof/paint_back.jpg"
+  },
+  {
+   "kind": "paint",
+   "view": "back_3q",
+   "path": "s09_paint/a2/preview/proof/paint_back_3q.jpg"
+  },
+  {
+   "kind": "paint",
+   "view": "top",
+   "path": "s09_paint/a2/preview/proof/paint_top.jpg"
+  },
+  {
+   "kind": "print",
+   "view": "front",
+   "path": "s09_paint/a2/preview/proof/print_front.jpg"
+  },
+  {
+   "kind": "print",
+   "view": "front_3q",
+   "path": "s09_paint/a2/preview/proof/print_front_3q.jpg"
+  },
+  {
+   "kind": "print",
+   "view": "left_3q",
+   "path": "s09_paint/a2/preview/proof/print_left_3q.jpg"
+  },
+  {
+   "kind": "print",
+   "view": "left",
+   "path": "s09_paint/a2/preview/proof/print_left.jpg"
+  },
+  {
+   "kind": "print",
+   "view": "right",
+   "path": "s09_paint/a2/preview/proof/print_right.jpg"
+  },
+  {
+   "kind": "print",
+   "view": "back",
+   "path": "s09_paint/a2/preview/proof/print_back.jpg"
+  },
+  {
+   "kind": "print",
+   "view": "back_3q",
+   "path": "s09_paint/a2/preview/proof/print_back_3q.jpg"
+  },
+  {
+   "kind": "print",
+   "view": "top",
+   "path": "s09_paint/a2/preview/proof/print_top.jpg"
+  }
+ ],
+ "toolpaths": "s09_paint/a2/preview/toolpaths.json",
+ "warnings": [],
+ "timings_s": {
+  "sim": 0.04,
+  "write": 0.01,
+  "slice": 1.28,
+  "proof": 1.45
+ }
+}

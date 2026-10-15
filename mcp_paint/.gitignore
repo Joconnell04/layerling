@@ -1,0 +1,2 @@
+# full-size renders stay local; the jpg comparisons and json summaries are committed
+_out/**/*.png

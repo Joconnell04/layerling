@@ -1,0 +1,727 @@
+{
+ "about": "Calibration cases for the native slicer. Each case is sliced once by Bambu Studio 02.08.02.61 (CLI, headless) through p2p_threemf.slice_check; build_truth.py writes the numbers to truth.json. input is repo-relative; a jobs/ path is read from the main checkout (P2P_MAIN_CHECKOUT). generator cases are rewritten by build_truth.py --regen-inputs with p2p_threemf. Palette for generated cases: Jackson's AMS (p2p_threemf.demo.jackson_palette: 1 black PLA, 2 brown PLA, 3 red Bambu PLA Basic, 4 blue PETG, 5 white PLA). Writer defaults apply unless noted: prime_volume_mode Saving, flush_into_infill 1.",
+ "cases": [
+  {
+   "id": "keychain_4c_020",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/keychain_4c_020.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "keychain",
+    "layer_mm": 0.2
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Flat keychain, the smallest product: 36 mm painted badge (white face, black eyes, red nose on top) plus a brown keyring loop part. 4 colors at 0.2 mm. Reference for the layer-height sweep below.",
+   "input_sha256": "a33db8a0f429613f7f42b56ad025530063a79e97db156ee4ef7175e8a22303ae",
+   "input_bytes": 658157,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "keychain_4c_008",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/keychain_4c_008.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "keychain",
+    "layer_mm": 0.08
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Layer-height sweep, 0.08 mm (0.08mm High Quality @BBL X2D, the finest X2D preset the writer maps).",
+   "input_sha256": "ed0a4a6b77cc7a311c02873bc085e720ea892a0b93530da8d0540409c0bdc117",
+   "input_bytes": 658157,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.08mm High Quality @BBL X2D",
+    "layer_height": "0.08",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "keychain_4c_012",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/keychain_4c_012.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "keychain",
+    "layer_mm": 0.12
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Layer-height sweep, 0.12 mm (0.12mm High Quality @BBL X2D).",
+   "input_sha256": "bcdf38abdb995577be51d47ea09f7515b3f95bad7df5f72ce52baa28a5560542",
+   "input_bytes": 658164,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.12mm High Quality @BBL X2D",
+    "layer_height": "0.12",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "keychain_4c_016",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/keychain_4c_016.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "keychain",
+    "layer_mm": 0.16
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Layer-height sweep, 0.16 mm (0.16mm Standard @BBL X2D).",
+   "input_sha256": "23bce2ae0c5d0a72769394725be8ad59bcc1b160ecf98f22d5f371d2a7369d99",
+   "input_bytes": 658151,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.16mm Standard @BBL X2D",
+    "layer_height": "0.16",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "keychain_4c_024",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/keychain_4c_024.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "keychain",
+    "layer_mm": 0.24
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Layer-height sweep, 0.24 mm (0.24mm Standard @BBL X2D).",
+   "input_sha256": "cc9f2bc19386b092dbb33874b32f4a7a1c3e166e42ed23ae106e3a8091b893e3",
+   "input_bytes": 658146,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.24mm Standard @BBL X2D",
+    "layer_height": "0.24",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "keychain_4c_028",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/keychain_4c_028.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "keychain",
+    "layer_mm": 0.28
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Layer-height sweep, 0.28 mm: no 0.28 preset for the 0.4 nozzle, so the writer uses the 0.24 preset with layer_height 0.28 (profiles.PROCESS_BY_LAYER). Tests a preset plus an override.",
+   "input_sha256": "38205d776439563025f043c0366fcde66ac009a9df9434b252c85402a0aeae78",
+   "input_bytes": 658153,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.24mm Standard @BBL X2D",
+    "layer_height": "0.28",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "keychain_1c_020",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/keychain_1c_020.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "keychain",
+    "layer_mm": 0.2,
+    "single_color": 1
+   },
+   "expected_slots": 1,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Single color: the same keychain with every face and the loop in slot 1 (5 filaments still in the project, as the pipeline writes them). No prime tower, no flush: isolates walls, infill, travel and time.",
+   "input_sha256": "79324b7e7320a9fe519943a765bd19e09f98cfe078e651d4fe733674f133370b",
+   "input_bytes": 656419,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "keychain_thin_3c_020",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/keychain_thin_3c_020.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "keychain_too_thin",
+    "layer_mm": 0.2
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Paint below the 2 x nozzle limit (0.5 mm eyes, 0.6 mm nose). Bambu drops a slot, so the gate fails on purpose: truth for which thin paint the slicer keeps.",
+   "input_sha256": "c96918a7c235a0a468cf68296126699aa95d38a9a64c843a2eaf5bd317fe5007",
+   "input_bytes": 2631211,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "nameplate_5c_020",
+   "product": "nameplate",
+   "input": "slicer/calibration/inputs/nameplate_5c_020.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "nameplate",
+    "layer_mm": 0.2
+   },
+   "expected_slots": 5,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Procedural 120 mm nameplate: brown plate part, raised white pixel text part, painted capsule figure with a PETG band. 5 colors, PLA and PETG, three parts in one object.",
+   "input_sha256": "975d73c5b6b1cb407666a70210b7a87e14690ef0bea508a9a79409c635b2c036",
+   "input_bytes": 49111,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "figurine_4c_020",
+   "product": "figurine",
+   "input": "slicer/calibration/inputs/figurine_4c_020.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "figurine",
+    "layer_mm": 0.2
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Procedural 40 mm capsule figurine with painted bands and a disc: tall, round walls, many layers with a color change. The shape the writer demo uses.",
+   "input_sha256": "f56ff625bba603d84f0b9d787bab1a7ffad36f6780e236d0cc36030df67ab9b1",
+   "input_bytes": 83062,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "figurine_4c_adaptive",
+   "product": "figurine",
+   "input": "slicer/calibration/inputs/figurine_4c_adaptive.3mf",
+   "generator": {
+    "kind": "product",
+    "product": "figurine",
+    "layer_mm": 0.2,
+    "adaptive": true
+   },
+   "expected_slots": 4,
+   "filament_ids": [
+    "generic-pla-161616",
+    "generic-pla-7c4b00",
+    "bambu-pla-basic-f72323",
+    "generic-petg-0d6284",
+    "generic-pla-ffffff"
+   ],
+   "why": "Same capsule with a variable layer height profile (p2p_threemf.layers.adaptive_profile: 0.2 mm where colors change, up to 0.28 mm elsewhere). The native slicer must read layer_heights_profile.",
+   "input_sha256": "11945f8c4e968586dbce06642393dfc6b42099a7b7930008e4df50c2d5ae6b4d",
+   "input_bytes": 83269,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "swatch_card_5c_020",
+   "product": "swatch_card",
+   "input": "filaments/swatch_card.3mf",
+   "source": "filaments/swatch_card.3mf (committed; uv run python -m p2p_filaments swatch-card)",
+   "expected_slots": 5,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-brown",
+    "bambu-pla-basic-red",
+    "generic-petg-blue",
+    "generic-pla-white"
+   ],
+   "why": "Filament swatch card: flat 2.4 mm card of many small whole-filament parts, 5 colors, 42 tool changes in 12 layers. Written with Bambu's own prime (Default) and flush_into_infill 0, so it is the one case without the writer's purge levers.",
+   "input_sha256": "5fc276542aaf1625e34ca0fd80e55f260a0ca801db258512e6e879709b6a8c5a",
+   "input_bytes": 50692,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Default",
+    "flush_into_infill": "0",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "100%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "meshy_retarget_3c_020",
+   "product": "figurine",
+   "input": "slicer/calibration/inputs/meshy_retarget_3c_020.3mf",
+   "source": "threemf/_out/meshy_multicolor_x2d.3mf (agent worktree agent-a68d70f2e659251cb): p2p_threemf retarget of data/fixtures/meshy/04_multi_color/meshy_multicolor.3mf",
+   "expected_slots": 3,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-brown",
+    "bambu-pla-basic-red",
+    "generic-petg-blue",
+    "generic-pla-white"
+   ],
+   "why": "Meshy's own painted beagle (31k faces) retargeted to the X2D with tree supports: an organic figure with supports, 3 colors.",
+   "input_sha256": "5364e1d9dca32e65884ed86d02e44965ba5e32f2dc9c5b8ee01702d5023f9f5b",
+   "input_bytes": 498394,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "1",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "geo_keychain_3c_020",
+   "product": "keychain",
+   "input": "slicer/calibration/inputs/geo_keychain_3c_020.3mf",
+   "source": "geometry/_out/keychain/keychain_x2d.3mf (agent worktree agent-a464d4ca209109bc8): p2p_geometry.production_slice on the real Meshy beagle",
+   "expected_slots": 3,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-brown",
+    "bambu-pla-basic-red",
+    "generic-petg-blue",
+    "generic-pla-white"
+   ],
+   "why": "Production keychain from the geometry stage: relief figure cut flat, 3 mm back, keyring part, 70k faces, 3 colors, no supports.",
+   "input_sha256": "a14b3bbb0f04232dec37813b231cc1f6b06a3037a9d82761e7f2604deef76881",
+   "input_bytes": 927304,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "geo_nameplate_3c_020",
+   "product": "nameplate",
+   "input": "slicer/calibration/inputs/geo_nameplate_3c_020.3mf",
+   "source": "geometry/_out/nameplate/nameplate_x2d.3mf (agent worktree agent-a464d4ca209109bc8): p2p_geometry.production_slice",
+   "expected_slots": 3,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-brown",
+    "bambu-pla-basic-red",
+    "generic-petg-blue",
+    "generic-pla-white"
+   ],
+   "why": "Production nameplate: upright Meshy beagle on a 120 mm plate with raised text 'BISCUIT', tree supports, 3 colors.",
+   "input_sha256": "a42dddb523e0778519c5f41f3a541594ef6ab1adc6d50e317cabc212250c6180",
+   "input_bytes": 582152,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "1",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "geo_figurine_3c_020",
+   "product": "figurine",
+   "input": "slicer/calibration/inputs/geo_figurine_3c_020.3mf",
+   "source": "geometry/_out/figurine/figurine_x2d.3mf (agent worktree agent-a464d4ca209109bc8): p2p_geometry.production_slice",
+   "expected_slots": 3,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-brown",
+    "bambu-pla-basic-red",
+    "generic-petg-blue",
+    "generic-pla-white"
+   ],
+   "why": "Production figurine on a round base, tree supports, 3 colors: the long print (hours) that dominates pricing.",
+   "input_sha256": "be0b074e6f3965f21280776712c1446b9c9b112b5a05a40c2a125fb40e925002",
+   "input_bytes": 548670,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "1",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "frenchie_baseline_3c_020",
+   "product": "keychain",
+   "input": "jobs/819cc491-c341-470a-bb97-63a194fa8dca/s07_baseline/a1/baseline_x2d.3mf",
+   "source": "Frenchie job s07 baseline (same bytes as examples/frenchie-keychain.3mf and data/deliverables/proof1_frenchie_keychain.3mf). 20.8 MB, referenced, not copied.",
+   "expected_slots": 3,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-brown",
+    "bambu-pla-basic-red",
+    "generic-petg-blue",
+    "generic-pla-white"
+   ],
+   "why": "The Frenchie job: a real worker-built keychain with 1.13M faces of Meshy paint, 3 colors. Largest mesh in the set; tests slicing speed on dense paint.",
+   "input_sha256": "eb9547492b4e567614a6317d437c756da75b3afe742bb6c7c69d6d2de505d3b5",
+   "input_bytes": 20797644,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "frenchie_paint_3c_020",
+   "product": "keychain",
+   "input": "jobs/819cc491-c341-470a-bb97-63a194fa8dca/s09_paint/a3/final.3mf",
+   "source": "Frenchie job s09 paint attempt 3, the paint agent's final file. 17.8 MB, referenced, not copied.",
+   "expected_slots": 3,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-white",
+    "generic-pla-brown"
+   ],
+   "why": "Same Frenchie mesh after the paint agent: 3-filament project (black, white, brown), paint by region. This is the file s09 gates on every paint run.",
+   "input_sha256": "6002b52275620c8885868640727327dc53ad4a0f0057ddde7ac7b069c380e357",
+   "input_bytes": 17827773,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#FFFFFF,#7C4B00",
+    "enable_support": "0",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1"
+   }
+  },
+  {
+   "id": "bronco_baseline_3c_020",
+   "product": "nameplate",
+   "input": "jobs/1785a480-84b8-41f9-8f97-1005b6d7d0a6/s07_baseline/a2/baseline_x2d.3mf",
+   "source": "Bronco job s07 baseline attempt 2 (same bytes as examples/bronco-nameplate.3mf). 10.5 MB, referenced, not copied.",
+   "expected_slots": 3,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-brown",
+    "bambu-pla-basic-red",
+    "generic-petg-blue",
+    "generic-pla-white"
+   ],
+   "why": "The Bronco job: a real nameplate (truck on a plate with 'Bronco' text), 537k faces, tree supports, a 9-hour, 127 g print. The heaviest slice in the set.",
+   "input_sha256": "d7acfcd6bac866992778aac37318113417054a99f9fac5bda7eafe9e10228071",
+   "input_bytes": 10547603,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Bambu PLA Basic @BBL X2D 0.4 nozzle,Generic PETG @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#F72323,#0D6284,#FFFFFF",
+    "enable_support": "1",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1,1,1"
+   }
+  },
+  {
+   "id": "bronco_paint_3c_020",
+   "product": "nameplate",
+   "input": "jobs/1785a480-84b8-41f9-8f97-1005b6d7d0a6/s09_paint/a2/final.3mf",
+   "source": "Bronco job s09 paint attempt 2 final file. 9.0 MB, referenced, not copied.",
+   "expected_slots": 3,
+   "filament_ids": [
+    "generic-pla-black",
+    "generic-pla-brown",
+    "generic-pla-white"
+   ],
+   "why": "Bronco after the paint agent: 3-filament project, same geometry. Pairs with the baseline to show how paint changes purge and time.",
+   "input_sha256": "034d5dc7f56907dfa3475a96adcaa26785325fda91661c91c3e17ef32dd3c799",
+   "input_bytes": 9017198,
+   "settings": {
+    "printer_settings_id": "Bambu Lab X2D 0.4 nozzle",
+    "print_settings_id": "0.20mm Standard @BBL X2D",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "filament_settings_id": "Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle,Generic PLA @BBL X2D 0.4 nozzle",
+    "filament_colour": "#161616,#7C4B00,#FFFFFF",
+    "enable_support": "1",
+    "support_type": "tree(auto)",
+    "prime_volume_mode": "Saving",
+    "flush_into_infill": "1",
+    "enable_prime_tower": "1",
+    "wall_loops": "2",
+    "sparse_infill_density": "15%",
+    "filament_map_mode": "Auto For Flush",
+    "filament_map": "1,1,1"
+   }
+  }
+ ]
+}

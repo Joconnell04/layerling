@@ -1,0 +1,12 @@
+{
+  "missing": false,
+  "updated_at": "2026-09-24T13:19:36+00:00",
+  "currency": "USD",
+  "products": {
+    "keychain": { "price": 31.99, "from": true, "cost_floor": 15.15, "basis": "cost", "channels": { "own_site": 31.99, "etsy": 38.99 } },
+    "nameplate": { "price": 44.99, "from": true, "cost_floor": 21.66, "basis": "cost", "channels": { "own_site": 44.99 } },
+    "figurine": { "price": 57.99, "from": true, "cost_floor": 27.86, "basis": "cost", "channels": { "own_site": 57.99 } },
+    "ornament": { "price": 44.99, "from": true, "cost_floor": 21.41, "basis": "cost", "channels": { "own_site": 44.99 } },
+    "magnet": { "price": 34.99, "from": true, "cost_floor": 16.52, "basis": "cost", "channels": { "own_site": 34.99 } }
+  }
+}

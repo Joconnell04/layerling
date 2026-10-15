@@ -1,0 +1,30 @@
+[project]
+name = "p2p-mcp-paint"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "claude-agent-sdk>=0.1",
+    "mcp>=1.12",
+    "numpy>=2.0",
+    "p2p-contracts",
+    "p2p-geometry",
+    "p2p-sam3",
+    "p2p-sim",
+    "p2p-threemf",
+    "pillow>=10.1",
+    "scipy>=1.13",
+]
+
+[project.scripts]
+p2p-mcp-paint = "p2p_mcp_paint.server:main"
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+p2p-geometry = { workspace = true }
+p2p-sam3 = { workspace = true }
+p2p-sim = { workspace = true }
+p2p-threemf = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

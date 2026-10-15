@@ -1,0 +1,15 @@
+[project]
+name = "p2p-costs"
+version = "0.1.0"
+description = "Cost model and price refresh: costs/cost_model.xlsx and costs/pricing.json."
+requires-python = ">=3.12,<3.13"
+dependencies = ["p2p-contracts", "p2p-threemf", "p2p-geometry", "openpyxl>=3.1"]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+p2p-threemf = { workspace = true }
+p2p-geometry = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

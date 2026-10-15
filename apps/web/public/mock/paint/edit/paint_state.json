@@ -1,0 +1,38 @@
+{
+ "schema_version": "1",
+ "region_map": {
+  "path": "s09_paint/a2/region_map.json",
+  "sha256": "e7efcd3f5c1d10bcab4634328f0d2af8cff01d05f2cf83a7248ef42561333439",
+  "bytes": 7675,
+  "kind": "json",
+  "role": "region_map"
+ },
+ "palette": [
+  "generic-pla-brown",
+  "generic-pla-white",
+  "generic-pla-black",
+  "bambu-pla-basic-orange"
+ ],
+ "assignment": {
+  "1": "generic-pla-brown",
+  "2": "generic-pla-brown",
+  "3": "bambu-pla-basic-orange",
+  "4": "generic-pla-white",
+  "5": "generic-pla-white",
+  "6": "generic-pla-brown",
+  "7": "generic-pla-brown",
+  "8": "generic-pla-brown",
+  "9": "generic-pla-brown",
+  "10": "generic-pla-black",
+  "11": "generic-pla-brown",
+  "12": "generic-pla-black",
+  "13": "generic-pla-black",
+  "14": "generic-pla-black",
+  "15": "generic-pla-white",
+  "16": "generic-pla-white"
+ },
+ "default_filament": "generic-pla-brown",
+ "part_filaments": {},
+ "iteration": 0,
+ "checkpoint_id": "c000"
+}

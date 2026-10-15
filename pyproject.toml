@@ -1,0 +1,46 @@
+[project]
+name = "photo2print"
+version = "0.1.0"
+description = "Photos plus a short request in, slice-ready multicolor 3MF out."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "p2p-contracts",
+    "p2p-threemf",
+    "p2p-sim",
+    "p2p-worker",
+    "p2p-mcp-paint",
+    "p2p-sam3",
+    "p2p-evals",
+    "p2p-geometry",
+    "p2p-costs",
+    "p2p-filaments",
+    "p2p-slicer",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+p2p-threemf = { workspace = true }
+p2p-sim = { workspace = true }
+p2p-worker = { workspace = true }
+p2p-mcp-paint = { workspace = true }
+p2p-sam3 = { workspace = true }
+p2p-evals = { workspace = true }
+p2p-geometry = { workspace = true }
+p2p-costs = { workspace = true }
+p2p-filaments = { workspace = true }
+p2p-slicer = { workspace = true }
+
+[tool.uv.workspace]
+members = ["contracts", "threemf", "sim", "worker", "mcp_paint", "sam3", "evals", "geometry", "costs", "filaments", "slicer"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]

@@ -1,0 +1,15 @@
+[project]
+name = "p2p-evals"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy", "p2p-contracts", "p2p-geometry", "p2p-threemf", "p2p-worker"]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+p2p-geometry = { workspace = true }
+p2p-threemf = { workspace = true }
+p2p-worker = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

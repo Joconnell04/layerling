@@ -1,0 +1,193 @@
+{
+  "$defs": {
+    "CheckItem": {
+      "additionalProperties": false,
+      "description": "One line of a concept or view check.",
+      "properties": {
+        "id": {
+          "description": "e.g. part.keyring_loop, text, ask.1, markings, no_extra_base",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "part",
+            "text",
+            "ask",
+            "markings",
+            "no_extra_base",
+            "figure_identical",
+            "view"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "label": {
+          "description": "What must be true, e.g. Name reads Bronco",
+          "maxLength": 160,
+          "title": "Label",
+          "type": "string"
+        },
+        "on": {
+          "description": "figure: the figure-only image; product: the product concept; view: s04",
+          "enum": [
+            "figure",
+            "product",
+            "view"
+          ],
+          "title": "On",
+          "type": "string"
+        },
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "maxLength": 300,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        },
+        "by": {
+          "default": "model",
+          "enum": [
+            "model",
+            "code"
+          ],
+          "title": "By",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "label",
+        "on",
+        "passed"
+      ],
+      "title": "CheckItem",
+      "type": "object"
+    },
+    "View": {
+      "additionalProperties": false,
+      "properties": {
+        "angle": {
+          "description": "concept: the approved figure itself (usually 3/4)",
+          "enum": [
+            "concept",
+            "front",
+            "left",
+            "right",
+            "back",
+            "three_quarter",
+            "top",
+            "other"
+          ],
+          "title": "Angle",
+          "type": "string"
+        },
+        "image": {
+          "description": "Job-relative PNG on the shared flat background",
+          "title": "Image",
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "concept",
+            "multiview"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "meshy_task_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Meshy Task Id"
+        },
+        "passed": {
+          "default": true,
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Note"
+        }
+      },
+      "required": [
+        "angle",
+        "image",
+        "source"
+      ],
+      "title": "View",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "s04 output views.json (role views). `views` is in the order s05 sends them: the approved\nfigure first, then back, side, front (at most 4). Empty when skipped or when every view\nfailed twice; s05 then builds from the figure alone.",
+  "properties": {
+    "views": {
+      "items": {
+        "$ref": "#/$defs/View"
+      },
+      "title": "Views",
+      "type": "array"
+    },
+    "skipped": {
+      "default": false,
+      "title": "Skipped",
+      "type": "boolean"
+    },
+    "reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Reason"
+    },
+    "dropped": {
+      "description": "Views that failed the check",
+      "items": {
+        "$ref": "#/$defs/View"
+      },
+      "title": "Dropped",
+      "type": "array"
+    },
+    "checks": {
+      "items": {
+        "$ref": "#/$defs/CheckItem"
+      },
+      "title": "Checks",
+      "type": "array"
+    }
+  },
+  "title": "ViewSet",
+  "type": "object"
+}

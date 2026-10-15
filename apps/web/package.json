@@ -1,0 +1,51 @@
+{
+  "name": "p2p-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/copy-pricing.mjs && node scripts/gen-tokens.mjs",
+    "dev": "next dev -p 3100",
+    "dev:mock": "node scripts/copy-pricing.mjs && node scripts/gen-tokens.mjs && NEXT_PUBLIC_DATA=mock next dev -p 3100",
+    "prebuild": "node scripts/copy-pricing.mjs && node scripts/gen-tokens.mjs",
+    "build": "next build",
+    "postbuild": "node scripts/check-landing-price.mjs",
+    "start": "next start -p 3100",
+    "pretest": "node scripts/copy-pricing.mjs && node scripts/gen-tokens.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "node scripts/copy-pricing.mjs && node scripts/gen-tokens.mjs && tsc --noEmit",
+    "gen:contracts": "node scripts/gen-contracts.mjs",
+    "gen:mock-assets": "node scripts/gen-mock-assets.mjs",
+    "sync-env": "node scripts/sync-env.mjs",
+    "gen:tokens": "node scripts/gen-tokens.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/instrument-sans": "^5.3.0",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.1",
+    "ajv": "^8.20.0",
+    "geist": "^1.7.2",
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^26.6.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "jsdom": "^30.1.1",
+    "json-schema-to-typescript": "^16.0.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0",
+    "vitest": "^5.0.1"
+  }
+}

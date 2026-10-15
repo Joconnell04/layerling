@@ -1,0 +1,67 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "glb": {
+      "title": "Glb",
+      "type": "string"
+    },
+    "thumbnails": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Thumbnails",
+      "type": "array"
+    },
+    "meshy_task_id": {
+      "title": "Meshy Task Id",
+      "type": "string"
+    },
+    "face_count": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Face Count"
+    },
+    "actions": {
+      "items": {
+        "enum": [
+          "approve",
+          "retexture",
+          "regenerate"
+        ],
+        "type": "string"
+      },
+      "title": "Actions",
+      "type": "array"
+    },
+    "retexture_credits": {
+      "default": 10,
+      "title": "Retexture Credits",
+      "type": "integer"
+    },
+    "regenerate_credits": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Regenerate Credits"
+    }
+  },
+  "required": [
+    "glb",
+    "meshy_task_id"
+  ],
+  "title": "MeshReview",
+  "type": "object"
+}

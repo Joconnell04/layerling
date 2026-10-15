@@ -1,0 +1,129 @@
+{
+  "$defs": {
+    "FileRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "description": "POSIX path relative to jobs/<job_id>/",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bytes"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+          "title": "Kind"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "FileRef",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "region_map": {
+      "$ref": "#/$defs/FileRef",
+      "description": "The region_map.json this state applies to"
+    },
+    "palette": {
+      "description": "Filament ids; slot = index + 1; len <= AMS slots",
+      "items": {
+        "type": "string"
+      },
+      "title": "Palette",
+      "type": "array"
+    },
+    "assignment": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "str(region_id) -> filament_id (in palette)",
+      "title": "Assignment",
+      "type": "object"
+    },
+    "default_filament": {
+      "description": "Filament for unlabeled faces (usually body color)",
+      "title": "Default Filament",
+      "type": "string"
+    },
+    "part_filaments": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Add-on part name -> filament id (parts are unpainted)",
+      "title": "Part Filaments",
+      "type": "object"
+    },
+    "iteration": {
+      "default": 0,
+      "title": "Iteration",
+      "type": "integer"
+    },
+    "checkpoint_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Checkpoint Id"
+    }
+  },
+  "required": [
+    "region_map",
+    "palette",
+    "assignment",
+    "default_filament"
+  ],
+  "title": "PaintState",
+  "type": "object"
+}

@@ -1,0 +1,379 @@
+{
+ "suite": "replay-from-s01",
+ "partial": true,
+ "start": "s01",
+ "claude": "recorded",
+ "paint": "replay",
+ "wall_s": 1033.7,
+ "jobs": [
+  {
+   "job": "sombrero",
+   "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+   "what": "live run 2: golden in a sombrero, figurine on a round base",
+   "start": "s01",
+   "claude": "recorded",
+   "paint": "replay",
+   "status": "done",
+   "error": null,
+   "wall_s": 1033.5,
+   "pause_reason": null,
+   "review_reason": null,
+   "stages": {
+    "s01_intake": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 0.299,
+     "stored_s": 34.104,
+     "stored_status": "succeeded"
+    },
+    "s02_color_spec": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 116.412,
+     "stored_s": 24.505,
+     "stored_status": "succeeded"
+    },
+    "s03_concept": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 5.445,
+     "stored_s": 129.062,
+     "stored_status": "succeeded"
+    },
+    "s04_multiview": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 7.94,
+     "stored_s": 99.769,
+     "stored_status": "succeeded"
+    },
+    "s05_mesh": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 15.088,
+     "stored_s": 249.439,
+     "stored_status": "succeeded"
+    },
+    "s06_printability": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 74.319,
+     "stored_s": 533.317,
+     "stored_status": "succeeded"
+    },
+    "s07_baseline": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 129.555,
+     "stored_s": 181.48,
+     "stored_status": "succeeded"
+    },
+    "s08_palette": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 180.044,
+     "stored_s": 31.792,
+     "stored_status": "succeeded"
+    },
+    "s09_paint": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 0.079,
+     "stored_s": 1100.738,
+     "stored_status": "succeeded"
+    },
+    "s10_write": {
+     "status": "succeeded",
+     "attempt": 1,
+     "wall_s": 504.212,
+     "stored_s": 526.22,
+     "stored_status": "succeeded"
+    }
+   },
+   "gate": {
+    "stage": "s10_write",
+    "slicer": "Bambu",
+    "ok": true,
+    "errors": [],
+    "print_time_s": 25324.0,
+    "total_grams": 111.49,
+    "slots_used": 5,
+    "summary": "Bambu pass",
+    "stored": "Bambu pass",
+    "stored_ok": true
+   },
+   "form": {
+    "job": "figure",
+    "concept": "figure",
+    "concept_read": "figure",
+    "built": "figure",
+    "stored_built": "figure",
+    "consistent": true,
+    "same_as_stored": true
+   },
+   "concept_check": {
+    "approved": "r1c2",
+    "passed": true,
+    "candidates": 1,
+    "candidates_passed": 1,
+    "stored": true,
+    "rerun": true
+   },
+   "final_check": {
+    "passed": false,
+    "how": "stored verdict (paint replayed)",
+    "approved_anyway": true,
+    "stored": false
+   },
+   "slots": {
+    "rerun": 5,
+    "stored": 5
+   },
+   "print_time_s": {
+    "rerun": 25324.0,
+    "stored": 25330.0,
+    "delta_pct": -0.02
+   },
+   "grams": {
+    "rerun": 111.49,
+    "stored": 111.49,
+    "delta_pct": 0.0
+   },
+   "paint_replay": {
+    "from": "s09_paint/a2",
+    "iteration": 4,
+    "same_mesh": true,
+    "stored_agent": null,
+    "stored_check_passed": false,
+    "stored_review_approved": true,
+    "used": true
+   },
+   "geometry_vs_stored": {
+    "compared": true,
+    "tol_mm": 0.001,
+    "parts": [
+     "base",
+     "figure"
+    ],
+    "parts_same": true,
+    "filaments_same": true,
+    "orientation_same": true,
+    "supports_same": true,
+    "notes_same": true,
+    "warnings_same": true,
+    "transform_max_dev": 0.0,
+    "meshes": {
+     "base": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     },
+     "figure": {
+      "identical": true,
+      "max_dev_mm": 0.0
+     }
+    },
+    "max_vertex_dev_mm": 0.0,
+    "faces_same": true,
+    "report_diffs": [],
+    "ok": true
+   },
+   "meshy_credits_booked": 0,
+   "meshy": {
+    "answered": 9,
+    "by_match": {
+     "key": 6,
+     "hash": 3
+    },
+    "misses": 1,
+    "asset_fetches": 16,
+    "credits_charged": 0,
+    "credits_live": 96,
+    "calls": [
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s03_concept",
+      "key": "r1c1",
+      "endpoint": "image-to-image",
+      "task_id": "01a0d643-6dcd-7313-ac00-9579c476ad1c",
+      "match": "key",
+      "request_hash": "68f79349a3f6bca9",
+      "diff": [
+       "prompt"
+      ],
+      "credits_live": 12
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s03_concept",
+      "key": "r1c2",
+      "endpoint": "image-to-image",
+      "task_id": "01a0d643-75ac-7787-b7a9-cf5338bfc071",
+      "match": "key",
+      "request_hash": "6a1cbec7569590df",
+      "diff": [
+       "prompt"
+      ],
+      "credits_live": 9
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s03_concept",
+      "key": "r1c1.p0",
+      "endpoint": "image-to-image",
+      "task_id": "01a0d644-17cf-716a-94db-e9d8e51fbec8",
+      "match": "key",
+      "request_hash": "098403cd36434ff7",
+      "diff": [
+       "prompt"
+      ],
+      "credits_live": 6
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s03_concept",
+      "key": "r1c2.p0",
+      "endpoint": "image-to-image",
+      "task_id": "01a0d644-2046-77b0-9a05-feafa6f9d223",
+      "match": "key",
+      "request_hash": "678f369387cd3cde",
+      "diff": [
+       "prompt"
+      ],
+      "credits_live": 6
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s04_multiview",
+      "key": "views0",
+      "endpoint": "image-to-image",
+      "task_id": "01a0d645-6766-72f6-924b-ca85df609b50",
+      "match": "key",
+      "request_hash": "7cc6585e20f2396e",
+      "diff": [
+       "prompt"
+      ],
+      "credits_live": 9
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s04_multiview",
+      "key": "views1",
+      "endpoint": "image-to-image",
+      "task_id": "01a0d646-0be5-70e8-9be1-3db8ee03e2f5",
+      "match": "key",
+      "request_hash": "2558c22a48717f7f",
+      "diff": [
+       "prompt"
+      ],
+      "credits_live": 9
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s05_mesh",
+      "key": "m1.gen",
+      "endpoint": "multi-image-to-3d",
+      "task_id": "01a0d646-ead5-708a-9356-666133b42d83",
+      "match": "hash",
+      "request_hash": "7fc3e5a192009008",
+      "diff": [],
+      "credits_live": 35
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s06_printability",
+      "key": "analyze",
+      "endpoint": "print-analyze",
+      "task_id": "01a0d64a-c058-75cb-86b9-78b0554c64be",
+      "match": "hash",
+      "request_hash": "a4906e117d7aeb11",
+      "diff": [],
+      "credits_live": 0
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s07_baseline",
+      "key": "mc.cartoon",
+      "endpoint": "print-multi-color",
+      "task_id": "01a0d652-e131-71db-8cef-bf0f5a794e59",
+      "match": "hash",
+      "request_hash": "1ba7ee01c0286330",
+      "diff": [],
+      "credits_live": 10
+     },
+     {
+      "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+      "stage": "s03_concept",
+      "key": "r1c1.p1",
+      "endpoint": "image-to-image",
+      "task_id": null,
+      "match": "miss",
+      "request_hash": "10fd26b82e2b523f",
+      "diff": [],
+      "credits_live": 0
+     }
+    ]
+   },
+   "claude_calls": {
+    "answered": 7,
+    "by_match": {
+     "text": 5,
+     "images": 2
+    },
+    "check_items_filled": 8,
+    "calls": [
+     {
+      "stage": "s01_intake",
+      "purpose": "intake",
+      "match": "text",
+      "recorded": "s01_intake/a1/01"
+     },
+     {
+      "stage": "s02_color_spec",
+      "purpose": "color_spec",
+      "match": "text",
+      "recorded": "s02_color_spec/a1/01"
+     },
+     {
+      "stage": "s03_concept",
+      "purpose": "check.concept",
+      "match": "images",
+      "recorded": "s03_concept/a1/05"
+     },
+     {
+      "stage": "s03_concept",
+      "purpose": "check.concept",
+      "match": "images",
+      "recorded": "s03_concept/a1/06"
+     },
+     {
+      "stage": "s04_multiview",
+      "purpose": "check.views",
+      "match": "text",
+      "recorded": "s04_multiview/a1/02"
+     },
+     {
+      "stage": "s04_multiview",
+      "purpose": "check.views",
+      "match": "text",
+      "recorded": "s04_multiview/a1/04"
+     },
+     {
+      "stage": "s06_printability",
+      "purpose": "concept_read",
+      "match": "text",
+      "recorded": "s06_printability/a1/02"
+     }
+    ]
+   },
+   "gates": {
+    "replies": [
+     "s01_intake gate:questions: answers {\"answers\": [{\"option_ids\": [\"sitting\"], \"question_id\": \"pose\"}, {\"option_ids\": [\"true_to_photo\"], \"question_id\": \"style",
+     "s03_concept gate:r1.g0: concept_pick {\"approve\": true, \"candidate_id\": \"r1c2\"}",
+     "s05_mesh gate:m1.review: mesh_decision {\"action\": \"approve\"}"
+    ],
+    "diverged": [],
+    "stuck": null
+   }
+  }
+ ]
+}

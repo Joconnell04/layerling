@@ -1,0 +1,456 @@
+{
+ "schema_version": "1",
+ "mesh": {
+  "path": "s06_printability/a1/figure.ply",
+  "sha256": "6d1df9d9f7a58e0d3b31bf7dfd31f2f1daf11b28604eab9814852a259723f157",
+  "n_faces": 3128,
+  "n_vertices": 1586,
+  "units": "mm",
+  "up_axis": "z"
+ },
+ "face_regions": {
+  "path": "s09_paint/a1/face_regions.npy",
+  "sha256": "e82ac91fac2633c827e2cf9a411aee7b4b09fe4c5a6ab1eaced8b452a8a04d1c",
+  "bytes": 12640,
+  "kind": "npy",
+  "role": "face_regions"
+ },
+ "regions": [
+  {
+   "id": 1,
+   "label": "s1.body",
+   "subject_id": "s1",
+   "part": "body",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 396,
+   "area_mm2": 981.7407,
+   "centroid_mm": [
+    -0.0,
+    -1.596,
+    28.615
+   ],
+   "bbox_min_mm": [
+    -9.231,
+    -10.232,
+    19.846
+   ],
+   "bbox_max_mm": [
+    9.231,
+    7.04,
+    37.385
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 2,
+   "label": "s1.brown_2",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 339,
+   "area_mm2": 953.8217,
+   "centroid_mm": [
+    0.011,
+    1.843,
+    13.412
+   ],
+   "bbox_min_mm": [
+    -10.154,
+    -7.653,
+    1.846
+   ],
+   "bbox_max_mm": [
+    10.154,
+    8.431,
+    24.0
+   ],
+   "min_width_mm": 2.0,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 3,
+   "label": "s1.collar_1",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 384,
+   "area_mm2": 281.2091,
+   "centroid_mm": [
+    0.0,
+    -0.212,
+    21.231
+   ],
+   "bbox_min_mm": [
+    -7.754,
+    -7.966,
+    20.123
+   ],
+   "bbox_max_mm": [
+    7.754,
+    7.542,
+    22.338
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 4,
+   "label": "s1.white_1",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 56,
+   "area_mm2": 235.5167,
+   "centroid_mm": [
+    -0.183,
+    -6.128,
+    10.875
+   ],
+   "bbox_min_mm": [
+    -9.541,
+    -7.932,
+    3.33
+   ],
+   "bbox_max_mm": [
+    9.541,
+    -2.495,
+    18.462
+   ],
+   "min_width_mm": 5.0,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 5,
+   "label": "s1.white_2",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 252,
+   "area_mm2": 213.035,
+   "centroid_mm": [
+    0.0,
+    -8.519,
+    25.846
+   ],
+   "bbox_min_mm": [
+    -4.8,
+    -12.299,
+    21.969
+   ],
+   "bbox_max_mm": [
+    4.8,
+    -4.74,
+    29.723
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 6,
+   "label": "s1.brown_3",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 168,
+   "area_mm2": 188.8435,
+   "centroid_mm": [
+    8.308,
+    -0.212,
+    30.462
+   ],
+   "bbox_min_mm": [
+    4.839,
+    -3.535,
+    24.605
+   ],
+   "bbox_max_mm": [
+    11.777,
+    3.111,
+    36.318
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 7,
+   "label": "s1.brown_4",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 168,
+   "area_mm2": 188.8435,
+   "centroid_mm": [
+    -8.308,
+    -0.212,
+    30.462
+   ],
+   "bbox_min_mm": [
+    -11.777,
+    -3.535,
+    24.605
+   ],
+   "bbox_max_mm": [
+    -4.839,
+    3.111,
+    36.318
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 8,
+   "label": "s1.brown_5",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 168,
+   "area_mm2": 146.6069,
+   "centroid_mm": [
+    4.615,
+    -5.289,
+    4.615
+   ],
+   "bbox_min_mm": [
+    1.661,
+    -8.242,
+    0.0
+   ],
+   "bbox_max_mm": [
+    7.569,
+    -2.335,
+    9.231
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 9,
+   "label": "s1.brown_6",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 168,
+   "area_mm2": 146.6069,
+   "centroid_mm": [
+    -4.615,
+    -5.289,
+    4.615
+   ],
+   "bbox_min_mm": [
+    -7.569,
+    -8.242,
+    0.0
+   ],
+   "bbox_max_mm": [
+    -1.661,
+    -2.335,
+    9.231
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 10,
+   "label": "s1.black_1",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 560,
+   "area_mm2": 128.6951,
+   "centroid_mm": [
+    -0.0,
+    -0.673,
+    40.8
+   ],
+   "bbox_min_mm": [
+    -4.2,
+    -1.683,
+    36.6
+   ],
+   "bbox_max_mm": [
+    4.2,
+    0.336,
+    45.0
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 11,
+   "label": "s1.brown_7",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 168,
+   "area_mm2": 77.5761,
+   "centroid_mm": [
+    -0.0,
+    9.019,
+    12.0
+   ],
+   "bbox_min_mm": [
+    -1.846,
+    4.865,
+    10.154
+   ],
+   "bbox_max_mm": [
+    1.846,
+    13.173,
+    13.846
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 12,
+   "label": "s1.black_2",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 100,
+   "area_mm2": 20.3602,
+   "centroid_mm": [
+    -0.0,
+    -12.119,
+    27.692
+   ],
+   "bbox_min_mm": [
+    -1.661,
+    -13.173,
+    26.492
+   ],
+   "bbox_max_mm": [
+    1.661,
+    -11.066,
+    28.892
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 13,
+   "label": "s1.black_3",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 100,
+   "area_mm2": 16.877,
+   "centroid_mm": [
+    3.508,
+    -8.612,
+    31.385
+   ],
+   "bbox_min_mm": [
+    2.215,
+    -9.49,
+    30.0
+   ],
+   "bbox_max_mm": [
+    4.8,
+    -7.734,
+    32.769
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 14,
+   "label": "s1.black_4",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 100,
+   "area_mm2": 16.877,
+   "centroid_mm": [
+    -3.508,
+    -8.612,
+    31.385
+   ],
+   "bbox_min_mm": [
+    -4.8,
+    -9.49,
+    30.0
+   ],
+   "bbox_max_mm": [
+    -2.215,
+    -7.734,
+    32.769
+   ],
+   "min_width_mm": null,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  },
+  {
+   "id": 15,
+   "label": "s1.white_3",
+   "subject_id": "s1",
+   "part": "other",
+   "source": "meshy_color",
+   "confidence": null,
+   "n_faces": 1,
+   "area_mm2": 4.184,
+   "centroid_mm": [
+    7.822,
+    -3.926,
+    16.68
+   ],
+   "bbox_min_mm": [
+    6.736,
+    -4.908,
+    15.79
+   ],
+   "bbox_max_mm": [
+    9.216,
+    -2.495,
+    18.462
+   ],
+   "min_width_mm": 2.5,
+   "views_seen": 0,
+   "color_lab": null,
+   "parent_ids": []
+  }
+ ],
+ "next_region_id": 16
+}

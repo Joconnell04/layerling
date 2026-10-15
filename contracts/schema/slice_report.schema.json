@@ -1,0 +1,396 @@
+{
+  "$defs": {
+    "FileRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "description": "POSIX path relative to jobs/<job_id>/",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bytes"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+          "title": "Kind"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "FileRef",
+      "type": "object"
+    },
+    "SliceFilament": {
+      "additionalProperties": false,
+      "properties": {
+        "slot": {
+          "title": "Slot",
+          "type": "integer"
+        },
+        "filament_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Filament Id"
+        },
+        "grams": {
+          "title": "Grams",
+          "type": "number"
+        },
+        "meters": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Meters"
+        },
+        "model_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Printed in the model, no flush or tower",
+          "title": "Model Grams"
+        },
+        "flush_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Flush Grams"
+        },
+        "tower_grams": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tower Grams"
+        }
+      },
+      "required": [
+        "slot",
+        "grams"
+      ],
+      "title": "SliceFilament",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "ok": {
+      "title": "Ok",
+      "type": "boolean"
+    },
+    "slicer": {
+      "enum": [
+        "bambu_studio",
+        "orcaslicer",
+        "p2p_slicer"
+      ],
+      "title": "Slicer",
+      "type": "string"
+    },
+    "slicer_version": {
+      "title": "Slicer Version",
+      "type": "string"
+    },
+    "printer_profile": {
+      "title": "Printer Profile",
+      "type": "string"
+    },
+    "process_profile": {
+      "title": "Process Profile",
+      "type": "string"
+    },
+    "errors": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Errors",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "print_time_s": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Print Time S"
+    },
+    "filaments": {
+      "items": {
+        "$ref": "#/$defs/SliceFilament"
+      },
+      "title": "Filaments",
+      "type": "array"
+    },
+    "total_grams": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Total Grams"
+    },
+    "purge_grams": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Flush and prime tower",
+      "title": "Purge Grams"
+    },
+    "slots_used": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Slots Used"
+    },
+    "expected_slots": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Expected Slots"
+    },
+    "output": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FileRef"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Sliced .gcode.3mf, if kept"
+    },
+    "log": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Job-relative path to the slicer log",
+      "title": "Log"
+    },
+    "filament_changes": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Filament Changes"
+    },
+    "nozzle_changes": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Nozzle Changes"
+    },
+    "ams_swaps": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "AMS unload and load pairs (Bambu filament_change_times)",
+      "title": "Ams Swaps"
+    },
+    "model_time_s": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "print_time_s minus prepare_time_s",
+      "title": "Model Time S"
+    },
+    "prepare_time_s": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Start and end G-code, heating, homing",
+      "title": "Prepare Time S"
+    },
+    "tower_grams": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Prime tower share of purge_grams",
+      "title": "Tower Grams"
+    },
+    "readback_ok": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Slicer re-saved file keeps presets and paint",
+      "title": "Readback Ok"
+    },
+    "readback_slots": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Readback Slots"
+    },
+    "thin_paint": {
+      "description": "[{slot, filament_id, area_mm2, min_width_mm}] under 2 x nozzle",
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Thin Paint",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ok",
+    "slicer",
+    "slicer_version",
+    "printer_profile",
+    "process_profile"
+  ],
+  "title": "SliceReport",
+  "type": "object"
+}

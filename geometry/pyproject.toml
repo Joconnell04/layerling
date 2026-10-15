@@ -1,0 +1,24 @@
+[project]
+name = "p2p-geometry"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fonttools>=4.66.0",
+    "manifold3d>=3.5.3",
+    "matplotlib>=3.11.2",
+    "networkx>=3.7",
+    "numpy>=2.5.3",
+    "p2p-contracts",
+    "pillow>=12.3.0",
+    "scipy>=1.18.1",
+    "shapely>=2.1.2",
+    "trimesh>=5.1.0",
+    "uharfbuzz>=0.56.2",
+]
+
+[tool.uv.sources]
+p2p-contracts = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.8,<1"]
+build-backend = "uv_build"

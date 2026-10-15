@@ -1,0 +1,7308 @@
+{
+ "stats": {
+  "cases": 20,
+  "time_abs_pct_median": 1.250203248927372,
+  "time_abs_pct_worst": 10.792802659971139,
+  "grams_abs_pct_median": 0.760594893867931,
+  "grams_abs_pct_worst": 14.138627601890002,
+  "slots_equal": 20,
+  "time_within_5pct": 19,
+  "grams_within_3pct": 18
+ },
+ "cases": [
+  {
+   "case": "keychain_4c_020",
+   "product": "keychain",
+   "wall_s": 1.509,
+   "timings": {
+    "load": 0.6,
+    "section": 0.341,
+    "segment": 0.179,
+    "walls": 0.054,
+    "surfaces": 0.095,
+    "grouping": 0.001,
+    "fills": 0.035,
+    "changes": 0.005,
+    "moves": 0.186,
+    "estimate": 0.01,
+    "total": 1.505
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 1864.3232029592186,
+     "bambu": 1864.4169921875,
+     "diff": -0.09378922828136638,
+     "pct": -0.005030485598145322
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 600.6110157249367,
+     "bambu": 597.5741577148438,
+     "diff": 3.036858010092942,
+     "pct": 0.5081976807206746
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 37.23244873145213,
+     "bambu": 34.441349029541016,
+     "diff": 2.791099701911115,
+     "pct": 8.103920957094726
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 47.624361079391676,
+     "bambu": 46.315277099609375,
+     "diff": 1.3090839797823008,
+     "pct": 2.8264625880719207
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.70375066562445,
+     "bambu": 287.38983154296875,
+     "diff": 0.31391912265570454,
+     "pct": 0.1092311168319013
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 663.3235639512205,
+     "bambu": 663.3241577148438,
+     "diff": -0.000593763623214727,
+     "pct": -8.951334220364394e-05
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 2.9245669841766357,
+     "diff": -2.9245669841766357,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 40.700288533888184,
+     "bambu": 35.726139068603516,
+     "diff": 4.974149465284668,
+     "pct": 13.92299754455135
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 162.66898433406192,
+     "bambu": 167.2962188720703,
+     "diff": -4.627234538008395,
+     "pct": -2.765893078280982
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 83.28015945338439,
+     "bambu": 87.42613983154297,
+     "diff": -4.145980378158583,
+     "pct": -4.742266313195646
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 291.4474760793978,
+     "bambu": 294.8448486328125,
+     "diff": -3.397372553414698,
+     "pct": -1.152257727807768
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 83.9412204501018,
+     "bambu": 79.66022491455078,
+     "diff": 4.280995535551014,
+     "pct": 5.374069104302824
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 34.29598365039908,
+     "bambu": 24.707042694091797,
+     "diff": 9.588940956307283,
+     "pct": 38.8105572772588
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 139.86756949225781,
+     "bambu": 148.0749053955078,
+     "diff": -8.207335903249998,
+     "pct": -5.54269197831207
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 132.10496603029674,
+     "bambu": 140.35894775390625,
+     "diff": -8.253981723609513,
+     "pct": -5.880623826050164
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.9411472036637,
+     "bambu": 308.68244801819213,
+     "diff": 0.25869918547158477,
+     "pct": 0.08380754627692287
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 7.383623421433523,
+     "bambu": 7.309181571006775,
+     "diff": 0.07444185042674789,
+     "pct": 1.0184703951265255
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.2803256954084743,
+     "bambu": 3.2063581735128537,
+     "diff": 0.07396752189562061,
+     "pct": 2.3069014094137383
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 4.103297726025049,
+     "bambu": 4.102823397493921,
+     "diff": 0.0004743285311281653,
+     "pct": 0.011561027253034916
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 0.846046169537096,
+     "bambu": 0.8460980653762817,
+     "diff": -5.189583918574492e-05,
+     "pct": -0.006133548971379044
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.002176830814232691,
+     "bambu": 0.0022318419069051743,
+     "diff": -5.501109267248318e-05,
+     "pct": -2.464829274075481
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 0.8786045832405158,
+     "bambu": 0.8678525686264038,
+     "diff": 0.010752014614112015,
+     "pct": 1.2389217941855952
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.33612099724500233,
+     "bambu": 0.3253805637359619,
+     "diff": 0.010740433509040415,
+     "pct": 3.3008835517772366
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 1.7171107133534076,
+     "bambu": 1.7170225381851196,
+     "diff": 8.817516828796279e-05,
+     "pct": 0.005135352991997607
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.001943367326120292,
+     "bambu": 0.0018577311420813203,
+     "diff": 8.563618403897161e-05,
+     "pct": 4.609718925367671
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 3.9418619553025036,
+     "bambu": 3.8782083988189697,
+     "diff": 0.06365355648353388,
+     "pct": 1.641313460692785
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 2.940084500023119,
+     "bambu": 2.8768880367279053,
+     "diff": 0.06319646329521378,
+     "pct": 2.1966952654539775
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 1.6740000325725137,
+     "bambu": 1.6735232061679415,
+     "diff": 0.00047682640457225034,
+     "pct": 0.028492368842861437
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 2.4292976934525354,
+     "bambu": 2.4292994829822505,
+     "diff": -1.7895297150793965e-06,
+     "pct": -7.366443403192671e-05
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 23,
+     "bambu": 23,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 18,
+     "bambu": 18,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 25,
+     "bambu": 25,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 6,
+     "bambu": 6,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 5",
+     "bambu": "1 2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 11\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"12 19\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"20 24\"}]",
+     "bambu": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 11\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"12 19\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"20 24\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -0.005030485598145322,
+    "grams_pct": 1.0184703951265255,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 1864.3,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 0.846,
+      "meters": 0.2837,
+      "model_grams": 0.0022,
+      "flush_grams": 0.6659,
+      "tower_grams": 0.178
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 0.8786,
+      "meters": 0.2946,
+      "model_grams": 0.3361,
+      "flush_grams": 0.1141,
+      "tower_grams": 0.4284
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 1.7171,
+      "meters": 0.5666,
+      "model_grams": 0.0019,
+      "flush_grams": 1.6493,
+      "tower_grams": 0.0658
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 3.9419,
+      "meters": 1.3216,
+      "model_grams": 2.9401,
+      "flush_grams": 0.0,
+      "tower_grams": 1.0018
+     }
+    ],
+    "total_grams": 7.3836,
+    "purge_grams": 4.1033,
+    "slots_used": 4,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 23,
+    "nozzle_changes": 18,
+    "ams_swaps": 6,
+    "model_time_s": 1555.4,
+    "prepare_time_s": 308.9,
+    "tower_grams": 1.674,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "keychain_4c_008",
+   "product": "keychain",
+   "wall_s": 2.353,
+   "timings": {
+    "load": 0.603,
+    "section": 0.371,
+    "segment": 0.312,
+    "walls": 0.147,
+    "surfaces": 0.314,
+    "grouping": 0.006,
+    "fills": 0.067,
+    "changes": 0.008,
+    "moves": 0.448,
+    "estimate": 0.068,
+    "total": 2.345
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 3772.7308865253417,
+     "bambu": 3842.885009765625,
+     "diff": -70.1541232402833,
+     "pct": -1.8255587419869728
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 1445.5194553208569,
+     "bambu": 1505.001953125,
+     "diff": -59.48249780414312,
+     "pct": -3.9523203063380157
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 37.490557974835546,
+     "bambu": 34.67684555053711,
+     "diff": 2.813712424298437,
+     "pct": 8.114095672854118
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 87.54672156698426,
+     "bambu": 69.48550415039062,
+     "diff": 18.061217416593635,
+     "pct": 25.992784592168928
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.70375066562445,
+     "bambu": 287.3901062011719,
+     "diff": 0.31364446445257954,
+     "pct": 0.10913544262133705
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 1109.0417035753342,
+     "bambu": 1109.042724609375,
+     "diff": -0.0010210340408320917,
+     "pct": -9.206444604663166e-05
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 6.864505767822266,
+     "diff": -6.864505767822266,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 109.2193112543907,
+     "bambu": 97.78703308105469,
+     "diff": 11.432278173336016,
+     "pct": 11.690996048381912
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 461.6342893843683,
+     "bambu": 471.2350158691406,
+     "diff": -9.600726484772338,
+     "pct": -2.037354220603676
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 200.7788700804652,
+     "bambu": 203.62747192382812,
+     "diff": -2.8486018433629283,
+     "pct": -1.3989280603692404
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 909.228580425487,
+     "bambu": 920.166259765625,
+     "diff": -10.937679340137947,
+     "pct": -1.1886633773035622
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 246.593228468525,
+     "bambu": 315.9721374511719,
+     "diff": -69.37890898264686,
+     "pct": -21.957286975459407
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 30.008172506646776,
+     "bambu": 26.448625564575195,
+     "diff": 3.559546942071581,
+     "pct": 13.458343736542487
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 301.24830408464425,
+     "bambu": 307.89111328125,
+     "diff": -6.642809196605754,
+     "pct": -2.1575189766967164
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 293.4857006226807,
+     "bambu": 300.17510986328125,
+     "diff": -6.689409240600526,
+     "pct": -2.228502304420678
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.9411472036637,
+     "bambu": 308.68270267979847,
+     "diff": 0.25844452386525063,
+     "pct": 0.0837249776620426
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 10.636926286359495,
+     "bambu": 10.684714794158936,
+     "diff": -0.04778850779944044,
+     "pct": -0.4472604905239512
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.3687962122279678,
+     "bambu": 3.3094939946895465,
+     "diff": 0.05930221753842124,
+     "pct": 1.7918817086109926
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 7.268130074131529,
+     "bambu": 7.375220799469389,
+     "diff": -0.10709072533786035,
+     "pct": -1.4520341593781843
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 1.4445627669771863,
+     "bambu": 1.4701359272003174,
+     "diff": -0.025573160223131053,
+     "pct": -1.739509915374411
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.0016687047158732572,
+     "bambu": 0.0017181872390210629,
+     "diff": -4.948252314780567e-05,
+     "pct": -2.879926123534612
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 1.2708642048887173,
+     "bambu": 1.256603479385376,
+     "diff": 0.014260725503341343,
+     "pct": 1.134862805752892
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.3230150283578485,
+     "bambu": 0.30091890692710876,
+     "diff": 0.022096121430739746,
+     "pct": 7.342882391930283
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 2.9245549821041634,
+     "bambu": 2.950451374053955,
+     "diff": -0.025896391949791653,
+     "pct": -0.8777094981982266
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.0014625190725454746,
+     "bambu": 0.0014283478958532214,
+     "diff": 3.417117669225322e-05,
+     "pct": 2.3923567074561425
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 4.996944332389428,
+     "bambu": 5.007524013519287,
+     "diff": -0.010579681129859075,
+     "pct": -0.21127569436104765
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 3.0426499600817007,
+     "bambu": 3.0054285526275635,
+     "diff": 0.03722140745413727,
+     "pct": 1.2384725440102582
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 3.1858345463729787,
+     "bambu": 3.292920989288067,
+     "diff": -0.1070864429150884,
+     "pct": -3.2520198104795885
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 4.08229552775855,
+     "bambu": 4.082299106817981,
+     "diff": -3.5790594310469714e-06,
+     "pct": -8.767264076925346e-05
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 47,
+     "bambu": 47,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 38,
+     "bambu": 38,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 61,
+     "bambu": 61,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 10,
+     "bambu": 10,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 5",
+     "bambu": "1 2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 28\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"29 51\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"52 60\"}]",
+     "bambu": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 28\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"29 51\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"52 60\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -1.8255587419869728,
+    "grams_pct": -0.4472604905239512,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.08mm High Quality @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 3772.7,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 1.4446,
+      "meters": 0.4843,
+      "model_grams": 0.0017,
+      "flush_grams": 1.142,
+      "tower_grams": 0.3009
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 1.2709,
+      "meters": 0.4261,
+      "model_grams": 0.323,
+      "flush_grams": 0.1141,
+      "tower_grams": 0.8338
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 2.9246,
+      "meters": 0.965,
+      "model_grams": 0.0015,
+      "flush_grams": 2.8262,
+      "tower_grams": 0.0969
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 4.9969,
+      "meters": 1.6754,
+      "model_grams": 3.0426,
+      "flush_grams": 0.0,
+      "tower_grams": 1.9543
+     }
+    ],
+    "total_grams": 10.6369,
+    "purge_grams": 7.2681,
+    "slots_used": 4,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 47,
+    "nozzle_changes": 38,
+    "ams_swaps": 10,
+    "model_time_s": 3463.8,
+    "prepare_time_s": 308.9,
+    "tower_grams": 3.1858,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "keychain_4c_012",
+   "product": "keychain",
+   "wall_s": 1.806,
+   "timings": {
+    "load": 0.573,
+    "section": 0.394,
+    "segment": 0.237,
+    "walls": 0.142,
+    "surfaces": 0.129,
+    "grouping": 0.003,
+    "fills": 0.034,
+    "changes": 0.005,
+    "moves": 0.264,
+    "estimate": 0.021,
+    "total": 1.802
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 2683.3673981936317,
+     "bambu": 2735.02880859375,
+     "diff": -51.66141040011826,
+     "pct": -1.8888799356625654
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 952.2337253563035,
+     "bambu": 997.5059204101562,
+     "diff": -45.27219505385278,
+     "pct": -4.538538982830065
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 37.503309957711735,
+     "bambu": 34.67677307128906,
+     "diff": 2.826536886422673,
+     "pct": 8.151095491532137
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 85.94730642961929,
+     "bambu": 68.666748046875,
+     "diff": 17.28055838274429,
+     "pct": 25.16583189719106
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.70375066562445,
+     "bambu": 287.38934326171875,
+     "diff": 0.31440740390570454,
+     "pct": 0.10940120476888424
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 884.5471822582606,
+     "bambu": 884.7393188476562,
+     "diff": -0.19213658939565903,
+     "pct": -0.02171674585977603
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 4.7915730476379395,
+     "diff": -4.7915730476379395,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 74.57523426140155,
+     "bambu": 66.26141357421875,
+     "diff": 8.313820687182798,
+     "pct": 12.54700169936847
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 236.40764427681214,
+     "bambu": 238.2247772216797,
+     "diff": -1.8171329448675522,
+     "pct": -0.7627808349996364
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 137.97724787674161,
+     "bambu": 140.3680877685547,
+     "diff": -2.390839891813073,
+     "pct": -1.7032645595024412
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 537.645343375404,
+     "bambu": 544.1102294921875,
+     "diff": -6.464886116783532,
+     "pct": -1.1881574295739934
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 163.36895158770386,
+     "bambu": 226.8855438232422,
+     "diff": -63.516592235538326,
+     "pct": -27.994993054745553
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 31.29046793496031,
+     "bambu": 27.507469177246094,
+     "diff": 3.7829987577142177,
+     "pct": 13.752623817691948
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 214.16356303135987,
+     "bambu": 219.1446990966797,
+     "diff": -4.9811360653198165,
+     "pct": -2.272989529681618
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 206.40095956939726,
+     "bambu": 211.42874145507812,
+     "diff": -5.0277818856808665,
+     "pct": -2.3780030335890308
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.9411472036637,
+     "bambu": 308.681956585246,
+     "diff": 0.2591906184177333,
+     "pct": 0.0839668833530135
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 8.696372227443334,
+     "bambu": 8.69659423828125,
+     "diff": -0.00022201083791628662,
+     "pct": -0.002552848067109127
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.110990711842179,
+     "bambu": 3.0663822961505502,
+     "diff": 0.04460841569162888,
+     "pct": 1.4547571497405598
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 5.585381515601155,
+     "bambu": 5.6302119421307,
+     "diff": -0.044830426529545164,
+     "pct": -0.7962475834005552
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 1.1380912114258737,
+     "bambu": 1.1497496366500854,
+     "diff": -0.011658425224211788,
+     "pct": -1.0139968609322476
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.025728817830751927,
+     "bambu": 0.02300044149160385,
+     "diff": 0.0027283763391480753,
+     "pct": 11.86227812254843
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 1.0700564049109498,
+     "bambu": 1.0496641397476196,
+     "diff": 0.020392265163330148,
+     "pct": 1.9427419105918249
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.33399056898122625,
+     "bambu": 0.31362584233283997,
+     "diff": 0.02036472664838629,
+     "pct": 6.493319076294079
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 2.3188198537929483,
+     "bambu": 2.3305020332336426,
+     "diff": -0.011682179440694274,
+     "pct": -0.5012730851165529
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.00168148392125691,
+     "bambu": 0.0016309169586747885,
+     "diff": 5.0566962582121585e-05,
+     "pct": 3.100523439477267
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 4.169404757313562,
+     "bambu": 4.166678428649902,
+     "diff": 0.0027263286636598494,
+     "pct": 0.06543170322225325
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 2.749589841108944,
+     "bambu": 2.7281250953674316,
+     "diff": 0.02146474574151247,
+     "pct": 0.7867947763085086
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 2.353892683628452,
+     "bambu": 2.3958751451083127,
+     "diff": -0.04198246147986051,
+     "pct": -1.7522808551011773
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 3.231488831972703,
+     "bambu": 3.234335973749747,
+     "diff": -0.0028471417770439267,
+     "pct": -0.08802863401179302
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 35,
+     "bambu": 35,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 28,
+     "bambu": 28,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 41,
+     "bambu": 41,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 8,
+     "bambu": 8,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 5",
+     "bambu": "1 2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 19\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"20 33\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"34 40\"}]",
+     "bambu": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 19\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"20 33\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"34 40\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -1.8888799356625654,
+    "grams_pct": -0.002552848067109127,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.12mm High Quality @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 2683.4,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 1.1381,
+      "meters": 0.3816,
+      "model_grams": 0.0257,
+      "flush_grams": 0.8796,
+      "tower_grams": 0.2327
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 1.0701,
+      "meters": 0.3588,
+      "model_grams": 0.334,
+      "flush_grams": 0.1141,
+      "tower_grams": 0.622
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 2.3188,
+      "meters": 0.7651,
+      "model_grams": 0.0017,
+      "flush_grams": 2.2378,
+      "tower_grams": 0.0794
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 4.1694,
+      "meters": 1.3979,
+      "model_grams": 2.7496,
+      "flush_grams": 0.0,
+      "tower_grams": 1.4198
+     }
+    ],
+    "total_grams": 8.6964,
+    "purge_grams": 5.5854,
+    "slots_used": 4,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 35,
+    "nozzle_changes": 28,
+    "ams_swaps": 8,
+    "model_time_s": 2374.4,
+    "prepare_time_s": 308.9,
+    "tower_grams": 2.3539,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "keychain_4c_016",
+   "product": "keychain",
+   "wall_s": 1.705,
+   "timings": {
+    "load": 0.621,
+    "section": 0.333,
+    "segment": 0.194,
+    "walls": 0.056,
+    "surfaces": 0.158,
+    "grouping": 0.003,
+    "fills": 0.055,
+    "changes": 0.005,
+    "moves": 0.263,
+    "estimate": 0.014,
+    "total": 1.702
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 2255.325043868189,
+     "bambu": 2247.43115234375,
+     "diff": 7.893891524438914,
+     "pct": 0.3512406382819207
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 823.0691734219316,
+     "bambu": 811.426025390625,
+     "diff": 11.643148031306623,
+     "pct": 1.4348995061751375
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 37.23343036010078,
+     "bambu": 34.44139862060547,
+     "diff": 2.7920317394953145,
+     "pct": 8.106615443383616
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 87.65033917252586,
+     "bambu": 69.60694885253906,
+     "diff": 18.0433903199868,
+     "pct": 25.92182334871675
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.70375066562445,
+     "bambu": 287.38983154296875,
+     "diff": 0.31391912265570454,
+     "pct": 0.1092311168319013
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 757.3417579311537,
+     "bambu": 757.3424072265625,
+     "diff": -0.000649295408834405,
+     "pct": -8.573340177954213e-05
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 5.919206142425537,
+     "diff": -5.919206142425537,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 50.92693559561925,
+     "bambu": 43.34019088745117,
+     "diff": 7.586744708168077,
+     "pct": 17.50510219918012
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 280.9906320082057,
+     "bambu": 288.2911376953125,
+     "diff": -7.300505687106806,
+     "pct": -2.532337880889881
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 97.02295686861515,
+     "bambu": 101.98797607421875,
+     "diff": -4.965019205603596,
+     "pct": -4.868239763862408
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 365.97296531144013,
+     "bambu": 369.9889221191406,
+     "diff": -4.015956807700491,
+     "pct": -1.0854262297094688
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 103.91912428489108,
+     "bambu": 99.5757064819336,
+     "diff": 4.3434178029574895,
+     "pct": 4.361925168711238
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 29.28072681322372,
+     "bambu": 19.153160095214844,
+     "diff": 10.127566718008875,
+     "pct": 52.876740275037484
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 165.0450283187512,
+     "bambu": 178.0977783203125,
+     "diff": -13.052750001561293,
+     "pct": -7.328979690069831
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 157.28242485678967,
+     "bambu": 170.38182067871094,
+     "diff": -13.099395821921263,
+     "pct": -7.6882590934526975
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.9411472036637,
+     "bambu": 308.68244801819213,
+     "diff": 0.25869918547158477,
+     "pct": 0.08380754627692287
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 8.10890502784817,
+     "bambu": 8.124154031276703,
+     "diff": -0.015249003428532859,
+     "pct": -0.1876995853331512
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.539946274624997,
+     "bambu": 3.53925621684175,
+     "diff": 0.0006900577832471555,
+     "pct": 0.019497254252559527
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 4.568958753223174,
+     "bambu": 4.584897814434953,
+     "diff": -0.015939061211779126,
+     "pct": -0.3476426707177
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 1.0139314444988687,
+     "bambu": 1.018515944480896,
+     "diff": -0.004584499982027257,
+     "pct": -0.4501156812389251
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.002134737866383206,
+     "bambu": 0.002191130304709077,
+     "diff": -5.6392438325870986e-05,
+     "pct": -2.573668859614371
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 0.8888458155224049,
+     "bambu": 0.8766908049583435,
+     "diff": 0.01215501056406143,
+     "pct": 1.386464931001413
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.3047606147674657,
+     "bambu": 0.2926081418991089,
+     "diff": 0.0121524728683568,
+     "pct": 4.15315609110664
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 1.8296737581405165,
+     "bambu": 1.8342052698135376,
+     "diff": -0.004531511673021127,
+     "pct": -0.24705586379008676
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.0018914897488709064,
+     "bambu": 0.00182336347643286,
+     "diff": 6.812627243804647e-05,
+     "pct": 3.736296866674406
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 4.37645400968638,
+     "bambu": 4.394742012023926,
+     "diff": -0.01828800233754535,
+     "pct": -0.416133695391214
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 3.2311594322422774,
+     "bambu": 3.242633581161499,
+     "diff": -0.011474148919221605,
+     "pct": -0.35385277528371273
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 1.8997420264469815,
+     "bambu": 1.9156782012942764,
+     "diff": -0.015936174847294815,
+     "pct": -0.8318816196022886
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 2.669216726776192,
+     "bambu": 2.669219411070765,
+     "diff": -2.6842945728411394e-06,
+     "pct": -0.00010056477791626455
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 27,
+     "bambu": 27,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 21,
+     "bambu": 21,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 31,
+     "bambu": 31,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 7,
+     "bambu": 7,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 5",
+     "bambu": "1 2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 14\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"15 24\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"25 30\"}]",
+     "bambu": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 14\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"15 24\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"25 30\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": 0.3512406382819207,
+    "grams_pct": -0.1876995853331512,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.16mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 2255.3,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 1.0139,
+      "meters": 0.34,
+      "model_grams": 0.0021,
+      "flush_grams": 0.7899,
+      "tower_grams": 0.2219
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 0.8888,
+      "meters": 0.298,
+      "model_grams": 0.3048,
+      "flush_grams": 0.1141,
+      "tower_grams": 0.47
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 1.8297,
+      "meters": 0.6037,
+      "model_grams": 0.0019,
+      "flush_grams": 1.7653,
+      "tower_grams": 0.0625
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 4.3765,
+      "meters": 1.4674,
+      "model_grams": 3.2312,
+      "flush_grams": 0.0,
+      "tower_grams": 1.1453
+     }
+    ],
+    "total_grams": 8.1089,
+    "purge_grams": 4.569,
+    "slots_used": 4,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 27,
+    "nozzle_changes": 21,
+    "ams_swaps": 7,
+    "model_time_s": 1946.4,
+    "prepare_time_s": 308.9,
+    "tower_grams": 1.8997,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "keychain_4c_024",
+   "product": "keychain",
+   "wall_s": 0.702,
+   "timings": {
+    "load": 0.198,
+    "section": 0.035,
+    "segment": 0.136,
+    "walls": 0.055,
+    "surfaces": 0.08,
+    "grouping": 0.005,
+    "fills": 0.048,
+    "changes": 0.003,
+    "moves": 0.138,
+    "estimate": 0.003,
+    "total": 0.699
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 1645.6512612481665,
+     "bambu": 1646.2701416015625,
+     "diff": -0.6188803533959799,
+     "pct": -0.03759287967124924
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 561.7282392776239,
+     "bambu": 559.5233154296875,
+     "diff": 2.2049238479363567,
+     "pct": 0.39407184421672925
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 37.23244873145213,
+     "bambu": 34.44129943847656,
+     "diff": 2.791149292975568,
+     "pct": 8.104076612909088
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 47.94886449417367,
+     "bambu": 45.69710922241211,
+     "diff": 2.25175527176156,
+     "pct": 4.9275661197780725
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.70375066562445,
+     "bambu": 287.3898620605469,
+     "diff": 0.31388860507757954,
+     "pct": 0.10922048635503014
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 554.4826881190969,
+     "bambu": 554.483154296875,
+     "diff": -0.00046617777809387917,
+     "pct": -8.407429053187857e-05
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 2.0718841552734375,
+     "diff": -2.0718841552734375,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 34.67644919808961,
+     "bambu": 30.8590145111084,
+     "diff": 3.8174346869812084,
+     "pct": 12.370565772951164
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 185.30028558974598,
+     "bambu": 187.64004516601562,
+     "diff": -2.3397595762696426,
+     "pct": -1.2469404247902023
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 68.32377079488577,
+     "bambu": 72.94236755371094,
+     "diff": -4.618596758825163,
+     "pct": -6.331843774366482
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 220.49918664778207,
+     "bambu": 223.58981323242188,
+     "diff": -3.090626584639807,
+     "pct": -1.3822752208425064
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 69.88460785058875,
+     "bambu": 67.3228988647461,
+     "diff": 2.5617089858426567,
+     "pct": 3.805107963323466
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 26.663933090872998,
+     "bambu": 27.537412643432617,
+     "diff": -0.8734795525596191,
+     "pct": -3.1719739391272648
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 120.69787952781368,
+     "bambu": 120.01268768310547,
+     "diff": 0.6851918447082141,
+     "pct": 0.5709328387990685
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 112.93527606585278,
+     "bambu": 112.29672241210938,
+     "diff": 0.6385536537434007,
+     "pct": 0.5686307133702622
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.9411472036637,
+     "bambu": 308.6824739817569,
+     "diff": 0.258673221906804,
+     "pct": 0.08379912813647189
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 6.70895146944046,
+     "bambu": 6.643678367137909,
+     "diff": 0.06527310230255079,
+     "pct": 0.9824843813242932
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.4838070082852526,
+     "bambu": 3.419227525475435,
+     "diff": 0.06457948280981762,
+     "pct": 1.8887155747507036
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 3.2251444611552067,
+     "bambu": 3.224450841662474,
+     "diff": 0.0006936194927327222,
+     "pct": 0.021511244140261208
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 0.7041378729374553,
+     "bambu": 0.7041850686073303,
+     "diff": -4.719566987498869e-05,
+     "pct": -0.006702168503562246
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.002050491845171628,
+     "bambu": 0.002093869261443615,
+     "diff": -4.337741627198676e-05,
+     "pct": -2.071639193083157
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 0.8021535961201759,
+     "bambu": 0.7920006513595581,
+     "diff": 0.010152944760617788,
+     "pct": 1.2819364154801032
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.32826967412698577,
+     "bambu": 0.3181132972240448,
+     "diff": 0.010156376902940967,
+     "pct": 3.192691720707263
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 1.2188249196580179,
+     "bambu": 1.218729019165039,
+     "diff": 9.590049297880654e-05,
+     "pct": 0.007868893861615663
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.0018401350957234096,
+     "bambu": 0.0017427176935598254,
+     "diff": 9.741740216358415e-05,
+     "pct": 5.589970339062259
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 3.9838350807248104,
+     "bambu": 3.9287636280059814,
+     "diff": 0.05507145271882896,
+     "pct": 1.4017502179631032
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 3.1516467072173717,
+     "bambu": 3.0972776412963867,
+     "diff": 0.054369065920985005,
+     "pct": 1.7553823782561664
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 1.3824266515320223,
+     "bambu": 1.3817309621937117,
+     "diff": 0.0006956893383105456,
+     "pct": 0.05034911696601422
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 1.8427178096231844,
+     "bambu": 1.8427195991529,
+     "diff": -1.7895297155234857e-06,
+     "pct": -9.711351180864057e-05
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 19,
+     "bambu": 19,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 15,
+     "bambu": 15,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 21,
+     "bambu": 21,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 5,
+     "bambu": 5,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 5",
+     "bambu": "1 2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 9\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"10 16\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"17 20\"}]",
+     "bambu": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 9\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"10 16\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"17 20\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -0.03759287967124924,
+    "grams_pct": 0.9824843813242932,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.24mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 1645.7,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 0.7041,
+      "meters": 0.2361,
+      "model_grams": 0.0021,
+      "flush_grams": 0.5518,
+      "tower_grams": 0.1503
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 0.8022,
+      "meters": 0.2689,
+      "model_grams": 0.3283,
+      "flush_grams": 0.1141,
+      "tower_grams": 0.3598
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 1.2188,
+      "meters": 0.4022,
+      "model_grams": 0.0018,
+      "flush_grams": 1.1768,
+      "tower_grams": 0.0401
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 3.9838,
+      "meters": 1.3357,
+      "model_grams": 3.1516,
+      "flush_grams": 0.0,
+      "tower_grams": 0.8322
+     }
+    ],
+    "total_grams": 6.709,
+    "purge_grams": 3.2251,
+    "slots_used": 4,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 19,
+    "nozzle_changes": 15,
+    "ams_swaps": 5,
+    "model_time_s": 1336.7,
+    "prepare_time_s": 308.9,
+    "tower_grams": 1.3824,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "keychain_4c_028",
+   "product": "keychain",
+   "wall_s": 0.741,
+   "timings": {
+    "load": 0.172,
+    "section": 0.05,
+    "segment": 0.193,
+    "walls": 0.05,
+    "surfaces": 0.061,
+    "grouping": 0.002,
+    "fills": 0.029,
+    "changes": 0.005,
+    "moves": 0.175,
+    "estimate": 0.003,
+    "total": 0.74
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 1536.7660188001225,
+     "bambu": 1540.9102783203125,
+     "diff": -4.144259520189962,
+     "pct": -0.2689487881609474
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 500.1996912646355,
+     "bambu": 500.75634765625,
+     "diff": -0.5566563916145242,
+     "pct": -0.11116312238874451
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 37.2415242354603,
+     "bambu": 34.441287994384766,
+     "diff": 2.800236241075531,
+     "pct": 8.130463185732415
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 47.70524572607038,
+     "bambu": 46.0583381652832,
+     "diff": 1.6469075607871773,
+     "pct": 3.5756990512274833
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.7057506656244,
+     "bambu": 287.391845703125,
+     "diff": 0.31390496249940725,
+     "pct": 0.1092254241700616
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 544.4826881190968,
+     "bambu": 544.483154296875,
+     "diff": -0.000466177778207566,
+     "pct": -8.561840242965283e-05
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 2.729238748550415,
+     "diff": -2.729238748550415,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 31.89537694694915,
+     "bambu": 28.76426887512207,
+     "diff": 3.1311080718270787,
+     "pct": 10.88540816184326
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 150.71421087577627,
+     "bambu": 154.54103088378906,
+     "diff": -3.8268200080127883,
+     "pct": -2.4762485316216507
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 60.780475457226395,
+     "bambu": 64.18929290771484,
+     "diff": -3.408817450488449,
+     "pct": -5.310570184017009
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 183.1424922127265,
+     "bambu": 186.99688720703125,
+     "diff": -3.854394994304755,
+     "pct": -2.0612081045164192
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 61.77758354642173,
+     "bambu": 59.30478286743164,
+     "diff": 2.4728006789900903,
+     "pct": 4.169647976821236
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 35.29589973692748,
+     "bambu": 31.058353424072266,
+     "diff": 4.2375463128552155,
+     "pct": 13.643821534888062
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 103.78937473980378,
+     "bambu": 108.67144012451172,
+     "diff": -4.882065384707943,
+     "pct": -4.4925008623372
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 96.02477127784286,
+     "bambu": 100.95347595214844,
+     "diff": -4.928704674305578,
+     "pct": -4.88215450515222
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.9411472036637,
+     "bambu": 308.68248407886256,
+     "diff": 0.25866312480115994,
+     "pct": 0.08379585436246405
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 6.4358999000161115,
+     "bambu": 6.386837899684906,
+     "diff": 0.049062000331205446,
+     "pct": 0.768173564161162
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.4013525032865797,
+     "bambu": 3.352618868695572,
+     "diff": 0.04873363459100766,
+     "pct": 1.453599007213391
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 3.0345473967295327,
+     "bambu": 3.034219030989334,
+     "diff": 0.00032836574019867726,
+     "pct": 0.010822084261056483
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 0.700117281981584,
+     "bambu": 0.7001534700393677,
+     "diff": -3.618805778371481e-05,
+     "pct": -0.00516858936394046
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.002350618966610093,
+     "bambu": 0.0023858011700212955,
+     "diff": -3.5182203411202734e-05,
+     "pct": -1.4746494323702883
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 0.705018276918648,
+     "bambu": 0.7007606625556946,
+     "diff": 0.004257614362953466,
+     "pct": 0.6075704003455077
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.2995325261959113,
+     "bambu": 0.2952784597873688,
+     "diff": 0.004254066408542534,
+     "pct": 1.440696490900794
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 1.218265502742981,
+     "bambu": 1.2181684970855713,
+     "diff": 9.70056574096656e-05,
+     "pct": 0.007963238061216366
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.002082339338410504,
+     "bambu": 0.0019858672749251127,
+     "diff": 9.647206348539121e-05,
+     "pct": 4.857931076437582
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 3.812498838372899,
+     "bambu": 3.7677552700042725,
+     "diff": 0.04474356836862636,
+     "pct": 1.1875391356980471
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 3.0973870187856476,
+     "bambu": 3.052968740463257,
+     "diff": 0.04441827832239076,
+     "pct": 1.4549208360269925
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 1.1918295871063482,
+     "bambu": 1.191499248725858,
+     "diff": 0.000330338380490236,
+     "pct": 0.027724598302809402
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 1.8427178096231844,
+     "bambu": 1.8427195991529,
+     "diff": -1.7895297155234857e-06,
+     "pct": -9.711351180864057e-05
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 17,
+     "bambu": 17,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 13,
+     "bambu": 13,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 18,
+     "bambu": 18,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 5,
+     "bambu": 5,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 5",
+     "bambu": "1 2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 8\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"9 13\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"14 17\"}]",
+     "bambu": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 8\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"9 13\"}, {\"filament_list\": \"0 2 4\", \"layer_ranges\": \"14 17\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -0.2689487881609474,
+    "grams_pct": 0.768173564161162,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.24mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 1536.8,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 0.7001,
+      "meters": 0.2347,
+      "model_grams": 0.0024,
+      "flush_grams": 0.5518,
+      "tower_grams": 0.146
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 0.705,
+      "meters": 0.2364,
+      "model_grams": 0.2995,
+      "flush_grams": 0.1141,
+      "tower_grams": 0.2914
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 1.2183,
+      "meters": 0.402,
+      "model_grams": 0.0021,
+      "flush_grams": 1.1768,
+      "tower_grams": 0.0393
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 3.8125,
+      "meters": 1.2783,
+      "model_grams": 3.0974,
+      "flush_grams": 0.0,
+      "tower_grams": 0.7151
+     }
+    ],
+    "total_grams": 6.4359,
+    "purge_grams": 3.0345,
+    "slots_used": 4,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 17,
+    "nozzle_changes": 13,
+    "ams_swaps": 5,
+    "model_time_s": 1227.8,
+    "prepare_time_s": 308.9,
+    "tower_grams": 1.1918,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "keychain_1c_020",
+   "product": "keychain",
+   "wall_s": 0.576,
+   "timings": {
+    "load": 0.227,
+    "section": 0.106,
+    "segment": 0.001,
+    "walls": 0.032,
+    "surfaces": 0.079,
+    "grouping": 0.002,
+    "fills": 0.035,
+    "changes": 0.0,
+    "moves": 0.088,
+    "estimate": 0.004,
+    "total": 0.575
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 693.4711337880831,
+     "bambu": 691.7348022460938,
+     "diff": 1.7363315419893297,
+     "pct": 0.2510111586624504
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 355.8545341299084,
+     "bambu": 354.12677001953125,
+     "diff": 1.7277641103771657,
+     "pct": 0.48789423919628383
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 35.86204727538321,
+     "bambu": 34.57115936279297,
+     "diff": 1.290887912590243,
+     "pct": 3.734002377656893
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 43.54792942184445,
+     "bambu": 41.80240249633789,
+     "diff": 1.7455269255065602,
+     "pct": 4.175661735373888
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.37920312013546,
+     "bambu": 287.32403564453125,
+     "diff": 0.05516747560420754,
+     "pct": 0.019200438793940337
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 29.0,
+     "bambu": 29.0,
+     "diff": 0.0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 2.093932628631592,
+     "diff": -2.093932628631592,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 34.6024259209703,
+     "bambu": 32.86801528930664,
+     "diff": 1.734410631663657,
+     "pct": 5.276894927780852
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 92.52085441786154,
+     "bambu": 93.5405502319336,
+     "diff": -1.0196958140720511,
+     "pct": -1.0901109856032678
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 40.21064003733869,
+     "bambu": 45.57349395751953,
+     "diff": -5.362853920180839,
+     "pct": -11.767484681292425
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 84.61909808101713,
+     "bambu": 79.51363372802734,
+     "diff": 5.1054643529897845,
+     "pct": 6.4208666031447965
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 23.350258368418455,
+     "bambu": 19.65274429321289,
+     "diff": 3.6975140752055644,
+     "pct": 18.81423795089273
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 30.14128060707485,
+     "bambu": 33.50971603393555,
+     "diff": -3.368435426860696,
+     "pct": -10.052115701158003
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 22.37867714511413,
+     "bambu": 25.793746948242188,
+     "diff": -3.415069803128059,
+     "pct": -13.239913572776956
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.61659965817466,
+     "bambu": 308.6166406188866,
+     "diff": -4.0960711942261696e-05,
+     "pct": -1.3272360122941148e-05
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 3.2462183161764675,
+     "bambu": 3.197725296020508,
+     "diff": 0.04849302015595969,
+     "pct": 1.516484865548272
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.2462183161764675,
+     "bambu": 3.197725296020508,
+     "diff": 0.04849302015595969,
+     "pct": 1.516484865548272
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 0.0,
+     "bambu": 0.0,
+     "diff": 0.0,
+     "pct": null
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 3.2462183161764675,
+     "bambu": 3.197725296020508,
+     "diff": 0.04849302015595969,
+     "pct": 1.516484865548272
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 3.2462183161764675,
+     "bambu": 3.197725296020508,
+     "diff": 0.04849302015595969,
+     "pct": 1.516484865548272
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 0.0,
+     "bambu": 0.0,
+     "diff": 0.0,
+     "pct": null
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 0.0,
+     "bambu": 0.0,
+     "diff": 0.0,
+     "pct": null
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 0,
+     "bambu": 0,
+     "diff": 0,
+     "pct": null
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 0,
+     "bambu": 0,
+     "diff": 0,
+     "pct": null
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 25,
+     "bambu": 25,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 0,
+     "bambu": 0,
+     "diff": 0,
+     "pct": null
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1",
+     "bambu": "1"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 1",
+     "bambu": "1 1 1 1 1"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 24\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 24\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": 0.2510111586624504,
+    "grams_pct": 1.516484865548272,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 693.5,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 3.2462,
+      "meters": 1.0884,
+      "model_grams": 3.2462,
+      "flush_grams": 0.0,
+      "tower_grams": 0.0
+     }
+    ],
+    "total_grams": 3.2462,
+    "purge_grams": 0.0,
+    "slots_used": 1,
+    "expected_slots": 1,
+    "output": null,
+    "log": null,
+    "filament_changes": 0,
+    "nozzle_changes": 0,
+    "ams_swaps": 0,
+    "model_time_s": 384.9,
+    "prepare_time_s": 308.6,
+    "tower_grams": 0.0,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "keychain_thin_3c_020",
+   "product": "keychain",
+   "wall_s": 1.834,
+   "timings": {
+    "load": 1.0,
+    "section": 0.156,
+    "segment": 0.372,
+    "walls": 0.049,
+    "surfaces": 0.064,
+    "grouping": 0.001,
+    "fills": 0.034,
+    "changes": 0.003,
+    "moves": 0.15,
+    "estimate": 0.003,
+    "total": 1.833
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 1321.253345823444,
+     "bambu": 1320.47900390625,
+     "diff": 0.7743419171940786,
+     "pct": 0.05864098671038427
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 562.341007131304,
+     "bambu": 555.6931762695312,
+     "diff": 6.647830861772718,
+     "pct": 1.1963132076590914
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 37.21886611545587,
+     "bambu": 34.44073486328125,
+     "diff": 2.7781312521746173,
+     "pct": 8.066411077472399
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 48.22904082572166,
+     "bambu": 46.38446044921875,
+     "diff": 1.8445803765029112,
+     "pct": 3.976720562530504
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.7037506157589,
+     "bambu": 287.38983154296875,
+     "diff": 0.3139190727901564,
+     "pct": 0.10923109948071394
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 227.44473816481963,
+     "bambu": 227.44488525390625,
+     "diff": -0.000147089086624419,
+     "pct": -6.467021074587687e-05
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 2.52850604057312,
+     "diff": -2.52850604057312,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 37.5319221839201,
+     "bambu": 32.40480422973633,
+     "diff": 5.127117954183774,
+     "pct": 15.822092051026386
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 162.300577379498,
+     "bambu": 164.468505859375,
+     "diff": -2.1679284798769913,
+     "pct": -1.318142016642766
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 77.13745197680332,
+     "bambu": 81.68887329101562,
+     "diff": -4.5514213142123054,
+     "pct": -5.571653924026987
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 222.52645337352226,
+     "bambu": 228.66714477539062,
+     "diff": -6.1406914018683665,
+     "pct": -2.6854279428293424
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 83.94125091733332,
+     "bambu": 79.66263580322266,
+     "diff": 4.278615114110664,
+     "pct": 5.370918337022409
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 32.74660153960402,
+     "bambu": 24.291872024536133,
+     "diff": 8.45472951506789,
+     "pct": 34.80476723460483
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 112.23529619296681,
+     "bambu": 118.8254623413086,
+     "diff": -6.59016614834178,
+     "pct": -5.546089212270431
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 104.47269273100608,
+     "bambu": 111.1094970703125,
+     "diff": -6.636804339306423,
+     "pct": -5.9732106744273255
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.94114715379817,
+     "bambu": 308.6824502965059,
+     "diff": 0.2586968572922501,
+     "pct": 0.08380679142716342
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 4.905252642215076,
+     "bambu": 4.83655521273613,
+     "diff": 0.06869742947894597,
+     "pct": 1.4203793083565885
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.2816369357192596,
+     "bambu": 3.2075903231452685,
+     "diff": 0.07404661257399114,
+     "pct": 2.308480981492151
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 1.6236157064958159,
+     "bambu": 1.6289648895908613,
+     "diff": -0.005349183095045396,
+     "pct": -0.328379275036979
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 0.8079386244263278,
+     "bambu": 0.8009244203567505,
+     "diff": 0.007014204069577312,
+     "pct": 0.8757635416401739
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.3360517480596734,
+     "bambu": 0.3248816430568695,
+     "diff": 0.01117010500280391,
+     "pct": 3.4382074954135273
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 0.3191205091401529,
+     "bambu": 0.3190949857234955,
+     "diff": 2.5523416657402542e-05,
+     "pct": 0.007998689355626315
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.00011884596205600756,
+     "bambu": 9.382909047417343e-05,
+     "diff": 2.5016871581834136e-05,
+     "pct": 26.66216996819346
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 3.778193508648595,
+     "bambu": 3.716535806655884,
+     "diff": 0.06165770199271137,
+     "pct": 1.6590100351593435
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 2.9454663416975304,
+     "bambu": 2.882614850997925,
+     "diff": 0.0628514906996056,
+     "pct": 2.180363799827341
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 1.2852555724824652,
+     "bambu": 1.290604659916371,
+     "diff": -0.005349087433905719,
+     "pct": -0.41446366963004233
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 0.3383601340133507,
+     "bambu": 0.3383601340133507,
+     "diff": 0.0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 18,
+     "bambu": 18,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 18,
+     "bambu": 18,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 25,
+     "bambu": 25,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 1,
+     "bambu": 1,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "2 3 5",
+     "bambu": "2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 11\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"12 19\"}, {\"filament_list\": \"2 4\", \"layer_ranges\": \"20 24\"}]",
+     "bambu": "[{\"filament_list\": \"1 4\", \"layer_ranges\": \"0 11\"}, {\"filament_list\": \"2 4\", \"layer_ranges\": \"20 24\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"12 19\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": 0.05864098671038427,
+    "grams_pct": 1.4203793083565885,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": false,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [
+     "3 filaments print, expected 4"
+    ],
+    "warnings": [],
+    "print_time_s": 1321.3,
+    "filaments": [
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 0.8079,
+      "meters": 0.2709,
+      "model_grams": 0.3361,
+      "flush_grams": 0.1141,
+      "tower_grams": 0.3578
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 0.3191,
+      "meters": 0.1053,
+      "model_grams": 0.0001,
+      "flush_grams": 0.2243,
+      "tower_grams": 0.0947
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 3.7782,
+      "meters": 1.2668,
+      "model_grams": 2.9455,
+      "flush_grams": 0.0,
+      "tower_grams": 0.8327
+     }
+    ],
+    "total_grams": 4.9053,
+    "purge_grams": 1.6236,
+    "slots_used": 3,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 18,
+    "nozzle_changes": 18,
+    "ams_swaps": 1,
+    "model_time_s": 1012.3,
+    "prepare_time_s": 308.9,
+    "tower_grams": 1.2853,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "nameplate_5c_020",
+   "product": "nameplate",
+   "wall_s": 1.458,
+   "timings": {
+    "load": 0.009,
+    "section": 0.013,
+    "segment": 0.308,
+    "walls": 0.131,
+    "surfaces": 0.2,
+    "grouping": 0.01,
+    "fills": 0.274,
+    "changes": 0.004,
+    "moves": 0.487,
+    "estimate": 0.016,
+    "total": 1.453
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 3456.686926652267,
+     "bambu": 3470.112548828125,
+     "diff": -13.425622175857825,
+     "pct": -0.3868929894043848
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 1838.8335188504075,
+     "bambu": 1859.671142578125,
+     "diff": -20.837623727717528,
+     "pct": -1.1205004611100018
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 118.47708922933492,
+     "bambu": 115.1826400756836,
+     "diff": 3.2944491536513283,
+     "pct": 2.8601959040760216
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 135.22463801014936,
+     "bambu": 150.4180145263672,
+     "diff": -15.193376516217825,
+     "pct": -10.10076922239559
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 286.64394111977174,
+     "bambu": 286.3052673339844,
+     "diff": 0.33867378578736407,
+     "pct": 0.11829114739698104
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 517.7887972016346,
+     "bambu": 517.926513671875,
+     "diff": -0.13771647024043432,
+     "pct": -0.026589963364509785
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 2.3243987560272217,
+     "diff": -2.3243987560272217,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 207.41289523752818,
+     "bambu": 203.0797882080078,
+     "diff": 4.333107029520363,
+     "pct": 2.1336968428793646
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 360.56300381694433,
+     "bambu": 359.46600341796875,
+     "diff": 1.097000398975581,
+     "pct": 0.3051750064108413
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 267.06504888767694,
+     "bambu": 324.05804443359375,
+     "diff": -56.99299554591681,
+     "pct": -17.587279971874256
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 791.0132729424139,
+     "bambu": 783.7557373046875,
+     "diff": 7.2575356377263915,
+     "pct": 0.9259945787044366
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 287.71020528809265,
+     "bambu": 269.9814758300781,
+     "diff": 17.728729458014527,
+     "pct": 6.56664662029357
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 93.86449562444173,
+     "bambu": 82.46881103515625,
+     "diff": 11.39568458928548,
+     "pct": 13.818174951531104
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 397.5161427562434,
+     "bambu": 381.720703125,
+     "diff": 15.795439631243426,
+     "pct": 4.13795728183781
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 390.9235392942843,
+     "bambu": 375.1747131347656,
+     "diff": 15.748826159518671,
+     "pct": 4.197731245778702
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 309.051337657811,
+     "bambu": 308.767910891644,
+     "diff": 0.2834267661669969,
+     "pct": 0.09179281789630657
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 17.737863088721944,
+     "bambu": 17.10105174779892,
+     "diff": 0.6368113409230247,
+     "pct": 3.723813893522595
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 11.209025535610044,
+     "bambu": 10.904970310628414,
+     "diff": 0.30405522498162973,
+     "pct": 2.788226068669674
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 6.5288375531119005,
+     "bambu": 6.1960814371705055,
+     "diff": 0.332756115941395,
+     "pct": 5.370428379865694
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 1.2623249487225736,
+     "bambu": 1.124921202659607,
+     "diff": 0.13740374606296668,
+     "pct": 12.214521847228804
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.33621253209152047,
+     "bambu": 0.3026711940765381,
+     "diff": 0.03354133801498238,
+     "pct": 11.081774107152265
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 9.359787206467056,
+     "bambu": 9.22787094116211,
+     "diff": 0.13191626530494638,
+     "pct": 1.4295417236116388
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 8.564147832443705,
+     "bambu": 8.441784858703613,
+     "diff": 0.12236297374009197,
+     "pct": 1.44949173413172
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 0.4862323932263614,
+     "bambu": 0.4778890013694763,
+     "diff": 0.008343391856885096,
+     "pct": 1.7458848881174533
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.18089097809150104,
+     "bambu": 0.18153350055217743,
+     "diff": -0.0006425224606763924,
+     "pct": -0.3539415362574991
+    },
+    {
+     "quantity": "grams slot 4",
+     "group": "filament",
+     "ours": 1.1615233432320085,
+     "bambu": 1.154577374458313,
+     "diff": 0.006945968773695466,
+     "pct": 0.6016027099919803
+    },
+    {
+     "quantity": "grams slot 4 model",
+     "group": "filament",
+     "ours": 0.1404695581924475,
+     "bambu": 0.11917421966791153,
+     "diff": 0.021295338524535967,
+     "pct": 17.86908157139785
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 5.467995197073946,
+     "bambu": 5.115793228149414,
+     "diff": 0.3522019689245317,
+     "pct": 6.884601335850652
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 1.9873046347908705,
+     "bambu": 1.8598065376281738,
+     "diff": 0.12749809716269667,
+     "pct": 6.855449455796409
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 5.320091055367984,
+     "bambu": 4.985253018665298,
+     "diff": 0.33483803670268575,
+     "pct": 6.716570562196498
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 1.208746497743917,
+     "bambu": 1.2108286059465423,
+     "diff": -0.0020821082026252213,
+     "pct": -0.1719573019996148
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 26,
+     "bambu": 26,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 25,
+     "bambu": 25,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 142,
+     "bambu": 142,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 4,
+     "bambu": 4,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 4 5",
+     "bambu": "1 2 3 4 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 2 1 2",
+     "bambu": "1 1 2 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"1\", \"layer_ranges\": \"0 13\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"14 14\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"15 51\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"52 59\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"60 67\"}, {\"filament_list\": \"3 4\", \"layer_ranges\": \"68 86\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"87 91\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"92 102\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"103 126\"}, {\"filament_list\": \"2\", \"layer_ranges\": \"127 141\"}]",
+     "bambu": "[{\"filament_list\": \"3 4\", \"layer_ranges\": \"67 86\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"0 13\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"52 52\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"14 14\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"53 59,92 102\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"15 51,60 66,87 91,103 126\"}, {\"filament_list\": \"2\", \"layer_ranges\": \"127 141\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -0.3868929894043848,
+    "grams_pct": 3.723813893522595,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 3456.7,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 1.2623,
+      "meters": 0.4232,
+      "model_grams": 0.3362,
+      "flush_grams": 0.2666,
+      "tower_grams": 0.6595
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 9.3598,
+      "meters": 3.1382,
+      "model_grams": 8.5641,
+      "flush_grams": 0.1141,
+      "tower_grams": 0.6816
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 0.4862,
+      "meters": 0.1604,
+      "model_grams": 0.1809,
+      "flush_grams": 0.2759,
+      "tower_grams": 0.0294
+     },
+     {
+      "slot": 4,
+      "filament_id": "GFG99",
+      "grams": 1.1615,
+      "meters": 0.3802,
+      "model_grams": 0.1405,
+      "flush_grams": 0.438,
+      "tower_grams": 0.583
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 5.468,
+      "meters": 1.8333,
+      "model_grams": 1.9873,
+      "flush_grams": 0.1141,
+      "tower_grams": 3.3666
+     }
+    ],
+    "total_grams": 17.7379,
+    "purge_grams": 6.5288,
+    "slots_used": 5,
+    "expected_slots": 5,
+    "output": null,
+    "log": null,
+    "filament_changes": 26,
+    "nozzle_changes": 25,
+    "ams_swaps": 4,
+    "model_time_s": 3147.6,
+    "prepare_time_s": 309.1,
+    "tower_grams": 5.3201,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "figurine_4c_020",
+   "product": "figurine",
+   "wall_s": 1.939,
+   "timings": {
+    "load": 0.04,
+    "section": 0.042,
+    "segment": 0.678,
+    "walls": 0.146,
+    "surfaces": 0.216,
+    "grouping": 0.008,
+    "fills": 0.106,
+    "changes": 0.004,
+    "moves": 0.665,
+    "estimate": 0.026,
+    "total": 1.929
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 3377.1220435446635,
+     "bambu": 3532.472900390625,
+     "diff": -155.35085684596152,
+     "pct": -4.397793308726661
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 1627.2127263920383,
+     "bambu": 1755.08447265625,
+     "diff": -127.87174626421165,
+     "pct": -7.285788704556362
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 19.18870632224998,
+     "bambu": 17.74823760986328,
+     "diff": 1.4404687123867,
+     "pct": 8.116122535942296
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 2.4015486240386963,
+     "diff": -2.4015486240386963,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 285.8556463828591,
+     "bambu": 285.8194885253906,
+     "diff": 0.036157857468481325,
+     "pct": 0.012650592041511284
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 543.0979627438818,
+     "bambu": 543.118896484375,
+     "diff": -0.020933740493205732,
+     "pct": -0.0038543568689490396
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 2.10971999168396,
+     "diff": -2.10971999168396,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 229.0214039983819,
+     "bambu": 232.8191375732422,
+     "diff": -3.797733574860274,
+     "pct": -1.6311947610687938
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 135.65924497679143,
+     "bambu": 131.81968688964844,
+     "diff": 3.83955808714299,
+     "pct": 2.912734947062375
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 327.6774257122158,
+     "bambu": 451.9144287109375,
+     "diff": -124.23700299872172,
+     "pct": -27.49126717487232
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 897.9683114878451,
+     "bambu": 925.4160766601562,
+     "diff": -27.447765172311165,
+     "pct": -2.9659918240636856
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 515.7902371588328,
+     "bambu": 501.5152282714844,
+     "diff": 14.275008887348463,
+     "pct": 2.846375958821533
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 1.8403905357306902,
+     "bambu": 5.6508708000183105,
+     "diff": -3.8104802642876203,
+     "pct": -67.43173572956708
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 427.03531768785905,
+     "bambu": 438.0410461425781,
+     "diff": -11.005728454719076,
+     "pct": -2.5124879395746893
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 421.02271422589416,
+     "bambu": 432.0750427246094,
+     "diff": -11.052328498715212,
+     "pct": -2.557965030569842
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.8430429208983,
+     "bambu": 308.8617112746488,
+     "diff": -0.018668353750513234,
+     "pct": -0.006044243449105541
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 13.304616577166342,
+     "bambu": 13.247110664844513,
+     "diff": 0.057505912321829555,
+     "pct": 0.4341015469466868
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 6.459830210708883,
+     "bambu": 6.407788693904877,
+     "diff": 0.052041516804006704,
+     "pct": 0.8121603144234278
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 6.84478636645746,
+     "bambu": 6.839321970939636,
+     "diff": 0.005464395517823739,
+     "pct": 0.07989674328891114
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 2.005908655527452,
+     "bambu": 1.941692590713501,
+     "diff": 0.06421606481395115,
+     "pct": 3.307220984468715
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.9837094738479698,
+     "bambu": 0.9431337118148804,
+     "diff": 0.040575762033089435,
+     "pct": 4.3022279370132095
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 0.6788192710380612,
+     "bambu": 0.6792102456092834,
+     "diff": -0.0003909745712222801,
+     "pct": -0.05756311447739684
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.4777433494203099,
+     "bambu": 0.4781349301338196,
+     "diff": -0.00039158071350969825,
+     "pct": -0.08189753327582724
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 1.8991761664720466,
+     "bambu": 1.8780550956726074,
+     "diff": 0.021121070799439146,
+     "pct": 1.1246246634673323
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.546249351686051,
+     "bambu": 0.5246117115020752,
+     "diff": 0.021637640183975848,
+     "pct": 4.124505745787236
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 8.720712484128782,
+     "bambu": 8.748152732849121,
+     "diff": -0.0274402487203389,
+     "pct": -0.3136690631532
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 4.452128035754552,
+     "bambu": 4.461908340454102,
+     "diff": -0.00978030469954927,
+     "pct": -0.21919555385922382
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 5.739469050427404,
+     "bambu": 5.733485665510366,
+     "diff": 0.005983384917038315,
+     "pct": 0.10435859206958886
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 1.1053173160300556,
+     "bambu": 1.1058361545728352,
+     "diff": -0.000518838542779676,
+     "pct": -0.046918211222718983
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 47,
+     "bambu": 47,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 46,
+     "bambu": 46,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 200,
+     "bambu": 200,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 3,
+     "bambu": 3,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 5",
+     "bambu": "1 2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 2 1 1 2",
+     "bambu": "1 2 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"4\", \"layer_ranges\": \"0 59\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"60 60\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"61 75\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"76 78\"}, {\"filament_list\": \"2 4\", \"layer_ranges\": \"79 120\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"121 123\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"124 139\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"140 176\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"177 199\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"61 74,124 139\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"0 59,76 78,121 123,140 176\"}, {\"filament_list\": \"2 4\", \"layer_ranges\": \"79 120\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"177 199\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"60 60,75 75\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -4.397793308726661,
+    "grams_pct": 0.4341015469466868,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 3377.1,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 2.0059,
+      "meters": 0.6725,
+      "model_grams": 0.9837,
+      "flush_grams": 0.2381,
+      "tower_grams": 0.7841
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 0.6788,
+      "meters": 0.2276,
+      "model_grams": 0.4777,
+      "flush_grams": 0.181,
+      "tower_grams": 0.02
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 1.8992,
+      "meters": 0.6267,
+      "model_grams": 0.5462,
+      "flush_grams": 0.5721,
+      "tower_grams": 0.7808
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 8.7207,
+      "meters": 2.9239,
+      "model_grams": 4.4521,
+      "flush_grams": 0.1141,
+      "tower_grams": 4.1545
+     }
+    ],
+    "total_grams": 13.3046,
+    "purge_grams": 6.8448,
+    "slots_used": 4,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 47,
+    "nozzle_changes": 46,
+    "ams_swaps": 3,
+    "model_time_s": 3068.3,
+    "prepare_time_s": 308.8,
+    "tower_grams": 5.7395,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "figurine_4c_adaptive",
+   "product": "figurine",
+   "wall_s": 1.676,
+   "timings": {
+    "load": 0.035,
+    "section": 0.026,
+    "segment": 0.694,
+    "walls": 0.117,
+    "surfaces": 0.152,
+    "grouping": 0.009,
+    "fills": 0.079,
+    "changes": 0.002,
+    "moves": 0.536,
+    "estimate": 0.019,
+    "total": 1.671
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 3129.170131352993,
+     "bambu": 3292.73779296875,
+     "diff": -163.56766161575706,
+     "pct": -4.967527689724835
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 1452.419416637248,
+     "bambu": 1564.66064453125,
+     "diff": -112.2412278940019,
+     "pct": -7.173518953538181
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 19.18870632224998,
+     "bambu": 17.74823760986328,
+     "diff": 1.4404687123867,
+     "pct": 8.116122535942296
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 3.1818947792053223,
+     "diff": -3.1818947792053223,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 285.8516463828591,
+     "bambu": 285.8154602050781,
+     "diff": 0.036186177780962225,
+     "pct": 0.012660678941229402
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 543.0992246941686,
+     "bambu": 553.13037109375,
+     "diff": -10.031146399581417,
+     "pct": -1.8135229818868939
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 14.059255599975586,
+     "diff": -14.059255599975586,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 184.63529242365829,
+     "bambu": 189.2140350341797,
+     "diff": -4.578742610521402,
+     "pct": -2.4198747253047572
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 138.2081126727156,
+     "bambu": 123.15962219238281,
+     "diff": 15.048490480332788,
+     "pct": 12.21868840814251
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 288.37717752290035,
+     "bambu": 384.5174865722656,
+     "diff": -96.14030904936527,
+     "pct": -25.002844449649448
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 824.808447100678,
+     "bambu": 866.0932006835938,
+     "diff": -41.284753582915755,
+     "pct": -4.766779551014873
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 457.63125902391914,
+     "bambu": 418.0276794433594,
+     "diff": 39.60357958055977,
+     "pct": 9.473913218688153
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 4.090854765413174,
+     "bambu": 9.129999160766602,
+     "diff": -5.039144395353428,
+     "pct": -55.19326241570339
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 389.2880139064075,
+     "bambu": 434.5641174316406,
+     "diff": -45.27610352523311,
+     "pct": -10.418739539017576
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 383.27941044444293,
+     "bambu": 428.6021423339844,
+     "diff": -45.322731889541444,
+     "pct": -10.574546277984798
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.8430429208983,
+     "bambu": 308.8617112746488,
+     "diff": -0.018668353750513234,
+     "pct": -0.006044243449105541
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 13.541107653209103,
+     "bambu": 13.330421388149261,
+     "diff": 0.21068626505984156,
+     "pct": 1.5804921609390499
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 6.756296084472725,
+     "bambu": 6.470617651939392,
+     "diff": 0.2856784325333326,
+     "pct": 4.4150102494111705
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 6.78481156873638,
+     "bambu": 6.859803736209869,
+     "diff": -0.07499216747348925,
+     "pct": -1.093211560523791
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 1.9727216683501512,
+     "bambu": 1.9732998609542847,
+     "diff": -0.0005781926041334984,
+     "pct": -0.029300797895657142
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 0.950522486670669,
+     "bambu": 0.9438349604606628,
+     "diff": 0.006687526210006123,
+     "pct": 0.7085482621603786
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 0.7463305760922965,
+     "bambu": 0.7325869202613831,
+     "diff": 0.013743655830913415,
+     "pct": 1.8760443915664988
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.5452546544745452,
+     "bambu": 0.5315116047859192,
+     "diff": 0.013743049688626052,
+     "pct": 2.5856537401777784
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 1.8995449348875755,
+     "bambu": 1.8753509521484375,
+     "diff": 0.024193982739137976,
+     "pct": 1.2901042714922715
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.5465847828947868,
+     "bambu": 0.5216044187545776,
+     "diff": 0.02498036414020921,
+     "pct": 4.789139670222546
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 8.92251047387908,
+     "bambu": 8.749183654785156,
+     "diff": 0.17332681909392456,
+     "pct": 1.9810627589138285
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 4.713934160432724,
+     "bambu": 4.473666667938232,
+     "diff": 0.24026749249449164,
+     "pct": 5.37070618641382
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 5.679460915499532,
+     "bambu": 5.753663507815244,
+     "diff": -0.07420259231571169,
+     "pct": -1.2896581841277608
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 1.1053506532368487,
+     "bambu": 1.1061392200891362,
+     "diff": -0.0007885668522875644,
+     "pct": -0.07129001828757317
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 47,
+     "bambu": 49,
+     "diff": -2,
+     "pct": -4.081632653061225
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 46,
+     "bambu": 48,
+     "diff": -2,
+     "pct": -4.166666666666667
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 172,
+     "bambu": 172,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 3,
+     "bambu": 3,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 5",
+     "bambu": "1 2 3 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 2 1 1 2",
+     "bambu": "1 2 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"4\", \"layer_ranges\": \"0 44\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"45 45\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"46 60\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"61 61\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"62 64\"}, {\"filament_list\": \"2 4\", \"layer_ranges\": \"65 105\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"106 109\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"110 125\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"126 153\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"154 171\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"47 60,110 125\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"0 44,62 64,106 109,126 153\"}, {\"filament_list\": \"2 4\", \"layer_ranges\": \"65 105\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"154 171\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"45 46,61 61\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -4.967527689724835,
+    "grams_pct": 1.5804921609390499,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 3129.2,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 1.9727,
+      "meters": 0.6614,
+      "model_grams": 0.9505,
+      "flush_grams": 0.2381,
+      "tower_grams": 0.7841
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 0.7463,
+      "meters": 0.2502,
+      "model_grams": 0.5453,
+      "flush_grams": 0.181,
+      "tower_grams": 0.02
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 1.8995,
+      "meters": 0.6268,
+      "model_grams": 0.5466,
+      "flush_grams": 0.5722,
+      "tower_grams": 0.7808
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 8.9225,
+      "meters": 2.9916,
+      "model_grams": 4.7139,
+      "flush_grams": 0.1141,
+      "tower_grams": 4.0945
+     }
+    ],
+    "total_grams": 13.5411,
+    "purge_grams": 6.7848,
+    "slots_used": 4,
+    "expected_slots": 4,
+    "output": null,
+    "log": null,
+    "filament_changes": 47,
+    "nozzle_changes": 46,
+    "ams_swaps": 3,
+    "model_time_s": 2820.3,
+    "prepare_time_s": 308.8,
+    "tower_grams": 5.6795,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "swatch_card_5c_020",
+   "product": "swatch_card",
+   "wall_s": 0.932,
+   "timings": {
+    "load": 0.013,
+    "section": 0.02,
+    "segment": 0.029,
+    "walls": 0.018,
+    "surfaces": 0.013,
+    "grouping": 0.008,
+    "fills": 0.409,
+    "changes": 0.004,
+    "moves": 0.383,
+    "estimate": 0.027,
+    "total": 0.924
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 5355.806032202663,
+     "bambu": 5382.87353515625,
+     "diff": -27.06750295358688,
+     "pct": -0.5028448611472197
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 1802.6084320292598,
+     "bambu": 1799.067626953125,
+     "diff": 3.540805076134802,
+     "pct": 0.19681333948137672
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 157.70892475974952,
+     "bambu": 157.62008666992188,
+     "diff": 0.08883808982764663,
+     "pct": 0.05636216278302511
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 131.22683092824187,
+     "bambu": 0.0,
+     "diff": 131.22683092824187,
+     "pct": Infinity
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.81963255173065,
+     "bambu": 287.52655029296875,
+     "diff": 0.2930822587618991,
+     "pct": 0.10193224189671161
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 2651.144199850361,
+     "bambu": 2665.991455078125,
+     "diff": -14.84725522776398,
+     "pct": -0.55691308385416
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 39.097190856933594,
+     "diff": -39.097190856933594,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 132.34233614241055,
+     "bambu": 117.30157470703125,
+     "diff": 15.040761435379295,
+     "pct": 12.822301382521617
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 516.5161195724243,
+     "bambu": 643.188232421875,
+     "diff": -126.67211284945074,
+     "pct": -19.694407712105804
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 250.22076482668064,
+     "bambu": 264.0310974121094,
+     "diff": -13.810332585428739,
+     "pct": -5.230570459612592
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 593.1263712332724,
+     "bambu": 609.1337890625,
+     "diff": -16.00741782922762,
+     "pct": -2.6278985202682925
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 202.86291772653524,
+     "bambu": 202.70303344726562,
+     "diff": 0.1598842792696189,
+     "pct": 0.0788761157396363
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 120.95693823528853,
+     "bambu": 84.53372192382812,
+     "diff": 36.42321631146041,
+     "pct": 43.08720293219875
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 319.7735998379298,
+     "bambu": 319.8697814941406,
+     "diff": -0.09618165621083108,
+     "pct": -0.030069003630651785
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 311.8809963759661,
+     "bambu": 312.0238037109375,
+     "diff": -0.14280733497139408,
+     "pct": -0.04576808989345328
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.9270290897699,
+     "bambu": 308.6891934278267,
+     "diff": 0.23783566194322248,
+     "pct": 0.07704696730785615
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 22.673548536844095,
+     "bambu": 22.274978160858154,
+     "diff": 0.3985703759859405,
+     "pct": 1.7893188182169035
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 9.49671983344107,
+     "bambu": 8.998851478099823,
+     "diff": 0.4978683553412466,
+     "pct": 5.532576646618635
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 13.176828703403027,
+     "bambu": 13.276126682758331,
+     "diff": -0.09929797935530438,
+     "pct": -0.747943897554566
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 4.747687003587914,
+     "bambu": 4.641488075256348,
+     "diff": 0.1061989283315663,
+     "pct": 2.2880362204895026
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 2.138376265487634,
+     "bambu": 2.012885570526123,
+     "diff": 0.1254906949615111,
+     "pct": 6.234368053456246
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 3.8073241907011823,
+     "bambu": 4.103338241577148,
+     "diff": -0.2960140508759661,
+     "pct": -7.213981237924732
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.790458464493593,
+     "bambu": 0.737390398979187,
+     "diff": 0.053068065514406015,
+     "pct": 7.196739418884659
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 3.9628483905824363,
+     "bambu": 3.9124317169189453,
+     "diff": 0.05041667366349101,
+     "pct": 1.2886275674913077
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.8032448342438648,
+     "bambu": 0.7492840886116028,
+     "diff": 0.05396074563226205,
+     "pct": 7.2016403994711045
+    },
+    {
+     "quantity": "grams slot 4",
+     "group": "filament",
+     "ours": 4.528848862501799,
+     "bambu": 4.283425807952881,
+     "diff": 0.245423054548918,
+     "pct": 5.729597419272442
+    },
+    {
+     "quantity": "grams slot 4 model",
+     "group": "filament",
+     "ours": 0.7839576078942961,
+     "bambu": 0.73211669921875,
+     "diff": 0.05184090867554614,
+     "pct": 7.080962465528537
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 5.626840089470764,
+     "bambu": 5.334294319152832,
+     "diff": 0.2925457703179317,
+     "pct": 5.484245015644215
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 4.980682661321681,
+     "bambu": 4.76717472076416,
+     "diff": 0.21350794055752065,
+     "pct": 4.478710201821513
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 3.3121966943983736,
+     "bambu": 3.2698518346097853,
+     "diff": 0.04234485978858826,
+     "pct": 1.295008518134938
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 9.864632009004653,
+     "bambu": 10.006273698859236,
+     "diff": -0.14164168985458225,
+     "pct": -1.4155288383799667
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 42,
+     "bambu": 42,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 12,
+     "bambu": 12,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 12,
+     "bambu": 12,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 30,
+     "bambu": 30,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3 4 5",
+     "bambu": "1 2 3 4 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0 1 2 3 4\", \"layer_ranges\": \"0 9\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"10 11\"}]",
+     "bambu": "[{\"filament_list\": \"0 4\", \"layer_ranges\": \"10 11\"}, {\"filament_list\": \"0 1 2 3 4\", \"layer_ranges\": \"0 9\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -0.5028448611472197,
+    "grams_pct": 1.7893188182169035,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 5355.8,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 4.7477,
+      "meters": 1.5918,
+      "model_grams": 2.1384,
+      "flush_grams": 1.6046,
+      "tower_grams": 1.0047
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 3.8073,
+      "meters": 1.2765,
+      "model_grams": 0.7905,
+      "flush_grams": 2.3411,
+      "tower_grams": 0.6757
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFA00",
+      "grams": 3.9628,
+      "meters": 1.3076,
+      "model_grams": 0.8032,
+      "flush_grams": 2.7859,
+      "tower_grams": 0.3737
+     },
+     {
+      "slot": 4,
+      "filament_id": "GFG99",
+      "grams": 4.5288,
+      "meters": 1.4826,
+      "model_grams": 0.784,
+      "flush_grams": 3.1331,
+      "tower_grams": 0.6118
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 5.6268,
+      "meters": 1.8866,
+      "model_grams": 4.9807,
+      "flush_grams": 0.0,
+      "tower_grams": 0.6462
+     }
+    ],
+    "total_grams": 22.6735,
+    "purge_grams": 13.1768,
+    "slots_used": 5,
+    "expected_slots": 5,
+    "output": null,
+    "log": null,
+    "filament_changes": 42,
+    "nozzle_changes": 12,
+    "ams_swaps": 30,
+    "model_time_s": 5046.9,
+    "prepare_time_s": 308.9,
+    "tower_grams": 3.3122,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "meshy_retarget_3c_020",
+   "product": "figurine",
+   "wall_s": 13.85,
+   "timings": {
+    "load": 0.105,
+    "section": 0.162,
+    "segment": 5.386,
+    "walls": 1.023,
+    "surfaces": 2.011,
+    "grouping": 0.004,
+    "fills": 0.948,
+    "changes": 0.011,
+    "moves": 3.965,
+    "estimate": 0.139,
+    "total": 13.756
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 40993.98269431398,
+     "bambu": 41589.67578125,
+     "diff": -595.6930869360222,
+     "pct": -1.4323100042164316
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 8498.316608009303,
+     "bambu": 9137.564453125,
+     "diff": -639.2478451156967,
+     "pct": -6.995823103574139
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 70.33206949082364,
+     "bambu": 67.14750671386719,
+     "diff": 3.1845627769564544,
+     "pct": 4.742637415454153
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 79.2011913885582,
+     "bambu": 129.5177459716797,
+     "diff": -50.31655458312149,
+     "pct": -38.849158627361916
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 284.10931754778596,
+     "bambu": 284.07318115234375,
+     "diff": 0.03613639544221314,
+     "pct": 0.012720805003705643
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 26417.844481605225,
+     "bambu": 26328.849609375,
+     "diff": 88.99487223022516,
+     "pct": 0.33801276375757966
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 31.282459259033203,
+     "diff": -31.282459259033203,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 1066.2929718350933,
+     "bambu": 1052.461181640625,
+     "diff": 13.83179019446834,
+     "pct": 1.3142328131196923
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 914.7987406117272,
+     "bambu": 769.2736206054688,
+     "diff": 145.52512000625848,
+     "pct": 18.917211783724063
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 1497.6393169804635,
+     "bambu": 1520.65576171875,
+     "diff": -23.01644473828651,
+     "pct": -1.513586790495683
+    },
+    {
+     "quantity": "time Overhang wall s",
+     "group": "feature",
+     "ours": 42.17596740377498,
+     "bambu": 42.14236831665039,
+     "diff": 0.033599087124592586,
+     "pct": 0.07972757219559878
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 5768.974890613621,
+     "bambu": 5814.40771484375,
+     "diff": -45.43282423012897,
+     "pct": -0.7813835296438252
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 1675.6951797130364,
+     "bambu": 1492.872802734375,
+     "diff": 182.8223769786614,
+     "pct": 12.246346550342425
+    },
+    {
+     "quantity": "time Support s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 455.2029724121094,
+     "diff": -455.2029724121094,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Support interface s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 15.201910972595215,
+     "diff": -15.201910972595215,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 71.03008715845554,
+     "bambu": 76.96658325195312,
+     "diff": -5.936496093497581,
+     "pct": -7.713082538774299
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 3110.1510834279984,
+     "bambu": 3513.123779296875,
+     "diff": -402.9726958688766,
+     "pct": -11.47049523969601
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 3105.8884799661764,
+     "bambu": 3508.907958984375,
+     "diff": -403.0194790181986,
+     "pct": -11.485609874328233
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.84671408582517,
+     "bambu": 308.8654091773687,
+     "diff": -0.018695091543520448,
+     "pct": -0.006052827862243592
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 152.79678778572546,
+     "bambu": 152.81525802612305,
+     "diff": -0.018470240397590487,
+     "pct": -0.012086646736828521
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 35.265798823282665,
+     "bambu": 36.61747932434082,
+     "diff": -1.351680501058155,
+     "pct": -3.69135321709501
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 117.5309889624428,
+     "bambu": 116.19777870178223,
+     "diff": 1.3332102606605787,
+     "pct": 1.1473629492369375
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 38.45049098676507,
+     "bambu": 38.318077087402344,
+     "diff": 0.1324138993627244,
+     "pct": 0.3455650946697884
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 9.957801916660902,
+     "bambu": 10.433060646057129,
+     "diff": -0.47525872939622715,
+     "pct": -4.55531454785358
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 84.92906531992605,
+     "bambu": 86.289306640625,
+     "diff": -1.3602413206989468,
+     "pct": -1.5763729871698207
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 10.348965482487843,
+     "bambu": 12.426673889160156,
+     "diff": -2.077708406672313,
+     "pct": -16.71974677379043
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 29.417231479034335,
+     "bambu": 28.207874298095703,
+     "diff": 1.2093571809386319,
+     "pct": 4.287303496032223
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 14.959031424133917,
+     "bambu": 13.757744789123535,
+     "diff": 1.2012866350103817,
+     "pct": 8.731711871556763
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 30.227812472883286,
+     "bambu": 30.21928663745924,
+     "diff": 0.00852583542404517,
+     "pct": 0.028213225303196632
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 87.30317648955952,
+     "bambu": 85.97848084599477,
+     "diff": 1.324695643564752,
+     "pct": 1.5407292970639428
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 624,
+     "bambu": 624,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 337,
+     "bambu": 337,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 375,
+     "bambu": 375,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 287,
+     "bambu": 287,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 5",
+     "bambu": "1 2 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"4\", \"layer_ranges\": \"0 28\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"29 33\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"34 272\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"273 275\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"276 323\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"324 364\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"365 374\"}]",
+     "bambu": "[{\"filament_list\": \"4\", \"layer_ranges\": \"0 28\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"365 374\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"29 33\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"34 272,276 323\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"273 275,324 364\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -1.4323100042164316,
+    "grams_pct": -0.012086646736828521,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [
+     "supports are on in the project but p2p_slicer does not generate them: time and grams leave out Bambu's tree supports"
+    ],
+    "print_time_s": 40994.0,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 38.4505,
+      "meters": 12.8918,
+      "model_grams": 9.9578,
+      "flush_grams": 23.8868,
+      "tower_grams": 4.6059
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 84.9291,
+      "meters": 28.4753,
+      "model_grams": 10.349,
+      "flush_grams": 63.4163,
+      "tower_grams": 11.1638
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 29.4172,
+      "meters": 9.8631,
+      "model_grams": 14.959,
+      "flush_grams": 0.0,
+      "tower_grams": 14.4582
+     }
+    ],
+    "total_grams": 152.7968,
+    "purge_grams": 117.531,
+    "slots_used": 3,
+    "expected_slots": 3,
+    "output": null,
+    "log": null,
+    "filament_changes": 624,
+    "nozzle_changes": 337,
+    "ams_swaps": 287,
+    "model_time_s": 40685.1,
+    "prepare_time_s": 308.8,
+    "tower_grams": 30.2278,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "geo_keychain_3c_020",
+   "product": "keychain",
+   "wall_s": 2.055,
+   "timings": {
+    "load": 0.217,
+    "section": 0.115,
+    "segment": 1.047,
+    "walls": 0.11,
+    "surfaces": 0.175,
+    "grouping": 0.001,
+    "fills": 0.093,
+    "changes": 0.001,
+    "moves": 0.281,
+    "estimate": 0.01,
+    "total": 2.05
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 3895.6157281054357,
+     "bambu": 3986.276611328125,
+     "diff": -90.66088322268934,
+     "pct": -2.2743249418530307
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 692.2695256279417,
+     "bambu": 747.120849609375,
+     "diff": -54.851323981433325,
+     "pct": -7.341693651048798
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 30.87340465621824,
+     "bambu": 27.64015769958496,
+     "diff": 3.2332469566332804,
+     "pct": 11.697642943194316
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 3.809153796200251,
+     "bambu": 27.99505615234375,
+     "diff": -24.1859023561435,
+     "pct": -86.39347685008538
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.2126508811192,
+     "bambu": 287.1691589355469,
+     "diff": 0.043491945572327495,
+     "pct": 0.015145061445156429
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 2417.2838795986618,
+     "bambu": 2428.26220703125,
+     "diff": -10.97832743258823,
+     "pct": -0.45210634176159
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 14.973712921142578,
+     "diff": -14.973712921142578,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 81.52000864292266,
+     "bambu": 66.53296661376953,
+     "diff": 14.98704202915313,
+     "pct": 22.525738430024315
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 116.07545523995972,
+     "bambu": 100.18965911865234,
+     "diff": 15.88579612130738,
+     "pct": 15.855724294354761
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 125.30904049689501,
+     "bambu": 125.31263732910156,
+     "diff": -0.003596832206554268,
+     "pct": -0.002870286894615512
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 477.36227545967415,
+     "bambu": 502.1904602050781,
+     "diff": -24.828184745403973,
+     "pct": -4.943977775934843
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 64.05174612826875,
+     "bambu": 61.76612854003906,
+     "diff": 2.285617588229684,
+     "pct": 3.7004384802069357
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 9.279801627207188,
+     "bambu": 16.439895629882812,
+     "diff": -7.160094002675624,
+     "pct": -43.55315972724739
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 290.35091504027184,
+     "bambu": 335.2226867675781,
+     "diff": -44.87177172730628,
+     "pct": -13.385660785666778
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 282.8383115783076,
+     "bambu": 327.7566833496094,
+     "diff": -44.91837177130179,
+     "pct": -13.704792015907897
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.7000474191584,
+     "bambu": 308.71176400302954,
+     "diff": -0.01171658387113439,
+     "pct": -0.0037953149951938368
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 14.203316031627832,
+     "bambu": 14.380609393119812,
+     "diff": -0.17729336149198005,
+     "pct": -1.2328640368801298
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 3.1039113629290194,
+     "bambu": 3.168222688138485,
+     "diff": -0.06431132520946559,
+     "pct": -2.0298865180860197
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 11.099404668698813,
+     "bambu": 11.212386704981327,
+     "diff": -0.11298203628251358,
+     "pct": -1.0076537605710572
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 6.806361845873467,
+     "bambu": 6.792582035064697,
+     "diff": 0.013779810808769888,
+     "pct": 0.20286557803256092
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 2.5254228086802484,
+     "bambu": 2.5351696014404297,
+     "diff": -0.009746792760181311,
+     "pct": -0.3844631441874102
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 6.800210184435628,
+     "bambu": 6.926239013671875,
+     "diff": -0.1260288292362466,
+     "pct": -1.8195853332158356
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.5477869842272896,
+     "bambu": 0.5938991904258728,
+     "diff": -0.04611220619858325,
+     "pct": -7.764315382467038
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 0.5967440013187368,
+     "bambu": 0.6617883443832397,
+     "diff": -0.06504434306450291,
+     "pct": -9.82857187143748
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 0.030701570021481522,
+     "bambu": 0.039153896272182465,
+     "diff": -0.008452326250700942,
+     "pct": -21.58744609206629
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 2.8313359666780245,
+     "bambu": 2.9297903121803497,
+     "diff": -0.09845434550232524,
+     "pct": -3.3604570638727904
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 8.26806870202079,
+     "bambu": 8.282595805994651,
+     "diff": -0.0145271039738617,
+     "pct": -0.1753931293296661
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 45,
+     "bambu": 48,
+     "diff": -3,
+     "pct": -6.25
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 20,
+     "bambu": 22,
+     "diff": -2,
+     "pct": -9.090909090909092
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 50,
+     "bambu": 50,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 26,
+     "bambu": 26,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 5",
+     "bambu": "1 2 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 20\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"21 24\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"25 25\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"26 27\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"28 29\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"30 30\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"31 32\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"33 43\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"44 44\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"45 45\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"46 47\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"48 48\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"49 49\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 20,27 27,44 44,49 49\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"21 24,26 26,31 32,45 45\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"48 48\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"25 25,28 30,33 43,46 47\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -2.2743249418530307,
+    "grams_pct": -1.2328640368801298,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 3895.6,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 6.8064,
+      "meters": 2.2821,
+      "model_grams": 2.5254,
+      "flush_grams": 2.4537,
+      "tower_grams": 1.8272
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 6.8002,
+      "meters": 2.28,
+      "model_grams": 0.5478,
+      "flush_grams": 5.8143,
+      "tower_grams": 0.4381
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 0.5967,
+      "meters": 0.2001,
+      "model_grams": 0.0307,
+      "flush_grams": 0.0,
+      "tower_grams": 0.566
+     }
+    ],
+    "total_grams": 14.2033,
+    "purge_grams": 11.0994,
+    "slots_used": 3,
+    "expected_slots": 3,
+    "output": null,
+    "log": null,
+    "filament_changes": 45,
+    "nozzle_changes": 20,
+    "ams_swaps": 26,
+    "model_time_s": 3586.9,
+    "prepare_time_s": 308.7,
+    "tower_grams": 2.8313,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "geo_nameplate_3c_020",
+   "product": "nameplate",
+   "wall_s": 9.905,
+   "timings": {
+    "load": 0.174,
+    "section": 0.128,
+    "segment": 3.072,
+    "walls": 0.696,
+    "surfaces": 1.555,
+    "grouping": 0.006,
+    "fills": 1.731,
+    "changes": 0.006,
+    "moves": 2.429,
+    "estimate": 0.085,
+    "total": 9.881
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 28570.30331034854,
+     "bambu": 28943.541015625,
+     "diff": -373.2377052764605,
+     "pct": -1.2895371201297392
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 6000.968800934024,
+     "bambu": 6389.3671875,
+     "diff": -388.39838656597567,
+     "pct": -6.078824008202701
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 187.0273928834666,
+     "bambu": 183.18869018554688,
+     "diff": 3.8387026979197287,
+     "pct": 2.09549109938589
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 257.56186063635465,
+     "bambu": 314.87127685546875,
+     "diff": -57.3094162191141,
+     "pct": -18.200903172701935
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 285.0426508811192,
+     "bambu": 284.9991455078125,
+     "diff": 0.04350537330668658,
+     "pct": 0.015265089033571854
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 18282.251906354446,
+     "bambu": 18227.50390625,
+     "diff": 54.748000104445964,
+     "pct": 0.3003592833447344
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 34.33140182495117,
+     "diff": -34.33140182495117,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 604.7435290143644,
+     "bambu": 581.1444702148438,
+     "diff": 23.599058799520662,
+     "pct": 4.0607903901754945
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 1011.8147722428638,
+     "bambu": 946.0321044921875,
+     "diff": 65.7826677506763,
+     "pct": 6.95353439257616
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 854.5743643438741,
+     "bambu": 881.0323486328125,
+     "diff": -26.457984288938405,
+     "pct": -3.003066156423876
+    },
+    {
+     "quantity": "time Overhang wall s",
+     "group": "feature",
+     "ours": 18.366366189038718,
+     "bambu": 19.163232803344727,
+     "diff": -0.7968666143060084,
+     "pct": -4.158309939056442
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 3978.3825556409106,
+     "bambu": 4017.966552734375,
+     "diff": -39.583997093464404,
+     "pct": -0.9851748782360079
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 794.572529064112,
+     "bambu": 708.1410522460938,
+     "diff": 86.43147681801827,
+     "pct": 12.205404070823667
+    },
+    {
+     "quantity": "time Support s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 224.90512084960938,
+     "diff": -224.90512084960938,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Support interface s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 8.569709777832031,
+     "diff": -8.569709777832031,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 177.20670108114194,
+     "bambu": 150.5018768310547,
+     "diff": 26.704824250087256,
+     "pct": 17.743847992051727
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 2124.101285478668,
+     "bambu": 2366.84228515625,
+     "diff": -242.74099967758184,
+     "pct": -10.255900919125121
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 2118.7586820168553,
+     "bambu": 2361.54638671875,
+     "diff": -242.78770470189465,
+     "pct": -10.280878074948
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.7000474191584,
+     "bambu": 308.71176400302954,
+     "diff": -0.01171658387113439,
+     "pct": -0.0037953149951938368
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 112.59751789921228,
+     "bambu": 112.43850994110107,
+     "diff": 0.1590079581112036,
+     "pct": 0.14141770305787324
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 29.56213322242869,
+     "bambu": 30.222656726837158,
+     "diff": -0.6605235044084665,
+     "pct": -2.1855242918533166
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 83.03538467678358,
+     "bambu": 82.21585321426392,
+     "diff": 0.819531462519663,
+     "pct": 0.9968046678100759
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 40.695928237883315,
+     "bambu": 40.489559173583984,
+     "diff": 0.20636906429933077,
+     "pct": 0.5096846409579315
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 19.762951705124554,
+     "bambu": 19.98119354248047,
+     "diff": -0.21824183735591518,
+     "pct": -1.0922362415034323
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 56.9281040836732,
+     "bambu": 57.43887710571289,
+     "diff": -0.5107730220396931,
+     "pct": -0.8892461826850223
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 4.1455815477300435,
+     "bambu": 5.047290802001953,
+     "diff": -0.9017092542719096,
+     "pct": -17.86521303496633
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 14.97348557765576,
+     "bambu": 14.5100736618042,
+     "diff": 0.4634119158515606,
+     "pct": 3.193725453451209
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 5.653599969574095,
+     "bambu": 5.194172382354736,
+     "diff": 0.4594275872193583,
+     "pct": 8.84505852713114
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 20.933865860505485,
+     "bambu": 20.928694077588275,
+     "diff": 0.0051717829172091,
+     "pct": 0.02471144591265903
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 62.101518816278094,
+     "bambu": 61.287156932226125,
+     "diff": 0.8143618840519693,
+     "pct": 1.3287643363070738
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 424,
+     "bambu": 424,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 228,
+     "bambu": 228,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 267,
+     "bambu": 267,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 197,
+     "bambu": 197,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 5",
+     "bambu": "1 2 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 18\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"19 19\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"20 33\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"34 36\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"37 232\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"233 260\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"261 266\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 18\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"20 33\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"37 232\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"261 266\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"19 19,34 36\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"233 260\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -1.2895371201297392,
+    "grams_pct": 0.14141770305787324,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [
+     "supports are on in the project but p2p_slicer does not generate them: time and grams leave out Bambu's tree supports"
+    ],
+    "print_time_s": 28570.3,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 40.6959,
+      "meters": 13.6447,
+      "model_grams": 19.763,
+      "flush_grams": 17.7749,
+      "tower_grams": 3.1581
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 56.9281,
+      "meters": 19.0871,
+      "model_grams": 4.1456,
+      "flush_grams": 44.3266,
+      "tower_grams": 8.4559
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 14.9735,
+      "meters": 5.0204,
+      "model_grams": 5.6536,
+      "flush_grams": 0.0,
+      "tower_grams": 9.3199
+     }
+    ],
+    "total_grams": 112.5975,
+    "purge_grams": 83.0354,
+    "slots_used": 3,
+    "expected_slots": 3,
+    "output": null,
+    "log": null,
+    "filament_changes": 424,
+    "nozzle_changes": 228,
+    "ams_swaps": 197,
+    "model_time_s": 28261.6,
+    "prepare_time_s": 308.7,
+    "tower_grams": 20.9339,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "geo_figurine_3c_020",
+   "product": "figurine",
+   "wall_s": 18.383,
+   "timings": {
+    "load": 0.104,
+    "section": 0.158,
+    "segment": 6.441,
+    "walls": 1.343,
+    "surfaces": 2.769,
+    "grouping": 0.004,
+    "fills": 1.297,
+    "changes": 0.02,
+    "moves": 6.057,
+    "estimate": 0.138,
+    "total": 18.33
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 49352.58544906761,
+     "bambu": 50409.046875,
+     "diff": -1056.4614259323935,
+     "pct": -2.095777427714742
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 11454.493990759063,
+     "bambu": 12315.875,
+     "diff": -861.3810092409367,
+     "pct": -6.994070735866812
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 119.49474735542215,
+     "bambu": 116.97051239013672,
+     "diff": 2.52423496528543,
+     "pct": 2.1580096673136233
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 143.77895828984262,
+     "bambu": 227.41258239746094,
+     "diff": -83.63362410761832,
+     "pct": -36.7761639333779
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 283.2126508811192,
+     "bambu": 283.1691589355469,
+     "diff": 0.043491945572327495,
+     "pct": 0.015358998040541149
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 30838.54541806001,
+     "bambu": 30899.48828125,
+     "diff": -60.94286318999002,
+     "pct": -0.19722936067834665
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 39.22837448120117,
+     "diff": -39.22837448120117,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 1398.655642232713,
+     "bambu": 1401.105712890625,
+     "diff": -2.450070657911965,
+     "pct": -0.17486693797409603
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 1192.2022530577683,
+     "bambu": 1075.479248046875,
+     "diff": 116.7230050108933,
+     "pct": 10.853115503889844
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 1993.2990168950064,
+     "bambu": 2051.4462890625,
+     "diff": -58.14727216749361,
+     "pct": -2.8344525751179477
+    },
+    {
+     "quantity": "time Overhang wall s",
+     "group": "feature",
+     "ours": 56.893494773465065,
+     "bambu": 58.46906280517578,
+     "diff": -1.5755680317107164,
+     "pct": -2.6947037563448757
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 6750.845992829377,
+     "bambu": 6884.97998046875,
+     "diff": -134.13398763937312,
+     "pct": -1.9482117307513345
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 2716.611888201333,
+     "bambu": 2397.712646484375,
+     "diff": 318.89924171695793,
+     "pct": 13.300144293126248
+    },
+    {
+     "quantity": "time Support s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 539.367431640625,
+     "diff": -539.367431640625,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Support interface s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 19.365699768066406,
+     "diff": -19.365699768066406,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 117.57104546560518,
+     "bambu": 107.04781341552734,
+     "diff": 10.523232050077837,
+     "pct": 9.83040354988833
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 3744.9869444888936,
+     "bambu": 4313.009765625,
+     "diff": -568.0228211361064,
+     "pct": -13.169986900175589
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 3741.474341027087,
+     "bambu": 4309.54345703125,
+     "diff": -568.0691160041629,
+     "pct": -13.181654197669774
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.7000474191584,
+     "bambu": 308.71176400302954,
+     "diff": -0.01171658387113439,
+     "pct": -0.0037953149951938368
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 192.38699665838857,
+     "bambu": 193.21343612670898,
+     "diff": -0.8264394683204159,
+     "pct": -0.4277339531286212
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 56.580718360704545,
+     "bambu": 58.481143951416016,
+     "diff": -1.900425590711471,
+     "pct": -3.2496381949885844
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 135.80627829768403,
+     "bambu": 134.73229217529297,
+     "diff": 1.0739861223910623,
+     "pct": 0.7971259933689515
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 54.24945819164809,
+     "bambu": 54.45683670043945,
+     "diff": -0.20737850879136488,
+     "pct": -0.38081262400923005
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 22.88403185598427,
+     "bambu": 23.752546310424805,
+     "diff": -0.8685144544405361,
+     "pct": -3.6565109403001226
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 101.86228901325823,
+     "bambu": 105.68842315673828,
+     "diff": -3.826134143480047,
+     "pct": -3.620201748876322
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 13.551803326701654,
+     "bambu": 17.834766387939453,
+     "diff": -4.282963061237799,
+     "pct": -24.0146855197055
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 36.27524945348225,
+     "bambu": 33.06817626953125,
+     "diff": 3.207073183951003,
+     "pct": 9.698367269518803
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 20.14488317801862,
+     "bambu": 16.893831253051758,
+     "diff": 3.2510519249668626,
+     "pct": 19.24401798662208
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 35.56184029481877,
+     "bambu": 35.6790994466396,
+     "diff": -0.11725915182082502,
+     "pct": -0.328649415594678
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 100.24443800286527,
+     "bambu": 99.05319447985997,
+     "diff": 1.1912435230052978,
+     "pct": 1.202630091094647
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 729,
+     "bambu": 732,
+     "diff": -3,
+     "pct": -0.4098360655737705
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 392,
+     "bambu": 394,
+     "diff": -2,
+     "pct": -0.5076142131979695
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 450,
+     "bambu": 450,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 337,
+     "bambu": 339,
+     "diff": -2,
+     "pct": -0.5899705014749262
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 5",
+     "bambu": "1 2 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 19\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"20 48\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"49 53\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"54 390\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"391 439\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"440 449\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 19\"}, {\"filament_list\": \"4\", \"layer_ranges\": \"20 47\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"53 390\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"440 449\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"48 52\"}, {\"filament_list\": \"1 4\", \"layer_ranges\": \"391 439\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -2.095777427714742,
+    "grams_pct": -0.4277339531286212,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [
+     "supports are on in the project but p2p_slicer does not generate them: time and grams leave out Bambu's tree supports"
+    ],
+    "print_time_s": 49352.6,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 54.2495,
+      "meters": 18.189,
+      "model_grams": 22.884,
+      "flush_grams": 26.508,
+      "tower_grams": 4.8574
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 101.8623,
+      "meters": 34.1528,
+      "model_grams": 13.5518,
+      "flush_grams": 73.7364,
+      "tower_grams": 14.5741
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 36.2752,
+      "meters": 12.1625,
+      "model_grams": 20.1449,
+      "flush_grams": 0.0,
+      "tower_grams": 16.1304
+     }
+    ],
+    "total_grams": 192.387,
+    "purge_grams": 135.8063,
+    "slots_used": 3,
+    "expected_slots": 3,
+    "output": null,
+    "log": null,
+    "filament_changes": 729,
+    "nozzle_changes": 392,
+    "ams_swaps": 337,
+    "model_time_s": 49043.9,
+    "prepare_time_s": 308.7,
+    "tower_grams": 35.5618,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "frenchie_baseline_3c_020",
+   "product": "keychain",
+   "wall_s": 7.497,
+   "timings": {
+    "load": 3.244,
+    "section": 0.795,
+    "segment": 2.583,
+    "walls": 0.145,
+    "surfaces": 0.262,
+    "grouping": 0.003,
+    "fills": 0.157,
+    "changes": 0.001,
+    "moves": 0.29,
+    "estimate": 0.01,
+    "total": 7.492
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 2585.75578543173,
+     "bambu": 2333.8662109375,
+     "diff": 251.88957449423015,
+     "pct": 10.792802659971139
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 671.5858446997356,
+     "bambu": 676.3736572265625,
+     "diff": -4.787812526826883,
+     "pct": -0.7078650204177196
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 29.760822512874807,
+     "bambu": 27.718482971191406,
+     "diff": 2.0423395416834005,
+     "pct": 7.368150500177305
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 7.916425129573178,
+     "bambu": 21.7202091217041,
+     "diff": -13.803783992130924,
+     "pct": -63.552721406983956
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.2030103960383,
+     "bambu": 287.1591491699219,
+     "diff": 0.043861226116405305,
+     "pct": 0.015274187238398287
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 1165.6152508361208,
+     "bambu": 955.606201171875,
+     "diff": 210.00904966424582,
+     "pct": 21.976526461078677
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 14.691990852355957,
+     "diff": -14.691990852355957,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 85.7832594395481,
+     "bambu": 71.8513412475586,
+     "diff": 13.93191819198951,
+     "pct": 19.389920842240222
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 110.07090031573338,
+     "bambu": 91.69107055664062,
+     "diff": 18.379829759092758,
+     "pct": 20.04538680540209
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 131.41058815862763,
+     "bambu": 134.78823852539062,
+     "diff": -3.3776503667629925,
+     "pct": -2.505893988759806
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 439.8542829617964,
+     "bambu": 393.1832275390625,
+     "diff": 46.6710554227339,
+     "pct": 11.8700524726979
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 73.94610821484491,
+     "bambu": 75.84220123291016,
+     "diff": -1.896093018065244,
+     "pct": -2.5000500872098548
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 14.52365643917045,
+     "bambu": 17.067121505737305,
+     "diff": -2.5434650665668546,
+     "pct": -14.902718456137082
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 247.1740844893609,
+     "bambu": 249.9969482421875,
+     "diff": -2.8228637528266063,
+     "pct": -1.1291592848133185
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 239.67148102739762,
+     "bambu": 242.54098510742188,
+     "diff": -2.8695040800242566,
+     "pct": -1.1831006948179696
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.70040693407753,
+     "bambu": 308.71176400302954,
+     "diff": -0.01135706895200883,
+     "pct": -0.00367885849400199
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 10.894028655447114,
+     "bambu": 9.544559001922607,
+     "diff": 1.3494696535245065,
+     "pct": 14.138627601890002
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 2.9197038106595947,
+     "bambu": 2.885508466511965,
+     "diff": 0.034195344147629925,
+     "pct": 1.1850716968772455
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 7.974324844787519,
+     "bambu": 6.659050535410643,
+     "diff": 1.3152743093768766,
+     "pct": 19.751679348019362
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 4.778595667204032,
+     "bambu": 4.572801113128662,
+     "diff": 0.20579455407536962,
+     "pct": 4.500404653168202
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 2.76691967450228,
+     "bambu": 2.7548515796661377,
+     "diff": 0.01206809483614224,
+     "pct": 0.43806696974959286
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 1.9440828749836405,
+     "bambu": 1.6721055507659912,
+     "diff": 0.2719773242176493,
+     "pct": 16.26555955711388
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.08848728660975344,
+     "bambu": 0.07084829360246658,
+     "diff": 0.017638993007286857,
+     "pct": 24.896849465789753
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 4.171350113259442,
+     "bambu": 3.299652338027954,
+     "diff": 0.8716977752314881,
+     "pct": 26.41786727605553
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 0.06429684954756151,
+     "bambu": 0.05980859324336052,
+     "diff": 0.004488256304200994,
+     "pct": 7.5043669493083165
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 2.882021191629596,
+     "bambu": 2.5924582940019976,
+     "diff": 0.28956289762759857,
+     "pct": 11.169433209303365
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 5.092303653157923,
+     "bambu": 4.066591748119938,
+     "diff": 1.0257119050379844,
+     "pct": 25.222888565398534
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 31,
+     "bambu": 27,
+     "diff": 4,
+     "pct": 14.814814814814815
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 22,
+     "bambu": 20,
+     "diff": 2,
+     "pct": 10.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 51,
+     "bambu": 51,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 10,
+     "bambu": 8,
+     "diff": 2,
+     "pct": 25.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 5",
+     "bambu": "1 2 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 2 1 1 2",
+     "bambu": "1 2 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 14\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"15 15\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"16 30\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"31 34\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"35 36\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"37 41\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"42 42\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"43 43\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"44 44\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"45 46\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"47 47\"}, {\"filament_list\": \"0\", \"layer_ranges\": \"48 48\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"49 49\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"50 50\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 30\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"31 34,48 48\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"38 45,49 49\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"35 37,46 47,50 50\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": 10.792802659971139,
+    "grams_pct": 14.138627601890002,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 2585.8,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 4.7786,
+      "meters": 1.6022,
+      "model_grams": 2.7669,
+      "flush_grams": 0.0,
+      "tower_grams": 2.0117
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 1.9441,
+      "meters": 0.6518,
+      "model_grams": 0.0885,
+      "flush_grams": 1.4756,
+      "tower_grams": 0.38
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 4.1714,
+      "meters": 1.3986,
+      "model_grams": 0.0643,
+      "flush_grams": 3.6167,
+      "tower_grams": 0.4904
+     }
+    ],
+    "total_grams": 10.894,
+    "purge_grams": 7.9743,
+    "slots_used": 3,
+    "expected_slots": 3,
+    "output": null,
+    "log": null,
+    "filament_changes": 31,
+    "nozzle_changes": 22,
+    "ams_swaps": 10,
+    "model_time_s": 2277.1,
+    "prepare_time_s": 308.7,
+    "tower_grams": 2.882,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "frenchie_paint_3c_020",
+   "product": "keychain",
+   "wall_s": 8.907,
+   "timings": {
+    "load": 3.28,
+    "section": 0.969,
+    "segment": 3.504,
+    "walls": 0.177,
+    "surfaces": 0.432,
+    "grouping": 0.002,
+    "fills": 0.163,
+    "changes": 0.002,
+    "moves": 0.341,
+    "estimate": 0.034,
+    "total": 8.904
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 1729.0295048790626,
+     "bambu": 1750.222412109375,
+     "diff": -21.192907230312358,
+     "pct": -1.2108693777250048
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 602.5137562106893,
+     "bambu": 621.322265625,
+     "diff": -18.80850941431072,
+     "pct": -3.027174536452654
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 29.760833906071717,
+     "bambu": 27.718482971191406,
+     "diff": 2.042350934880311,
+     "pct": 7.3681916034257116
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 11.32980348675477,
+     "bambu": 27.35749626159668,
+     "diff": -16.02769277484191,
+     "pct": -58.58610971407102
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 287.20265088111915,
+     "bambu": 287.1591491699219,
+     "diff": 0.04350171119727975,
+     "pct": 0.015148990141191114
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 486.66889632107035,
+     "bambu": 486.6421813964844,
+     "diff": 0.02671492458597413,
+     "pct": 0.005489644261685682
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 12.04652214050293,
+     "diff": -12.04652214050293,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 82.25640747064213,
+     "bambu": 67.01287078857422,
+     "diff": 15.243536682067912,
+     "pct": 22.74717752379436
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 108.9289812629124,
+     "bambu": 90.61601257324219,
+     "diff": 18.312968689670214,
+     "pct": 20.209417926956778
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 117.0928900637757,
+     "bambu": 120.06430053710938,
+     "diff": -2.971410473333677,
+     "pct": -2.47484927663013
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 331.14680492814466,
+     "bambu": 333.5548095703125,
+     "diff": -2.408004642167839,
+     "pct": -0.7219217271277983
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 73.10398915017224,
+     "bambu": 71.19747161865234,
+     "diff": 1.9065175315198957,
+     "pct": 2.6777882531160353
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 12.39737993211443,
+     "bambu": 22.0771541595459,
+     "diff": -9.67977422743147,
+     "pct": -43.84520829758328
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 196.6434709382467,
+     "bambu": 212.23147583007812,
+     "diff": -15.588004891831417,
+     "pct": -7.344812936377006
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 189.1408674762847,
+     "bambu": 204.7755126953125,
+     "diff": -15.634645219027789,
+     "pct": -7.635017006301301
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.7000474191584,
+     "bambu": 308.71176400302954,
+     "diff": -0.01171658387113439,
+     "pct": -0.0037953149951938368
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 6.501973744311647,
+     "bambu": 6.510812938213348,
+     "diff": -0.008839193901700959,
+     "pct": -0.1357617548773648
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 2.873694146338385,
+     "bambu": 2.883922286797315,
+     "diff": -0.010228140458929946,
+     "pct": -0.35466075163518407
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 3.6282795979732625,
+     "bambu": 3.6268906514160335,
+     "diff": 0.0013889465572289872,
+     "pct": 0.038295793579734914
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 4.99850375646015,
+     "bambu": 4.9998602867126465,
+     "diff": -0.0013565302524964906,
+     "pct": -0.02713136317231765
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 2.8159195975789584,
+     "bambu": 2.818250894546509,
+     "diff": -0.0023312969675504114,
+     "pct": -0.08272141320212535
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 0.5470625826125833,
+     "bambu": 0.5540722608566284,
+     "diff": -0.007009678244045081,
+     "pct": -1.2651198659914331
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 0.05327887328302367,
+     "bambu": 0.06030131131410599,
+     "diff": -0.007022438031082316,
+     "pct": -11.645580963410314
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 0.9564074052389141,
+     "bambu": 0.9568803906440735,
+     "diff": -0.00047298540515938736,
+     "pct": -0.04942994022910452
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 0.0044956754764030665,
+     "bambu": 0.005370080936700106,
+     "diff": -0.0008744054602970392,
+     "pct": -16.282910269027678
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 2.340116457909031,
+     "bambu": 2.339126800659877,
+     "diff": 0.0009896572491538969,
+     "pct": 0.04230883288903836
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 1.2881631400642317,
+     "bambu": 1.2877634784278142,
+     "diff": 0.0003996616364174699,
+     "pct": 0.031035329321918874
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 20,
+     "bambu": 20,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 16,
+     "bambu": 16,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 51,
+     "bambu": 51,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 4,
+     "bambu": 4,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3",
+     "bambu": "1 2 3"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 2 1",
+     "bambu": "1 2 1"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 34\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"35 43\"}, {\"filament_list\": \"0 1 2\", \"layer_ranges\": \"44 47\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"48 50\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 34\"}, {\"filament_list\": \"0 1 2\", \"layer_ranges\": \"44 47\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"35 43,48 50\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -1.2108693777250048,
+    "grams_pct": -0.1357617548773648,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [],
+    "print_time_s": 1729.0,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 4.9985,
+      "meters": 1.6759,
+      "model_grams": 2.8159,
+      "flush_grams": 0.3794,
+      "tower_grams": 1.8031
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 0.5471,
+      "meters": 0.1834,
+      "model_grams": 0.0533,
+      "flush_grams": 0.0,
+      "tower_grams": 0.4938
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFL99",
+      "grams": 0.9564,
+      "meters": 0.3207,
+      "model_grams": 0.0045,
+      "flush_grams": 0.9087,
+      "tower_grams": 0.0432
+     }
+    ],
+    "total_grams": 6.502,
+    "purge_grams": 3.6283,
+    "slots_used": 3,
+    "expected_slots": 3,
+    "output": null,
+    "log": null,
+    "filament_changes": 20,
+    "nozzle_changes": 16,
+    "ams_swaps": 4,
+    "model_time_s": 1420.3,
+    "prepare_time_s": 308.7,
+    "tower_grams": 2.3401,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "bronco_baseline_3c_020",
+   "product": "nameplate",
+   "wall_s": 16.6,
+   "timings": {
+    "load": 1.794,
+    "section": 0.745,
+    "segment": 6.963,
+    "walls": 1.058,
+    "surfaces": 1.614,
+    "grouping": 0.003,
+    "fills": 1.612,
+    "changes": 0.004,
+    "moves": 2.686,
+    "estimate": 0.098,
+    "total": 16.577
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 33171.619045281695,
+     "bambu": 33716.6796875,
+     "diff": -545.0606422183046,
+     "pct": -1.6165905043739475
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 6369.114986045704,
+     "bambu": 6941.970703125,
+     "diff": -572.8557170792956,
+     "pct": -8.252061865104366
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 169.67717582355695,
+     "bambu": 166.6162109375,
+     "diff": 3.0609648860569507,
+     "pct": 1.8371350955791212
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 231.27110908620762,
+     "bambu": 266.1033020019531,
+     "diff": -34.83219291574551,
+     "pct": -13.089725927373065
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 285.0426508811192,
+     "bambu": 284.9991455078125,
+     "diff": 0.04350537330668658,
+     "pct": 0.015265089033571854
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 22357.989698996542,
+     "bambu": 22304.66015625,
+     "diff": 53.32954274654185,
+     "pct": 0.23909596637184516
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 128.86293029785156,
+     "diff": -128.86293029785156,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 713.0331766597653,
+     "bambu": 702.84326171875,
+     "diff": 10.189914941015331,
+     "pct": 1.4498132792931195
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 1012.878864481503,
+     "bambu": 923.3070068359375,
+     "diff": 89.5718576455655,
+     "pct": 9.70119981570567
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 1072.3005330096887,
+     "bambu": 1112.9420166015625,
+     "diff": -40.641483591873794,
+     "pct": -3.651716170800621
+    },
+    {
+     "quantity": "time Overhang wall s",
+     "group": "feature",
+     "ours": 6.096211141000658,
+     "bambu": 7.762237548828125,
+     "diff": -1.6660264078274674,
+     "pct": -21.463223681926475
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 4135.814312820289,
+     "bambu": 4161.34521484375,
+     "diff": -25.53090202346084,
+     "pct": -0.6135252113280747
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 646.1717937061956,
+     "bambu": 573.2417602539062,
+     "diff": 72.93003345228931,
+     "pct": 12.72238669771483
+    },
+    {
+     "quantity": "time Support s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 183.2757110595703,
+     "diff": -183.2757110595703,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Support interface s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 4.635491847991943,
+     "diff": -4.635491847991943,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 142.4480643394382,
+     "bambu": 123.91629028320312,
+     "diff": 18.531774056235065,
+     "pct": 14.955074925081945
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 2404.238057798262,
+     "bambu": 2779.8984375,
+     "diff": -375.66037970173784,
+     "pct": -13.513456989442185
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 2398.8954543364657,
+     "bambu": 2774.6025390625,
+     "diff": -375.7070847260343,
+     "pct": -13.540933500802625
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.7000474191584,
+     "bambu": 308.71176400302954,
+     "diff": -0.01171658387113439,
+     "pct": -0.0037953149951938368
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 127.06005399299949,
+     "bambu": 127.14705181121826,
+     "diff": -0.0869978182187765,
+     "pct": -0.06842299288853872
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 27.626433674718996,
+     "bambu": 28.512635946273804,
+     "diff": -0.8862022715548079,
+     "pct": -3.108103625440572
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 99.43362031828048,
+     "bambu": 98.63441586494446,
+     "diff": 0.7992044533360172,
+     "pct": 0.8102693632112455
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 54.11681404519506,
+     "bambu": 54.87164306640625,
+     "diff": -0.7548290212111866,
+     "pct": -1.3756267883170263
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 18.483650584573297,
+     "bambu": 19.662181854248047,
+     "diff": -1.1785312696747496,
+     "pct": -5.993898736218463
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 61.825477877995795,
+     "bambu": 61.875755310058594,
+     "diff": -0.05027743206279922,
+     "pct": -0.08125546397108152
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 4.769115905632762,
+     "bambu": 5.194762229919434,
+     "diff": -0.4256463242866717,
+     "pct": -8.193759510977138
+    },
+    {
+     "quantity": "grams slot 5",
+     "group": "filament",
+     "ours": 11.117762069808629,
+     "bambu": 10.399653434753418,
+     "diff": 0.718108635055211,
+     "pct": 6.905120825040625
+    },
+    {
+     "quantity": "grams slot 5 model",
+     "group": "filament",
+     "ours": 4.373667184512937,
+     "bambu": 3.6556918621063232,
+     "diff": 0.7179753224066134,
+     "pct": 19.63992999106147
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 22.279740731204512,
+     "bambu": 22.274317823791016,
+     "diff": 0.005422907413496603,
+     "pct": 0.02434600896151549
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 77.15387958707596,
+     "bambu": 76.36008655757166,
+     "diff": 0.7937930295043003,
+     "pct": 1.0395391955269986
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 481,
+     "bambu": 481,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 238,
+     "bambu": 238,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 267,
+     "bambu": 267,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 243,
+     "bambu": 243,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 5",
+     "bambu": "1 2 5"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 1 1 2",
+     "bambu": "1 1 1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 18\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"19 19\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"20 233\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"234 236\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"237 257\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"258 261\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"262 266\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 18\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"262 266\"}, {\"filament_list\": \"0 4\", \"layer_ranges\": \"19 19\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"234 236,258 261\"}, {\"filament_list\": \"0 1 4\", \"layer_ranges\": \"20 233,237 257\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -1.6165905043739475,
+    "grams_pct": -0.06842299288853872,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [
+     "supports are on in the project but p2p_slicer does not generate them: time and grams leave out Bambu's tree supports"
+    ],
+    "print_time_s": 33171.6,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 54.1168,
+      "meters": 18.1445,
+      "model_grams": 18.4837,
+      "flush_grams": 22.7534,
+      "tower_grams": 12.8798
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 61.8255,
+      "meters": 20.7291,
+      "model_grams": 4.7691,
+      "flush_grams": 54.4005,
+      "tower_grams": 2.6558
+     },
+     {
+      "slot": 5,
+      "filament_id": "GFL99",
+      "grams": 11.1178,
+      "meters": 3.7276,
+      "model_grams": 4.3737,
+      "flush_grams": 0.0,
+      "tower_grams": 6.7441
+     }
+    ],
+    "total_grams": 127.0601,
+    "purge_grams": 99.4336,
+    "slots_used": 3,
+    "expected_slots": 3,
+    "output": null,
+    "log": null,
+    "filament_changes": 481,
+    "nozzle_changes": 238,
+    "ams_swaps": 243,
+    "model_time_s": 32862.9,
+    "prepare_time_s": 308.7,
+    "tower_grams": 22.2797,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  },
+  {
+   "case": "bronco_paint_3c_020",
+   "product": "nameplate",
+   "wall_s": 14.279,
+   "timings": {
+    "load": 1.977,
+    "section": 0.75,
+    "segment": 5.217,
+    "walls": 0.919,
+    "surfaces": 1.822,
+    "grouping": 0.003,
+    "fills": 1.446,
+    "changes": 0.008,
+    "moves": 2.017,
+    "estimate": 0.099,
+    "total": 14.257
+   },
+   "faces": null,
+   "rows": [
+    {
+     "quantity": "time total s",
+     "group": "time",
+     "ours": 32626.37774792366,
+     "bambu": 32835.26953125,
+     "diff": -208.89178332634037,
+     "pct": -0.6361811135052013
+    },
+    {
+     "quantity": "time main s",
+     "group": "time",
+     "ours": 6123.528219645457,
+     "bambu": 6570.56640625,
+     "diff": -447.0381866045427,
+     "pct": -6.803647645647637
+    },
+    {
+     "quantity": "time Bottom surface s",
+     "group": "feature",
+     "ours": 169.67717582355695,
+     "bambu": 166.6162109375,
+     "diff": 3.0609648860569507,
+     "pct": 1.8371350955791212
+    },
+    {
+     "quantity": "time Bridge s",
+     "group": "feature",
+     "ours": 231.70043341950264,
+     "bambu": 268.4802551269531,
+     "diff": -36.77982170745048,
+     "pct": -13.699265031634761
+    },
+    {
+     "quantity": "time Custom s",
+     "group": "feature",
+     "ours": 285.0426508811192,
+     "bambu": 284.9991455078125,
+     "diff": 0.04350537330668658,
+     "pct": 0.015265089033571854
+    },
+    {
+     "quantity": "time Flush s",
+     "group": "feature",
+     "ours": 22245.42013377916,
+     "bambu": 22015.630859375,
+     "diff": 229.7892744041601,
+     "pct": 1.0437551204957094
+    },
+    {
+     "quantity": "time Gap infill s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 95.76056671142578,
+     "diff": -95.76056671142578,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Inner wall s",
+     "group": "feature",
+     "ours": 694.9824457949251,
+     "bambu": 674.6673583984375,
+     "diff": 20.31508739648757,
+     "pct": 3.0111264675250693
+    },
+    {
+     "quantity": "time Internal solid infill s",
+     "group": "feature",
+     "ours": 1000.8606869138281,
+     "bambu": 911.3014526367188,
+     "diff": 89.55923427710934,
+     "pct": 9.827618952870388
+    },
+    {
+     "quantity": "time Outer wall s",
+     "group": "feature",
+     "ours": 985.9657488366205,
+     "bambu": 1002.9951171875,
+     "diff": -17.02936835087951,
+     "pct": -1.6978515706668227
+    },
+    {
+     "quantity": "time Overhang wall s",
+     "group": "feature",
+     "ours": 6.187606431531797,
+     "bambu": 7.342049598693848,
+     "diff": -1.154443167162051,
+     "pct": -15.723717902524475
+    },
+    {
+     "quantity": "time Prime tower s",
+     "group": "feature",
+     "ours": 3948.7293470798836,
+     "bambu": 3940.369873046875,
+     "diff": 8.35947403300861,
+     "pct": 0.2121494758700071
+    },
+    {
+     "quantity": "time Sparse infill s",
+     "group": "feature",
+     "ours": 652.8675839411447,
+     "bambu": 589.63525390625,
+     "diff": 63.232330034894744,
+     "pct": 10.72397378141648
+    },
+    {
+     "quantity": "time Support s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 183.82164001464844,
+     "diff": -183.82164001464844,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Support interface s",
+     "group": "feature",
+     "ours": 0.0,
+     "bambu": 4.555670738220215,
+     "diff": -4.555670738220215,
+     "pct": -100.0
+    },
+    {
+     "quantity": "time Top surface s",
+     "group": "feature",
+     "ours": 142.48652845100113,
+     "bambu": 124.1150894165039,
+     "diff": 18.37143903449723,
+     "pct": 14.801938362906526
+    },
+    {
+     "quantity": "time Travel s",
+     "group": "feature",
+     "ours": 2267.8000100332056,
+     "bambu": 2571.97265625,
+     "diff": -304.1726462167944,
+     "pct": -11.826433903861393
+    },
+    {
+     "quantity": "time Undefined s",
+     "group": "feature",
+     "ours": 2262.4574065714105,
+     "bambu": 2566.6767578125,
+     "diff": -304.2193512410895,
+     "pct": -11.85265539632526
+    },
+    {
+     "quantity": "time prepare s",
+     "group": "time",
+     "ours": 308.7000474191584,
+     "bambu": 308.71176400302954,
+     "diff": -0.01171658387113439,
+     "pct": -0.0037953149951938368
+    },
+    {
+     "quantity": "grams total",
+     "group": "grams",
+     "ours": 125.7370067835092,
+     "bambu": 124.79726314544678,
+     "diff": 0.9397436380624242,
+     "pct": 0.7530162235747
+    },
+    {
+     "quantity": "grams model",
+     "group": "grams",
+     "ours": 27.394567397114532,
+     "bambu": 28.169238328933716,
+     "diff": -0.774670931819184,
+     "pct": -2.7500599156189804
+    },
+    {
+     "quantity": "grams purge",
+     "group": "grams",
+     "ours": 98.34243938639466,
+     "bambu": 96.62802481651306,
+     "diff": 1.7144145698815976,
+     "pct": 1.7742415548047257
+    },
+    {
+     "quantity": "grams slot 1",
+     "group": "filament",
+     "ours": 53.24552606188619,
+     "bambu": 53.62405776977539,
+     "diff": -0.3785317078892021,
+     "pct": -0.7058990379175619
+    },
+    {
+     "quantity": "grams slot 1 model",
+     "group": "filament",
+     "ours": 18.1963650899122,
+     "bambu": 19.3028564453125,
+     "diff": -1.1064913554003013,
+     "pct": -5.732267442050015
+    },
+    {
+     "quantity": "grams slot 2",
+     "group": "filament",
+     "ours": 62.04136575801647,
+     "bambu": 61.43329620361328,
+     "diff": 0.6080695544031869,
+     "pct": 0.9898045391994162
+    },
+    {
+     "quantity": "grams slot 2 model",
+     "group": "filament",
+     "ours": 4.869535554464497,
+     "bambu": 5.247799873352051,
+     "diff": -0.3782643188875534,
+     "pct": -7.208055337787409
+    },
+    {
+     "quantity": "grams slot 3",
+     "group": "filament",
+     "ours": 10.450114963606545,
+     "bambu": 9.739909172058105,
+     "diff": 0.7102057915484394,
+     "pct": 7.291708567322999
+    },
+    {
+     "quantity": "grams slot 3 model",
+     "group": "filament",
+     "ours": 4.328666752737835,
+     "bambu": 3.618582010269165,
+     "diff": 0.7100847424686698,
+     "pct": 19.623287255989283
+    },
+    {
+     "quantity": "grams tower",
+     "group": "grams",
+     "ours": 21.226751345992728,
+     "bambu": 20.981540083100928,
+     "diff": 0.24521126289180017,
+     "pct": 1.1687000187812697
+    },
+    {
+     "quantity": "grams flush",
+     "group": "grams",
+     "ours": 77.11568804040193,
+     "bambu": 75.64647489823622,
+     "diff": 1.4692131421657137,
+     "pct": 1.9422096589988889
+    },
+    {
+     "quantity": "filament changes",
+     "group": "counts",
+     "ours": 459,
+     "bambu": 457,
+     "diff": 2,
+     "pct": 0.437636761487965
+    },
+    {
+     "quantity": "nozzle switches",
+     "group": "counts",
+     "ours": 216,
+     "bambu": 216,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "layers",
+     "group": "counts",
+     "ours": 267,
+     "bambu": 267,
+     "diff": 0,
+     "pct": 0.0
+    },
+    {
+     "quantity": "ams swaps",
+     "group": "counts",
+     "ours": 243,
+     "bambu": 241,
+     "diff": 2,
+     "pct": 0.8298755186721992
+    },
+    {
+     "quantity": "slots used",
+     "group": "counts",
+     "ours": "1 2 3",
+     "bambu": "1 2 3"
+    },
+    {
+     "quantity": "filament maps",
+     "group": "counts",
+     "ours": "1 1 2",
+     "bambu": "1 1 2"
+    },
+    {
+     "quantity": "layer filament lists",
+     "group": "counts",
+     "ours": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 18\"}, {\"filament_list\": \"0 2\", \"layer_ranges\": \"19 19\"}, {\"filament_list\": \"0 1 2\", \"layer_ranges\": \"20 233\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"234 259\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"260 260\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"261 261\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"262 266\"}]",
+     "bambu": "[{\"filament_list\": \"0\", \"layer_ranges\": \"0 18\"}, {\"filament_list\": \"0 2\", \"layer_ranges\": \"19 19\"}, {\"filament_list\": \"1\", \"layer_ranges\": \"261 266\"}, {\"filament_list\": \"0 1 2\", \"layer_ranges\": \"20 233\"}, {\"filament_list\": \"0 1\", \"layer_ranges\": \"234 260\"}]"
+    }
+   ],
+   "summary": {
+    "time_pct": -0.6361811135052013,
+    "grams_pct": 0.7530162235747,
+    "slots_equal": true
+   },
+   "report": {
+    "ok": true,
+    "slicer": "p2p_slicer",
+    "slicer_version": "0.1.0",
+    "printer_profile": "Bambu Lab X2D 0.4 nozzle",
+    "process_profile": "0.20mm Standard @BBL X2D",
+    "errors": [],
+    "warnings": [
+     "supports are on in the project but p2p_slicer does not generate them: time and grams leave out Bambu's tree supports"
+    ],
+    "print_time_s": 32626.4,
+    "filaments": [
+     {
+      "slot": 1,
+      "filament_id": "GFL99",
+      "grams": 53.2455,
+      "meters": 17.8524,
+      "model_grams": 18.1964,
+      "flush_grams": 22.7005,
+      "tower_grams": 12.3487
+     },
+     {
+      "slot": 2,
+      "filament_id": "GFL99",
+      "grams": 62.0414,
+      "meters": 20.8015,
+      "model_grams": 4.8695,
+      "flush_grams": 54.4152,
+      "tower_grams": 2.7566
+     },
+     {
+      "slot": 3,
+      "filament_id": "GFL99",
+      "grams": 10.4501,
+      "meters": 3.5038,
+      "model_grams": 4.3287,
+      "flush_grams": 0.0,
+      "tower_grams": 6.1214
+     }
+    ],
+    "total_grams": 125.737,
+    "purge_grams": 98.3424,
+    "slots_used": 3,
+    "expected_slots": 3,
+    "output": null,
+    "log": null,
+    "filament_changes": 459,
+    "nozzle_changes": 216,
+    "ams_swaps": 243,
+    "model_time_s": 32317.7,
+    "prepare_time_s": 308.7,
+    "tower_grams": 21.2268,
+    "readback_ok": null,
+    "readback_slots": null,
+    "thin_paint": []
+   }
+  }
+ ]
+}

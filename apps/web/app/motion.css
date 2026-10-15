@@ -1,0 +1,292 @@
+/*
+ * Public site motion (design system v1). Only transform, opacity and clip-path animate; nothing
+ * moves layout. Anything that starts hidden is gated on html.js (set before paint in
+ * app/layout.tsx), so pages read fine without JavaScript. prefers-reduced-motion: reduce shows
+ * everything in its final state.
+ */
+
+/* ------------------------------------------------------------------ print-in */
+/* A render builds bottom-up in 18 layers. The wrapper is exactly the image box. */
+
+@keyframes ll-print {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* The brick line rides the top edge of the built part. */
+@keyframes ll-print-line {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ll-print-line-fade {
+  0%,
+  94% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.print-in {
+  position: relative;
+  display: block;
+  overflow: clip;
+}
+
+.print-in > .print-in-body {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.print-in > .print-in-line {
+  position: absolute;
+  inset: 0 6%;
+  border-top: 1px solid var(--color-brick);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* On load (the hero): runs once over dur-print. */
+  html.js .print-in[data-print="load"] > .print-in-body {
+    animation: ll-print var(--dur-print) var(--ease-print) var(--print-delay, 120ms) both;
+  }
+  html.js .print-in[data-print="load"] > .print-in-line {
+    animation:
+      ll-print-line var(--dur-print) var(--ease-print) var(--print-delay, 120ms) both,
+      ll-print-line-fade var(--dur-print) linear var(--print-delay, 120ms) both;
+  }
+
+  /* On scroll without scroll timelines: an IntersectionObserver adds .is-printing once. */
+  html.js .print-in[data-print="scroll"]:not(.is-printing) > .print-in-body {
+    clip-path: inset(100% 0 0 0);
+  }
+  html.js .print-in[data-print="scroll"].is-printing > .print-in-body {
+    animation: ll-print var(--dur-print) var(--ease-print) var(--print-delay, 0ms) both;
+  }
+  html.js .print-in[data-print="scroll"].is-printing > .print-in-line {
+    animation:
+      ll-print-line var(--dur-print) var(--ease-print) var(--print-delay, 0ms) both,
+      ll-print-line-fade var(--dur-print) linear var(--print-delay, 0ms) both;
+  }
+
+  /* Scroll-linked where supported: the render builds as it enters the viewport. */
+  @supports (animation-timeline: view()) {
+    html.js .print-in[data-print="scroll"] > .print-in-body,
+    html.js .print-in[data-print="scroll"]:not(.is-printing) > .print-in-body {
+      clip-path: none;
+      animation: ll-print linear both;
+      animation-timing-function: var(--ease-print);
+      animation-timeline: view();
+      animation-range: entry var(--print-from, 10%) cover var(--print-to, 42%);
+    }
+    html.js .print-in[data-print="scroll"] > .print-in-line,
+    html.js .print-in[data-print="scroll"].is-printing > .print-in-line {
+      animation:
+        ll-print-line linear both,
+        ll-print-line-fade linear both;
+      animation-timing-function: var(--ease-print), linear;
+      animation-timeline: view();
+      animation-range: entry var(--print-from, 10%) cover var(--print-to, 42%);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ reveal */
+/* h2s and ledes rise 12 px and fade in once. */
+
+@media (prefers-reduced-motion: no-preference) {
+  html.js [data-reveal] {
+    transition:
+      opacity var(--dur-reveal) var(--ease-out),
+      transform var(--dur-reveal) var(--ease-out);
+  }
+  html.js [data-reveal]:not(.is-revealed) {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+/* ------------------------------------------------------------------ parallax */
+/* The How it works trio drifts at three rates across the band's view range. */
+
+@keyframes ll-drift {
+  from {
+    transform: translateY(calc(var(--drift, 0px) / 2));
+  }
+  to {
+    transform: translateY(calc(var(--drift, 0px) / -2));
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .drift-scope {
+      view-timeline: --ll-band block;
+    }
+    .drift {
+      animation: ll-drift linear both;
+      animation-timeline: --ll-band;
+      animation-range: cover 0% cover 100%;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------ number tick */
+/* Price and mm roll to the new value; both values share one grid cell, so nothing reflows. */
+
+@keyframes ll-tick-in {
+  from {
+    transform: translateY(55%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ll-tick-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-55%);
+    opacity: 0;
+  }
+}
+
+.tick {
+  display: inline-grid;
+  overflow: clip;
+  font-variant-numeric: tabular-nums;
+}
+
+.tick > span {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+}
+
+.tick > .tick-in {
+  animation: ll-tick-in var(--dur-base) var(--ease-in-out) both;
+}
+
+.tick > .tick-out {
+  animation: ll-tick-out var(--dur-base) var(--ease-in-out) both;
+}
+
+/* ------------------------------------------------------------------ typing hint caret */
+
+@keyframes ll-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-caret {
+  display: inline-block;
+  width: 1.5px;
+  height: 1.1em;
+  margin-left: 1px;
+  vertical-align: -0.15em;
+  background: var(--color-brick);
+  animation: ll-caret 1s steps(1) infinite;
+}
+
+/* ------------------------------------------------------------------ first look: printing */
+/* The chosen product's silhouette (its -front render as a mask, --shape) builds from stacked ink
+   layer lines, like the logo, over a faint ghost of the whole shape, under a brick print line. */
+
+@keyframes ll-strata {
+  0% {
+    clip-path: inset(100% 0 0 0);
+  }
+  90%,
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes ll-strata-line {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.strata-ghost,
+.strata,
+.strata-line {
+  position: absolute;
+  inset: 8% 14% 6%;
+}
+
+.strata-ghost,
+.strata {
+  -webkit-mask: var(--shape) center bottom / contain no-repeat;
+  mask: var(--shape) center bottom / contain no-repeat;
+}
+
+.strata-ghost {
+  background: var(--color-ink);
+  opacity: 0.07;
+}
+
+.strata {
+  background-image: repeating-linear-gradient(0deg, var(--color-ink) 0 3px, transparent 3px 5px);
+  clip-path: inset(100% 0 0 0);
+  animation: ll-strata 6s steps(40, jump-end) infinite;
+}
+
+.strata-line {
+  border-top: 1.5px solid var(--color-brick);
+  pointer-events: none;
+  animation: ll-strata-line 6s steps(40, jump-end) infinite;
+}
+
+/* ------------------------------------------------------------------ reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  .print-in > .print-in-body {
+    animation: none !important;
+    clip-path: none !important;
+  }
+  .print-in > .print-in-line,
+  .strata-line,
+  .typing-caret {
+    display: none !important;
+  }
+  .strata {
+    animation: none !important;
+    clip-path: inset(40% 0 0 0);
+  }
+  .drift {
+    animation: none !important;
+  }
+  .tick > .tick-out {
+    display: none;
+  }
+  .tick > .tick-in {
+    animation: none !important;
+  }
+}

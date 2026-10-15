@@ -1,0 +1,16 @@
+{
+  "id": "01a0d17e-ca8e-7381-9057-85b493814c28",
+  "type": "image-to-image",
+  "ai_model": "nano-banana",
+  "prompt": "Chunky sculpted collectible figurine of this beagle puppy sitting, one connected solid sculpture on a small round base, no loose whiskers, no thin parts, no gaps, flat even lighting, neutral background, three-quarter hero view. Clear painted color regions: tan brown head and ears, white blaze, muzzle and chest, black saddle on the back, black nose, dark brown eyes.",
+  "status": "SUCCEEDED",
+  "progress": 100,
+  "created_at": 1790221143519,
+  "started_at": 1790221143529,
+  "finished_at": 1790221183672,
+  "expires_at": 1790480383672,
+  "image_urls": [
+    "https://assets.meshy.ai/00000000-0000-4000-8000-000000000000/uploads/image_01a0d17e-ca8e-7381-9057-85b493814c28_0.png?Expires=1790480383&Signature=REDACTED&Key-Pair-Id=REDACTED"
+  ],
+  "consumed_credits": 3
+}

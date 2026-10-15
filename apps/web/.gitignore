@@ -1,0 +1,6 @@
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+lib/pricing.generated.json
+# The root .gitignore ignores every data/ directory (for /data fixtures); keep the web data layer.
+!lib/data/

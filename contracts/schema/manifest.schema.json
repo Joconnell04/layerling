@@ -1,0 +1,688 @@
+{
+  "$defs": {
+    "Decision": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "description": "Dotted key, e.g. concept.pick, palette.k, route.tweak",
+          "title": "Key",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "by": {
+          "enum": [
+            "user",
+            "model",
+            "code"
+          ],
+          "title": "By",
+          "type": "string"
+        },
+        "model": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model"
+        },
+        "at": {
+          "format": "date-time",
+          "title": "At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "value",
+        "by",
+        "at"
+      ],
+      "title": "Decision",
+      "type": "object"
+    },
+    "FileRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "description": "POSIX path relative to jobs/<job_id>/",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bytes"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+          "title": "Kind"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "FileRef",
+      "type": "object"
+    },
+    "GateRequest": {
+      "additionalProperties": false,
+      "description": "What a WAITING_USER stage is waiting on. Mirrored as an assistant message in Supabase.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "answer_questions",
+            "pick_concept",
+            "approve_mesh",
+            "review"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "message_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Supabase messages.id of the prompt message",
+          "title": "Message Id"
+        },
+        "opened_at": {
+          "format": "date-time",
+          "title": "Opened At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "opened_at"
+      ],
+      "title": "GateRequest",
+      "type": "object"
+    },
+    "InputRef": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "description": "POSIX path relative to jobs/<job_id>/",
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "bytes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bytes"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "png, jpg, glb, 3mf, json, npy, ply, gcode.3mf, ...",
+          "title": "Kind"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Semantic role, e.g. concept_candidate, baseline_3mf",
+          "title": "Role"
+        },
+        "from_stage": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/StageId"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "from_attempt": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Attempt"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "title": "InputRef",
+      "type": "object"
+    },
+    "MeshyTask": {
+      "additionalProperties": false,
+      "properties": {
+        "task_id": {
+          "title": "Task Id",
+          "type": "string"
+        },
+        "endpoint": {
+          "description": "API path, e.g. openapi/v1/image-to-image",
+          "title": "Endpoint",
+          "type": "string"
+        },
+        "purpose": {
+          "title": "Purpose",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "PENDING",
+            "IN_PROGRESS",
+            "SUCCEEDED",
+            "FAILED",
+            "CANCELED",
+            "EXPIRED"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "test_mode": {
+          "title": "Test Mode",
+          "type": "boolean"
+        },
+        "credits": {
+          "default": 0,
+          "title": "Credits",
+          "type": "integer"
+        },
+        "refunded": {
+          "default": false,
+          "title": "Refunded",
+          "type": "boolean"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "finished_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Finished At"
+        },
+        "request": {
+          "additionalProperties": true,
+          "description": "Request body with secrets and data URIs stripped",
+          "title": "Request",
+          "type": "object"
+        },
+        "result": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Trimmed vendor result (urls, ids)",
+          "title": "Result"
+        }
+      },
+      "required": [
+        "task_id",
+        "endpoint",
+        "purpose",
+        "status",
+        "test_mode",
+        "created_at"
+      ],
+      "title": "MeshyTask",
+      "type": "object"
+    },
+    "ModelCall": {
+      "additionalProperties": false,
+      "properties": {
+        "vendor": {
+          "enum": [
+            "anthropic",
+            "meshy",
+            "runpod",
+            "local"
+          ],
+          "title": "Vendor",
+          "type": "string"
+        },
+        "model": {
+          "description": "claude-sonnet-5, meshy:image-to-image/nano-banana-pro, sam3, ...",
+          "title": "Model",
+          "type": "string"
+        },
+        "purpose": {
+          "title": "Purpose",
+          "type": "string"
+        },
+        "started_at": {
+          "format": "date-time",
+          "title": "Started At",
+          "type": "string"
+        },
+        "duration_s": {
+          "title": "Duration S",
+          "type": "number"
+        },
+        "effort": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effort"
+        },
+        "input_tokens": {
+          "default": 0,
+          "title": "Input Tokens",
+          "type": "integer"
+        },
+        "output_tokens": {
+          "default": 0,
+          "title": "Output Tokens",
+          "type": "integer"
+        },
+        "cache_read_tokens": {
+          "default": 0,
+          "title": "Cache Read Tokens",
+          "type": "integer"
+        },
+        "cache_write_tokens": {
+          "default": 0,
+          "title": "Cache Write Tokens",
+          "type": "integer"
+        },
+        "credits": {
+          "default": 0,
+          "title": "Credits",
+          "type": "integer"
+        },
+        "usd": {
+          "default": 0.0,
+          "description": "Real money spent. 0 for subscription (Claude Code OAuth) calls",
+          "title": "Usd",
+          "type": "number"
+        },
+        "usd_list": {
+          "default": 0.0,
+          "description": "List-price equivalent, for comparing backends",
+          "title": "Usd List",
+          "type": "number"
+        },
+        "billing": {
+          "default": "api",
+          "enum": [
+            "api",
+            "subscription",
+            "credits",
+            "gpu_seconds",
+            "free"
+          ],
+          "title": "Billing",
+          "type": "string"
+        },
+        "request_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Request Id"
+        }
+      },
+      "required": [
+        "vendor",
+        "model",
+        "purpose",
+        "started_at",
+        "duration_s"
+      ],
+      "title": "ModelCall",
+      "type": "object"
+    },
+    "StageError": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "enum": [
+            "budget_exceeded",
+            "vendor_failed",
+            "vendor_timeout",
+            "validation",
+            "slicer_failed",
+            "retry_limit",
+            "internal",
+            "cancelled"
+          ],
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "retryable": {
+          "title": "Retryable",
+          "type": "boolean"
+        },
+        "detail": {
+          "additionalProperties": true,
+          "title": "Detail",
+          "type": "object"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "retryable"
+      ],
+      "title": "StageError",
+      "type": "object"
+    },
+    "StageId": {
+      "enum": [
+        "s01_intake",
+        "s02_color_spec",
+        "s03_concept",
+        "s04_multiview",
+        "s05_mesh",
+        "s06_printability",
+        "s07_baseline",
+        "s08_palette",
+        "s09_paint",
+        "s10_write"
+      ],
+      "title": "StageId",
+      "type": "string"
+    },
+    "StageStatus": {
+      "enum": [
+        "pending",
+        "running",
+        "waiting_user",
+        "waiting_vendor",
+        "succeeded",
+        "failed",
+        "paused",
+        "skipped",
+        "stale"
+      ],
+      "title": "StageStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1",
+      "default": "1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "job_id": {
+      "title": "Job Id",
+      "type": "string"
+    },
+    "stage": {
+      "$ref": "#/$defs/StageId"
+    },
+    "attempt": {
+      "minimum": 1,
+      "title": "Attempt",
+      "type": "integer"
+    },
+    "status": {
+      "$ref": "#/$defs/StageStatus"
+    },
+    "started_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Started At"
+    },
+    "finished_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Finished At"
+    },
+    "duration_s": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Duration S"
+    },
+    "inputs": {
+      "items": {
+        "$ref": "#/$defs/InputRef"
+      },
+      "title": "Inputs",
+      "type": "array"
+    },
+    "outputs": {
+      "items": {
+        "$ref": "#/$defs/FileRef"
+      },
+      "title": "Outputs",
+      "type": "array"
+    },
+    "model_calls": {
+      "items": {
+        "$ref": "#/$defs/ModelCall"
+      },
+      "title": "Model Calls",
+      "type": "array"
+    },
+    "meshy_tasks": {
+      "items": {
+        "$ref": "#/$defs/MeshyTask"
+      },
+      "title": "Meshy Tasks",
+      "type": "array"
+    },
+    "credits": {
+      "default": 0,
+      "title": "Credits",
+      "type": "integer"
+    },
+    "usd": {
+      "default": 0.0,
+      "title": "Usd",
+      "type": "number"
+    },
+    "decisions": {
+      "items": {
+        "$ref": "#/$defs/Decision"
+      },
+      "title": "Decisions",
+      "type": "array"
+    },
+    "confidence": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Confidence"
+    },
+    "gate": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/GateRequest"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "pause_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Pause Reason"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/StageError"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "data": {
+      "additionalProperties": true,
+      "description": "Small stage-specific summary. Large payloads go in output files.",
+      "title": "Data",
+      "type": "object"
+    }
+  },
+  "required": [
+    "job_id",
+    "stage",
+    "attempt",
+    "status"
+  ],
+  "title": "Manifest",
+  "type": "object"
+}

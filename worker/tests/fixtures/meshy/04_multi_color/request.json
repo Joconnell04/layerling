@@ -1,0 +1,8 @@
+{
+  "path": "/openapi/v1/print/multi-color",
+  "body": {
+    "input_task_id": "01a0d17f-760d-716a-bb19-348bc00a15df",
+    "max_colors": 5,
+    "style": "cartoon"
+  }
+}

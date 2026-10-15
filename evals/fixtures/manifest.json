@@ -1,0 +1,3837 @@
+{
+ "version": 1,
+ "built_at": "2026-09-25T15:50:40+00:00",
+ "store": "evals/fixtures/store (gitignored)",
+ "jobs": [
+  {
+   "job_id": "77032daf-2325-4061-ba6f-7703e1b0a303",
+   "label": "sombrero",
+   "what": "live run 2: golden in a sombrero, figurine on a round base",
+   "product_type": "figurine",
+   "profile": "full",
+   "form": "figure",
+   "prompt": "make my dog wear a sombrero lol, little figurine for my desk",
+   "attempts": {
+    "s01_intake": 1,
+    "s02_color_spec": 1,
+    "s03_concept": 1,
+    "s04_multiview": 1,
+    "s05_mesh": 1,
+    "s06_printability": 1,
+    "s07_baseline": 1,
+    "s08_palette": 1,
+    "s09_paint": 2,
+    "s10_write": 1
+   },
+   "credits_live": 96,
+   "result": {
+    "threemf": "s10_write/a1/final.3mf",
+    "slice_ok": true,
+    "print_time_s": 25330.0,
+    "baseline_only": false,
+    "filaments": [
+     {
+      "filament_id": "bambu-pla-matte-caramel",
+      "grams": 36.65,
+      "meters": 11.54,
+      "slot": 1
+     },
+     {
+      "filament_id": "generic-pla-black",
+      "grams": 7.26,
+      "meters": 2.43,
+      "slot": 2
+     },
+     {
+      "filament_id": "generic-pla-white",
+      "grams": 50.48,
+      "meters": 16.93,
+      "slot": 3
+     },
+     {
+      "filament_id": "bambu-pla-matte-latte-brown",
+      "grams": 11.85,
+      "meters": 3.73,
+      "slot": 4
+     },
+     {
+      "filament_id": "bambu-pla-matte-dark-chocolate",
+      "grams": 5.25,
+      "meters": 1.65,
+      "slot": 5
+     }
+    ]
+   },
+   "meshy": [
+    {
+     "task_id": "01a0d643-6dcd-7313-ac00-9579c476ad1c",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c1 gpt-image-2",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "aspect_ratio": "1:1",
+      "prompt": "A small collectible figurine. Request: make my dog wear a sombrero lol, little figurine for my desk Subjects, matching the reference photos: Dog (dog): Yellow Labrador Retriever, cream/white coat, tan ear markings, black nose, friendly expression, medium build. Dog colors, keep every one: white main body; tan ears; black nose; brown eyes; light tan muzzle shading. A sitting pose. Realistic proportions true to the photos. Must show: wearing a sombrero. Finished size about 90 mm. Notes: Customer wants whimsical sombrero on dog for desk figurine. Capture friendly personality from photos.\"}] One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. Hard constraints, do not draw any of these: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/77032daf-2325-4061-ba6f-7703e1b0a303/input/photo_1.jpg",
+       "storage:inputs/77032daf-2325-4061-ba6f-7703e1b0a303/input/photo_2.jpg",
+       "storage:inputs/77032daf-2325-4061-ba6f-7703e1b0a303/input/photo_3.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "00ddfe6ad2af1c7fc47d2f66390e2c5bf9fa6108a93234c5ef38d97c773457ad",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "61c18cc6837bc768",
+      "reference_image_urls": "1a361e383e16bcc2",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d643-6dcd-7313-ac00-9579c476ad1c.json",
+     "task_sha256": "816c7d0e55913cf8b46050329d4c26012b0b02f81fc153e7b1eb15c1a5f729a1",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/figure_r1c1.png",
+       "sha256": "7abb40d6bee63806740a2a1270be0bad4e40781d80385dd9f1e2429962154a29",
+       "bytes": 757237
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d643-75ac-7787-b7a9-cf5338bfc071",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c2 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "1:1",
+      "prompt": "The figure stands on its own feet with nothing under it, cut out and isolated on a plain light background like a product photo. A small collectible figurine. Request: make my dog wear a sombrero lol, little figurine for my desk Subjects, matching the reference photos: Dog (dog): Yellow Labrador Retriever, cream/white coat, tan ear markings, black nose, friendly expression, medium build. Dog colors, keep every one: white main body; tan ears; black nose; brown eyes; light tan muzzle shading. A sitting pose. Realistic proportions true to the photos. Must show: wearing a sombrero. Finished size about 90 mm. Notes: Customer wants whimsical sombrero on dog for desk figurine. Capture friendly personality from photos.\"}] One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. Avoid: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/77032daf-2325-4061-ba6f-7703e1b0a303/input/photo_1.jpg",
+       "storage:inputs/77032daf-2325-4061-ba6f-7703e1b0a303/input/photo_2.jpg",
+       "storage:inputs/77032daf-2325-4061-ba6f-7703e1b0a303/input/photo_3.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "f12e633d1b2d8e4ba132c7a5bb3fccff2c7ad15c80e460b99c4326c7908bed60",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "bb898305e9eaa5f2",
+      "reference_image_urls": "1a361e383e16bcc2",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d643-75ac-7787-b7a9-cf5338bfc071.json",
+     "task_sha256": "d0c8e1ea46c340f4a99d802c33f33344582660362e244ba0009a316ab6606dfc",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/figure_r1c2.png",
+       "sha256": "579b37ccd9117023416e991de2efbd1df06bf35e40cdf0cc935855c6aaea677e",
+       "bytes": 369615
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d644-17cf-716a-94db-e9d8e51fbec8",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1.p0",
+     "endpoint": "image-to-image",
+     "purpose": "product r1c1 nano-banana-2",
+     "status": "SUCCEEDED",
+     "credits": 6,
+     "request": {
+      "ai_model": "nano-banana-2",
+      "aspect_ratio": "1:1",
+      "input_task_id": "01a0d643-6dcd-7313-ac00-9579c476ad1c",
+      "prompt": "Stand the figure on a low, plain round base, a smooth disc a little wider than the figure, in one solid color. Keep the figure itself exactly as it is: same pose, proportions, colors and markings; do not redraw it. Only its size and place in the frame may change, to make room for what is added. Plain light background, same lighting. Avoid: plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "remove_background": true
+     },
+     "request_hash": "ce81bbc20df69337ed7dc59528fab7c95fb212628fc445ce94d657df4c769f4c",
+     "request_fields": {
+      "ai_model": "75da99efb0119f8d",
+      "aspect_ratio": "738a397ca42f89be",
+      "input_task_id": "5e63081bf5e6baaf",
+      "prompt": "beab79b049c2f899",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d644-17cf-716a-94db-e9d8e51fbec8.json",
+     "task_sha256": "d28f51a9fb658ae3ac8f1ed6af154e3eef73ed5fce414703ae9cc3592881b71d",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/edit_r1c1_0.png",
+       "sha256": "f06a6d820acac910e6b1decef12e0198d3f4ee05c1d266054890f3bf71bb2749",
+       "bytes": 690094
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d644-2046-77b0-9a05-feafa6f9d223",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2.p0",
+     "endpoint": "image-to-image",
+     "purpose": "product r1c2 nano-banana-2",
+     "status": "SUCCEEDED",
+     "credits": 6,
+     "request": {
+      "ai_model": "nano-banana-2",
+      "aspect_ratio": "1:1",
+      "input_task_id": "01a0d643-75ac-7787-b7a9-cf5338bfc071",
+      "prompt": "Stand the figure on a low, plain round base, a smooth disc a little wider than the figure, in one solid color. Keep the figure itself exactly as it is: same pose, proportions, colors and markings; do not redraw it. Only its size and place in the frame may change, to make room for what is added. Plain light background, same lighting. Avoid: plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "remove_background": true
+     },
+     "request_hash": "fe2b944704f1f6f4b22c91d461d5e77c88b1e0ac76b4685101e30f5b3edb5d3a",
+     "request_fields": {
+      "ai_model": "75da99efb0119f8d",
+      "aspect_ratio": "738a397ca42f89be",
+      "input_task_id": "f2156f123db2e083",
+      "prompt": "beab79b049c2f899",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d644-2046-77b0-9a05-feafa6f9d223.json",
+     "task_sha256": "6d29df217ec8675c9e829a7ec6d46a627ec10a2c307a6ce387bbb9975169b999",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/edit_r1c2_0.png",
+       "sha256": "50c42af27c2a2c18a52d9201d59435f2c9a6f9660f2ef5da577afa453122ed6e",
+       "bytes": 461802
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d645-6766-72f6-924b-ca85df609b50",
+     "stage": "s04_multiview",
+     "attempt": 1,
+     "key": "views0",
+     "endpoint": "image-to-image",
+     "purpose": "multi-view",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "generate_multi_view": true,
+      "input_task_id": "01a0d643-75ac-7787-b7a9-cf5338bfc071",
+      "prompt": "The figure stands on its own feet with nothing under it, cut out and isolated on a plain light background like a product photo. The same figure seen from the front, the left side and the back. Keep proportions, pose, every color and every marking identical. Same plain light background, same lighting, same scale, centered with margin. No base, plate, stand, text, keyring or loop. Keep showing: wearing a sombrero. Avoid: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole."
+     },
+     "request_hash": "6c9e99259a2614b30881535c1dbf36be5e6bd0e7aa6f1ed92a297602af3cf15c",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "generate_multi_view": "b5bea41b6c623f7c",
+      "input_task_id": "f2156f123db2e083",
+      "prompt": "b3a06a3f49e73877"
+     },
+     "task": "meshy/01a0d645-6766-72f6-924b-ca85df609b50.json",
+     "task_sha256": "35d6414232a92eab8883f4004ca318ab958aa35231984469366cbeabec2207c9",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s04_multiview/a1/views0_raw_0.png",
+       "sha256": "1411f79173e3a68ccbd4b890c60ad7efa5bbc07869e9b6d2f5f645becf67224e",
+       "bytes": 208284
+      },
+      {
+       "field": "image_urls.1",
+       "path": "s04_multiview/a1/views0_raw_1.png",
+       "sha256": "67fafd2c8410dd407be200a6fc5392f609d6660e46322a68d5292d355b9f173d",
+       "bytes": 261613
+      },
+      {
+       "field": "image_urls.2",
+       "path": "s04_multiview/a1/views0_raw_2.png",
+       "sha256": "9f0581e1c6d40b645de468bbc87b5346f00dde90c0dedde15b8f4aee0ce2b42a",
+       "bytes": 198639
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d646-0be5-70e8-9be1-3db8ee03e2f5",
+     "stage": "s04_multiview",
+     "attempt": 1,
+     "key": "views1",
+     "endpoint": "image-to-image",
+     "purpose": "multi-view retry",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "generate_multi_view": true,
+      "input_task_id": "01a0d643-75ac-7787-b7a9-cf5338bfc071",
+      "prompt": "The figure stands on its own feet with nothing under it, cut out and isolated on a plain light background like a product photo. The same figure seen from the front, the left side and the back. Keep proportions, pose, every color and every marking identical. Same plain light background, same lighting, same scale, centered with margin. No base, plate, stand, text, keyring or loop. Keep showing: wearing a sombrero. Correct these problems from the last try: no view from the back. Avoid: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole."
+     },
+     "request_hash": "ff0362638ac586bdd104d92866de46901ec6f1b147e5b6cbbb5608caf5ea141e",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "generate_multi_view": "b5bea41b6c623f7c",
+      "input_task_id": "f2156f123db2e083",
+      "prompt": "d65697e23e26fb70"
+     },
+     "task": "meshy/01a0d646-0be5-70e8-9be1-3db8ee03e2f5.json",
+     "task_sha256": "f1d2bd563f038b5ccdc28d0d592bf025c4100e4e05a4d25111378eaa94153f4d",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s04_multiview/a1/views1_raw_0.png",
+       "sha256": "827a554d26432196cd4121674fe44a263f892c3082bb26a8a768ad5eaed3e667",
+       "bytes": 203113
+      },
+      {
+       "field": "image_urls.1",
+       "path": "s04_multiview/a1/views1_raw_1.png",
+       "sha256": "207a3f65a4f766fff42e7a4486fb88ce2a226ccff19a8c6a305f4ed248f538f4",
+       "bytes": 257254
+      },
+      {
+       "field": "image_urls.2",
+       "path": "s04_multiview/a1/views1_raw_2.png",
+       "sha256": "ccade38ab2681bc3c2d6b8a1f2d4a1b15013845b1e7da2ad00e3d766519aa6c2",
+       "bytes": 185763
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d646-ead5-708a-9356-666133b42d83",
+     "stage": "s05_mesh",
+     "attempt": 1,
+     "key": "m1.gen",
+     "endpoint": "multi-image-to-3d",
+     "purpose": "3D model round 1 (generate)",
+     "status": "SUCCEEDED",
+     "credits": 35,
+     "request": {
+      "ai_model": "latest",
+      "geometry_resolution": "2k",
+      "image_urls": [
+       "storage:artifacts/77032daf-2325-4061-ba6f-7703e1b0a303/s04_multiview/a1/view_concept.png",
+       "storage:artifacts/77032daf-2325-4061-ba6f-7703e1b0a303/s04_multiview/a1/views1_3.png",
+       "storage:artifacts/77032daf-2325-4061-ba6f-7703e1b0a303/s04_multiview/a1/views1_1.png"
+      ],
+      "multi_view_thumbnails": true,
+      "should_remesh": false,
+      "should_texture": true,
+      "target_formats": [
+       "glb"
+      ],
+      "texture_image_urls": [
+       "storage:artifacts/77032daf-2325-4061-ba6f-7703e1b0a303/s04_multiview/a1/view_concept.png",
+       "storage:artifacts/77032daf-2325-4061-ba6f-7703e1b0a303/s04_multiview/a1/views1_3.png",
+       "storage:artifacts/77032daf-2325-4061-ba6f-7703e1b0a303/s04_multiview/a1/views1_1.png"
+      ]
+     },
+     "request_hash": "7fc3e5a1920090086c27614dfe4f551c29f2103f4950c7276416d674dbbf330b",
+     "request_fields": {
+      "ai_model": "eb0f1f245cda8f6d",
+      "geometry_resolution": "16184d36f0c96ed4",
+      "image_urls": "fb308ceb5e85f456",
+      "multi_view_thumbnails": "b5bea41b6c623f7c",
+      "should_remesh": "fcbcf165908dd18a",
+      "should_texture": "b5bea41b6c623f7c",
+      "target_formats": "45c64e428cb1d98e",
+      "texture_image_urls": "fb308ceb5e85f456"
+     },
+     "task": "meshy/01a0d646-ead5-708a-9356-666133b42d83.json",
+     "task_sha256": "09c66e28fc35c7026d837a979a0c6a464c3d59e43db7c7b47440fff431a43efa",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "model_urls.glb",
+       "path": "s05_mesh/a1/mesh_m1.glb",
+       "sha256": "bd78f81cad28199c1ba8a0563cbc3bea35b817a0b086f6428a5d84bf194d4650",
+       "bytes": 39739572
+      },
+      {
+       "field": "thumbnail_urls.front",
+       "path": "s05_mesh/a1/thumb_m1_front.png",
+       "sha256": "610e8623da08ab1e6e1be0cf01522a457f00f192d86d5bc7c664701d3cb79579",
+       "bytes": 143583
+      },
+      {
+       "field": "thumbnail_urls.right",
+       "path": "s05_mesh/a1/thumb_m1_right.png",
+       "sha256": "40c04b084e397921d508acfbf6aa9a18bd24ad5776a8f5c981e9a44144628e33",
+       "bytes": 143224
+      },
+      {
+       "field": "thumbnail_urls.back",
+       "path": "s05_mesh/a1/thumb_m1_back.png",
+       "sha256": "a47218c140d683283a4dac2e3cd2824ad7fdee19d7fb486509e70d139c76f4c7",
+       "bytes": 99987
+      },
+      {
+       "field": "thumbnail_urls.left",
+       "path": "s05_mesh/a1/thumb_m1_left.png",
+       "sha256": "2752a562205c20790f81606179de8f799d1ee6af8d9e1702f28f9f845f699a5d",
+       "bytes": 167232
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d64a-c058-75cb-86b9-78b0554c64be",
+     "stage": "s06_printability",
+     "attempt": 1,
+     "key": "analyze",
+     "endpoint": "print-analyze",
+     "purpose": "printability analysis",
+     "status": "SUCCEEDED",
+     "credits": 0,
+     "request": {
+      "input_task_id": "01a0d646-ead5-708a-9356-666133b42d83"
+     },
+     "request_hash": "a4906e117d7aeb11a43c081d05cfe8a68e3cd56f8fa211b62a73934eb8d55c8f",
+     "request_fields": {
+      "input_task_id": "88ca8f8adec0e038"
+     },
+     "task": "meshy/01a0d64a-c058-75cb-86b9-78b0554c64be.json",
+     "task_sha256": "e498ddc10e2b501eee856ed88a6883501cad0230a37e26fb0d9105102b7bacd5",
+     "task_full": true,
+     "assets": []
+    },
+    {
+     "task_id": "01a0d652-e131-71db-8cef-bf0f5a794e59",
+     "stage": "s07_baseline",
+     "attempt": 1,
+     "key": "mc.cartoon",
+     "endpoint": "print-multi-color",
+     "purpose": "baseline 3MF (cartoon)",
+     "status": "SUCCEEDED",
+     "credits": 10,
+     "request": {
+      "input_task_id": "01a0d646-ead5-708a-9356-666133b42d83",
+      "max_colors": 5,
+      "style": "cartoon"
+     },
+     "request_hash": "1ba7ee01c028633006ced131d3e778b330f310c672172e11af5caedfb0098f64",
+     "request_fields": {
+      "input_task_id": "88ca8f8adec0e038",
+      "max_colors": "ef2d127de37b942b",
+      "style": "25fb7f6c45350faf"
+     },
+     "task": "meshy/01a0d652-e131-71db-8cef-bf0f5a794e59.json",
+     "task_sha256": "acd961a044e8937b14338a061ff0a9b0f72156a98a75b96f8e2c4ccaac061485",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "model_urls.3mf",
+       "path": "s07_baseline/a1/baseline_cartoon.3mf",
+       "sha256": "e17d07122134e682d0a0a321b1c1766398c46bd37286f7da91a71efc69b88f64",
+       "bytes": 26422785
+      }
+     ]
+    }
+   ],
+   "files": [
+    {
+     "path": "job.json",
+     "sha256": "2ea2869ce2e5cd6c3cb73ad795511251883b33211e4e137dc3ff35d95ced2326",
+     "bytes": 5628
+    },
+    {
+     "path": "job_row.json",
+     "sha256": "67705dc6f922e78f15336f0d97f9a9f663d45cc9f5eb87faca72daca66109db3",
+     "bytes": 4356
+    },
+    {
+     "path": "ledger.jsonl",
+     "sha256": "78c65257a90cd7cd302d7227273b12044227ead45e3230c3c26033a9d07bf97a",
+     "bytes": 9308
+    },
+    {
+     "path": "messages.jsonl",
+     "sha256": "074b063a6cd6ed8883b3eaf10a36fe78ab403670077a229906260c9f8a018be5",
+     "bytes": 16590
+    },
+    {
+     "path": "input/photo_1.jpg",
+     "sha256": "f59b96fa97d5249699c17435aaebc575fd1cfcd820f75935e69c01038d3166a7",
+     "bytes": 805624
+    },
+    {
+     "path": "input/photo_2.jpg",
+     "sha256": "533ff8554e9f7202cc0bafa186c9ce1410c2556dd183ea650748636dd9c3e2ef",
+     "bytes": 637375
+    },
+    {
+     "path": "input/photo_3.jpg",
+     "sha256": "a71975dc699919ebc13649b2e1bca2b809fe56d778723ba80ec86249db8311be",
+     "bytes": 507549
+    },
+    {
+     "path": "input/request.json",
+     "sha256": "31efff3841e2a643c93516e718a5524a125321b8457136675e4d118c55f285c1",
+     "bytes": 257
+    },
+    {
+     "path": "s01_intake/a1/addons.json",
+     "sha256": "a7067e830940782b47d9a4cc57be232393f5579b76db840464515696d3737841",
+     "bytes": 98
+    },
+    {
+     "path": "s01_intake/a1/answers.json",
+     "sha256": "33c68788a625f9fa2adfeeb8ba629f367ea1d8af72889e613f72e70f3cc32392",
+     "bytes": 249
+    },
+    {
+     "path": "s01_intake/a1/color_regions.json",
+     "sha256": "75954fc8833ef54ad2b100e49730ddf8078a928cab5b3044ca7b545ed1a0dd88",
+     "bytes": 622
+    },
+    {
+     "path": "s01_intake/a1/intake.json",
+     "sha256": "9f3f954c871291aa1d333196c67612579be36a9b45d3e86333ac14445d28db72",
+     "bytes": 1738
+    },
+    {
+     "path": "s01_intake/a1/manifest.json",
+     "sha256": "9fe49cdb61f483aecca1e138555dd23689ff3713435b34382d7f5b96dc1aae81",
+     "bytes": 10517
+    },
+    {
+     "path": "s01_intake/a1/product.json",
+     "sha256": "0908fb26d0f098a96164ae71742c28346c9fd95e672c84e97b1ebef00b821b7d",
+     "bytes": 548
+    },
+    {
+     "path": "s01_intake/a1/subjects.json",
+     "sha256": "d66fabf33d549329faa83863346ce006cb2cc58898484077725b1b0de31a4efe",
+     "bytes": 673
+    },
+    {
+     "path": "s01_intake/a1/trace/01-claude.json",
+     "sha256": "f0afceb740964c13de54004e0c9520bb60f2faec6d11d8056451a380e5a044d4",
+     "bytes": 5924
+    },
+    {
+     "path": "s02_color_spec/a1/color_spec.json",
+     "sha256": "1491dbd8814e1a307fc4a3acecb0d4333912a3f5d9ae8110c53927cd259926ef",
+     "bytes": 3374
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_ears.png",
+     "sha256": "cfd4e93d379faad8de68382c1e4b467b8ecc5341237bcc59efb8923c5807a1f7",
+     "bytes": 91912
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_left_eye.png",
+     "sha256": "08783b91787a08c399d1bd87d34ad5f343ee72f7aed67266600d3cb8fc96ead6",
+     "bytes": 27870
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_main_body.png",
+     "sha256": "944701da71e480f6960de867078c8dde44281d01581c544e17345e5e1fbf3fa8",
+     "bytes": 82340
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_mouth_interior.png",
+     "sha256": "9835cb72abb9dab9dd2a3bb530a1ffd433f49bb6c2714ed59f6dbb2a23fcd304",
+     "bytes": 108312
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_nose.png",
+     "sha256": "30eb383fe8e279d4afd080574d4fef7c865262dbfaa72bd12e36c2d707a0dc2e",
+     "bytes": 107299
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_right_eye.png",
+     "sha256": "7f7d9d9ad4464664d50e23f113153588cb892c4a88624e6d8a425fd1f20ec92c",
+     "bytes": 61311
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_teeth.png",
+     "sha256": "00b28ad36782d632d7a254b0a466f078bf637091305b4218883161250fb95d57",
+     "bytes": 34353
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_tongue.png",
+     "sha256": "112413756a96bc8eca72856fdb8a1e269b6e565717a7c750f3a34dbdff41203a",
+     "bytes": 75791
+    },
+    {
+     "path": "s02_color_spec/a1/manifest.json",
+     "sha256": "de172672a705ee6d2f1726cda0a1cecf677e7aff8f08191692a2eadf727b86f7",
+     "bytes": 14156
+    },
+    {
+     "path": "s02_color_spec/a1/trace/01-claude.json",
+     "sha256": "f14c50897ae1f7f331a199152c35fb608f02626dd1a34222034cf440d32cdbe9",
+     "bytes": 3340
+    },
+    {
+     "path": "s03_concept/a1/approved_concept.png",
+     "sha256": "a4440d68577e4b87b83f82343d132f32a7034e017a3db658dbfccf2f1836fecf",
+     "bytes": 467172
+    },
+    {
+     "path": "s03_concept/a1/concept.json",
+     "sha256": "b0735cd2271f8bfaa4bbc6eaa119a1e7394207cef6a0a241b6113b6b608d74d9",
+     "bytes": 11053
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c1.png",
+     "sha256": "c36cc805e70bf1103974cae7530d9f57970fe7be2d2e40ebc420f2a4f5a2f1f4",
+     "bytes": 767634
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c2.png",
+     "sha256": "a4440d68577e4b87b83f82343d132f32a7034e017a3db658dbfccf2f1836fecf",
+     "bytes": 467172
+    },
+    {
+     "path": "s03_concept/a1/figure_concept.png",
+     "sha256": "579b37ccd9117023416e991de2efbd1df06bf35e40cdf0cc935855c6aaea677e",
+     "bytes": 369615
+    },
+    {
+     "path": "s03_concept/a1/manifest.json",
+     "sha256": "6f4d97ff2482e1129790e41100de76a201fc0de1272a0fd81f7eaf48a7f38f1d",
+     "bytes": 33796
+    },
+    {
+     "path": "s03_concept/a1/trace/01-meshy.json",
+     "sha256": "ed279138c83c47171f8390243e11f4f10bae2e77a0279270253182f82e4ae512",
+     "bytes": 3566
+    },
+    {
+     "path": "s03_concept/a1/trace/02-meshy.json",
+     "sha256": "9e0189f7ece951ef120a288b0521d92495cb05e1031bad96bf180a8b8e4bb7f5",
+     "bytes": 3762
+    },
+    {
+     "path": "s03_concept/a1/trace/03-meshy.json",
+     "sha256": "ad442ca15cc01654ebdc62129a0f62f9d63f3c0517df4d0e0f6fcccc489d36d7",
+     "bytes": 2426
+    },
+    {
+     "path": "s03_concept/a1/trace/04-meshy.json",
+     "sha256": "00fa6bea09046d74e7bbfb7618216e29f926e8a8ae65bd180f7499169cdd9deb",
+     "bytes": 2426
+    },
+    {
+     "path": "s03_concept/a1/trace/05-claude.json",
+     "sha256": "a7129f89bd8f20cf77dd0fc0515029e3be433125f94ade5bb71da0aba7749888",
+     "bytes": 3348
+    },
+    {
+     "path": "s03_concept/a1/trace/06-claude.json",
+     "sha256": "8105224dc5c4e93f8dda569e8fc47c10776f26a008fa91163565d8bb5ace0a0f",
+     "bytes": 3348
+    },
+    {
+     "path": "s04_multiview/a1/manifest.json",
+     "sha256": "cff87f0b40db6278f50d04b354cb4463809f1e69636367cb8d55a3db848ba696",
+     "bytes": 17444
+    },
+    {
+     "path": "s04_multiview/a1/trace/01-meshy.json",
+     "sha256": "baefb3fcde6e106e455ff3ea9c9d5d770c83fd2708e2e1aea0d821e67e313714",
+     "bytes": 2960
+    },
+    {
+     "path": "s04_multiview/a1/trace/02-claude.json",
+     "sha256": "7b3fafb34cf577d24534b24cd6398ac2d8d79a389c7f829c96390836444d531f",
+     "bytes": 2684
+    },
+    {
+     "path": "s04_multiview/a1/trace/03-meshy.json",
+     "sha256": "1ebd6359a0afefc56ddae8ae2dd9a9feead47d83fcb9bda6b61936c0549e4572",
+     "bytes": 3096
+    },
+    {
+     "path": "s04_multiview/a1/trace/04-claude.json",
+     "sha256": "5a4d07c9a5e4b3371e206e172d006c275b34b21e0e73065618399d3b125268d6",
+     "bytes": 2690
+    },
+    {
+     "path": "s04_multiview/a1/view_concept.png",
+     "sha256": "584ac35835cae5ac162854867bec8ecef1c162cbbf3db20a975ee8388240b363",
+     "bytes": 464142
+    },
+    {
+     "path": "s04_multiview/a1/views.json",
+     "sha256": "1b8326966054fd91590b57a7b1b843f4d239885eb321fd6b7fa8dfc830ea03b8",
+     "bytes": 1932
+    },
+    {
+     "path": "s04_multiview/a1/views0_1.png",
+     "sha256": "9421c2bc92de6447f26e1f1a2ced19bfbe8535569fa849985fdeb0824f6d6938",
+     "bytes": 421478
+    },
+    {
+     "path": "s04_multiview/a1/views0_2.png",
+     "sha256": "c18d2e182f70ffa3bce2701983b4bd5ee01dd91601ca2a61d7de35f97e527a7f",
+     "bytes": 514338
+    },
+    {
+     "path": "s04_multiview/a1/views0_3.png",
+     "sha256": "389482763be97a769ba07c4d12e39f37132f279336da3491fdd9a4de18473d39",
+     "bytes": 415904
+    },
+    {
+     "path": "s04_multiview/a1/views1_1.png",
+     "sha256": "8fd7ca4f355e60fee8f3bf8456969bb88dfcf719a8f64e2fe0232cda3d12793b",
+     "bytes": 427403
+    },
+    {
+     "path": "s04_multiview/a1/views1_2.png",
+     "sha256": "e6e461810d1b006c0c69c72e3b668eb44515b969d6fe2041bb6f125fe197edcd",
+     "bytes": 507064
+    },
+    {
+     "path": "s04_multiview/a1/views1_3.png",
+     "sha256": "3ea4083937d96f5e278c6b2b97dd7958e137a34dcd35d66e1707d40d3fbee81f",
+     "bytes": 401541
+    },
+    {
+     "path": "s05_mesh/a1/manifest.json",
+     "sha256": "f8a1f44cbef9fbed7078eb33060f4cfaf8b23bd0f5f165b39e5fe4d70736c24e",
+     "bytes": 8951
+    },
+    {
+     "path": "s05_mesh/a1/mesh.json",
+     "sha256": "386620244ba258b4c3f171cd118f188720aa61e4e3a8e5014e8787d525931542",
+     "bytes": 572
+    },
+    {
+     "path": "s05_mesh/a1/trace/01-meshy.json",
+     "sha256": "6f77eea46b42b5d5f09b393be0dd59ed25525121a7e52b6655a328038b66cf90",
+     "bytes": 3566
+    },
+    {
+     "path": "s06_printability/a1/base.ply",
+     "sha256": "8f3de9d57c470b177f78db0a612102a6d3330f9644c3eb38a5bab2a7b288026e",
+     "bytes": 29347
+    },
+    {
+     "path": "s06_printability/a1/concept_read.json",
+     "sha256": "0f2c801d246186736568cea77925e3dde38a3b90a811e14519eea63c6834f592",
+     "bytes": 1276
+    },
+    {
+     "path": "s06_printability/a1/figure.ply",
+     "sha256": "73c34e466d6d3ee3c722868169b1c9bf84015c1f1e5d16894f2cf271009dfda5",
+     "bytes": 24529811
+    },
+    {
+     "path": "s06_printability/a1/geometry.json",
+     "sha256": "d36c6b842d83914aebb629bfe89e1b9dc09e9723f6d149befee6ebbd027fc0eb",
+     "bytes": 1597
+    },
+    {
+     "path": "s06_printability/a1/geometry_report.json",
+     "sha256": "85a8a0064a488487d95a424c8427b5c493f045968ef4bc7a162f8a0c2387d891",
+     "bytes": 3412
+    },
+    {
+     "path": "s06_printability/a1/manifest.json",
+     "sha256": "156ca3ddacc0f8642fa3d9e8524c3451ed34f03b5bc08c028f9ff6c9555e24cf",
+     "bytes": 11955
+    },
+    {
+     "path": "s06_printability/a1/printability.json",
+     "sha256": "b204762ad04279b2516f9ce48e8dfbb763521d592d69971d4783bdb4a5cb5a86",
+     "bytes": 298
+    },
+    {
+     "path": "s06_printability/a1/product_resolved.json",
+     "sha256": "7e5b804e0144e87beab43648f86462e5affe80668e14555a9a3f06eaf623536c",
+     "bytes": 233
+    },
+    {
+     "path": "s06_printability/a1/warnings.json",
+     "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+     "bytes": 3
+    },
+    {
+     "path": "s06_printability/a1/trace/01-meshy.json",
+     "sha256": "0e9c816326f50ab9c3bca7eb3e02256f0468854b8a16dcf89c7e7a714ff76a88",
+     "bytes": 1743
+    },
+    {
+     "path": "s06_printability/a1/trace/02-claude.json",
+     "sha256": "ec21ba7d12f60bce4f02472f99771151442c84ed8505e6e7729dad876ace18de",
+     "bytes": 4062
+    },
+    {
+     "path": "s07_baseline/a1/manifest.json",
+     "sha256": "456aa83c73e588cfde5ea85d03b0519307791e1d435b477e7e78d525dae284bb",
+     "bytes": 12701
+    },
+    {
+     "path": "s07_baseline/a1/render_sheet.png",
+     "sha256": "2d0a58dc62733cb743f5528d40b6ca96f1e9d117a2aa1440c67309d63a7c3a89",
+     "bytes": 253916
+    },
+    {
+     "path": "s07_baseline/a1/trace/01-meshy.json",
+     "sha256": "8d74f8b7cdbb02bc84b54d4fb1c5e83aec7af4d7500375ed7eb8e002b64ca98a",
+     "bytes": 1933
+    },
+    {
+     "path": "s08_palette/a1/face_regions.npy",
+     "sha256": "a344c592b1fa4fcca09f3c3b7ba6944c6edfc684b3f16734369cac26a22797e1",
+     "bytes": 5164328
+    },
+    {
+     "path": "s08_palette/a1/filaments.json",
+     "sha256": "21c169d7871ed0a9144f3d0a2a6f5df7afacefec6311de2efc4f0e0e6c1a0b87",
+     "bytes": 158763
+    },
+    {
+     "path": "s08_palette/a1/first_pass.png",
+     "sha256": "ed1da5d9af8e7914348dcc7e5b8af9711d5348c125ef27f4f5a7f0100946c77a",
+     "bytes": 210044
+    },
+    {
+     "path": "s08_palette/a1/manifest.json",
+     "sha256": "a84d46b2d278b954eefab80f09e47ff63cadf1b75a4dcce94e7aa31965dd528c",
+     "bytes": 22328
+    },
+    {
+     "path": "s08_palette/a1/paint_state.json",
+     "sha256": "d84257abd50e0a64965dbb32525f879168eebc9f0c94a5226f7ffbf3c66b24f0",
+     "bytes": 5150
+    },
+    {
+     "path": "s08_palette/a1/palette.json",
+     "sha256": "ab8e28ebea3fe6ef6b3fae855a7bd072fda8aebda89c1199d5be0c88de8e6b05",
+     "bytes": 8482
+    },
+    {
+     "path": "s08_palette/a1/region_map.json",
+     "sha256": "632ba4631026766fe9f9f424b99086a1611547e7fff208ed69e642164706f578",
+     "bytes": 65362
+    },
+    {
+     "path": "s09_paint/a1/manifest.json",
+     "sha256": "980473d6b65ef92f0f6c116fdeeb2f2035102581b6f47e2eaf1c846a05c8b311",
+     "bytes": 47737
+    },
+    {
+     "path": "s09_paint/a2/checklist.json",
+     "sha256": "5efe37377ba447612d39258d4628a57510604cdf94691612e9c8039a1fad1c7f",
+     "bytes": 1996
+    },
+    {
+     "path": "s09_paint/a2/checklist_baseline.json",
+     "sha256": "ca7d380b41f99ba721c90f64da5bfd66a1fc31d530324cff56c39398fbfa87b1",
+     "bytes": 2149
+    },
+    {
+     "path": "s09_paint/a2/checklist_code.json",
+     "sha256": "0826d6243cc3bc3404af6b75a6270c8c5b3e1d34dd7d2412e11670d246da1ec3",
+     "bytes": 1629
+    },
+    {
+     "path": "s09_paint/a2/face_regions.npy",
+     "sha256": "cb96aba73fffd44947c18219f5003ed8e411aac0ac3cbd43c254cc57f6d5a806",
+     "bytes": 5164328
+    },
+    {
+     "path": "s09_paint/a2/final.slice.log",
+     "sha256": "4dacaa9cdda90069831585920b189449790698d202febcecf2bb289ab3f7b272",
+     "bytes": 1247
+    },
+    {
+     "path": "s09_paint/a2/final.slice_result.json",
+     "sha256": "4feb26e3afa1b083099b0eb51df6b93e5a7e3d41828c1fb9f227382f64ab3981",
+     "bytes": 2496
+    },
+    {
+     "path": "s09_paint/a2/manifest.json",
+     "sha256": "bcaea6d3b8d994c3a807f048208a441039d96aa015916f955d959780f900dd5a",
+     "bytes": 45199
+    },
+    {
+     "path": "s09_paint/a2/paint_run.json",
+     "sha256": "b3ac4f432de7fed3b2492372d20ca16b90ca9d63888ede861281e95474cb376f",
+     "bytes": 25053
+    },
+    {
+     "path": "s09_paint/a2/paint_state.json",
+     "sha256": "1a02dad0b46230182906dfd5273bfccba9ec5e0a6f657033776e1086fcb27856",
+     "bytes": 1486
+    },
+    {
+     "path": "s09_paint/a2/palette_plan.json",
+     "sha256": "b76852ca88d8e0f42e8b05dc9235170005790e6e2cf7210b93179e10dd38104e",
+     "bytes": 12263
+    },
+    {
+     "path": "s09_paint/a2/region_map.json",
+     "sha256": "4c675b259468d4e5c446f0c07906003069366cb4924e6d04570f2dbc3cec9cef",
+     "bytes": 14932
+    },
+    {
+     "path": "s09_paint/a2/session.json",
+     "sha256": "f42d8b79a3535559ea177fa7abfaeada57a5cf11dd6e395c3dfc478a3d4186a2",
+     "bytes": 16346
+    },
+    {
+     "path": "s09_paint/a2/slice_report.json",
+     "sha256": "b59b02cd54ee1ddbe2fdfdd27995be82065c981b62a5bb26cd8eff5ea6333df9",
+     "bytes": 2717
+    },
+    {
+     "path": "s10_write/a1/final.slice.log",
+     "sha256": "fb01d212fcfd639152d16a8dd85ce798317db38329c98e19adff8f31e0ecc773",
+     "bytes": 1247
+    },
+    {
+     "path": "s10_write/a1/final.slice_result.json",
+     "sha256": "b0822a51925dc47c2f99148611696e6f00ac502a36653a0b618872254ce51679",
+     "bytes": 2502
+    },
+    {
+     "path": "s10_write/a1/manifest.json",
+     "sha256": "3c71b1a6c55c5298e0970122851627304041087ed60ed7e5ffdbf9383893a853",
+     "bytes": 19604
+    },
+    {
+     "path": "s10_write/a1/render_sheet.png",
+     "sha256": "c3163f49fecb75a6a192e4ce660fa20893ccfc2ae52e56dac24bf3465765dc33",
+     "bytes": 257668
+    },
+    {
+     "path": "s10_write/a1/result.json",
+     "sha256": "30e99d06a50c2fe173335053a717b6021f6d2a6c69327da7767c1f430f55bafb",
+     "bytes": 3518
+    },
+    {
+     "path": "s10_write/a1/slice_report.json",
+     "sha256": "2d417c44212361292ae7d91d2b585cd5b8bbc244975faa58ab53e712e1d1c3e2",
+     "bytes": 2802
+    }
+   ]
+  },
+  {
+   "job_id": "f67c6a54-82d8-4d2f-a2ae-acba2e9a8261",
+   "label": "catfish",
+   "what": "live run 2: cat holding a fish, flat charm keychain",
+   "product_type": "keychain",
+   "profile": "full",
+   "form": "flat",
+   "prompt": "keychain of my cat holding a fish",
+   "attempts": {
+    "s01_intake": 1,
+    "s02_color_spec": 1,
+    "s03_concept": 1,
+    "s04_multiview": 1,
+    "s05_mesh": 1,
+    "s06_printability": 2,
+    "s07_baseline": 2,
+    "s08_palette": 2,
+    "s09_paint": 1,
+    "s10_write": 1
+   },
+   "credits_live": 73,
+   "result": {
+    "threemf": "s10_write/a1/final.3mf",
+    "slice_ok": true,
+    "print_time_s": 3231.0,
+    "baseline_only": false,
+    "filaments": [
+     {
+      "filament_id": "bambu-pla-basic-black",
+      "grams": 3.69,
+      "meters": 1.22,
+      "slot": 1
+     },
+     {
+      "filament_id": "bambu-pla-basic-silver",
+      "grams": 2.56,
+      "meters": 0.84,
+      "slot": 2
+     },
+     {
+      "filament_id": "generic-pla-white",
+      "grams": 2.91,
+      "meters": 0.98,
+      "slot": 3
+     },
+     {
+      "filament_id": "bambu-pla-matte-apple-green",
+      "grams": 1.73,
+      "meters": 0.54,
+      "slot": 4
+     }
+    ]
+   },
+   "meshy": [
+    {
+     "task_id": "01a0d643-eb62-76aa-9a2f-c2884094e231",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c1 gpt-image-2",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "aspect_ratio": "1:1",
+      "prompt": "Art for a flat relief keychain charm: the subject facing straight forward, front view, bold simple shapes and clear color areas, compact rounded outline. Request: keychain of my cat holding a fish Subjects, matching the reference photos: cat (cat): Black and white tuxedo cat, lean build, alert expression, round face with pointed ears. cat colors, keep every one: white body; black head; black ears; black back and tail; black paws; pink nose; green eyes. Realistic proportions true to the photos. Must show: holding a fish. Finished size about 45 mm. Bold simple markings, no fine speckle or ticking: details under 1 mm do not print at this size. Notes: Cat holding a fish; decide attachment method for secure prop integration. One connected subject, front view, facing the viewer. Neutral plain background. Flat even lighting. Hard constraints, do not draw any of these: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/input/photo_1.jpg",
+       "storage:inputs/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/input/photo_2.jpg",
+       "storage:inputs/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/input/photo_3.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "96f16cf843c2b406570f393adc5d407c67fb5d3db135acda1861d2b4c847a497",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "9a2283837500c71e",
+      "reference_image_urls": "c4440fcdfc2f5427",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d643-eb62-76aa-9a2f-c2884094e231.json",
+     "task_sha256": "b73f189cca3ada0971d3b64877b2d1cf809d44e1b237a3fd16077303e74a98cf",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/figure_r1c1.png",
+       "sha256": "a29f5183d84426f6e687820a98b6627809f8ff63a2dfdc0ab9a3a9007c12a28e",
+       "bytes": 728538
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d643-f52d-7479-a5ec-e4f8feafaf65",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c2 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "1:1",
+      "prompt": "The figure stands on its own feet with nothing under it, cut out and isolated on a plain light background like a product photo. Art for a flat relief keychain charm: the subject facing straight forward, front view, bold simple shapes and clear color areas, compact rounded outline. Request: keychain of my cat holding a fish Subjects, matching the reference photos: cat (cat): Black and white tuxedo cat, lean build, alert expression, round face with pointed ears. cat colors, keep every one: white body; black head; black ears; black back and tail; black paws; pink nose; green eyes. Realistic proportions true to the photos. Must show: holding a fish. Finished size about 45 mm. Bold simple markings, no fine speckle or ticking: details under 1 mm do not print at this size. Notes: Cat holding a fish; decide attachment method for secure prop integration. One connected subject, front view, facing the viewer. Neutral plain background. Flat even lighting. Avoid: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/input/photo_1.jpg",
+       "storage:inputs/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/input/photo_2.jpg",
+       "storage:inputs/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/input/photo_3.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "4740a83a885167eeccce4da2779d1e7de8359430466cf45b4d3fb82683c060bc",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "adb5814afeafe4de",
+      "reference_image_urls": "c4440fcdfc2f5427",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d643-f52d-7479-a5ec-e4f8feafaf65.json",
+     "task_sha256": "64c120887e55b2caa4c079f011d8b8b4beb54446fe9c18f5f284577156734bc7",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/figure_r1c2.png",
+       "sha256": "a8dfe72ec242e58c5d1183694ed84b4dd6bfa0e4a2a7d153c8a3c0cc7bf51208",
+       "bytes": 335102
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d644-9d4f-756b-9513-ecc07d1f1fca",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1.charm0",
+     "endpoint": "keychain-prototype",
+     "purpose": "charm r1c1",
+     "status": "SUCCEEDED",
+     "credits": 6,
+     "request": {
+      "image_url": "storage:artifacts/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/s03_concept/a1/figure_r1c1.png",
+      "remove_background": true
+     },
+     "request_hash": "7609f4858be09ddcd79cb21ec371ca6728d0efc0efb2280b35801ee186ec49a8",
+     "request_fields": {
+      "image_url": "1453c83cba0ed829",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d644-9d4f-756b-9513-ecc07d1f1fca.json",
+     "task_sha256": "171e12ebeecac76044829aa3e8c7d7c486b229f3b00a214b7ae7a12d53964a71",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/charm_r1c1_0.png",
+       "sha256": "831cad5ffd5c28339d0f9fc9639c6c96435d6e3e4910caaa095cb30ad456eb44",
+       "bytes": 893669
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d645-6de6-7521-b8c1-d1eea4dad39a",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2.charm0",
+     "endpoint": "keychain-prototype",
+     "purpose": "charm r1c2",
+     "status": "SUCCEEDED",
+     "credits": 6,
+     "request": {
+      "image_url": "storage:artifacts/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/s03_concept/a1/figure_r1c2.png",
+      "remove_background": true
+     },
+     "request_hash": "f219b44f66fc3b75d5754388afe98acfb69afb414270bd074e8da20f09ce5b3f",
+     "request_fields": {
+      "image_url": "84e91c2879dac46a",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d645-6de6-7521-b8c1-d1eea4dad39a.json",
+     "task_sha256": "75f9eb346f895f2163c7f25ded4263ab1107c42b5bb8a434b9978bd09f95cdf3",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/charm_r1c2_0.png",
+       "sha256": "947b5bfadf9618bc22c5aa0063ef968bdf2ff76dc4c395655ac2d3469ceed95e",
+       "bytes": 815181
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d646-8bf3-7584-a398-280796aff328",
+     "stage": "s05_mesh",
+     "attempt": 1,
+     "key": "m1.gen",
+     "endpoint": "keychain-build",
+     "purpose": "3D model round 1 (generate)",
+     "status": "SUCCEEDED",
+     "credits": 30,
+     "request": {
+      "input_task_id": "01a0d644-9d4f-756b-9513-ecc07d1f1fca",
+      "options": {
+       "base_thickness_mm": 2.0,
+       "size_mm": 45.0
+      },
+      "output": {
+       "format": "glb"
+      }
+     },
+     "request_hash": "d2767241d06d107b20004c3924767510c5a5d16c048c5f4acbf136d3f9e9b0ce",
+     "request_fields": {
+      "input_task_id": "2f7326dab9dced79",
+      "options": "fbe325f1e615217e",
+      "output": "dce42a763436753f"
+     },
+     "task": "meshy/01a0d646-8bf3-7584-a398-280796aff328.json",
+     "task_sha256": "e11dc0a40e9fe48e7d5e4f88d1e7c60785026f46ade1bcd10d9f252a62e925ce",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "model_urls.glb",
+       "path": "s05_mesh/a1/mesh_m1.glb",
+       "sha256": "ad8de81d1b0c69c125bce7b94c4d8803cb725dde28f6a2a9d23fd990323ee5e3",
+       "bytes": 13571992
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d649-7f67-73b4-9fb4-31b9306a6f52",
+     "stage": "s06_printability",
+     "attempt": 1,
+     "key": "analyze",
+     "endpoint": "print-analyze",
+     "purpose": "printability analysis",
+     "status": "SUCCEEDED",
+     "credits": 0,
+     "request": {
+      "model_url": "storage:artifacts/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/s05_mesh/a1/mesh_m1.glb"
+     },
+     "request_hash": "a3bfdbe7137f4351ebaa96af8949249a4ef4c88c53bdf9d12d4b41a11152645d",
+     "request_fields": {
+      "model_url": "aae60d6dbc75b7bd"
+     },
+     "task": "meshy/01a0d649-7f67-73b4-9fb4-31b9306a6f52.json",
+     "task_sha256": "60fe7be8c2aa35f4efefb0431e4ed3bb3306dc8765c5f17e3f3d57fb9b616fd5",
+     "task_full": true,
+     "assets": []
+    },
+    {
+     "task_id": "01a0d6a8-986e-759e-b279-d8ebd9a615a9",
+     "stage": "s06_printability",
+     "attempt": 2,
+     "key": "analyze",
+     "endpoint": "print-analyze",
+     "purpose": "printability analysis",
+     "status": "SUCCEEDED",
+     "credits": 0,
+     "request": {
+      "model_url": "storage:artifacts/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/s05_mesh/a1/mesh_m1.glb"
+     },
+     "request_hash": "a3bfdbe7137f4351ebaa96af8949249a4ef4c88c53bdf9d12d4b41a11152645d",
+     "request_fields": {
+      "model_url": "aae60d6dbc75b7bd"
+     },
+     "task": "meshy/01a0d6a8-986e-759e-b279-d8ebd9a615a9.json",
+     "task_sha256": "6e0f237de0695bf8b2e738540ead652922ca2df25cba78753838c72684beb12b",
+     "task_full": true,
+     "assets": []
+    },
+    {
+     "task_id": "01a0d64a-b8ce-73b2-bebb-d69853e832d8",
+     "stage": "s07_baseline",
+     "attempt": 1,
+     "key": "mc.cartoon",
+     "endpoint": "print-multi-color",
+     "purpose": "baseline 3MF (cartoon)",
+     "status": "SUCCEEDED",
+     "credits": 10,
+     "request": {
+      "max_colors": 5,
+      "model_url": "storage:artifacts/f67c6a54-82d8-4d2f-a2ae-acba2e9a8261/s05_mesh/a1/mesh_m1.glb",
+      "style": "cartoon"
+     },
+     "request_hash": "5842d0eaea9555aa8378385920289e30ea45effcf047280bae5e18f4af764e34",
+     "request_fields": {
+      "max_colors": "ef2d127de37b942b",
+      "model_url": "aae60d6dbc75b7bd",
+      "style": "25fb7f6c45350faf"
+     },
+     "task": "meshy/01a0d64a-b8ce-73b2-bebb-d69853e832d8.json",
+     "task_sha256": "206c8c40b56734c9dc368ab04b8522485abc7ea992471826270c98cc6c6b9f8d",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "model_urls.3mf",
+       "path": "s07_baseline/a1/baseline_cartoon.3mf",
+       "sha256": "d68cae68f8c029c66afee75fb13ab91df042ff4c412f55164d2a2dbfa5a8e5d3",
+       "bytes": 7158222
+      }
+     ]
+    }
+   ],
+   "files": [
+    {
+     "path": "job.json",
+     "sha256": "083dc9aff4957d0bea88411e260ea8f0324b642f3b538424c46d83b29c6b8eba",
+     "bytes": 5736
+    },
+    {
+     "path": "job_row.json",
+     "sha256": "ac7138f1d8b3df609787bed8c5e6639b5ea1572c20019a3e5a5ab1ffda1b1b04",
+     "bytes": 4491
+    },
+    {
+     "path": "ledger.jsonl",
+     "sha256": "20066355d81d353c1c7e7b20e56fb86555997d886c729d36f5d7c868bc2f3b2f",
+     "bytes": 7493
+    },
+    {
+     "path": "messages.jsonl",
+     "sha256": "cb4dc0f5f550da10391f99fa380ff3f681d21e7343f93df77b151b011cf452c1",
+     "bytes": 14902
+    },
+    {
+     "path": "input/photo_1.jpg",
+     "sha256": "08b69a0e9a5a7a12231371726d97a9931a834a81a68985c19aef1cf5298860ec",
+     "bytes": 386994
+    },
+    {
+     "path": "input/photo_2.jpg",
+     "sha256": "4219288f08e49e7990575f9c3785485bb91b0da9bf3c217858ab8c15cc0c79b9",
+     "bytes": 579230
+    },
+    {
+     "path": "input/photo_3.jpg",
+     "sha256": "da5f59dae7222090840ecb55fbb3f7c98c9f6d3c854860cef8cff0e415be5f9e",
+     "bytes": 351669
+    },
+    {
+     "path": "input/request.json",
+     "sha256": "22f6c6901bec0d676219f5c997f8507cbb469b777d6d4f284977236b3ee84c0d",
+     "bytes": 232
+    },
+    {
+     "path": "s01_intake/a1/addons.json",
+     "sha256": "c77695ca3080d4355e9250f1e8e4fa167ffd34a308cc543ed73eb8dc406c3661",
+     "bytes": 129
+    },
+    {
+     "path": "s01_intake/a1/answers.json",
+     "sha256": "f787a69e1783066a6c7deafff532b6e3979d5e29a251aa1e35b3737178804672",
+     "bytes": 246
+    },
+    {
+     "path": "s01_intake/a1/color_regions.json",
+     "sha256": "2c98065ba1766e795288bcc8fba97c818b482434912c5caa14934206c9930ff4",
+     "bytes": 855
+    },
+    {
+     "path": "s01_intake/a1/intake.json",
+     "sha256": "f76ba276ba4da0dc30e332cb67a632509737470b680958aabaa97fe9774f1fd9",
+     "bytes": 1574
+    },
+    {
+     "path": "s01_intake/a1/manifest.json",
+     "sha256": "e9b4a16164ed6da340cf29b62092bc56a5d0ccc31ba3a6ccf607c01ac547ebbf",
+     "bytes": 10680
+    },
+    {
+     "path": "s01_intake/a1/product.json",
+     "sha256": "cf43379b3db99b077a84312821c7c2b22cfb395ac128a4de925a0d72c2a7a446",
+     "bytes": 571
+    },
+    {
+     "path": "s01_intake/a1/subjects.json",
+     "sha256": "cf4ab8ed361531f7c6ebc8c1b86d59648e0a50d07ece1e48804fdc3f962d9fd7",
+     "bytes": 666
+    },
+    {
+     "path": "s01_intake/a1/trace/01-claude.json",
+     "sha256": "48f55ebf20983652e6d6c80e13b205072ffa46a45a146b47fb16271d34eb75a2",
+     "bytes": 5856
+    },
+    {
+     "path": "s02_color_spec/a1/color_spec.json",
+     "sha256": "328e08a2d86088bfe1e586e58d282d8db800b6d084cfcfad996f6d4418aa099d",
+     "bytes": 4525
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_back_patch.png",
+     "sha256": "ac312ca10cf2d58acc5d01bc4ce2a898e74e530d2f6a88154576cd662d56e64c",
+     "bytes": 66942
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_body_white.png",
+     "sha256": "1e73f75e0eb494f2accda8429582e8ad10f660c31827bbb658e3b8393763ae2e",
+     "bytes": 46408
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_front_paw.png",
+     "sha256": "0cd6fa70ffd5e8361e4c37457e557f78dce97c6bc97eef523273011211ec42e2",
+     "bytes": 19165
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_head_black.png",
+     "sha256": "1150825a59c2ef9246cf1f61ded2e5d45c92f05d5083cc258bc8a1ca27e933fc",
+     "bytes": 81958
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_left_ear.png",
+     "sha256": "9313bd69813d354135c69e6404085d285fcae179c0506ec0ed44111cda8d371d",
+     "bytes": 26393
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_left_eye.png",
+     "sha256": "e5e439ff21dd4935148e5794892a0b4ae0458c23477d659c36f8c4ac2261d2d9",
+     "bytes": 3432
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_left_inner_ear.png",
+     "sha256": "2974e4d8505182f49adeeaf5d78b3a310cdcb1631c24afde81a39113a07294b5",
+     "bytes": 52856
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_nose.png",
+     "sha256": "56b9f290d12d602a9dffb3b1a6efb4f6c098258c5108e4bbca7d8b80c2793d10",
+     "bytes": 4898
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_right_ear.png",
+     "sha256": "9e37a7a2498dd2af81614b47543b98be6ca55bfe5290324eb33eb27ac8b6981f",
+     "bytes": 60067
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_right_eye.png",
+     "sha256": "e5e439ff21dd4935148e5794892a0b4ae0458c23477d659c36f8c4ac2261d2d9",
+     "bytes": 3432
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_right_inner_ear.png",
+     "sha256": "a458d2385055293ae58e1efebfe354e23ef7890616dcb155ea4468080b665e3c",
+     "bytes": 61574
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_tail_black.png",
+     "sha256": "ee8da0a15e10b3725999ff9302fa7cef595c045a169bed4b3fc545a7b90494d8",
+     "bytes": 18191
+    },
+    {
+     "path": "s02_color_spec/a1/manifest.json",
+     "sha256": "82fbdf93bc8a7863b600c14ec3c883404cc4daa9683359505f3a5946fb3be69e",
+     "bytes": 17270
+    },
+    {
+     "path": "s02_color_spec/a1/trace/01-claude.json",
+     "sha256": "7a422de802a67e6d30e756a234d174de1e59cce0f23ecefc1c164ae4747a8e33",
+     "bytes": 3639
+    },
+    {
+     "path": "s03_concept/a1/approved_concept.png",
+     "sha256": "d976c6b77f0177803dab27ad40c2a2f6b0579a770afd8224e5d65c4699ce0a4a",
+     "bytes": 860315
+    },
+    {
+     "path": "s03_concept/a1/concept.json",
+     "sha256": "49f174b0bc18a6b9d4a62462c8a006b38740bc49fe8fc7a470cbfa52fad13b58",
+     "bytes": 9954
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c1.png",
+     "sha256": "d976c6b77f0177803dab27ad40c2a2f6b0579a770afd8224e5d65c4699ce0a4a",
+     "bytes": 860315
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c2.png",
+     "sha256": "26c1f68cb73d666438cab9a620c8591234a43386699486d92c6585f268338a6c",
+     "bytes": 793808
+    },
+    {
+     "path": "s03_concept/a1/figure_concept.png",
+     "sha256": "a29f5183d84426f6e687820a98b6627809f8ff63a2dfdc0ab9a3a9007c12a28e",
+     "bytes": 728538
+    },
+    {
+     "path": "s03_concept/a1/manifest.json",
+     "sha256": "e3a9ba4f838e17410ea613cf60248354d076e102474273edfef28e669179bd51",
+     "bytes": 30701
+    },
+    {
+     "path": "s03_concept/a1/trace/01-meshy.json",
+     "sha256": "9d446da3f0cf2dfa574f97ee5d0ba21bbcc19e10134ce23255787b1515af6544",
+     "bytes": 3474
+    },
+    {
+     "path": "s03_concept/a1/trace/02-meshy.json",
+     "sha256": "5a909fd13c99275ef62dc06d9b3b9105fcdc7d9f894e6a0bacd7f096d16683cb",
+     "bytes": 3670
+    },
+    {
+     "path": "s03_concept/a1/trace/03-meshy.json",
+     "sha256": "63ce82813be836534606ce5e52ce99e8e69213537320de0afac1e2ebc4c2d21d",
+     "bytes": 1463
+    },
+    {
+     "path": "s03_concept/a1/trace/04-claude.json",
+     "sha256": "e3d08509f6b750cef28a4dcad80a681d36fba8ca0ca22bc4e74283dfce3f1579",
+     "bytes": 3372
+    },
+    {
+     "path": "s03_concept/a1/trace/05-meshy.json",
+     "sha256": "15298809d8656df061d7e5e8ea180dfd7527936cb1c6c74fa02b94ab425d88ae",
+     "bytes": 1463
+    },
+    {
+     "path": "s03_concept/a1/trace/06-claude.json",
+     "sha256": "9fef0aba932ec50e2ef2cd26e91222bb2cb577a43c337bcbf45daa2620e4b637",
+     "bytes": 3307
+    },
+    {
+     "path": "s04_multiview/a1/manifest.json",
+     "sha256": "c369f9eb697646a5f26e660d95ff36aaee4b45d366594e6f06d4dc077d241510",
+     "bytes": 1822
+    },
+    {
+     "path": "s04_multiview/a1/views.json",
+     "sha256": "f697bb32b9c85c627f075622bdce5e6d8bbd5fecafa553dbcb114ae96e872a0e",
+     "bytes": 172
+    },
+    {
+     "path": "s05_mesh/a1/manifest.json",
+     "sha256": "96ba8dbc56c2a666e2582bdc3eef3475b7ae3466918d68441034e8b06c3bd8ba",
+     "bytes": 5614
+    },
+    {
+     "path": "s05_mesh/a1/mesh.json",
+     "sha256": "e5cbcc659eab73b0380d5e78ee73137608c88d2f1a79b11e8b84ae733f7dc30a",
+     "bytes": 339
+    },
+    {
+     "path": "s05_mesh/a1/trace/01-meshy.json",
+     "sha256": "7e504112de55fd4de614edf2ad8421b03d0a5b7bb1c06af45e496d96ee1298b3",
+     "bytes": 1642
+    },
+    {
+     "path": "s06_printability/a1/manifest.json",
+     "sha256": "bd7d6e550a1b8266cdf15cd9b6b3e0fadf939a85e9ff9c998934c8553348ac37",
+     "bytes": 14236
+    },
+    {
+     "path": "s06_printability/a1/trace/01-meshy.json",
+     "sha256": "d93700d80928900a4643244436c31b4e16d95c5747ac0d0ebd4027ab3098c528",
+     "bytes": 1559
+    },
+    {
+     "path": "s06_printability/a1/trace/02-claude.json",
+     "sha256": "a0d76f3a801c89aba3c4134fa618e7c5f73050bd863c90f25facf78f752786df",
+     "bytes": 3729
+    },
+    {
+     "path": "s06_printability/a2/back.ply",
+     "sha256": "d687227cd6f6a620ca910f03fadc95261397836c4181b962bdd6e55e3f4121ce",
+     "bytes": 7208654
+    },
+    {
+     "path": "s06_printability/a2/concept_read.json",
+     "sha256": "7ae4566a8fe5bf12ba7969f869c976dfb2d587aa5c19c1f32e12d23a97d01367",
+     "bytes": 1085
+    },
+    {
+     "path": "s06_printability/a2/figure.ply",
+     "sha256": "e7ccd55222c3b1449484116e9c85e888600453580b393c10cabe222d1ea25ffb",
+     "bytes": 8567382
+    },
+    {
+     "path": "s06_printability/a2/geometry.json",
+     "sha256": "8f9b5cef5d6139e0f7a5fb93b246b04cb30bfe1b3e888e9369104e6b399e739d",
+     "bytes": 2314
+    },
+    {
+     "path": "s06_printability/a2/geometry_report.json",
+     "sha256": "6e6de64616ce83a31c4270d0b0e4afe42493494a743ad6e70edf226230111435",
+     "bytes": 4976
+    },
+    {
+     "path": "s06_printability/a2/keyring.ply",
+     "sha256": "4f396ffff629decd1e70c7b75fd4415f3beca5e851227166504ce24e926e5029",
+     "bytes": 21077
+    },
+    {
+     "path": "s06_printability/a2/manifest.json",
+     "sha256": "916d48ead97d9c5068a9c8c882abc8afbc5b399b5579e43f541276571868522f",
+     "bytes": 12066
+    },
+    {
+     "path": "s06_printability/a2/printability.json",
+     "sha256": "00f1a6184f4a71bccc3aef814486273df793c5a65383cbd4cea8e91d8978630e",
+     "bytes": 293
+    },
+    {
+     "path": "s06_printability/a2/product_resolved.json",
+     "sha256": "c23b25fe9549fc35dcc8d4c26dc88714a23fc43982f476f064101aea91e02946",
+     "bytes": 231
+    },
+    {
+     "path": "s06_printability/a2/warnings.json",
+     "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+     "bytes": 3
+    },
+    {
+     "path": "s06_printability/a2/trace/01-meshy.json",
+     "sha256": "7cabb5d1d1b9328fcf2a0ffb137410233f8d07b566decaed806a704dec21fb49",
+     "bytes": 1559
+    },
+    {
+     "path": "s07_baseline/a1/manifest.json",
+     "sha256": "3d59f925d2999ac9b80a882d89d4424cb9da820c24447415b5d2c00601f2dc01",
+     "bytes": 12971
+    },
+    {
+     "path": "s07_baseline/a1/trace/01-meshy.json",
+     "sha256": "62dfd41a509d88b825c60404ee81e38a8037fcd5683d9954eaa6fd03eb9b8267",
+     "bytes": 1755
+    },
+    {
+     "path": "s07_baseline/a2/manifest.json",
+     "sha256": "5a0ceb3e608246d315351e751713c02b7769983784f466a5ec44f47058cabe2f",
+     "bytes": 11101
+    },
+    {
+     "path": "s07_baseline/a2/render_sheet.png",
+     "sha256": "f4d95958b5c000a074da53aaa4406ff78be8a4809ee24a4bbda664711590d1e6",
+     "bytes": 177357
+    },
+    {
+     "path": "s08_palette/a1/manifest.json",
+     "sha256": "4f8984de9b466abd7fd42662f8c52690c93593b23716a4e8450fee5abe2a5b57",
+     "bytes": 13811
+    },
+    {
+     "path": "s08_palette/a2/face_regions.npy",
+     "sha256": "b5fabf0e1afa80b464b6147c10f93b7a0a906dbcd16a21d790619d21884365d6",
+     "bytes": 1803736
+    },
+    {
+     "path": "s08_palette/a2/filaments.json",
+     "sha256": "ccbb8708740368ddf8d34c6392c1e677a75ec1a0b0051e1b9bd51b865bfa7651",
+     "bytes": 158763
+    },
+    {
+     "path": "s08_palette/a2/first_pass.png",
+     "sha256": "c1d07906f5315109fa915c269a9cc20628cffddee77616860d0abb2913b21f4f",
+     "bytes": 201538
+    },
+    {
+     "path": "s08_palette/a2/manifest.json",
+     "sha256": "bc113a4370ea3b5e1a98dcc5f9e98ff4a89ea5385624f7379c0796c04e4700b0",
+     "bytes": 15633
+    },
+    {
+     "path": "s08_palette/a2/paint_state.json",
+     "sha256": "53dd118d97322afecaba981fdb46de73b3ad61e5574be999fe25d21a98d9af81",
+     "bytes": 3078
+    },
+    {
+     "path": "s08_palette/a2/palette.json",
+     "sha256": "635e3c48ba052b593b2d5a5f41804f3f20b51989aacc62809705b0f45db585ac",
+     "bytes": 5394
+    },
+    {
+     "path": "s08_palette/a2/region_map.json",
+     "sha256": "f3cebc3ac7968f80a2eac4a027a2d53595088fd4db3007054944ec0fa475b13e",
+     "bytes": 33292
+    },
+    {
+     "path": "s09_paint/a1/checklist.json",
+     "sha256": "463f703dc4d39558b009f92b228cde4acbe228fd31cf66c7d565b3bd506de06d",
+     "bytes": 2589
+    },
+    {
+     "path": "s09_paint/a1/checklist_baseline.json",
+     "sha256": "0422369bd09cb31ddf04de1e4a65a6936c14acf3def9b5258381fa2badebd0d6",
+     "bytes": 2014
+    },
+    {
+     "path": "s09_paint/a1/checklist_code.json",
+     "sha256": "fc91aafcec00b50fd54e7fcd3682d4bce5d4a8c97151d70c9d86c03c00316641",
+     "bytes": 2149
+    },
+    {
+     "path": "s09_paint/a1/face_regions.npy",
+     "sha256": "4c5279d8a1953fe048a04aef3b4ebf5bf08d8adf3057fdb3195622133122d703",
+     "bytes": 1803736
+    },
+    {
+     "path": "s09_paint/a1/final.slice.log",
+     "sha256": "3dd1ccd9a2bfd60bcf29d8db954d68f970b9bea633c8e281ec718ac09591bdd3",
+     "bytes": 1287
+    },
+    {
+     "path": "s09_paint/a1/final.slice_result.json",
+     "sha256": "700c858783f0b97272813831605678c6f837ddeee4094a84dd6db0bf1701f1a7",
+     "bytes": 2237
+    },
+    {
+     "path": "s09_paint/a1/iter3.slice.log",
+     "sha256": "b67bbf86aa310398cb25f9fd69ee6ccfe147e6c25887365958edeb546d2d19d6",
+     "bytes": 1287
+    },
+    {
+     "path": "s09_paint/a1/iter3.slice_result.json",
+     "sha256": "43314f562f64e70c7f5351af4cf04719c1b281984f5fd4d6ab1d854a8530e884",
+     "bytes": 2220
+    },
+    {
+     "path": "s09_paint/a1/manifest.json",
+     "sha256": "952f99884509e6a565aee3ff9dd822c762f0130ab14b048ab7fa87915a034c24",
+     "bytes": 56137
+    },
+    {
+     "path": "s09_paint/a1/paint_run.json",
+     "sha256": "43f3703e6aef134d8349e44532b071e5d456e34bfb10ff1f9bbaf83b05f10ab9",
+     "bytes": 27987
+    },
+    {
+     "path": "s09_paint/a1/paint_state.json",
+     "sha256": "448eccfa13944210993b796b33478b3368cfdf615ed725ccee225fe672dd9321",
+     "bytes": 1518
+    },
+    {
+     "path": "s09_paint/a1/palette_plan.json",
+     "sha256": "fb3fe6b387637af25b40f0fd8600a2ef515b7b37fa445bdc831085c07271a55c",
+     "bytes": 10609
+    },
+    {
+     "path": "s09_paint/a1/region_map.json",
+     "sha256": "21cc6326294230a38e0023d399898adb915f31d228ffcde66572d097a8963ea9",
+     "bytes": 15407
+    },
+    {
+     "path": "s09_paint/a1/session.json",
+     "sha256": "862504f3c0c7f8af29e670dad8d268ab6b9af97083325113a160758bef2b4441",
+     "bytes": 33444
+    },
+    {
+     "path": "s09_paint/a1/slice_report.json",
+     "sha256": "009f1deef1935bd291205bdad194f164afe2b5721986b9eb86be13c38a3f999a",
+     "bytes": 1383
+    },
+    {
+     "path": "s10_write/a1/final.slice.log",
+     "sha256": "cad1b1e65447383fe7b6d12ad71ed3101ef5150ebb2a13bbef077e7547499f5a",
+     "bytes": 1287
+    },
+    {
+     "path": "s10_write/a1/final.slice_result.json",
+     "sha256": "feabd4940f81e49f21b6c1ddfab68678bbe0a1fb4bd53764776c9df0ed497a2a",
+     "bytes": 2238
+    },
+    {
+     "path": "s10_write/a1/manifest.json",
+     "sha256": "79166f602002b58604f2effa822153d71c0d1bd35294569fb6bf5c0e0ec98a94",
+     "bytes": 18757
+    },
+    {
+     "path": "s10_write/a1/render_sheet.png",
+     "sha256": "06abfdb968ad0e00b4c030d67f66aa1df12527b0444a071e58b07afbfd81ad02",
+     "bytes": 193000
+    },
+    {
+     "path": "s10_write/a1/result.json",
+     "sha256": "ccf67adcf70c3aab725644e31608414ac5e2e1c9b446d168db26a774d96aa771",
+     "bytes": 3616
+    },
+    {
+     "path": "s10_write/a1/slice_report.json",
+     "sha256": "6eada7172c1a21af4bfd7e2ffb106479b42d7071f6d6aca1e1dd0e978c2ba361",
+     "bytes": 1512
+    }
+   ]
+  },
+  {
+   "job_id": "eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb",
+   "label": "bronco",
+   "what": "live run 2: Bronco nameplate",
+   "product_type": "nameplate",
+   "profile": "full",
+   "form": "figure",
+   "prompt": "nameplate for my beagle Bronco",
+   "attempts": {
+    "s01_intake": 1,
+    "s02_color_spec": 1,
+    "s03_concept": 1,
+    "s04_multiview": 1,
+    "s05_mesh": 2,
+    "s06_printability": 1,
+    "s07_baseline": 1,
+    "s08_palette": 1,
+    "s09_paint": 1,
+    "s10_write": 1
+   },
+   "credits_live": 159,
+   "result": {
+    "threemf": "s10_write/a1/final.3mf",
+    "slice_ok": true,
+    "print_time_s": 21678.0,
+    "baseline_only": false,
+    "filaments": [
+     {
+      "filament_id": "bambu-pla-matte-dark-chocolate",
+      "grams": 30.85,
+      "meters": 9.72,
+      "slot": 1
+     },
+     {
+      "filament_id": "generic-pla-white",
+      "grams": 7.58,
+      "meters": 2.54,
+      "slot": 2
+     },
+     {
+      "filament_id": "generic-pla-black",
+      "grams": 18.28,
+      "meters": 6.13,
+      "slot": 3
+     },
+     {
+      "filament_id": "bambu-pla-matte-caramel",
+      "grams": 47.9,
+      "meters": 15.09,
+      "slot": 4
+     }
+    ]
+   },
+   "meshy": [
+    {
+     "task_id": "01a0d644-c7e7-70d6-a42b-7bd8158f863c",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c1 gpt-image-2",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "aspect_ratio": "1:1",
+      "prompt": "A figure that will sit on a flat name plate: a flat, wide underside so it stands steadily, compact pose. Request: nameplate for my beagle Bronco Subjects, matching the reference photos: Bronco (dog): Beagle, tricolor with dark ears and saddle, white chest and muzzle, tan facial markings, brown eyes, alert expression. Bronco colors, keep every one: tan body; dark brown saddle and ears; white chest and muzzle; tan facial markings; black nose; brown eyes. A sitting pose. Finished size about 120 mm. Notes: Beagle in standing pose on nameplate. Classic tricolor pattern: dark saddle on back, tan base with white accents. One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. Hard constraints, do not draw any of these: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/input/photo_1.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "6d532fc1e52fb1a404690d9c696f9c3bffd33785f29c2ebd6b8577c70c442cc7",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "ca744a85941fc816",
+      "reference_image_urls": "68f74ae4fa84bb9c",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d644-c7e7-70d6-a42b-7bd8158f863c.json",
+     "task_sha256": "30e3a294e1348373bf59405273ce38ddbccb4c991e688933abcdbc6ae98307e3",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/figure_r1c1.png",
+       "sha256": "97f4122a8cabd6671a475a35844ddb97a0d4c2ccf5ae078376cdab80b69c1ec9",
+       "bytes": 1231934
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d644-d022-762f-afbc-293f8d1a7ced",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c2 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "1:1",
+      "prompt": "The figure stands on its own feet with nothing under it, cut out and isolated on a plain light background like a product photo. A figure that will sit on a flat name plate: a flat, wide underside so it stands steadily, compact pose. Request: nameplate for my beagle Bronco Subjects, matching the reference photos: Bronco (dog): Beagle, tricolor with dark ears and saddle, white chest and muzzle, tan facial markings, brown eyes, alert expression. Bronco colors, keep every one: tan body; dark brown saddle and ears; white chest and muzzle; tan facial markings; black nose; brown eyes. A sitting pose. Finished size about 120 mm. Notes: Beagle in standing pose on nameplate. Classic tricolor pattern: dark saddle on back, tan base with white accents. One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. Avoid: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/input/photo_1.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "5085bb0f9de5097e4a7e8698779afe3e1e466085b98efdee6ead11ec9b16ae5b",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "076b15e261054bc6",
+      "reference_image_urls": "68f74ae4fa84bb9c",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d644-d022-762f-afbc-293f8d1a7ced.json",
+     "task_sha256": "5f48ebe08dfbcd4abfd58f373302449bbc776026eda65a67c0bcadf0e0a7d6f8",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/figure_r1c2.png",
+       "sha256": "117f948af2972ef0c8dfb641e37043361a71bf9a80782b93fcf7d9de0fa45c1b",
+       "bytes": 447280
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d645-59e2-701d-ac2d-9b49d4fd6d1c",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2.p0",
+     "endpoint": "image-to-image",
+     "purpose": "product r1c2 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "16:9",
+      "input_task_id": "01a0d644-d022-762f-afbc-293f8d1a7ced",
+      "prompt": "Stand the figure on the left end of a long, low, flat rounded-corner rectangular name plate in one solid color, about 2.4 times as wide as the figure is tall. On the plate's top surface, to the right of the figure, the name \"Bronco\" in raised rounded bold letters, spelled exactly \"Bronco\" and nothing else. Keep the figure itself exactly as it is: same pose, proportions, colors and markings; do not redraw it. Only its size and place in the frame may change, to make room for what is added. Plain light background, same lighting. Avoid: plinth, pedestal, stand, podium, ground or floor, keyring, loop or hole.",
+      "remove_background": true
+     },
+     "request_hash": "ee0e8a36e341c96eee03688f65544a64166de14e94f200ff8665172b7e426a24",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "0c607131a93856ed",
+      "input_task_id": "bf3df5d0a9511822",
+      "prompt": "0d71ca253655f922",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d645-59e2-701d-ac2d-9b49d4fd6d1c.json",
+     "task_sha256": "f25fea209225159db7ca0ec1fb05633cec694961cf88a9519532415f7afebc24",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/edit_r1c2_0.png",
+       "sha256": "ce01eafbe07c418e6dc1866ef5f3d6a4afe40c3e9d3003c98f1a8e60cdac7beb",
+       "bytes": 464477
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d645-c5b5-73fc-be9e-4b4983b920c4",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1.p0",
+     "endpoint": "image-to-image",
+     "purpose": "product r1c1 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "16:9",
+      "input_task_id": "01a0d644-c7e7-70d6-a42b-7bd8158f863c",
+      "prompt": "Stand the figure on the left end of a long, low, flat rounded-corner rectangular name plate in one solid color, about 2.4 times as wide as the figure is tall. On the plate's top surface, to the right of the figure, the name \"Bronco\" in raised rounded bold letters, spelled exactly \"Bronco\" and nothing else. Keep the figure itself exactly as it is: same pose, proportions, colors and markings; do not redraw it. Only its size and place in the frame may change, to make room for what is added. Plain light background, same lighting. Avoid: plinth, pedestal, stand, podium, ground or floor, keyring, loop or hole.",
+      "remove_background": true
+     },
+     "request_hash": "17e7cd15bcf5586644c3b170ac38461e8848507f1ef9f96097bb271a81272946",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "0c607131a93856ed",
+      "input_task_id": "b312544fcb8b817e",
+      "prompt": "0d71ca253655f922",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d645-c5b5-73fc-be9e-4b4983b920c4.json",
+     "task_sha256": "083eaab333270cdc13c38fa399d4cfa417ec86d69c5c8df34f9cfc64f20eb6a9",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/edit_r1c1_0.png",
+       "sha256": "60365d4a5af0a0553ba2f192ddf7b2b0f8e7d6d1febcb69dd4b28ba2ce546e3c",
+       "bytes": 416447
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d645-cf91-700a-89e9-73e390d7bfa9",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2.p1",
+     "endpoint": "image-to-image",
+     "purpose": "product r1c2 gpt-image-2",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "aspect_ratio": "3:2",
+      "input_task_id": "01a0d644-d022-762f-afbc-293f8d1a7ced",
+      "prompt": "Stand the figure on the left end of a long, low, flat rounded-corner rectangular name plate in one solid color, about 2.4 times as wide as the figure is tall. On the plate's top surface, to the right of the figure, the name \"Bronco\" in raised rounded bold letters, spelled exactly \"Bronco\" and nothing else. Keep the figure itself exactly as it is: same pose, proportions, colors and markings; do not redraw it. Only its size and place in the frame may change, to make room for what is added. Plain light background, same lighting. Correct these problems from the last try: The figure is unchanged in the product (the edit changed the figure (rmse 0.122, scale 0.65)). Hard constraints, do not draw any of these: plinth, pedestal, stand, podium, ground or floor, keyring, loop or hole.",
+      "remove_background": true
+     },
+     "request_hash": "b6663fa4bd48142410eca2bad025b247666bbb902264bfd2c8adca7367ddcbe7",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "aspect_ratio": "73e893153b20c535",
+      "input_task_id": "bf3df5d0a9511822",
+      "prompt": "f987453dbf3bf82b",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d645-cf91-700a-89e9-73e390d7bfa9.json",
+     "task_sha256": "717033acebcda1bb1c79e526aa9fa694d525008e310771d06eb55235b71522d2",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/edit_r1c2_1.png",
+       "sha256": "07d644da801ca96fe5b34a769030691604222a9380cc2a8d94cf4c856c77816d",
+       "bytes": 518778
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d646-3b71-7358-933a-8fc4a56f90a5",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1.p1",
+     "endpoint": "image-to-image",
+     "purpose": "product r1c1 gpt-image-2",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "aspect_ratio": "3:2",
+      "input_task_id": "01a0d644-c7e7-70d6-a42b-7bd8158f863c",
+      "prompt": "Stand the figure on the left end of a long, low, flat rounded-corner rectangular name plate in one solid color, about 2.4 times as wide as the figure is tall. On the plate's top surface, to the right of the figure, the name \"Bronco\" in raised rounded bold letters, spelled exactly \"Bronco\" and nothing else. Keep the figure itself exactly as it is: same pose, proportions, colors and markings; do not redraw it. Only its size and place in the frame may change, to make room for what is added. Plain light background, same lighting. Correct these problems from the last try: The figure is unchanged in the product (the edit changed the figure (rmse 0.177, scale 0.37)). Hard constraints, do not draw any of these: plinth, pedestal, stand, podium, ground or floor, keyring, loop or hole.",
+      "remove_background": true
+     },
+     "request_hash": "186d9b66431044676138e3694692ea24fb9de53633f71575a62591d02964411a",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "aspect_ratio": "73e893153b20c535",
+      "input_task_id": "b312544fcb8b817e",
+      "prompt": "c61ee107c0cd7552",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d646-3b71-7358-933a-8fc4a56f90a5.json",
+     "task_sha256": "5ca66f1fcad71943470263a507d9aafa0e4749433eb7227155ee09f979d73ca0",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/edit_r1c1_1.png",
+       "sha256": "7220d71d751ea793d555b617c7d593b14406727fb716985f28be2cf77f100a9b",
+       "bytes": 710369
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d646-9112-7732-9513-ff015b65b10c",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2.fix3",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c2 nano-banana-pro fix",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "1:1",
+      "prompt": "The figure stands on its own feet with nothing under it, cut out and isolated on a plain light background like a product photo. A figure that will sit on a flat name plate: a flat, wide underside so it stands steadily, compact pose. Request: nameplate for my beagle Bronco Subjects, matching the reference photos: Bronco (dog): Beagle, tricolor with dark ears and saddle, white chest and muzzle, tan facial markings, brown eyes, alert expression. Bronco colors, keep every one: tan body; dark brown saddle and ears; white chest and muzzle; tan facial markings; black nose; brown eyes. A sitting pose. Finished size about 120 mm. Notes: Beagle in standing pose on nameplate. Classic tricolor pattern: dark saddle on back, tan base with white accents. One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. Correct these problems from the last try: No base, plinth, stand or ground under the figure (Figure shown on a pedestal base; should have none.). Avoid: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/input/photo_1.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "bd486cb2d2eb355944807137b2d83bdb756934bc001232d6681640522e5bba77",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "17ff5738d09878a8",
+      "reference_image_urls": "68f74ae4fa84bb9c",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d646-9112-7732-9513-ff015b65b10c.json",
+     "task_sha256": "71b56f7d2d42444403fbf36dc1a6279dcd6a2ee4dfb4430e5273607ea58afaee",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/figure_r1c2_3.png",
+       "sha256": "202ae6e620cdc361b9af6171e1bc6365da99d4edc3a8397014e1cea3d0023263",
+       "bytes": 455852
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d647-1d1e-720b-a9c3-47d0a6aec192",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1.fix3",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c1 gpt-image-2 fix",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "aspect_ratio": "1:1",
+      "prompt": "A figure that will sit on a flat name plate: a flat, wide underside so it stands steadily, compact pose. Request: nameplate for my beagle Bronco Subjects, matching the reference photos: Bronco (dog): Beagle, tricolor with dark ears and saddle, white chest and muzzle, tan facial markings, brown eyes, alert expression. Bronco colors, keep every one: tan body; dark brown saddle and ears; white chest and muzzle; tan facial markings; black nose; brown eyes. A sitting pose. Finished size about 120 mm. Notes: Beagle in standing pose on nameplate. Classic tricolor pattern: dark saddle on back, tan base with white accents. One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. Correct these problems from the last try: No base, plinth, stand or ground under the figure (Brown oval base under figure; should be just beagle.). Hard constraints, do not draw any of these: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/input/photo_1.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "2f542c66e506dde6e1ad41dddd097b45c7b4ec2954365c3b6968d0fc11e42f77",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "392ad6df67ee66a0",
+      "reference_image_urls": "68f74ae4fa84bb9c",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d647-1d1e-720b-a9c3-47d0a6aec192.json",
+     "task_sha256": "4b2ebc79a9c057325641428e021c5602c17b5741c69af364b4947054cb8c3161",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/figure_r1c1_3.png",
+       "sha256": "85320dcf5d308495dd3b612b2739b3c745be181de7feedc62f269384c0dcd013",
+       "bytes": 908975
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d647-b3d1-7042-9f25-cf0a5d8f2be9",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1.p3",
+     "endpoint": "image-to-image",
+     "purpose": "product r1c1 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "16:9",
+      "input_task_id": "01a0d647-1d1e-720b-a9c3-47d0a6aec192",
+      "prompt": "Stand the figure on the left end of a long, low, flat rounded-corner rectangular name plate in one solid color, about 2.4 times as wide as the figure is tall. On the plate's top surface, to the right of the figure, the name \"Bronco\" in raised rounded bold letters, spelled exactly \"Bronco\" and nothing else. Keep the figure itself exactly as it is: same pose, proportions, colors and markings; do not redraw it. Only its size and place in the frame may change, to make room for what is added. Plain light background, same lighting. Avoid: plinth, pedestal, stand, podium, ground or floor, keyring, loop or hole.",
+      "remove_background": true
+     },
+     "request_hash": "4b526fb9ca5f76961f26f8887f46027431dbb2107448bc6b417fd5af9efcdf5a",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "0c607131a93856ed",
+      "input_task_id": "7ad852df7bb13394",
+      "prompt": "0d71ca253655f922",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d647-b3d1-7042-9f25-cf0a5d8f2be9.json",
+     "task_sha256": "1dfa931fd48419c66d14c83af1f37a2c6455cb5b8951d0389f581fcb33dd9b3f",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/edit_r1c1_3.png",
+       "sha256": "8eac718190e3b2248baf6d548f039a98d99c11f4b2020deb4ebcf2919d3748d5",
+       "bytes": 432651
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d647-bcbc-7650-a77c-d354794adbb0",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2.p3",
+     "endpoint": "image-to-image",
+     "purpose": "product r1c2 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "16:9",
+      "input_task_id": "01a0d646-9112-7732-9513-ff015b65b10c",
+      "prompt": "Stand the figure on the left end of a long, low, flat rounded-corner rectangular name plate in one solid color, about 2.4 times as wide as the figure is tall. On the plate's top surface, to the right of the figure, the name \"Bronco\" in raised rounded bold letters, spelled exactly \"Bronco\" and nothing else. Keep the figure itself exactly as it is: same pose, proportions, colors and markings; do not redraw it. Only its size and place in the frame may change, to make room for what is added. Plain light background, same lighting. Avoid: plinth, pedestal, stand, podium, ground or floor, keyring, loop or hole.",
+      "remove_background": true
+     },
+     "request_hash": "42154b574b43f42861d4f677c0cfead79c2b415b8b3025730565a74007c882f0",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "0c607131a93856ed",
+      "input_task_id": "47d3e1b24712e347",
+      "prompt": "0d71ca253655f922",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d647-bcbc-7650-a77c-d354794adbb0.json",
+     "task_sha256": "22a2a7a56fb4caf51ff7cb92c567bda1014723c6057f30ba61d52e7da1766b5f",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/edit_r1c2_3.png",
+       "sha256": "8e320b2039d66b722255fce4dca3ebe54e36e1a0d06e0cddff11306952defdbe",
+       "bytes": 478104
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d649-4024-76e7-96ee-c8fc12ad757f",
+     "stage": "s04_multiview",
+     "attempt": 1,
+     "key": "views0",
+     "endpoint": "image-to-image",
+     "purpose": "multi-view",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "generate_multi_view": true,
+      "input_task_id": "01a0d647-1d1e-720b-a9c3-47d0a6aec192",
+      "prompt": "The same figure seen from the front, the left side and the back. Keep proportions, pose, every color and every marking identical. Same plain light background, same lighting, same scale, centered with margin. No base, plate, stand, text, keyring or loop. Hard constraints, do not draw any of these: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole."
+     },
+     "request_hash": "39c2757848ed9f8e8d33057d45c2510b8a629eb5339e19e5b1574e2248edee75",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "generate_multi_view": "b5bea41b6c623f7c",
+      "input_task_id": "7ad852df7bb13394",
+      "prompt": "c3037d2645d2c6f9"
+     },
+     "task": "meshy/01a0d649-4024-76e7-96ee-c8fc12ad757f.json",
+     "task_sha256": "f303927e55c0387272da4099e4373e9715e2d2885db6ea055e1ad7301ac6923a",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s04_multiview/a1/views0_raw_0.png",
+       "sha256": "3c6b00e39ae08c7e55359c148957d24dbb2a4f11524639f2db965e38109d7a90",
+       "bytes": 268908
+      },
+      {
+       "field": "image_urls.1",
+       "path": "s04_multiview/a1/views0_raw_1.png",
+       "sha256": "1150b79fccd4f4f5f09fd4e6cb4538e5a510ead44eeda1e6a5ceabf4063ecb2a",
+       "bytes": 272842
+      },
+      {
+       "field": "image_urls.2",
+       "path": "s04_multiview/a1/views0_raw_2.png",
+       "sha256": "3b441215099fd3b5868049cd04d7ddb144aba3c624f905ddbbc4ff7c9aa8e19f",
+       "bytes": 479903
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d64a-d7cc-7092-b2a7-ed1ea6e9abca",
+     "stage": "s05_mesh",
+     "attempt": 2,
+     "key": "m1.gen",
+     "endpoint": "multi-image-to-3d",
+     "purpose": "3D model round 1 (generate)",
+     "status": "SUCCEEDED",
+     "credits": 35,
+     "request": {
+      "ai_model": "latest",
+      "geometry_resolution": "2k",
+      "image_urls": [
+       "storage:artifacts/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/s04_multiview/a1/view_concept.png",
+       "storage:artifacts/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/s04_multiview/a1/views0_1.png",
+       "storage:artifacts/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/s04_multiview/a1/views0_3.png",
+       "storage:artifacts/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/s04_multiview/a1/views0_2.png"
+      ],
+      "multi_view_thumbnails": true,
+      "should_remesh": false,
+      "should_texture": true,
+      "target_formats": [
+       "glb"
+      ],
+      "texture_image_urls": [
+       "storage:artifacts/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/s04_multiview/a1/view_concept.png",
+       "storage:artifacts/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/s04_multiview/a1/views0_1.png",
+       "storage:artifacts/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/s04_multiview/a1/views0_3.png",
+       "storage:artifacts/eb8f1de4-0f0b-41f9-a43f-d5017c3ea9eb/s04_multiview/a1/views0_2.png"
+      ]
+     },
+     "request_hash": "e4dc3f70707a1caa9000bffa94f9a06210a75fbc582fbac7bbea690688ff0b9c",
+     "request_fields": {
+      "ai_model": "eb0f1f245cda8f6d",
+      "geometry_resolution": "16184d36f0c96ed4",
+      "image_urls": "eaa43911ebfee20c",
+      "multi_view_thumbnails": "b5bea41b6c623f7c",
+      "should_remesh": "fcbcf165908dd18a",
+      "should_texture": "b5bea41b6c623f7c",
+      "target_formats": "45c64e428cb1d98e",
+      "texture_image_urls": "eaa43911ebfee20c"
+     },
+     "task": "meshy/01a0d64a-d7cc-7092-b2a7-ed1ea6e9abca.json",
+     "task_sha256": "4bf6e63d6c4b66fb4aa0ed806a113ee38eb479638386d7c6b3cc06438360ad5f",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "model_urls.glb",
+       "path": "s05_mesh/a2/mesh_m1.glb",
+       "sha256": "77609b92a3d34c564551f752b6577a16df5fc77a4e73c6a5d2a172f8f3883bd8",
+       "bytes": 24763160
+      },
+      {
+       "field": "thumbnail_urls.front",
+       "path": "s05_mesh/a2/thumb_m1_front.png",
+       "sha256": "ad3aca57da7f20b6fa80fb041ab8725056d5ca3ffb3727d8fd8012d2747a0449",
+       "bytes": 70726
+      },
+      {
+       "field": "thumbnail_urls.right",
+       "path": "s05_mesh/a2/thumb_m1_right.png",
+       "sha256": "e9cd5c47d799fbe92f8e16b17399e9092bad8c294314df8810847a15e7353f6a",
+       "bytes": 87372
+      },
+      {
+       "field": "thumbnail_urls.back",
+       "path": "s05_mesh/a2/thumb_m1_back.png",
+       "sha256": "6271d82fdcfc363df2132e0e3330f12560c3f56f955275696b17194082325499",
+       "bytes": 56382
+      },
+      {
+       "field": "thumbnail_urls.left",
+       "path": "s05_mesh/a2/thumb_m1_left.png",
+       "sha256": "19093f590ad437d9af5158161365afaf123b3b8deee147e8b553cd270a6a5775",
+       "bytes": 88921
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d6aa-3b7b-746d-bad8-66dc6c350ae5",
+     "stage": "s06_printability",
+     "attempt": 1,
+     "key": "analyze",
+     "endpoint": "print-analyze",
+     "purpose": "printability analysis",
+     "status": "SUCCEEDED",
+     "credits": 0,
+     "request": {
+      "input_task_id": "01a0d64a-d7cc-7092-b2a7-ed1ea6e9abca"
+     },
+     "request_hash": "c87f478fe7b7ccde332528cf76a54190946fcd8c8bb650f2022e2f3b45f3194c",
+     "request_fields": {
+      "input_task_id": "284394fee828783a"
+     },
+     "task": "meshy/01a0d6aa-3b7b-746d-bad8-66dc6c350ae5.json",
+     "task_sha256": "8368458153dac53d77f36021469508e007c3b13309eef14c92b368703a442586",
+     "task_full": true,
+     "assets": []
+    },
+    {
+     "task_id": "01a0d6ba-9f14-773a-8798-0574a8eac588",
+     "stage": "s07_baseline",
+     "attempt": 1,
+     "key": "mc.cartoon",
+     "endpoint": "print-multi-color",
+     "purpose": "baseline 3MF (cartoon)",
+     "status": "SUCCEEDED",
+     "credits": 10,
+     "request": {
+      "input_task_id": "01a0d64a-d7cc-7092-b2a7-ed1ea6e9abca",
+      "max_colors": 5,
+      "style": "cartoon"
+     },
+     "request_hash": "143efa7292a487282be9009980de61f90d353ea13e8932941c3b8a941769b6a9",
+     "request_fields": {
+      "input_task_id": "284394fee828783a",
+      "max_colors": "ef2d127de37b942b",
+      "style": "25fb7f6c45350faf"
+     },
+     "task": "meshy/01a0d6ba-9f14-773a-8798-0574a8eac588.json",
+     "task_sha256": "21a1e16f1566ca08b2f72a881c7dcd45811c41a2403a3fa3b118593ccf249474",
+     "task_full": true,
+     "assets": [
+      {
+       "field": "model_urls.3mf",
+       "path": "s07_baseline/a1/baseline_cartoon.3mf",
+       "sha256": "a09626b5a5a69bf31ca7fa5f526ff061ca09a622785bda9907ba4fc44a8b7d98",
+       "bytes": 15997793
+      }
+     ]
+    }
+   ],
+   "files": [
+    {
+     "path": "job.json",
+     "sha256": "ab04a779fee1d4592deec3a79b8c3f376499a1495f65c7a6493922aeac70b72b",
+     "bytes": 5169
+    },
+    {
+     "path": "job_row.json",
+     "sha256": "910f3206cdc339f9ef7f6bb0e45915ecf6c1b745e70d604e32d23c5df0ed2799",
+     "bytes": 4325
+    },
+    {
+     "path": "ledger.jsonl",
+     "sha256": "83d089fc84d052991235e74d3b3a7cb5aa66dcce99c21665e21815739ae42e3d",
+     "bytes": 8664
+    },
+    {
+     "path": "messages.jsonl",
+     "sha256": "37bf58a8b937ccbf25eb66c1a6eb7d4e848f8d21598a9bb78705ad80c1511e43",
+     "bytes": 13428
+    },
+    {
+     "path": "input/photo_1.jpg",
+     "sha256": "08b2a150a942e9b5044f3fbe887f00f9b5749cbefa21753ec5523ac9142f1d44",
+     "bytes": 600336
+    },
+    {
+     "path": "input/request.json",
+     "sha256": "f04514909421af12b18d2a0a8a62e8597caf13e0dc1e64019449f2db285a0af9",
+     "bytes": 228
+    },
+    {
+     "path": "s01_intake/a1/addons.json",
+     "sha256": "8c93c11e7a5b18eae3d2734760b0ee0d7d1cea438109ccc0ecaf36c4b7fba443",
+     "bytes": 288
+    },
+    {
+     "path": "s01_intake/a1/answers.json",
+     "sha256": "fffdb28eb77ec6756c8046555fb7d6f3fd2b89058c2009234508dc0dcc9f7c4a",
+     "bytes": 249
+    },
+    {
+     "path": "s01_intake/a1/color_regions.json",
+     "sha256": "64115621cb67e1bc6b3afa4f8963df5f3c0a2ba09508ec6498221adf3c9905fd",
+     "bytes": 761
+    },
+    {
+     "path": "s01_intake/a1/intake.json",
+     "sha256": "a88299df776b665f136d4c40730cdb19e59054b520a4192597cce38b0b669145",
+     "bytes": 1712
+    },
+    {
+     "path": "s01_intake/a1/manifest.json",
+     "sha256": "adcfa4ae87ba72e956d280a36e0fe642abbff011de4f4fcc9d847dac6527b093",
+     "bytes": 9931
+    },
+    {
+     "path": "s01_intake/a1/product.json",
+     "sha256": "51050aa08fd075545e50d72da63e6e202f47b7d4009fbd2d0430d08e1cfb9c07",
+     "bytes": 608
+    },
+    {
+     "path": "s01_intake/a1/subjects.json",
+     "sha256": "e197eaebacf1db4d0ae15f63614fd6d1306b769452177cb5ed638b91dcc74fa0",
+     "bytes": 509
+    },
+    {
+     "path": "s01_intake/a1/trace/01-claude.json",
+     "sha256": "b2aae3f3403f74f2fe1d55c26080c149f9962ed529a2cdc2f114b3f2f67067f1",
+     "bytes": 5986
+    },
+    {
+     "path": "s02_color_spec/a1/color_spec.json",
+     "sha256": "f3e6e1f4f5f6005c181d714a20f01d689a1b142f5b80a395f156a3585cca6d15",
+     "bytes": 3383
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_collar.png",
+     "sha256": "c9c9a387e0b64b16c6433f8a6173cf8755a1c4104ca6ec3a13a9e5c3122e1062",
+     "bytes": 28953
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_eyes.png",
+     "sha256": "9542f9b54bbd979a4abd4bbcf75cc8e78dd70ef3eb7688cff3523e805b191897",
+     "bytes": 8592
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_facial_markings.png",
+     "sha256": "f4f740ba8fcade7ebfb2130fb6dfc63b600d077d81bce5a4b57c22a98cdbb63e",
+     "bytes": 104477
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_inner_ears.png",
+     "sha256": "a9cd9b24c8cbae50e06bad977f7b7fbac797eb01198689fba7ec371e2d506410",
+     "bytes": 51397
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_nose.png",
+     "sha256": "f148b83a90bb0286bda3e97e9ffe740d3c9c7bdf0a1d6e4036fee100a4058ff0",
+     "bytes": 27143
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_saddle_and_ears.png",
+     "sha256": "5e9be8703992dc168c7b01bbb0857ba2648d74fc9715558ec2154e29e1a9985a",
+     "bytes": 52543
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_tag.png",
+     "sha256": "e8ef4569c53a6d1e45d8c8b309d73d9cad5ab14e0e250df8cd5be5cbfbed95e9",
+     "bytes": 35060
+    },
+    {
+     "path": "s02_color_spec/a1/crop_s1_tan_body.png",
+     "sha256": "b261a2352650011ec6548397341dc32d4b7dac87370f8cff9b90553e0d04964b",
+     "bytes": 109499
+    },
+    {
+     "path": "s02_color_spec/a1/manifest.json",
+     "sha256": "3d3591c74424e23b69335950da64d7c49699da40a5e9a6c730c7262337719865",
+     "bytes": 11724
+    },
+    {
+     "path": "s02_color_spec/a1/trace/01-claude.json",
+     "sha256": "e00f91df9177a898e9adf15ce892ae0f1d444c5cbbeee3712fd3a2c87612ebe9",
+     "bytes": 3380
+    },
+    {
+     "path": "s03_concept/a1/approved_concept.png",
+     "sha256": "e6bd224e15b99ef6ef6ff8ce99cea0b1db77bc533318dbd969d87ff2e700ca18",
+     "bytes": 944973
+    },
+    {
+     "path": "s03_concept/a1/concept.json",
+     "sha256": "c7cb3fafde1ce61554c918b69dd62481c2e20dfa3b4d2adb46540c8ac234cbbf",
+     "bytes": 10299
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c1_1.png",
+     "sha256": "6648ae412da90432563cb7f117429b009f331b8e17ff9fb5b2688baa376f3656",
+     "bytes": 1789710
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c1_2.png",
+     "sha256": "94eb3883596936ed28152375de5f4353d50e552f8e01e19cf4f1b109abc623f7",
+     "bytes": 1272525
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c1_4.png",
+     "sha256": "e6bd224e15b99ef6ef6ff8ce99cea0b1db77bc533318dbd969d87ff2e700ca18",
+     "bytes": 944973
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c2_1.png",
+     "sha256": "0bfaa7df17f3b25a6bee577862a2989e2aa899ea12a165efc612cfead9915bcb",
+     "bytes": 904117
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c2_2.png",
+     "sha256": "01687c475e180b695b66decc0112b767ecb79b7c273b619ed8778aa6b56ec0e9",
+     "bytes": 485633
+    },
+    {
+     "path": "s03_concept/a1/concept_r1c2_4.png",
+     "sha256": "0484da007fda5f483d3a11597b79f1fc3f167afaa76995f30372ff3d2f0ac0ab",
+     "bytes": 502000
+    },
+    {
+     "path": "s03_concept/a1/figure_concept.png",
+     "sha256": "85320dcf5d308495dd3b612b2739b3c745be181de7feedc62f269384c0dcd013",
+     "bytes": 908975
+    },
+    {
+     "path": "s03_concept/a1/manifest.json",
+     "sha256": "98313c41ea54a7af60d0cd1bcbd1a44f974ddcbcfbb7feb9838c60cff4e3c36c",
+     "bytes": 76115
+    },
+    {
+     "path": "s03_concept/a1/trace/01-meshy.json",
+     "sha256": "fe79cfeba69e31a19573f466e276796353cb9fac5eed1236e18ecf03c639bcae",
+     "bytes": 3760
+    },
+    {
+     "path": "s03_concept/a1/trace/02-meshy.json",
+     "sha256": "848b4db3a32efa09663f8a74172f1b644765e1f36d2f0249e17c0ea4bad2a8c5",
+     "bytes": 3564
+    },
+    {
+     "path": "s03_concept/a1/trace/03-meshy.json",
+     "sha256": "2a8bde7765781e1ff4c508fc21bf3c6f8ab069ce9f4ab4ce4c2ce93a57934f12",
+     "bytes": 2788
+    },
+    {
+     "path": "s03_concept/a1/trace/04-meshy.json",
+     "sha256": "9c1a455732ff29b9c0799760730aa59c0bba0a4351527088aa9c0f4a13cfd22d",
+     "bytes": 2789
+    },
+    {
+     "path": "s03_concept/a1/trace/05-meshy.json",
+     "sha256": "822e2e75174a3b3d0e3c45fa3f05833825b32fe0008b42e032415cb434b09661",
+     "bytes": 3122
+    },
+    {
+     "path": "s03_concept/a1/trace/06-claude.json",
+     "sha256": "7c3202e14c8cdfebf539fa9329bec630fa092c25216292bc76ac301bc327247e",
+     "bytes": 3416
+    },
+    {
+     "path": "s03_concept/a1/trace/07-claude.json",
+     "sha256": "d643e003bf52fd413250b79ea6ed5e2f58be7877b39d804ea57187a5b8a0ae24",
+     "bytes": 3529
+    },
+    {
+     "path": "s03_concept/a1/trace/08-meshy.json",
+     "sha256": "d9e9333dee7a6cc8402ff8bf6b3c0362b3df650d21cddabc816a51104d403b70",
+     "bytes": 3122
+    },
+    {
+     "path": "s03_concept/a1/trace/09-claude.json",
+     "sha256": "899129b15ac487c0aa03cfcb25770c75a2c81c7432b07a4b46e8ddd829d2f9e7",
+     "bytes": 3521
+    },
+    {
+     "path": "s03_concept/a1/trace/10-claude.json",
+     "sha256": "90df7aed8fb744b58757958508c72a32a02e70829beaad4f292d0f56bd2afc4f",
+     "bytes": 3656
+    },
+    {
+     "path": "s03_concept/a1/trace/11-meshy.json",
+     "sha256": "364e4d5b6d42ae026f34ecd17a09c4d4fea5ea9b53f4c2ccf9f3818d7b4a879c",
+     "bytes": 3867
+    },
+    {
+     "path": "s03_concept/a1/trace/12-meshy.json",
+     "sha256": "0f7ecea0e9f449f68add1341f8561a55fedb487282315a44d3be4f4c9e1f442d",
+     "bytes": 4059
+    },
+    {
+     "path": "s03_concept/a1/trace/13-meshy.json",
+     "sha256": "5c8fba70d111f093caa3aa145635f54bcd185ecdfa50dba36363232fe28e6f87",
+     "bytes": 2792
+    },
+    {
+     "path": "s03_concept/a1/trace/14-meshy.json",
+     "sha256": "e640522cad1f03b69bb1b7d08ecb014cfb2a1c46d00018a822a96428f6e80d3e",
+     "bytes": 2792
+    },
+    {
+     "path": "s03_concept/a1/trace/15-claude.json",
+     "sha256": "989387ddbd28d120ed9adf3507c6fb1c615a9c06c8b7d68f51967026a202c2af",
+     "bytes": 3419
+    },
+    {
+     "path": "s03_concept/a1/trace/16-claude.json",
+     "sha256": "ddaa4360b7bce962628a30401c94404baecf0fb6359b1838c60a4e888de9afae",
+     "bytes": 3419
+    },
+    {
+     "path": "s04_multiview/a1/manifest.json",
+     "sha256": "64b94e333968d048b3189dbfc9dbe269829237cd3ed240866f21057dd4692d63",
+     "bytes": 9472
+    },
+    {
+     "path": "s04_multiview/a1/trace/01-meshy.json",
+     "sha256": "22a1be5b384be44b0b20ef71cd5a4c54226549058ca9b897e7fa99925c9340e6",
+     "bytes": 2702
+    },
+    {
+     "path": "s04_multiview/a1/trace/02-claude.json",
+     "sha256": "212140b00b548c55a0831a27dda5b3c94f853a5361bea3c3d575ce4cf7d0f8e5",
+     "bytes": 2510
+    },
+    {
+     "path": "s04_multiview/a1/view_concept.png",
+     "sha256": "b531af841873c8b3bdb13fd677c8fe84ad073ce56a30ac1c9a3183cffc972d7e",
+     "bytes": 874794
+    },
+    {
+     "path": "s04_multiview/a1/views.json",
+     "sha256": "45c33c5fe587ca0e92f35027631844250f90e9184b0508c678e56e49ebabd0b8",
+     "bytes": 1556
+    },
+    {
+     "path": "s04_multiview/a1/views0_1.png",
+     "sha256": "6bad1c8c25d0c4eedca8a6483e30338d45d32b6f4bc5dab3e76268e04e829349",
+     "bytes": 569614
+    },
+    {
+     "path": "s04_multiview/a1/views0_2.png",
+     "sha256": "96c9717fb3f8642655b748903fb497fbf4d30171c783dcf778b49657567a039a",
+     "bytes": 599506
+    },
+    {
+     "path": "s04_multiview/a1/views0_3.png",
+     "sha256": "fdbfdb5443e517120a61d1f5ab7d0f26293263c854b807bc037abf5662161685",
+     "bytes": 656072
+    },
+    {
+     "path": "s05_mesh/a1/manifest.json",
+     "sha256": "65d8fbf61dafbc021ff7a89fa75cf705a6c8dde5aa3c443fcd9afbebed5bcd0b",
+     "bytes": 3791
+    },
+    {
+     "path": "s05_mesh/a2/manifest.json",
+     "sha256": "8da53e89f7e0f166c58d059cc189e6ec90e735d024d0b536e5c4239f2e60d0ad",
+     "bytes": 9503
+    },
+    {
+     "path": "s05_mesh/a2/mesh.json",
+     "sha256": "991b9fbf9a718de03ef2de13fa386ed8b96588b3b12bb4edbebb0b524c96aebb",
+     "bytes": 608
+    },
+    {
+     "path": "s05_mesh/a2/trace/01-meshy.json",
+     "sha256": "b64fb5d031a89a427cb544158b99a12fafd921c92177c0bfac7918ec05769749",
+     "bytes": 3698
+    },
+    {
+     "path": "s06_printability/a1/concept_read.json",
+     "sha256": "60297d333d49382f2f0353b8402bab4b85563f92c0598fa1f9bd36e99186a013",
+     "bytes": 1104
+    },
+    {
+     "path": "s06_printability/a1/figure.ply",
+     "sha256": "2fec0270dc6667557a593346f26df7041042d9e6a245189a867910ea8069aa74",
+     "bytes": 14652640
+    },
+    {
+     "path": "s06_printability/a1/geometry.json",
+     "sha256": "bb857518055e9308751dfc5d0023637f4a4ebe6c14ecd3fabc87ac2f05f18c67",
+     "bytes": 2101
+    },
+    {
+     "path": "s06_printability/a1/geometry_report.json",
+     "sha256": "6ef19da68e3c09dd9d628fe98e26ae474dd4a5a4e3e46b4ece5cb703453a2569",
+     "bytes": 4684
+    },
+    {
+     "path": "s06_printability/a1/manifest.json",
+     "sha256": "87aa579b5ac43debe94d48e76b39972da65bdff729df92bd61d43465fc78970a",
+     "bytes": 13066
+    },
+    {
+     "path": "s06_printability/a1/plate.ply",
+     "sha256": "0fb0c3e3df14548dae6a8e84b02c9669b6816cbed837d9eaefda3b3216205d42",
+     "bytes": 15362
+    },
+    {
+     "path": "s06_printability/a1/printability.json",
+     "sha256": "3e9e9029634943faf55766d89d4f34e2bf20ab3c2dddeac229f807a08e518538",
+     "bytes": 299
+    },
+    {
+     "path": "s06_printability/a1/product_resolved.json",
+     "sha256": "13a8d92fe736dc4adfc14b884a2041afcf17d06cdc81148d5ff89316e235b919",
+     "bytes": 243
+    },
+    {
+     "path": "s06_printability/a1/text.ply",
+     "sha256": "c13c57d71e21f66a3fca22f0515de41f38f4947c45d0e27a9216baf2840c8539",
+     "bytes": 79684
+    },
+    {
+     "path": "s06_printability/a1/warnings.json",
+     "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+     "bytes": 3
+    },
+    {
+     "path": "s06_printability/a1/trace/01-meshy.json",
+     "sha256": "022e44d468f4d5150d1841a575eac790b28a10dfbb81f84cc0a027004c2f670b",
+     "bytes": 1744
+    },
+    {
+     "path": "s06_printability/a1/trace/02-claude.json",
+     "sha256": "b0995dc3ee0937d29a13da000102ed8dfa5bd5913b75a811a2250c3381f02685",
+     "bytes": 3770
+    },
+    {
+     "path": "s07_baseline/a1/manifest.json",
+     "sha256": "c87e573e7c2888bd6085ee13fa4ae90c70a22b2329988af656cc55b6f455b580",
+     "bytes": 12906
+    },
+    {
+     "path": "s07_baseline/a1/render_sheet.png",
+     "sha256": "f47ab78774dd7a5e0aeeb061170dfa00b6d52853e7c3bf6b947ff7f65d38cdf5",
+     "bytes": 85763
+    },
+    {
+     "path": "s07_baseline/a1/trace/01-meshy.json",
+     "sha256": "1e9c064e781a532bff7c7acd9c7dc31abff37fb78010dba4c15af1d053c34916",
+     "bytes": 1933
+    },
+    {
+     "path": "s08_palette/a1/face_regions.npy",
+     "sha256": "aa8c0bea9ba5705490ebbb4983170f6882d635df5598c72b0d4353f4a06419cd",
+     "bytes": 3084848
+    },
+    {
+     "path": "s08_palette/a1/filaments.json",
+     "sha256": "d8c84d3a98bcef83dc8a9c6d870896e1ef58fc31e5c3ac8e5cfd660844e2c9df",
+     "bytes": 158763
+    },
+    {
+     "path": "s08_palette/a1/first_pass.png",
+     "sha256": "8b293933ddea87e8b118e84be71d0844ba2ee4604da1ffc583287c8e8cb6d70d",
+     "bytes": 122687
+    },
+    {
+     "path": "s08_palette/a1/manifest.json",
+     "sha256": "9d2bb44b246a835027a8a1a2e3cec35045cad18fcbcfc4174ec3edad7b16121e",
+     "bytes": 15222
+    },
+    {
+     "path": "s08_palette/a1/paint_state.json",
+     "sha256": "8e657ed5a0330cc5f872e868cce421bf8520d4939c0b7492d5d0bd79555dcf32",
+     "bytes": 3105
+    },
+    {
+     "path": "s08_palette/a1/palette.json",
+     "sha256": "437f38e2163990a4e8ff7a5d0397591787282f20c3a845ae9e604ecb4af86a53",
+     "bytes": 5054
+    },
+    {
+     "path": "s08_palette/a1/region_map.json",
+     "sha256": "eb4381fca49faea4cea9308ea5ce234abc98214611fb430bb0ddf9174b68a1f3",
+     "bytes": 31256
+    },
+    {
+     "path": "s09_paint/a1/checklist.json",
+     "sha256": "c7b996c6f0e8c4850bbcadb7efaa556063a471ef3921be135bacac5a2dce4942",
+     "bytes": 2090
+    },
+    {
+     "path": "s09_paint/a1/checklist_baseline.json",
+     "sha256": "aa928640ac09e5639243f215431ea47554765f5c5dc8d6cb14b0e6e3bde44464",
+     "bytes": 1968
+    },
+    {
+     "path": "s09_paint/a1/checklist_code.json",
+     "sha256": "38cf4ca7f64ba2bf8d5d25c18357738870752513bac61f6cfffff5bfc3d9ba5a",
+     "bytes": 1728
+    },
+    {
+     "path": "s09_paint/a1/face_regions.npy",
+     "sha256": "ee88a74e409de04960a7478435e3b8dc6a22fed0f844fc85cfd130505cc27ad6",
+     "bytes": 3084848
+    },
+    {
+     "path": "s09_paint/a1/final.slice.log",
+     "sha256": "84576759f96cee75f65423d311e90813492802aa22fea07ff929f1145b19705d",
+     "bytes": 1247
+    },
+    {
+     "path": "s09_paint/a1/final.slice_result.json",
+     "sha256": "76df5455ca120962e753442b9dcc5393704bac5e20150bddf40f6f0b7d63abfd",
+     "bytes": 2316
+    },
+    {
+     "path": "s09_paint/a1/manifest.json",
+     "sha256": "5cd7f829b289c9a80cc8c5ac04d2af3753b34e53ffeb9bbfe012232c7048b564",
+     "bytes": 35152
+    },
+    {
+     "path": "s09_paint/a1/paint_run.json",
+     "sha256": "a54100a11c7f198c5eb4f306f7e04cc5a808eb2997952e9af7b0caaada84db94",
+     "bytes": 18433
+    },
+    {
+     "path": "s09_paint/a1/paint_state.json",
+     "sha256": "c5493dd90eb57df07dddb1359ad49c8779768a6bb0c925435274de8328bd143d",
+     "bytes": 2029
+    },
+    {
+     "path": "s09_paint/a1/palette_plan.json",
+     "sha256": "b4e2424a58efd740a7c1a7a6db9ee3d3d244fcc4c9ce7be1333b51dc706cf6bb",
+     "bytes": 9315
+    },
+    {
+     "path": "s09_paint/a1/region_map.json",
+     "sha256": "83a880e5dd9e173ce72bc4c89ad5fca5da4d7beab27763cc0df2d5cad8fbf4bc",
+     "bytes": 24454
+    },
+    {
+     "path": "s09_paint/a1/session.json",
+     "sha256": "d984c482f3545bf762282bc5609313b0e23c7accd896e7054544836c500b4703",
+     "bytes": 9477
+    },
+    {
+     "path": "s09_paint/a1/slice_report.json",
+     "sha256": "4f854ffcb53fa2f0e61a683262a27846244ef4d95db9c5f4439e02d80e5ce94a",
+     "bytes": 2771
+    },
+    {
+     "path": "s10_write/a1/final.slice.log",
+     "sha256": "315c54866c849884458c8306bece1bb8de4049d66532104b70589f40c761477b",
+     "bytes": 1247
+    },
+    {
+     "path": "s10_write/a1/final.slice_result.json",
+     "sha256": "d5ce7624b0dc7911a696c365f1a676f2c9df9628b7e77d30eff92825eecf8eac",
+     "bytes": 2319
+    },
+    {
+     "path": "s10_write/a1/manifest.json",
+     "sha256": "b251ee80c0879efa86c36f3d85c18b9b302fdf9dddb2665646f6189ca7a3c233",
+     "bytes": 19736
+    },
+    {
+     "path": "s10_write/a1/render_sheet.png",
+     "sha256": "bf287483631565d0da2ae6a6f5e41faa58bf312c821004e96eb94ff51a942f3c",
+     "bytes": 85746
+    },
+    {
+     "path": "s10_write/a1/result.json",
+     "sha256": "245adcf58fcac5d6247bbc3a59c9871714774a745beb8a11f82e595e22142190",
+     "bytes": 3392
+    },
+    {
+     "path": "s10_write/a1/slice_report.json",
+     "sha256": "825840cc6c84a2e1fa3a8ff0f9e3db900c76c0178de8669e1b3e9cc5d7fe5db0",
+     "bytes": 2825
+    }
+   ]
+  },
+  {
+   "job_id": "819cc491-c341-470a-bb97-63a194fa8dca",
+   "label": "frenchie",
+   "what": "M3: Frenchie keychain, thin slice",
+   "product_type": "keychain",
+   "profile": "thin_slice",
+   "form": null,
+   "prompt": "keychain of my frenchie",
+   "attempts": {
+    "s01_intake": 1,
+    "s02_color_spec": 1,
+    "s03_concept": 1,
+    "s04_multiview": 1,
+    "s05_mesh": 1,
+    "s06_printability": 1,
+    "s07_baseline": 1,
+    "s08_palette": 1,
+    "s09_paint": 1,
+    "s10_write": 1
+   },
+   "credits_live": 66,
+   "result": {
+    "threemf": "s07_baseline/a1/baseline_x2d.3mf",
+    "slice_ok": true,
+    "print_time_s": 2333.0,
+    "baseline_only": true,
+    "filaments": [
+     {
+      "filament_id": "generic-pla-black",
+      "grams": 4.57,
+      "meters": 1.53,
+      "slot": 1
+     },
+     {
+      "filament_id": "generic-pla-brown",
+      "grams": 1.67,
+      "meters": 0.56,
+      "slot": 2
+     },
+     {
+      "filament_id": "generic-pla-white",
+      "grams": 3.3,
+      "meters": 1.11,
+      "slot": 5
+     }
+    ]
+   },
+   "meshy": [
+    {
+     "task_id": "01a0d382-6fb2-7387-b05f-005b3b1b62a8",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c1 gpt-image-2",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "aspect_ratio": "1:1",
+      "prompt": "A keychain charm figure: chunky and compact, head and body close together, no thin limbs, ears or tails sticking out. Request: keychain of my frenchie Subjects, matching the reference photos: French Bulldog (dog): Black and white French Bulldog with a black facial mask, white chest and muzzle, black ears and saddle, dark brown eyes, black nose, and characteristic stocky Frenchie build. French Bulldog colors, keep every one: white body; black face mask; black ears; black saddle on the back; white muzzle; white chest; brown eyes; black nose; pink inner ears. Realistic proportions true to the photos. Finished size about 45 mm. One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. Hard constraints, do not draw any of these: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/819cc491-c341-470a-bb97-63a194fa8dca/input/photo_1.jpg",
+       "storage:inputs/819cc491-c341-470a-bb97-63a194fa8dca/input/photo_2.jpg",
+       "storage:inputs/819cc491-c341-470a-bb97-63a194fa8dca/input/photo_3.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "51a27c60e4b897eaac5fda3b46600467f1294b100c0fcc4de6fb641e0e7e62b8",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "8e8cd1f018c9dc9a",
+      "reference_image_urls": "97d89baca0e0dd33",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d382-6fb2-7387-b05f-005b3b1b62a8.json",
+     "task_sha256": "7936827c6acd7c9aaf087dcb33c16481cdb002384fb97fc764a6a3065ab1fd37",
+     "task_full": false,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/concept_r1c1.png",
+       "sha256": "27e0c4ad4b3bc71b6430e52faf3dde50ec5cf5d5487120d18b130285b909207b",
+       "bytes": 856432
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d382-7936-74ef-9d28-87f0c6f858cf",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c2 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "1:1",
+      "prompt": "The figure stands on its own feet with nothing under it, cut out and isolated on a plain light background like a product photo. A keychain charm figure: chunky and compact, head and body close together, no thin limbs, ears or tails sticking out. Request: keychain of my frenchie Subjects, matching the reference photos: French Bulldog (dog): Black and white French Bulldog with a black facial mask, white chest and muzzle, black ears and saddle, dark brown eyes, black nose, and characteristic stocky Frenchie build. French Bulldog colors, keep every one: white body; black face mask; black ears; black saddle on the back; white muzzle; white chest; brown eyes; black nose; pink inner ears. Realistic proportions true to the photos. Finished size about 45 mm. One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. Avoid: base, plinth, pedestal, plate, stand, podium, ground or floor, text or letters, keyring, loop or hole.",
+      "reference_image_urls": [
+       "storage:inputs/819cc491-c341-470a-bb97-63a194fa8dca/input/photo_1.jpg",
+       "storage:inputs/819cc491-c341-470a-bb97-63a194fa8dca/input/photo_2.jpg",
+       "storage:inputs/819cc491-c341-470a-bb97-63a194fa8dca/input/photo_3.jpg"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "4f487b2a1926327f9c56405a881b5d60dc12541e47158b18e58e77fed190c392",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "4fdff1e3ea3bff23",
+      "reference_image_urls": "97d89baca0e0dd33",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d382-7936-74ef-9d28-87f0c6f858cf.json",
+     "task_sha256": "50caad475383c8ea9778b64a66de62bb194265480f4823665418987c32a5377c",
+     "task_full": false,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/concept_r1c2.png",
+       "sha256": "9be343f4b9eb283daaf30c4428af1afe1191170df99d4255ed0adcee35a46855",
+       "bytes": 559505
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d384-0bc0-7079-ac1f-a818c7114aa2",
+     "stage": "s05_mesh",
+     "attempt": 1,
+     "key": "m1.gen",
+     "endpoint": "multi-image-to-3d",
+     "purpose": "3D model round 1 (generate)",
+     "status": "SUCCEEDED",
+     "credits": 35,
+     "request": {
+      "ai_model": "latest",
+      "geometry_resolution": "2k",
+      "input_task_id": "01a0d382-7936-74ef-9d28-87f0c6f858cf",
+      "multi_view_thumbnails": true,
+      "should_remesh": false,
+      "should_texture": true,
+      "target_formats": [
+       "glb"
+      ],
+      "texture_image_urls": [
+       "storage:artifacts/819cc491-c341-470a-bb97-63a194fa8dca/s03_concept/a1/approved_concept.png"
+      ]
+     },
+     "request_hash": "3a5c325534f21a81f55344a705d3c4639e2e81f96e0d9f44e961068e5718b4c2",
+     "request_fields": {
+      "ai_model": "eb0f1f245cda8f6d",
+      "geometry_resolution": "16184d36f0c96ed4",
+      "input_task_id": "6dcaebc539cea4e6",
+      "multi_view_thumbnails": "b5bea41b6c623f7c",
+      "should_remesh": "fcbcf165908dd18a",
+      "should_texture": "b5bea41b6c623f7c",
+      "target_formats": "45c64e428cb1d98e",
+      "texture_image_urls": "8c99ef22c1c34b66"
+     },
+     "task": "meshy/01a0d384-0bc0-7079-ac1f-a818c7114aa2.json",
+     "task_sha256": "d48b4b8ced9a42b593b6b710a649113bdb4db2b57adb7b2de64159d34ba2cc1e",
+     "task_full": false,
+     "assets": [
+      {
+       "field": "model_urls.glb",
+       "path": "s05_mesh/a1/mesh_m1.glb",
+       "sha256": "6bfac897d5e841fc91ab9825dc7d2c9b4ae7118de7d6595a9f26f30087a93643",
+       "bytes": 29148524
+      },
+      {
+       "field": "thumbnail_urls.front",
+       "path": "s05_mesh/a1/thumb_m1_front.png",
+       "sha256": "a909a3f87c27e6dfc640a9b11c8061b09de2bb790de7eb0844ee05997dc4c99f",
+       "bytes": 120558
+      },
+      {
+       "field": "thumbnail_urls.right",
+       "path": "s05_mesh/a1/thumb_m1_right.png",
+       "sha256": "0a1acf6ef176db122429c6acfb0f7f95548ccae35218c6366c39a8afd243c20d",
+       "bytes": 142136
+      },
+      {
+       "field": "thumbnail_urls.back",
+       "path": "s05_mesh/a1/thumb_m1_back.png",
+       "sha256": "7506dc841adff5178340406c67e689988954af5ea02965eb1f32498a455e7f3f",
+       "bytes": 115021
+      },
+      {
+       "field": "thumbnail_urls.left",
+       "path": "s05_mesh/a1/thumb_m1_left.png",
+       "sha256": "79439ef01ada98265df57004b79cdfd55a4c8d2fbbf2ebb8a089b9b6ee536846",
+       "bytes": 142346
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d386-e67a-70e4-8a67-c12f1ada455a",
+     "stage": "s06_printability",
+     "attempt": 1,
+     "key": "analyze",
+     "endpoint": "print-analyze",
+     "purpose": "printability analysis",
+     "status": "SUCCEEDED",
+     "credits": 0,
+     "request": {
+      "input_task_id": "01a0d384-0bc0-7079-ac1f-a818c7114aa2"
+     },
+     "request_hash": "7b8e5e84d362b78eee772d8bb29c65b671c77a658e8838eabccd5ac6fec1b598",
+     "request_fields": {
+      "input_task_id": "0dc73053fc4ecc4e"
+     },
+     "task": "meshy/01a0d386-e67a-70e4-8a67-c12f1ada455a.json",
+     "task_sha256": "91428247a071da0cded83609ab8af7ae5e13543c8cbe1017f40f81533cfeae50",
+     "task_full": false,
+     "assets": []
+    },
+    {
+     "task_id": "01a0d388-70d7-749b-a66d-1fa56a38d301",
+     "stage": "s07_baseline",
+     "attempt": 1,
+     "key": "mc.cartoon",
+     "endpoint": "print-multi-color",
+     "purpose": "baseline 3MF (cartoon)",
+     "status": "SUCCEEDED",
+     "credits": 10,
+     "request": {
+      "input_task_id": "01a0d384-0bc0-7079-ac1f-a818c7114aa2",
+      "max_colors": 5,
+      "style": "cartoon"
+     },
+     "request_hash": "baedaaa134ac2c914f3da402f87933d3f7bf947b544becc5c9745c5a18591be4",
+     "request_fields": {
+      "input_task_id": "0dc73053fc4ecc4e",
+      "max_colors": "ef2d127de37b942b",
+      "style": "25fb7f6c45350faf"
+     },
+     "task": "meshy/01a0d388-70d7-749b-a66d-1fa56a38d301.json",
+     "task_sha256": "abbb94574b50be37ed76334c599d2027944dd4a3fd3b9ddf50c8e7c5e91216e0",
+     "task_full": false,
+     "assets": [
+      {
+       "field": "model_urls.3mf",
+       "path": "s07_baseline/a1/baseline_cartoon.3mf",
+       "sha256": "de87eea7311d5b65628760a25f47a0d472027a55788feed42d18e6734b4fe39c",
+       "bytes": 19025371
+      }
+     ]
+    }
+   ],
+   "files": [
+    {
+     "path": "job.json",
+     "sha256": "fe058d5cdc42085ce27c3e8210d4f0d234d9de91a7f24ae4c2f34fb9c57440f8",
+     "bytes": 2190
+    },
+    {
+     "path": "job_row.json",
+     "sha256": "3c31c2725763fac28f9a119a5de4d33e0a622eb15c129130135f88216e44c4fd",
+     "bytes": 922
+    },
+    {
+     "path": "ledger.jsonl",
+     "sha256": "d4fcb86a9cffb6be9aeca5151d542b42568fee5854060694a2ff04324d7c568e",
+     "bytes": 1539
+    },
+    {
+     "path": "messages.jsonl",
+     "sha256": "b226c7c8e63587f5e22feb125502b233d57f85991a10df316d270b0610dbc946",
+     "bytes": 5507
+    },
+    {
+     "path": "input/photo_1.jpg",
+     "sha256": "8e2178baeaacd14a1ab5b08015f7add35d15c2c4e369c66ae4bedac047287b0a",
+     "bytes": 642968
+    },
+    {
+     "path": "input/photo_2.jpg",
+     "sha256": "dd04bbb09b996d1a935035d93226e977d02a24d167435d154d9646836b4521ec",
+     "bytes": 677902
+    },
+    {
+     "path": "input/photo_3.jpg",
+     "sha256": "2c91fb991a0ac3a1a68e43b53f71f9ff65198d3ab81b8e068fa7dd61be79a739",
+     "bytes": 912400
+    },
+    {
+     "path": "input/request.json",
+     "sha256": "ad7841158fe617cb4b017b624975e69d889c52a325a09e976f3242aae1c8fe48",
+     "bytes": 156
+    },
+    {
+     "path": "s01_intake/a1/addons.json",
+     "sha256": "c77695ca3080d4355e9250f1e8e4fa167ffd34a308cc543ed73eb8dc406c3661",
+     "bytes": 129
+    },
+    {
+     "path": "s01_intake/a1/answers.json",
+     "sha256": "73a9b0c5edfb0c79cfcf409b60798a069589e6431374fb62421a38c85e01fae4",
+     "bytes": 245
+    },
+    {
+     "path": "s01_intake/a1/color_regions.json",
+     "sha256": "be18f3f6a25976401399f58752caf574c13c99d62ffa5f8a0004552f1847dad3",
+     "bytes": 1116
+    },
+    {
+     "path": "s01_intake/a1/intake.json",
+     "sha256": "41bbbf6cd7a5e34f062d92f986b1944086f22ad3e397016b0ef62b5c04720d3a",
+     "bytes": 1410
+    },
+    {
+     "path": "s01_intake/a1/manifest.json",
+     "sha256": "96fe928cf144840b70f5e0664fd64661a38760c106430878ecbfb031c9f3c7eb",
+     "bytes": 10105
+    },
+    {
+     "path": "s01_intake/a1/subjects.json",
+     "sha256": "4082d64ebca7eacc1112acebd76a8396044c240bb25d4edf847138ae26fcb1f2",
+     "bytes": 807
+    },
+    {
+     "path": "s01_intake/a1/trace/01-claude.json",
+     "sha256": "604e4d8ca30b5da52c6b8de03b1c080c9d06e449d05472e085f77e53ace7db26",
+     "bytes": 4488
+    },
+    {
+     "path": "s02_color_spec/a1/manifest.json",
+     "sha256": "c7756ee17cc69de3898d4671fa4a62add9d27e061a973eba130907f0be21a064",
+     "bytes": 432
+    },
+    {
+     "path": "s03_concept/a1/approved_concept.png",
+     "sha256": "9be343f4b9eb283daaf30c4428af1afe1191170df99d4255ed0adcee35a46855",
+     "bytes": 559505
+    },
+    {
+     "path": "s03_concept/a1/concept.json",
+     "sha256": "7ae8f6d15d2e852a2701ac75214d578eb89164c1b45f103c4c949c82bf8ae473",
+     "bytes": 5014
+    },
+    {
+     "path": "s03_concept/a1/manifest.json",
+     "sha256": "9d62dcb5bb4fb51965dda4d32cbbaab63b3d19119e83672216adc9fa9f336c68",
+     "bytes": 15065
+    },
+    {
+     "path": "s03_concept/a1/trace/01-meshy.json",
+     "sha256": "d9c166b19e4b2b02ba25d8211132ea7550cd801fd4865f49ca5234740cecf254",
+     "bytes": 2532
+    },
+    {
+     "path": "s03_concept/a1/trace/02-meshy.json",
+     "sha256": "b9049df1232c602cb7a5147d4afb429520da598883c0b6631c765b50b6267193",
+     "bytes": 2637
+    },
+    {
+     "path": "s04_multiview/a1/manifest.json",
+     "sha256": "85f405359ce652a93251830029e7ef6bf94f07b4c3330653554e5db47795ef37",
+     "bytes": 431
+    },
+    {
+     "path": "s05_mesh/a1/manifest.json",
+     "sha256": "7a181f0d50549486d10de3563dca4f3e0ea380540d6fa45e32f4595ebc625000",
+     "bytes": 7508
+    },
+    {
+     "path": "s05_mesh/a1/mesh.json",
+     "sha256": "8f8ce0f491528797cb15d649db01c0c7cc057a147739a8fb8beeed834b4bbeef",
+     "bytes": 397
+    },
+    {
+     "path": "s05_mesh/a1/trace/01-meshy.json",
+     "sha256": "320d7af576321221f19e1fd5189ebad449854cd304ff854ecaa9300d00e1fd8e",
+     "bytes": 2799
+    },
+    {
+     "path": "s06_printability/a1/back.ply",
+     "sha256": "54180904ef5434ca2545024aa0103f3df801f7bd5825b07d7dee120c3c7e6748",
+     "bytes": 4069170
+    },
+    {
+     "path": "s06_printability/a1/figure.ply",
+     "sha256": "a09115331c39452600f0613315770b0a73ea8f1aac666cbd60ccdf077ad4ba0a",
+     "bytes": 17469748
+    },
+    {
+     "path": "s06_printability/a1/geometry.json",
+     "sha256": "de175886678834ffc33506a8a4f72fe90732e8bfdef989106ca1a85a4cb7c92c",
+     "bytes": 2126
+    },
+    {
+     "path": "s06_printability/a1/geometry_report.json",
+     "sha256": "0994cc40a2de19c35bc2bd235b1f91c54fa1f538b49be60697e2651fc82e0c0f",
+     "bytes": 2832
+    },
+    {
+     "path": "s06_printability/a1/keyring.ply",
+     "sha256": "4e249dcd7eb0ad7622c9845f6eff6b60db3d972aef237b503aeab692fdf50b3b",
+     "bytes": 20849
+    },
+    {
+     "path": "s06_printability/a1/manifest.json",
+     "sha256": "06c493a76f30afe1a1827f50b0defe79b38d287f872e3ed5ca6b66e9d9a96e27",
+     "bytes": 8563
+    },
+    {
+     "path": "s06_printability/a1/printability.json",
+     "sha256": "da46e66e6d2315a7d8f16a88d05e56526cc34bb74871220d89c6bd7a5b77428a",
+     "bytes": 298
+    },
+    {
+     "path": "s06_printability/a1/warnings.json",
+     "sha256": "066e3eb23400c23c630218957b3a5c705c496787339dda5ccdbc43d1d09fb945",
+     "bytes": 55
+    },
+    {
+     "path": "s06_printability/a1/trace/01-meshy.json",
+     "sha256": "8bf35f8f2eb2e87bd463f7f4895ace8d22aeee1f31f2a0f95837c95ee8366e91",
+     "bytes": 1714
+    },
+    {
+     "path": "s07_baseline/a1/baseline_x2d.slice.log",
+     "sha256": "7075db4aaf21a890f8e30c352513fa95218e6c4cba67b634725e75ab58197d49",
+     "bytes": 1147
+    },
+    {
+     "path": "s07_baseline/a1/manifest.json",
+     "sha256": "1fb1424eb0a539c2bbae9b95d3e6a40af5c46af0b5d4aeb9dbb4f3e83517d8bc",
+     "bytes": 507784
+    },
+    {
+     "path": "s07_baseline/a1/result.json",
+     "sha256": "6fa88027b9c68afe82333c85f63f2d0a23c70ad2c0c259bcc6d4fb4410736b4a",
+     "bytes": 553
+    },
+    {
+     "path": "s07_baseline/a1/slice_report.json",
+     "sha256": "27e0a01ee0bec563bf2b7ffc2a0e54d6766a6759abb41e610475004fccebc326",
+     "bytes": 346440
+    },
+    {
+     "path": "s07_baseline/a1/trace/01-meshy.json",
+     "sha256": "6112fef80a097b93b7bb7e9bf48e8eef1bbdcf6834f5248aa6fb732f28b24eec",
+     "bytes": 1640
+    },
+    {
+     "path": "s07_baseline/a1/trace/02-slicer.json",
+     "sha256": "7b0f0af1b92f5feb09574b1ffd86c981ad376cf205bf627edfbe732df26631c2",
+     "bytes": 3332
+    },
+    {
+     "path": "s08_palette/a1/manifest.json",
+     "sha256": "b587cb2e1394d59be22972b869cee90b3e6c1ef2c2607b889d62fae707407af6",
+     "bytes": 429
+    },
+    {
+     "path": "s09_paint/a1/manifest.json",
+     "sha256": "66df069650eaa879624f86155979ab2380cce415bfc23035eac217a15ec2165e",
+     "bytes": 427
+    },
+    {
+     "path": "s09_paint/a2/manifest.json",
+     "sha256": "e5164f8dbb3b2ba61ce5009a7a79e69bade7a05de2b26a538ba51ade4f532035",
+     "bytes": 8226
+    },
+    {
+     "path": "s09_paint/a2/trace/01-claude.json",
+     "sha256": "be1e73994cab9ce9ec8bb8dfdfe2993bedb94c456d2752c71c4f538f34c09ba8",
+     "bytes": 848
+    },
+    {
+     "path": "s09_paint/a2/trace/02-claude.json",
+     "sha256": "e4b96ae4361f06ef39492c6249115833bd5689e8f4cff8c82c4a525ddce83218",
+     "bytes": 844
+    },
+    {
+     "path": "s09_paint/a2/trace/03-slicer.json",
+     "sha256": "9e838242f57c2b751f538d122f9e08d38d19f8af5121f9540fe4dd61cbc865a2",
+     "bytes": 3196
+    },
+    {
+     "path": "s09_paint/a3/manifest.json",
+     "sha256": "4dbafc38dd37680cab22640bbeed90adfa58c76a2ef2e9c6f985a29ba46e99d0",
+     "bytes": 10291
+    },
+    {
+     "path": "s09_paint/a3/trace/01-claude.json",
+     "sha256": "eff15667b25cae65bad7b493acacebf651f44059e37469c6400bfd244c75d375",
+     "bytes": 849
+    },
+    {
+     "path": "s09_paint/a3/trace/02-claude.json",
+     "sha256": "40762ab1e81d0806ce5e0daec81ef99683d5aeb119d8c6e98e00492eb63ebcaf",
+     "bytes": 848
+    },
+    {
+     "path": "s09_paint/a3/trace/03-claude.json",
+     "sha256": "f6aca6ab2b7867036acce02f39496436e013c06e239a336590ecfa04df57210a",
+     "bytes": 844
+    },
+    {
+     "path": "s09_paint/a3/trace/04-slicer.json",
+     "sha256": "dc57c507b4f02a8d7b4eb73d4a5eca4cb5be14877f3a173d24c5fc5898574c13",
+     "bytes": 2754
+    },
+    {
+     "path": "s10_write/a1/manifest.json",
+     "sha256": "dd955f2f18a83ef1e1317e26d208ebad23111a24a9751330286cd912dfe38c62",
+     "bytes": 427
+    }
+   ]
+  },
+  {
+   "job_id": "1785a480-84b8-41f9-8f97-1005b6d7d0a6",
+   "label": "bronco_m3",
+   "what": "M3: Bronco nameplate, thin slice",
+   "product_type": "nameplate",
+   "profile": "thin_slice",
+   "form": null,
+   "prompt": "nameplate for my beagle Bronco",
+   "attempts": {
+    "s01_intake": 1,
+    "s02_color_spec": 1,
+    "s03_concept": 1,
+    "s04_multiview": 1,
+    "s05_mesh": 1,
+    "s06_printability": 1,
+    "s07_baseline": 2,
+    "s08_palette": 1,
+    "s09_paint": 1,
+    "s10_write": 1
+   },
+   "credits_live": 66,
+   "result": {
+    "threemf": "s07_baseline/a2/baseline_x2d.3mf",
+    "slice_ok": true,
+    "print_time_s": 33716.0,
+    "baseline_only": true,
+    "filaments": [
+     {
+      "filament_id": "generic-pla-black",
+      "grams": 54.87,
+      "meters": 18.4,
+      "slot": 1
+     },
+     {
+      "filament_id": "generic-pla-brown",
+      "grams": 61.88,
+      "meters": 20.75,
+      "slot": 2
+     },
+     {
+      "filament_id": "generic-pla-white",
+      "grams": 10.4,
+      "meters": 3.49,
+      "slot": 5
+     }
+    ]
+   },
+   "meshy": [
+    {
+     "task_id": "01a0d1c1-c6e3-73b6-bb9c-476454efc70c",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c1",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c1 gpt-image-2",
+     "status": "SUCCEEDED",
+     "credits": 12,
+     "request": {
+      "ai_model": "gpt-image-2",
+      "aspect_ratio": "1:1",
+      "prompt": "A figure that will sit on a flat name plate: a flat, wide underside so it stands steadily, compact pose. Request: nameplate for my beagle Bronco Subjects, matching the reference photos: Bronco (dog): Beagle with tan/brown and white bi-color coat, long droopy ears, white muzzle and chest, dark nose and eyes, alert friendly expression. Which pose on the plate? Sitting. Finished size about 120 mm. One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. No text, letters, keyring, loop, hole, plate, stand or base in the image.",
+      "reference_image_urls": [
+       "data:image/jpeg;sha256=c905ab333e6138f0;len=604948"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "95bb2fd2a4d8c732b765178ca9c008be462cf76f0ada9ff2fce7b2c13f90ec1b",
+     "request_fields": {
+      "ai_model": "02396d2880f71d65",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "47867ed1a17abec3",
+      "reference_image_urls": "68f74ae4fa84bb9c",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d1c1-c6e3-73b6-bb9c-476454efc70c.json",
+     "task_sha256": "1a8fffa1b7b394764ee030cd79a53f16815ed398d7284d79dd05df43a3b953be",
+     "task_full": false,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/concept_r1c1.png",
+       "sha256": "bccbff42570b5575a2e800e5bfb3f8d8a73c74feb967f5df8090d2335f138e18",
+       "bytes": 824461
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d1c1-ce5a-745b-988d-ddc07083db4d",
+     "stage": "s03_concept",
+     "attempt": 1,
+     "key": "r1c2",
+     "endpoint": "image-to-image",
+     "purpose": "concept r1c2 nano-banana-pro",
+     "status": "SUCCEEDED",
+     "credits": 9,
+     "request": {
+      "ai_model": "nano-banana-pro",
+      "aspect_ratio": "1:1",
+      "prompt": "A figure that will sit on a flat name plate: a flat, wide underside so it stands steadily, compact pose. Request: nameplate for my beagle Bronco Subjects, matching the reference photos: Bronco (dog): Beagle with tan/brown and white bi-color coat, long droopy ears, white muzzle and chest, dark nose and eyes, alert friendly expression. Which pose on the plate? Sitting. Finished size about 120 mm. One connected sculpted figure: every subject touching the others so it prints as one solid piece, with a flat underside. Chunky proportions for a small print. No loose whiskers, no thin tails, no gaps between subjects. Neutral plain background. Flat even lighting. 3/4 hero view. No text, letters, keyring, loop, hole, plate, stand or base in the image.",
+      "reference_image_urls": [
+       "data:image/jpeg;sha256=c905ab333e6138f0;len=604948"
+      ],
+      "remove_background": true
+     },
+     "request_hash": "e4872dc84dd338a4eb24d6c01db9e8dc4148b318a2a3f1d29b4a6086ca034c0d",
+     "request_fields": {
+      "ai_model": "a36714c35681568c",
+      "aspect_ratio": "738a397ca42f89be",
+      "prompt": "47867ed1a17abec3",
+      "reference_image_urls": "68f74ae4fa84bb9c",
+      "remove_background": "b5bea41b6c623f7c"
+     },
+     "task": "meshy/01a0d1c1-ce5a-745b-988d-ddc07083db4d.json",
+     "task_sha256": "af486f8b5f6b47ea6b5899dd00fedd1ddae9c861edf0ad5ae2b92284f2a7ba2e",
+     "task_full": false,
+     "assets": [
+      {
+       "field": "image_urls.0",
+       "path": "s03_concept/a1/concept_r1c2.png",
+       "sha256": "06753d3297b7d6d63a5719261f2d1eab23fb7fe2ef9d5a50f83e61432f261ac8",
+       "bytes": 547342
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d1c3-94e9-7213-a24c-2ea152d669e2",
+     "stage": "s05_mesh",
+     "attempt": 1,
+     "key": "m1.gen",
+     "endpoint": "multi-image-to-3d",
+     "purpose": "3D model round 1 (generate)",
+     "status": "SUCCEEDED",
+     "credits": 35,
+     "request": {
+      "ai_model": "latest",
+      "geometry_resolution": "2k",
+      "input_task_id": "01a0d1c1-c6e3-73b6-bb9c-476454efc70c",
+      "multi_view_thumbnails": true,
+      "should_remesh": false,
+      "should_texture": true,
+      "target_formats": [
+       "glb"
+      ],
+      "texture_image_urls": [
+       "storage:artifacts/1785a480-84b8-41f9-8f97-1005b6d7d0a6/s03_concept/a1/approved_concept.png"
+      ]
+     },
+     "request_hash": "2cae458d25a3321a3c25b92d8840322c87b88eeb98a49183578e2fede2c454ed",
+     "request_fields": {
+      "ai_model": "eb0f1f245cda8f6d",
+      "geometry_resolution": "16184d36f0c96ed4",
+      "input_task_id": "59a7eb8e9235585a",
+      "multi_view_thumbnails": "b5bea41b6c623f7c",
+      "should_remesh": "fcbcf165908dd18a",
+      "should_texture": "b5bea41b6c623f7c",
+      "target_formats": "45c64e428cb1d98e",
+      "texture_image_urls": "21176e6ba747bcb2"
+     },
+     "task": "meshy/01a0d1c3-94e9-7213-a24c-2ea152d669e2.json",
+     "task_sha256": "719bb808290bbdf3ef5a7065a2fe24ff9276f436c5eaab0ec273de068644d553",
+     "task_full": false,
+     "assets": [
+      {
+       "field": "model_urls.glb",
+       "path": "s05_mesh/a1/mesh_m1.glb",
+       "sha256": "6f068cdd12760dfd9ece9a13e6c4e0f93a17ccf50ac3252f3f8c8bbb77ba34fd",
+       "bytes": 18657968
+      },
+      {
+       "field": "thumbnail_urls.front",
+       "path": "s05_mesh/a1/thumb_m1_front.png",
+       "sha256": "012326dad5f806fec05a6b9901a4f2e0cb49132ed04f82025d17771b42074ab5",
+       "bytes": 182906
+      },
+      {
+       "field": "thumbnail_urls.right",
+       "path": "s05_mesh/a1/thumb_m1_right.png",
+       "sha256": "9b960e1fc56c09ec1f34e8aa01617539427aa6c39b77e58f08f550d50730e8f2",
+       "bytes": 147455
+      },
+      {
+       "field": "thumbnail_urls.back",
+       "path": "s05_mesh/a1/thumb_m1_back.png",
+       "sha256": "d93808ba828dee03928b51992e8951d4375f7828a0aa57e7242c5735b418427e",
+       "bytes": 198111
+      },
+      {
+       "field": "thumbnail_urls.left",
+       "path": "s05_mesh/a1/thumb_m1_left.png",
+       "sha256": "e3a89da3506ccd5d69214cf2c0a6eeb1164fc88b722decc4a8e1f69effb9c6ca",
+       "bytes": 167700
+      }
+     ]
+    },
+    {
+     "task_id": "01a0d1c7-032b-7175-884a-fb06b8b18914",
+     "stage": "s06_printability",
+     "attempt": 1,
+     "key": "analyze",
+     "endpoint": "print-analyze",
+     "purpose": "printability analysis",
+     "status": "SUCCEEDED",
+     "credits": 0,
+     "request": {
+      "input_task_id": "01a0d1c3-94e9-7213-a24c-2ea152d669e2"
+     },
+     "request_hash": "bbd37affcf856434ab249e51f8c4f8f70068a114f6c80f4a7fff2c51ce4d2ee9",
+     "request_fields": {
+      "input_task_id": "10d4699477c7dacf"
+     },
+     "task": "meshy/01a0d1c7-032b-7175-884a-fb06b8b18914.json",
+     "task_sha256": "4beff95ba3ed9abdb775840df971ef1dcc4cbb57253503d04ada9f50df6a30f9",
+     "task_full": false,
+     "assets": []
+    },
+    {
+     "task_id": "01a0d1c7-ac68-7062-ae0d-d44df6a64d1d",
+     "stage": "s07_baseline",
+     "attempt": 1,
+     "key": "mc.cartoon",
+     "endpoint": "print-multi-color",
+     "purpose": "baseline 3MF (cartoon)",
+     "status": "SUCCEEDED",
+     "credits": 10,
+     "request": {
+      "input_task_id": "01a0d1c3-94e9-7213-a24c-2ea152d669e2",
+      "max_colors": 5,
+      "style": "cartoon"
+     },
+     "request_hash": "d78f46a57208b3813b01d674726338f29c2cc224777f79e331a04d0473c2f3d3",
+     "request_fields": {
+      "input_task_id": "10d4699477c7dacf",
+      "max_colors": "ef2d127de37b942b",
+      "style": "25fb7f6c45350faf"
+     },
+     "task": "meshy/01a0d1c7-ac68-7062-ae0d-d44df6a64d1d.json",
+     "task_sha256": "b1c575d189a81d5f69c86116cf95adb0842606b64d0aa86a769d6196b3fae218",
+     "task_full": false,
+     "assets": [
+      {
+       "field": "model_urls.3mf",
+       "path": "s07_baseline/a1/baseline_cartoon.3mf",
+       "sha256": "bd21dd140f79c5af22cf54310bbc9f6c8cb2d9a40b6ee88f05ba95208f0ad169",
+       "bytes": 10809645
+      }
+     ]
+    }
+   ],
+   "files": [
+    {
+     "path": "job.json",
+     "sha256": "5b05102c9404143df9baac23a56549e191bc14245254e4f0b4b8db6839cb3732",
+     "bytes": 2025
+    },
+    {
+     "path": "job_row.json",
+     "sha256": "e79d1b3f777a77967f3f2dc1b56737db9220578f29f6773eb83253e6fd3ceaca",
+     "bytes": 1126
+    },
+    {
+     "path": "ledger.jsonl",
+     "sha256": "9b53f2bb6d4be17ffe215c67f714fe474f1064540f24cc2166cf4ee1f113d9ec",
+     "bytes": 1521
+    },
+    {
+     "path": "messages.jsonl",
+     "sha256": "97b8feffe0ad77878891f474e7f101e829ed99308d500463f06dea72433b96b4",
+     "bytes": 5487
+    },
+    {
+     "path": "input/photo_1.jpg",
+     "sha256": "08b2a150a942e9b5044f3fbe887f00f9b5749cbefa21753ec5523ac9142f1d44",
+     "bytes": 600336
+    },
+    {
+     "path": "input/request.json",
+     "sha256": "4f81c11ff6d717ed0736c538cede8311eaf6a8d22e70e574f7e68a61c6fe8191",
+     "bytes": 105
+    },
+    {
+     "path": "s01_intake/a1/addons.json",
+     "sha256": "8c93c11e7a5b18eae3d2734760b0ee0d7d1cea438109ccc0ecaf36c4b7fba443",
+     "bytes": 288
+    },
+    {
+     "path": "s01_intake/a1/answers.json",
+     "sha256": "3c4f1aaf66a2452bea1476f29c685fd5cf6fe437b02bc5fda032aab6f282900d",
+     "bytes": 470
+    },
+    {
+     "path": "s01_intake/a1/intake.json",
+     "sha256": "3520254432ef96a32d8105833d2e7c0de78c390e9870b1475594d1ad6fd10ce6",
+     "bytes": 1893
+    },
+    {
+     "path": "s01_intake/a1/manifest.json",
+     "sha256": "6424f1a826f56ebeae9055aa29abd60f8946e9aa9e2bed1e088b488a4517aa91",
+     "bytes": 8842
+    },
+    {
+     "path": "s01_intake/a1/subjects.json",
+     "sha256": "688b02490cf644c8b55750aac7760da2ddbdd6fb805d61591aa798278a320335",
+     "bytes": 411
+    },
+    {
+     "path": "s01_intake/a1/trace/01-claude.json",
+     "sha256": "3104e0f72220c9b5c2ca031308e96f86f8329f549eca40711ec9bced36b3c895",
+     "bytes": 3378
+    },
+    {
+     "path": "s02_color_spec/a1/manifest.json",
+     "sha256": "facab78e7541cd28d53a9dbbad575fc3227869450efdb4e775544ef656629175",
+     "bytes": 432
+    },
+    {
+     "path": "s03_concept/a1/approved_concept.png",
+     "sha256": "bccbff42570b5575a2e800e5bfb3f8d8a73c74feb967f5df8090d2335f138e18",
+     "bytes": 824461
+    },
+    {
+     "path": "s03_concept/a1/concept.json",
+     "sha256": "8d9ec467a61a8549e256d8b1768de4df1ffde3dc848c24145a2aef8804151321",
+     "bytes": 3747
+    },
+    {
+     "path": "s03_concept/a1/manifest.json",
+     "sha256": "335e6af47a60d9632793028942cb6a82e3bb141b6d40d812ac0c24d0bbf00bf6",
+     "bytes": 12209
+    },
+    {
+     "path": "s03_concept/a1/trace/01-meshy.json",
+     "sha256": "18ff86b293c357a7be057c64d750b17780b706186db9c6a84db51c491cfa50ca",
+     "bytes": 2171
+    },
+    {
+     "path": "s03_concept/a1/trace/02-meshy.json",
+     "sha256": "c93fdcf7406d0dd905b7819a205572a1dfaf079bd1e1e74e977ea9bce53c9e80",
+     "bytes": 2185
+    },
+    {
+     "path": "s04_multiview/a1/manifest.json",
+     "sha256": "290c0465eebd3c7804741e30039fe53c2652daad57f8cbd90d40aaf6a32885c9",
+     "bytes": 431
+    },
+    {
+     "path": "s05_mesh/a1/manifest.json",
+     "sha256": "9bf48bc35d2f23472386ba66efa6f1087ed6c27965731a35c3ee04ff8d2e828b",
+     "bytes": 7652
+    },
+    {
+     "path": "s05_mesh/a1/mesh.json",
+     "sha256": "228ef5f3df7876820f14bf55fef697a8439e2a9ee7007e576dddd0c2ad0dead1",
+     "bytes": 935
+    },
+    {
+     "path": "s05_mesh/a1/trace/01-meshy.json",
+     "sha256": "975367d8f27f74f4c0d12732264f09507a224ba4d760949c00b454e8c4816f0d",
+     "bytes": 2799
+    },
+    {
+     "path": "s06_printability/a1/figure.ply",
+     "sha256": "fcb4f9babbc7ae2ab5bebf40cc9b34c70ed194cffaea6909b87ebd3643c6a2f0",
+     "bytes": 10115084
+    },
+    {
+     "path": "s06_printability/a1/geometry.json",
+     "sha256": "f9bc5ee9467a8c15c34dc4f46d44bd53511ed91829fa86c12df33f9bb00e1419",
+     "bytes": 1760
+    },
+    {
+     "path": "s06_printability/a1/geometry_report.json",
+     "sha256": "c9bf706145ab88e635f3e125e5873a0bbc7c57d49e0919522d39adecbc2456b7",
+     "bytes": 2663
+    },
+    {
+     "path": "s06_printability/a1/manifest.json",
+     "sha256": "2c118cbe3a529caf869519771c935c7cb9f3c804290c9314dc57fd1263eb609e",
+     "bytes": 8156
+    },
+    {
+     "path": "s06_printability/a1/plate.ply",
+     "sha256": "e7b30528a46f35bdcdaaa16dc925461fd7306dd851a39caaebafd773c2a438ce",
+     "bytes": 15362
+    },
+    {
+     "path": "s06_printability/a1/printability.json",
+     "sha256": "541a01e85c8e36208237b7a4468fcef5c92356893012b274831e0e7cc01d8605",
+     "bytes": 297
+    },
+    {
+     "path": "s06_printability/a1/text.ply",
+     "sha256": "42d5f78df339eb422df9c197971c64faf8a7b61e0156092ca5b21941a742b19a",
+     "bytes": 80140
+    },
+    {
+     "path": "s06_printability/a1/warnings.json",
+     "sha256": "c9702bc95ec183073a7a006b2eb1a398015e2fed0198b48d85f67cc8cbd72f89",
+     "bytes": 68
+    },
+    {
+     "path": "s06_printability/a1/trace/01-meshy.json",
+     "sha256": "493f944cb057db380a64a5eeed1075e45bdbb3172b9b170bbe8206a39ee0a333",
+     "bytes": 1712
+    },
+    {
+     "path": "s07_baseline/a1/manifest.json",
+     "sha256": "0874b15911845a3faf7ecb788415a6c42b8866968cc0bfcd599bcfc8860c953b",
+     "bytes": 4673
+    },
+    {
+     "path": "s07_baseline/a1/trace/01-meshy.json",
+     "sha256": "1f78e4f3867b86b4ea9865191ea08c06e29773c49ae43714a011a8af6151c6e2",
+     "bytes": 1640
+    },
+    {
+     "path": "s07_baseline/a2/baseline_x2d.slice.log",
+     "sha256": "d069549c1fd31a5a44f89f08d7fa1f1315cb6cb042fc0ecb8914bd8ff26f93fc",
+     "bytes": 1247
+    },
+    {
+     "path": "s07_baseline/a2/manifest.json",
+     "sha256": "f2cacd5de96993c7f947382d8a45716bf059898a789b253bd4b881db2ee1f044",
+     "bytes": 78513
+    },
+    {
+     "path": "s07_baseline/a2/result.json",
+     "sha256": "691bae45a574f8964d358ce7eb7545666239331a23a5f552a463ac810b593195",
+     "bytes": 558
+    },
+    {
+     "path": "s07_baseline/a2/slice_report.json",
+     "sha256": "33b4af08f845aafa3d3a1bfd1f0848b81df2f7d566082d6552a87226503605ee",
+     "bytes": 50467
+    },
+    {
+     "path": "s07_baseline/a2/trace/01-slicer.json",
+     "sha256": "b99155aadd5035cb90ad22f9f401371cab89bd4bb1125d63e8531a40bbeebf39",
+     "bytes": 3505
+    },
+    {
+     "path": "s08_palette/a1/manifest.json",
+     "sha256": "b05bb9ae50a08c75f9714eac9dd5f85e7dd1eeefa50e45b04a7bd92f938ec9bd",
+     "bytes": 429
+    },
+    {
+     "path": "s09_paint/a1/manifest.json",
+     "sha256": "8106f77def5419331694705d13dd074c2130a7175f94aa6f37d9850ff2084c6e",
+     "bytes": 427
+    },
+    {
+     "path": "s09_paint/a2/manifest.json",
+     "sha256": "171d657ed4f5f7542e5e614210a39ba06154fa95182b833d7cf9416727e3ef40",
+     "bytes": 11562
+    },
+    {
+     "path": "s09_paint/a2/trace/01-claude.json",
+     "sha256": "631bfe6a49b8a59c71be3ecbb943ad0588fbf70bc384d137322d2733266c41c6",
+     "bytes": 848
+    },
+    {
+     "path": "s09_paint/a2/trace/02-claude.json",
+     "sha256": "fb180240f5282477e241e9c78b3b47a0a4275c3b962562d4ec2d7444704fee9b",
+     "bytes": 847
+    },
+    {
+     "path": "s09_paint/a2/trace/03-claude.json",
+     "sha256": "b431334965b0d4f1f021ee906f491978ac72e237c50cf076f3ff46e620268cd5",
+     "bytes": 848
+    },
+    {
+     "path": "s09_paint/a2/trace/04-claude.json",
+     "sha256": "008abb2305fb84732ab255c4a5b7c8db57e5fced30b1fc3cbc045bd6d9312e0b",
+     "bytes": 848
+    },
+    {
+     "path": "s09_paint/a2/trace/05-claude.json",
+     "sha256": "eb53d062c057ae02560284e4d826a0c13c2d6e14c1cb2288101f56f9d12b13d9",
+     "bytes": 844
+    },
+    {
+     "path": "s09_paint/a2/trace/06-slicer.json",
+     "sha256": "544ff17f826cc8743b1e8eae2e56e0c8c17b26b398da33d8d979bedccf0b6822",
+     "bytes": 3117
+    },
+    {
+     "path": "s10_write/a1/manifest.json",
+     "sha256": "df79cd59aed70cae9d8eeb15af56f710e0b18b67f981b87afa719e1627eb8780",
+     "bytes": 427
+    }
+   ]
+  }
+ ]
+}
